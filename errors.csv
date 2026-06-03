@@ -1,0 +1,180 @@
+filename,url,issue,timestamp
+Above Top Secret,https://abovetopsecret.com,"Blank — pure white, nothing rendered",
+Africa Check,https://africacheck.org,Bot check — Cloudflare Verify you are human,
+America Magazine,https://americamagazine.org,Bot check — wp.com Checking your browser,
+Anonymous Wire,https://anonymouswire.com,Account suspended,
+Anthropocene Magazine,https://anthropocenemagazine.org,403 Forbidden (Cloudflare),
+Arkansas Democrat-Gazette,https://arkansasonline.com,Bot check — Cloudflare Verify you are human,
+Americans United for Separation of Church and State,https://au.org,403 Forbidden (Cloudflare),
+The Austin Chronicle,https://austinchronicle.com,Bot check — wp.com Checking your browser,
+Bangor Daily News,https://bangordailynews.com,Bot check — wp.com Checking your browser,
+BerkeleySide,https://berkeleyside.org,Bot check — wp.com Checking your browser,
+Better Government Association,https://bettergov.org,Bot check — wp.com Checking your browser,
+Boy Genius Report,https://bgr.com,Too large to analyze,
+Big League Politics,https://bigleaguepolitics.com,"Blank — pure white, nothing rendered",
+Bipartisan Report,https://bipartisanreport.com,Cloudflare — Web server is down (521),
+Bismarck Tribune,https://bismarcktribune.com,Bot detected — Challenge failed: Bot detected,
+Borgen Magazine,https://borgenmagazine.com,403 Forbidden (Cloudflare),
+Brampton Guardian,https://bramptonguardian.com,Bot detected — Challenge failed: Bot detected,
+Breaking Defense,https://breakingdefense.com,403 Forbidden (nginx),
+C-Span,https://c-span.org,Human verification — Let's confirm you are human,
+Central Florida Post,https://centralfloridapost.com,403 Forbidden (Cloudflare),
+Chicago Reporter,https://chicagoreporter.com,Bot check — wp.com Checking your browser,
+Christian Action Network,https://christianaction.org,403 Forbidden (Cloudflare),
+Clash Daily,https://clashdaily.com,Bot check — Cloudflare Verify you are human,
+Concord Monitor,https://concordmonitor.com,Bot check — wp.com Checking your browser,
+Congress.gov,https://congress.gov,Bot check — Cloudflare Verify you are human,
+Conservative Firing Line,https://conservativefiringline.com,Bot check — Cloudflare Verify you are human,
+Cook Political Reports,https://cookpolitical.com,Bot check — Cloudflare Verify you are human,
+Daily Mail,https://dailymail.co.uk,Access denied (CDN),
+Defense One,https://defenseone.com,Too large to analyze,
+Defiant America,https://defiantamerica.com,"Cloudflare — Sorry, you have been blocked",
+Economics.Help,https://economicshelp.org,403 Forbidden (Cloudflare),
+Activist Mommy/Elizabeth Johnston,https://elizabethjohnston.org,403 Forbidden (Cloudflare),
+Fairness and Accuracy in Reporting,https://fair.org,403 Forbidden (nginx),
+Fair360,https://fair360.com,403 Forbidden (nginx),
+Finextra,https://finextra.com,Bot check — Cloudflare Verify you are human,
+The Gay Center,https://gaycenter.org,403 Forbidden (nginx),
+Colorado Springs Gazette,https://gazette.com,"Cloudflare — Sorry, you have been blocked",
+Gothamist,https://gothamist.com,Bot check — Cloudflare Verify you are human,
+Great Awakening,https://greatawakening.win,"Cloudflare — Sorry, you have been blocked",
+IndustryWeek,https://industryweek.com,Bot check — Cloudflare Verify you are human,
+Institute for New Economic Thinking,https://ineteconomics.org,Bot check — Cloudflare Verify you are human,
+InsideNoVA,https://insidenova.com,Bot detected — Challenge failed: Bot detected,
+Inside Philanthropy,https://insidephilanthropy.com,403 Forbidden (Cloudflare),
+Jacksonville Daily News,https://jdnews.com,Bot detected — Challenge failed: Bot detected,
+Joplin Globe,https://joplinglobe.com,Bot detected — Challenge failed: Bot detected,
+Kunstler.com,https://kunstler.com,Subscription popup only (Substack),
+Loudoun Times-Mirror,https://loudountimes.com,Bot detected — Challenge failed: Bot detected,
+Mississippi Free Press,https://mississippifreepress.org,Bot detected — Challenge failed: Bot detected,
+Rensselaer Republican,https://newsbug.info/rensselaer_republican/,Bot detected — Challenge failed: Bot detected,
+Pike County News Watchman,https://newswatchman.com,Bot detected — Challenge failed: Bot detected,
+Walker County Messenger,https://northwestgeorgianews.com/catoosa_walker_news/,Bot detected — Challenge failed: Bot detected,
+Polk County Standard-Journal,https://northwestgeorgianews.com/polk_standard_journal/,Bot detected — Challenge failed: Bot detected,
+KNWO - NPR - Cottonwood,https://nwpb.org,Bot check — Cloudflare Verify you are human,
+OnTheWight,https://onthewight.com,Bot check — Cloudflare Verify you are human,
+Lebanon Enterprise,https://pmg-ky2.com/lebanon/,Bot detected — Challenge failed: Bot detected,
+Popular Information,https://popular.info,Subscription popup only (Substack),
+Poynter Institute,https://poynter.org,Bot check — Cloudflare Verify you are human,
+Center for Media and Democracy,https://prwatch.org,Bot check — Cloudflare Verify you are human,
+Quad City Times,https://qctimes.com,Bot detected — Challenge failed: Bot detected,
+Queerty,https://queerty.com,Bot check — Cloudflare Verify you are human,
+RealClearPolling,https://realclearpolling.com,Bot check — Cloudflare Verify you are human,
+Salem News,https://salemnews.com,Bot detected — Challenge failed: Bot detected,
+San Diego Reader,https://sandiegoreader.com,Bot check — Cloudflare Verify you are human,
+Santa Maria Times,https://santamariatimes.com,Bot detected — Challenge failed: Bot detected,
+Sciencing,https://sciencing.com,Too large to analyze,
+Seattle Times,https://seattletimes.com,Bot check — Max challenge attempts exceeded,
+2nd Amendment Daily News,https://secondamendmentdaily.com,Cloudflare — Invalid SSL certificate (526),
+Sharon Herald,https://sharonherald.com,Bot detected — Challenge failed: Bot detected,
+Stillwater County News,https://stillwatercountynews.com,Bot detected — Challenge failed: Bot detected,
+Stilwell Democrat,https://stilwelldemocrat.com,Bot detected — Challenge failed: Bot detected,
+Stillwater News Press,https://stwnewspress.com,Bot detected — Challenge failed: Bot detected,
+Tax Policy Center,https://taxpolicycenter.org,"Cloudflare — Sorry, you have been blocked",
+Texas Tribune,https://texastribune.org,Bot check — wp.com Checking your browser,
+Baton Rouge Advocate,https://theadvocate.com,Bot detected — Challenge failed: Bot detected,
+The City,https://thecity.nyc,Bot check — wp.com Checking your browser,
+The Stokes News,https://thestokesnews.com,Bot detected — Challenge failed: Bot detected,
+Chattanooga Times Free Press,https://timesfreepress.com,Bot check — Cloudflare Verify you are human,
+Vaccine Safety Research Foundation,https://vacsafety.org,403 Forbidden (Cloudflare),
+Vigilant News,https://vigilantnews.com,Cloudflare — Invalid SSL certificate (526),
+WABE - NPR - Atlanta,https://wabe.org,Bot check — Cloudflare Verify you are human,
+Washington Times-Herald,https://washtimesherald.com,Bot detected — Challenge failed: Bot detected,
+Conservative Tribune,https://westernjournal.com/commentary,Bot check — Cloudflare Verify you are human,
+Al.com,https://www.al.com,Bot check — Cloudflare Verify you are human,
+Congressional Budget Office,https://www.cbo.gov/,Bot check — Cloudflare Verify you are human,
+Yadkin Ripple,https://yadkinripple.com,Bot detected — Challenge failed: Bot detected,
+Newzoh,https://newzoh.com,DNS failure — domain does not exist,
+Sputnik News Agency - India,https://Sputniknews.in,DNS failure — domain does not exist,
+Denver Westword,https://westword.com,Page load timeout,2026-06-04 00:15:55
+Yahoo News,https://news.yahoo.com,Page load timeout,2026-06-04 00:02:16
+Isle of Wight County Press,https://countypress.co.uk,Page load timeout,
+Savannah Morning News,https://savannahnow.com,Page load timeout,2026-06-04 00:08:34
+Just One Focus,https://justonefocus.org,DNS failure — domain does not exist,
+Keighley News,https://keighleynews.co.uk,Page load timeout,2026-06-03 23:56:01
+Huntsville Item,https://itemonline.com,Page load timeout,2026-06-03 23:55:20
+National Law Review,https://natlawreview.com,Page load timeout,
+Regina Leader-Post,https://leaderpost.com,Page load timeout,2026-06-03 23:57:21
+Tellico Village Connection,https://tellicovillageconnection.com,Capture error,2026-06-04 00:11:45
+NoTricksZone,https://notrickszone.com,Page load timeout,2026-06-04 00:03:53
+Thompson Citizen,https://thompsoncitizen.net,DNS failure — domain does not exist,
+The Washington Spectator,https://washingtonspectator.org,Page load timeout,2026-06-04 00:13:56
+CreationWiki,https://creationwiki.org,Capture error,
+Trentonian,https://trentonian.ca,Page load timeout,2026-06-04 00:12:42
+Epping Forest Guardian,https://Eppingforestguardian.co.uk,Page load timeout,
+Rense,https://rense.com,Page load timeout,
+Lebanon Daily News,https://ldnews.com,Page load timeout,2026-06-03 23:56:56
+WSAZ News Channel,https://wsaz.com,Page load timeout,2026-06-04 00:17:48
+The Breach,https://breachmedia.ca,Navigation during capture,
+The Gateway Pundit,https://thegatewaypundit.com,Page load timeout,2026-06-04 00:10:53
+San Bernadino Sun,https://sbsun.com,Page load timeout,
+Eurasia Review,https://eurasiareview.com,DNS failure — domain does not exist,
+Milford Mercury,https://milfordmercury.co.uk,Page load timeout,
+The Quint,https://thequint.com,DNS failure — domain does not exist,
+BOOMLIVE,https://boomlive.in,Connection reset by server,
+San Diego Union Tribune,https://sandiegouniontribune.com,Page load timeout,
+Daily Stormer,https://dailystormer.in,DNS failure — domain does not exist,
+Wide Awake Media,https://wide-awake-media.com,DNS failure — domain does not exist,
+TheSpectator.info,https://thespectator.info,Page load timeout,2026-06-04 00:11:59
+Newark Advocate,https://newarkadvocate.com,Page load timeout,2026-06-04 00:01:36
+Above the Law,https://abovethelaw.com,Capture error,
+The MacArthur Foundation,https://macfound.org,Page load timeout,2026-06-03 23:58:28
+Ealing Times,https://ealingtimes.co.uk,Page load timeout,
+Roll Call,https://rollcall.com,Page load timeout,2026-06-04 00:05:56
+Technocrats.News,https://technocrats.news,Page load timeout,2026-06-04 00:09:52
+Watauga Democrat,https://wataugademocrat.com,Page load timeout,2026-06-04 00:16:01
+Pandemic News,https://pandemic.news,Page load timeout,2026-06-04 00:01:52
+The Province,https://theprovince.com,Page load timeout,2026-06-04 00:12:05
+Austin American-Statesman,https://statesman.com,Page load timeout,2026-06-04 00:10:35
+D.C. Circuit Breaker,https://dccircuitbreaker.org,SSL/TLS certificate error,
+Salt Lake Tribune,https://sltrib.com,Page load timeout,2026-06-04 00:09:47
+Dallas Morning News,https://dallasnews.com,Page load timeout,
+Eagle Tribune,https://eagletribune.com,Capture error,
+Yorkshire Post,https://yorkshirepost.co.uk,Page load timeout,2026-06-04 00:18:14
+DeadState,https://deadstate.org,DNS failure — domain does not exist,
+WSVN,https://wsvn.com,Connection timed out,2026-06-04 00:16:48
+Relevant Magazine,https://relevantmagazine.com,Page load timeout,
+Leigh Journal,https://leighjournal.co.uk,Page load timeout,2026-06-03 23:58:05
+Bristol World,https://bristolworld.com,Page load timeout,
+Ruth Institute,https://ruthinstitute.org,Page load timeout,2026-06-04 00:05:14
+LaRouche PAC,https://larouchepac.com,DNS failure — domain does not exist,
+Public Religion Research Institute,https://prri.org,Page load timeout,2026-06-04 00:02:56
+ABC News,https://abcnews.go.com,Connection reset by server,
+Committee for Economic development,https://ced.org,SSL/TLS certificate error,
+ScienceClowns,https://scienceclowns.com,Page load timeout,2026-06-04 00:07:35
+Fitchburg Sentinel & Enterprise,https://sentinelandenterprise.com,Page load timeout,2026-06-04 00:08:58
+Survival.News,https://survival.news,Page load timeout,2026-06-04 00:09:12
+The Patriot Light,https://thepatriotlight.com,DNS failure — domain does not exist,
+RadarOnline,https://radaronline.com,Page load timeout,
+Monadnock Ledger-Transcript,https://home.ledgertranscript.com,Capture error,
+TechGiants.News,https://techgiants.news,Page load timeout,2026-06-04 00:09:39
+Blackpool Gazette,https://blackpoolgazette.co.uk,Page load timeout,
+East Bay Times,https://eastbaytimes.com,Page load timeout,
+911Truth.org,https://911truth.org,Capture error,
+Red River Valley News,https://valleynewslive.com,Page load timeout,2026-06-04 00:13:54
+Dekalb Daily Chronicle,https://shawlocal.com/daily-chronicle/,Page load timeout,2026-06-04 00:09:23
+MedicalTyranny,https://medicaltyranny.com,Capture error,2026-06-03 23:57:36
+Tyranny.News,https://tyranny.news,Page load timeout,2026-06-04 00:12:22
+National File,https://nationalfile.com,Page load timeout,2026-06-03 23:59:13
+TheQanons.com,https://theqanons.com,DNS failure — domain does not exist,
+Variety Magazine,https://variety.com,Page load timeout,2026-06-04 00:13:58
+Irvine Times,https://irvinetimes.com,Page load timeout,2026-06-03 23:55:33
+The Mountain Times,https://wataugademocrat.com/mountaintimes/,Capture error,
+News Addicts,https://newsaddicts.com,Page load timeout,2026-06-04 00:02:28
+WayneDupree.com,https://waynedupree.com,SSL/TLS certificate error,
+Alt News,https://altnews.in,DNS failure — domain does not exist,
+The Bearded Patriot,https://thebeardedpatriot.com,Page load timeout,2026-06-04 00:10:27
+Religion News Service,https://religionnews.com,Page load timeout,2026-06-04 00:04:53
+Largs & Millport News,https://largsandmillportnews.com,Page load timeout,2026-06-03 23:56:40
+Western Mass News,https://westernmassnews.com,Page load timeout,2026-06-04 00:16:05
+San Jose Mercury News,https://mercurynews.com,Page load timeout,2026-06-04 00:00:11
+Survive The News,https://survivethenews.com,Page load timeout,2026-06-04 00:10:08
+Ludlow Advertiser,https://ludlowadvertiser.co.uk,Page load timeout,2026-06-03 23:58:32
+Miami Independent,https://miamiindependent.com,Page load timeout,2026-06-03 23:59:39
+Newport Daily News,https://newportri.com,Page load timeout,2026-06-04 00:01:30
+Health Helpline,https://health-helpline.co.nz,DNS failure — domain does not exist,
+YnetNews,https://ynetnews.com,Capture error,
+Bay Area Reporter,https://ebar.com,Capture error,
+The Last American Vagabond,https://thelastamericanvagabond.com,Page load timeout,2026-06-04 00:11:18
+The Wellness Company,https://twc.health,Page load timeout,2026-06-04 00:13:38
+Them.us,https://them.us,Page load timeout,2026-06-04 00:12:17

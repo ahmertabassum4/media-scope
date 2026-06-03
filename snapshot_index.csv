@@ -1,0 +1,867 @@
+media_name,url,image_path,timestamp,country,factuality,trustworthiness
+100% Fed up,https://100percentfedup.com,output/100_Fed_up.png,2026-06-03 17:40:49,USA,LOW,0
+100 Mile Free Press,https://100milefreepress.net,output/100_Mile_Free_Press.png,2026-06-03 17:39:43,,HIGH,1
+247Sports,https://247sports.com,output/247Sports.png,2026-06-03 17:40:33,,HIGH,1
+350.org,https://350.org,output/350.org.png,2026-06-03 17:41:20,USA,HIGH,1
+350Africa.org,https://350africa.org,output/350Africa.org.png,2026-06-03 17:41:24,USA,HIGH,1
+350 Aotearoa,https://350.org.nz,output/350_Aotearoa.png,2026-06-03 17:40:03,USA,HIGH,1
+350 Asia,https://350asia.org,output/350_Asia.png,2026-06-03 17:40:57,USA,HIGH,1
+350 Australia,https://350.org.au,output/350_Australia.png,2026-06-03 17:41:12,USA,HIGH,1
+350 Pilipinas,https://world.350.org/philippines/,output/350_Pilipinas.png,2026-06-03 17:40:59,USA,HIGH,1
+972 Magazine,https://972mag.com,output/972_Magazine.png,2026-06-03 17:42:24,,HIGH,1
+9 News,https://www.9news.com.au/,output/9_News.png,2026-06-03 17:41:34,,HIGH,1
+ABC11 Eyewitness News,https://abc11.com,output/ABC11_Eyewitness_News.png,2026-06-03 17:42:40,USA,HIGH,1
+ABC News Australia,https://abc.net.au,output/ABC_News_Australia.png,2026-06-03 17:41:58,,HIGH,1
+ABC News/Washington Post Polling,https://langerresearch.com,output/ABC_News_Washington_Post_Polling.png,2026-06-03 17:41:47,,VERY HIGH,1
+ABS-CBN,https://news.abs-cbn.com,output/ABS-CBN.png,2026-06-03 17:42:04,,HIGH,1
+ABT Associates,https://abtassociates.com,output/ABT_Associates.png,2026-06-03 17:43:09,,HIGH,1
+APM Reports,https://apmreports.org,output/APM_Reports.png,2026-06-03 17:42:22,USA,HIGH,1
+APTN National News,https://aptnnews.ca,output/APTN_National_News.png,2026-06-03 17:43:01,,HIGH,1
+AV Club,https://avclub.com,output/AV_Club.png,2026-06-03 17:43:08,USA,HIGH,1
+A Voice for Men,https://avoiceformen.com,output/A_Voice_for_Men.png,2026-06-03 17:42:03,USA,LOW,0
+Aberdeen American News,https://aberdeennews.com,output/Aberdeen_American_News.png,2026-06-03 17:43:56,USA,HIGH,1
+Abilene Reporter-News,https://reporternews.com,output/Abilene_Reporter-News.png,2026-06-03 17:44:25,USA,HIGH,1
+Ad Fontes Media,https://adfontesmedia.com,output/Ad_Fontes_Media.png,2026-06-03 17:44:20,USA,HIGH,1
+Adams.News,https://adams.news,output/Adams.News.png,2026-06-03 17:43:50,USA,VERY LOW,0
+Addiction.News,https://addiction.news,output/Addiction.News.png,2026-06-03 17:44:00,USA,VERY LOW,0
+Adweek,https://adweek.com,output/Adweek.png,2026-06-03 22:16:04,USA,HIGH,1
+Aeon,https://aeon.co,output/Aeon.png,2026-06-03 17:44:29,,HIGH,1
+African Arguments,https://africanarguments.org,output/African_Arguments.png,2026-06-03 17:45:28,,HIGH,1
+AgricultureDive,https://agriculturedive.com,output/AgricultureDive.png,2026-06-03 17:45:01,USA,HIGH,1
+Ahsland Times-Gazette,https://times-gazette.com,output/Ahsland_Times-Gazette.png,2026-06-03 17:49:56,USA,HIGH,1
+Air Force Times,https://airforcetimes.com,output/Air_Force_Times.png,2026-06-03 17:50:12,USA,HIGH,1
+Airdrie City View,https://airdriecityview.com,output/Airdrie_City_View.png,2026-06-03 17:50:13,,HIGH,1
+Airwars,https://airwars.org,output/Airwars.png,2026-06-03 17:45:52,,HIGH,1
+Akron Beacon Journal,https://beaconjournal.com,output/Akron_Beacon_Journal.png,2026-06-03 17:51:18,USA,HIGH,1
+Al Monitor,https://al-monitor.com,output/Al_Monitor.png,2026-06-03 17:50:47,USA,HIGH,1
+Alabama Political Reporter,https://alreporter.com,output/Alabama_Political_Reporter.png,2026-06-03 17:50:52,USA,HIGH,1
+Alabama Reflector,https://alabamareflector.com,output/Alabama_Reflector.png,2026-06-03 17:50:39,USA,HIGH,1
+Alan Guttmacher Institute,https://guttmacher.org,output/Alan_Guttmacher_Institute.png,2026-06-03 17:50:58,USA,HIGH,1
+Albany Democrat-Herald,https://democratherald.com,output/Albany_Democrat-Herald.png,2026-06-03 17:51:37,USA,HIGH,1
+Alberta Views,https://albertaviews.ca,output/Alberta_Views.png,2026-06-03 17:51:24,,HIGH,1
+Albuquerque Journal,https://abqjournal.com,output/Albuquerque_Journal.png,2026-06-03 17:51:57,USA,HIGH,1
+AllAfrica,https://allafrica.com,output/AllAfrica.png,2026-06-03 17:51:47,,HIGH,1
+All News Pipeline,https://allnewspipeline.com,output/All_News_Pipeline.png,2026-06-03 17:51:48,USA,LOW,0
+Alliance Defending Freedom,https://adflegal.org,output/Alliance_Defending_Freedom.png,2026-06-03 17:52:43,USA,LOW,0
+Alliance For Securing Democracy,https://securingdemocracy.gmfus.org,output/Alliance_For_Securing_Democracy.png,2026-06-03 17:52:07,USA,HIGH,1
+Alliance Review,https://the-review.com,output/Alliance_Review.png,2026-06-03 17:53:10,USA,HIGH,1
+Alpha News,https://alphanews.org,output/Alpha_News.png,2026-06-03 17:52:54,USA,LOW,0
+AlternativeNews.com,https://alternativenews.com,output/AlternativeNews.com.png,2026-06-03 17:52:19,USA,LOW,0
+Aluminum.News,https://aluminum.news,output/Aluminum.News.png,2026-06-03 17:52:37,USA,VERY LOW,0
+Amandla,https://aidc.org.za/amandla-media/,output/Amandla.png,2026-06-03 17:53:29,,HIGH,1
+Amarillo Globe-News,https://amarillo.com,output/Amarillo_Globe-News.png,2026-06-03 17:54:05,USA,HIGH,1
+America First Legal,https://aflegal.org,output/America_First_Legal.png,2026-06-03 17:53:26,USA,LOW,0
+America First Report,https://americafirstreport.com,output/America_First_Report.png,2026-06-03 17:54:01,USA,LOW,0
+America Out Loud,https://americaoutloud.news,output/America_Out_Loud.png,2026-06-03 17:54:22,USA,LOW,0
+American Affairs Journal,https://americanaffairsjournal.org,output/American_Affairs_Journal.png,2026-06-03 17:53:57,USA,HIGH,1
+American Firearms Institute,https://americanfirearms.org,output/American_Firearms_Institute.png,2026-06-03 17:54:28,USA,HIGH,1
+American Free Press,https://americanfreepress.net,output/American_Free_Press.png,2026-06-03 17:54:34,USA,LOW,0
+American Heritage,https://americanheritage.com,output/American_Heritage.png,2026-06-03 17:54:24,USA,HIGH,1
+American Intelligence Media,https://aim4truth.org,output/American_Intelligence_Media.png,2026-06-03 17:54:28,USA,VERY LOW,0
+American Renaissance Magazine,https://amren.com,output/American_Renaissance_Magazine.png,2026-06-03 17:54:43,USA,LOW,0
+"American Society for the Defense of Tradition, Family, and Property",https://tfp.org,output/American_Society_for_the_Defense_of_Tradition_Family_and_Property.png,2026-06-03 17:55:22,USA,LOW,0
+American Thinker,https://americanthinker.com,output/American_Thinker.png,2026-06-03 17:55:08,USA,LOW,0
+Americans for Truth,https://americansfortruth.com,output/Americans_for_Truth.png,2026-06-03 17:55:22,USA,VERY LOW,0
+Americas Quarterly,https://americasquarterly.org,output/Americas_Quarterly.png,2026-06-03 17:55:02,USA,HIGH,1
+Amherst Bulletin,https://amherstbulletin.com,output/Amherst_Bulletin.png,2026-06-03 19:04:13,USA,HIGH,1
+Amnesty International,https://amnesty.org,output/Amnesty_International.png,2026-06-03 17:55:32,,HIGH,1
+AmoMama,https://news.amomama.com,output/AmoMama.png,2026-06-03 17:55:38,,HIGH,1
+Anderson Independent Mail,https://independentmail.com,output/Anderson_Independent_Mail.png,2026-06-03 17:56:42,USA,HIGH,1
+Angus Reid Institute,https://angusreid.org,output/Angus_Reid_Institute.png,2026-06-03 17:55:45,,HIGH,1
+Answers in Genesis,https://answersingenesis.org,output/Answers_in_Genesis.png,2026-06-03 17:56:49,USA,LOW,0
+Anthropocene Alliance,https://anthropocenealliance.org,output/Anthropocene_Alliance.png,2026-06-03 17:55:50,USA,HIGH,1
+Antioxidants.News,https://antioxidants.news,output/Antioxidants.News.png,2026-06-03 17:56:00,USA,VERY LOW,0
+Argus Leader,https://argusleader.com,output/Argus_Leader.png,2026-06-03 17:57:12,USA,HIGH,1
+Arizona Capitol Times,https://azcapitoltimes.com,output/Arizona_Capitol_Times.png,2026-06-03 17:56:35,USA,HIGH,1
+Arizona Daily Star,https://tucson.com,output/Arizona_Daily_Star.png,2026-06-03 17:57:32,USA,HIGH,1
+Arizona Daily Sun,https://azdailysun.com,output/Arizona_Daily_Sun.png,2026-06-03 17:58:13,USA,HIGH,1
+Arizona Republic,https://azcentral.com,output/Arizona_Republic.png,2026-06-03 17:58:15,USA,HIGH,1
+Arkansas Times,https://arktimes.com,output/Arkansas_Times.png,2026-06-03 17:57:25,USA,HIGH,1
+Arlington Heights Daily Herald,https://dailyherald.com,output/Arlington_Heights_Daily_Herald.png,2026-06-03 17:58:22,USA,HIGH,1
+Armed Forces Press,https://armedforces.press,output/Armed_Forces_Press.png,2026-06-03 22:15:47,USA,LOW,0
+Arms Control Association,https://armscontrol.org,output/Arms_Control_Association.png,2026-06-03 17:58:36,USA,HIGH,1
+Army Times,https://armytimes.com,output/Army_Times.png,2026-06-03 17:59:15,USA,HIGH,1
+Arrow Lakes News,https://arrowlakesnews.com,output/Arrow_Lakes_News.png,2026-06-03 17:58:37,,HIGH,1
+Ars Technica,https://arstechnica.com,output/Ars_Technica.png,2026-06-03 17:59:31,USA,HIGH,1
+Asheville Citizen-Times,https://citizen-times.com,output/Asheville_Citizen-Times.png,2026-06-03 17:59:59,USA,HIGH,1
+Associated Press,https://apnews.com,output/Associated_Press.png,2026-06-03 18:00:38,USA,HIGH,1
+Athol Daily News,https://atholdailynews.com,output/Athol_Daily_News.png,2026-06-03 17:59:36,USA,HIGH,1
+Atlantic,https://theatlantic.com,output/Atlantic.png,2026-06-03 18:00:52,USA,HIGH,1
+Atlantic Council,https://atlanticcouncil.org,output/Atlantic_Council.png,2026-06-03 18:00:34,USA,HIGH,1
+AtlasIntel,https://atlasintel.org,output/AtlasIntel.png,2026-06-03 18:00:43,,HIGH,1
+Atlas Obscura,https://atlasobscura.com,output/Atlas_Obscura.png,2026-06-03 18:00:47,USA,HIGH,1
+Auburn Reporter,https://auburn-reporter.com,output/Auburn_Reporter.png,2026-06-03 18:01:39,USA,HIGH,1
+Austin Daily Herald,https://austindailyherald.com,output/Austin_Daily_Herald.png,2026-06-03 18:01:48,USA,HIGH,1
+Australian Associated Press,https://www.aap.com.au/,output/Australian_Associated_Press.png,2026-06-03 18:01:41,,HIGH,1
+Australian National Review,https://australiannationalreview.com,output/Australian_National_Review.png,2026-06-03 18:02:29,,LOW,0
+AutomotiveDive,https://automotivedive.com,output/AutomotiveDive.png,2026-06-03 18:02:50,USA,HIGH,1
+Awakening.News,https://awakening.news,output/Awakening.News.png,2026-06-03 18:02:11,USA,VERY LOW,0
+BNO News,https://bnonews.com,output/BNO_News.png,2026-06-03 18:02:19,,HIGH,1
+Balkan Insight,https://balkaninsight.com,output/Balkan_Insight.png,2026-06-03 18:02:33,,HIGH,1
+Ballotpedia,https://ballotpedia.org,output/Ballotpedia.png,2026-06-03 19:04:32,USA,VERY HIGH,1
+Baltimore Sun,https://baltimoresun.com,output/Baltimore_Sun.png,2026-06-03 18:03:49,USA,HIGH,1
+BankingDive,https://bankingdive.com,output/BankingDive.png,2026-06-03 18:04:04,USA,HIGH,1
+Banned.News,https://banned.news,output/Banned.News.png,2026-06-03 18:03:42,USA,VERY LOW,0
+Baptist News Global,https://baptistnews.com,output/Baptist_News_Global.png,2026-06-03 18:03:48,USA,HIGH,1
+Bare Naked Islam,https://barenakedislam.com,output/Bare_Naked_Islam.png,2026-06-03 18:04:03,USA,LOW,0
+Bartlesville Examiner-Enterprise,https://examiner-enterprise.com,output/Bartlesville_Examiner-Enterprise.png,2026-06-03 18:05:09,USA,HIGH,1
+Bashaw Star,https://bashawstar.com,output/Bashaw_Star.png,2026-06-03 18:04:07,,HIGH,1
+Basildon Echo,https://echo-news.co.uk,output/Basildon_Echo.png,2026-06-03 18:05:17,,HIGH,1
+Battle Creek Enquirer,https://battlecreekenquirer.com,output/Battle_Creek_Enquirer.png,2026-06-03 18:05:29,USA,HIGH,1
+Baxter Bulletin,https://baxterbulletin.com,output/Baxter_Bulletin.png,2026-06-03 18:05:37,USA,HIGH,1
+Beaver County Times,https://timesonline.com,output/Beaver_County_Times.png,2026-06-03 18:21:52,USA,HIGH,1
+Before It's News,https://beforeitsnews.com,output/Before_It_s_News.png,2026-06-03 22:17:44,USA,LOW,0
+Belfer Center for Science and International Affairs,https://belfercenter.org,output/Belfer_Center_for_Science_and_International_Affairs.png,2026-06-03 18:05:58,USA,HIGH,1
+Belleville Community Press,https://communitypress.ca,output/Belleville_Community_Press.png,2026-06-03 18:22:05,,HIGH,1
+Bellevue Reporter,https://bellevuereporter.com,output/Bellevue_Reporter.png,2026-06-03 19:06:05,USA,HIGH,1
+Benzinga,https://benzinga.com,output/Benzinga.png,2026-06-03 19:06:16,USA,HIGH,1
+"Berkley Center for Religion, Peace & World Affairs",https://berkleycenter.georgetown.edu,output/Berkley_Center_for_Religion_Peace_World_Affairs.png,2026-06-03 22:16:41,USA,HIGH,1
+Berkshire Eagle,https://berkshireeagle.com,output/Berkshire_Eagle.png,2026-06-03 22:18:06,USA,HIGH,1
+Biased.News,https://biased.news,output/Biased.News.png,2026-06-03 18:22:49,USA,VERY LOW,0
+Big Government News,https://biggovernment.news,output/Big_Government_News.png,2026-06-03 22:16:34,USA,VERY LOW,0
+Bigfork Eagle,https://bigforkeagle.com,output/Bigfork_Eagle.png,2026-06-03 18:22:55,USA,HIGH,1
+Biggleswade Chronicle,https://biggleswadetoday.co.uk,output/Biggleswade_Chronicle.png,2026-06-03 18:24:06,,HIGH,1
+Bill & Melinda Gates Foundation,https://gatesfoundation.org,output/Bill_Melinda_Gates_Foundation.png,2026-06-03 18:23:21,USA,HIGH,1
+Billings Gazette,https://billingsgazette.com,output/Billings_Gazette.png,2026-06-03 18:23:53,USA,HIGH,1
+BillionBibles.org,https://billionbibles.org,output/BillionBibles.org.png,2026-06-03 18:23:15,USA,VERY LOW,0
+BioPharmaDive,https://biopharmadive.com,output/BioPharmaDive.png,2026-06-03 18:24:28,USA,HIGH,1
+Bioterrorism.News,https://bioterrorism.news,output/Bioterrorism.News.png,2026-06-03 18:23:39,USA,VERY LOW,0
+Birmingham World,https://birminghamworld.uk,output/Birmingham_World.png,2026-06-03 18:24:56,,HIGH,1
+Black Ennterprise Magazine,https://blackenterprise.com,output/Black_Ennterprise_Magazine.png,2026-06-03 18:25:15,USA,HIGH,1
+Bleeping Computer,https://bleepingcomputer.com,output/Bleeping_Computer.png,2026-06-03 18:24:45,USA,HIGH,1
+Bloomington Herald-Times,https://heraldtimesonline.com,output/Bloomington_Herald-Times.png,2026-06-03 18:26:08,USA,HIGH,1
+Borgen Project,https://borgenproject.org,output/Borgen_Project.png,2026-06-03 18:25:19,USA,HIGH,1
+Boston.com,https://boston.com,output/Boston.com.png,2026-06-03 22:18:30,USA,HIGH,1
+Boston Globe,https://bostonglobe.com,output/Boston_Globe.png,2026-06-03 18:26:10,USA,HIGH,1
+Boston Herald,https://bostonherald.com,output/Boston_Herald.png,2026-06-03 18:26:29,USA,HIGH,1
+Boston Review,https://bostonreview.net,output/Boston_Review.png,2026-06-03 18:26:03,USA,HIGH,1
+Bothell Reporter,https://bothell-reporter.com,output/Bothell_Reporter.png,2026-06-03 18:27:05,USA,HIGH,1
+Boundless,https://boundless.com,output/Boundless.png,2026-06-03 18:26:58,USA,HIGH,1
+Brantford Expositor,https://brantfordexpositor.ca,output/Brantford_Expositor.png,2026-06-03 18:27:50,,HIGH,1
+Braun Research,https://braunresearch.com,output/Braun_Research.png,2026-06-03 18:27:28,USA,HIGH,1
+Breakthrough.News,https://breakthrough.news,output/Breakthrough.News.png,2026-06-03 18:27:45,USA,VERY LOW,0
+Breakthrough Institute,https://thebreakthrough.org,output/Breakthrough_Institute.png,2026-06-03 18:27:29,USA,HIGH,1
+Brennan Center for Justice,https://brennancenter.org,output/Brennan_Center_for_Justice.png,2026-06-03 18:27:52,USA,HIGH,1
+Bridge Michigan,https://bridgemi.com,output/Bridge_Michigan.png,2026-06-03 18:27:51,USA,HIGH,1
+Brockville Recorder & Times,https://recorder.ca,output/Brockville_Recorder_Times.png,2026-06-03 18:28:33,,HIGH,1
+Bucks County Courier Times,https://phillyburbs.com,output/Bucks_County_Courier_Times.png,2026-06-03 18:29:19,USA,HIGH,1
+Bucyrus Telegraph-Forum,https://bucyrustelegraphforum.com,output/Bucyrus_Telegraph-Forum.png,2026-06-03 18:30:11,USA,HIGH,1
+Buenos Aires Times,https://batimes.com.ar,output/Buenos_Aires_Times.png,2026-06-03 18:30:07,,HIGH,1
+Buffalo News,https://buffalonews.com,output/Buffalo_News.png,2026-06-03 18:30:35,USA,HIGH,1
+Bullshido,https://bullshido.net,output/Bullshido.png,2026-06-03 18:30:24,USA,HIGH,1
+Burlington Free Press,https://burlingtonfreepress.com,output/Burlington_Free_Press.png,2026-06-03 18:31:33,USA,HIGH,1
+Buxton Advertiser,https://buxtonadvertiser.co.uk,output/Buxton_Advertiser.png,2026-06-03 18:31:45,,HIGH,1
+C-StoreDive,https://cstoredive.com,output/C-StoreDive.png,2026-06-03 18:32:09,USA,HIGH,1
+CBS Boston - WBZ-TV,https://cbsnews.com/boston,output/CBS_Boston_-_WBZ-TV.png,2026-06-03 18:32:28,USA,HIGH,1
+CBS News,https://cbsnews.com,output/CBS_News.png,2026-06-03 18:33:00,USA,HIGH,1
+CCN Markets,https://ccn.com,output/CCN_Markets.png,2026-06-03 18:32:32,,HIGH,1
+CDC.News,https://cdc.news,output/CDC.News.png,2026-06-03 18:32:30,USA,VERY LOW,0
+CFO Dive,https://cfo.com,output/CFO_Dive.png,2026-06-03 18:33:05,USA,HIGH,1
+CNET,https://cnet.com,output/CNET.png,2026-06-03 18:33:20,USA,HIGH,1
+CNS News,https://mrctv.org/cnsnews,output/CNS_News.png,2026-06-03 18:32:57,USA,LOW,0
+CP24,https://cp24.com,output/CP24.png,2026-06-03 18:34:16,,HIGH,1
+CTV News,https://ctvnews.ca,output/CTV_News.png,2026-06-03 18:34:35,,HIGH,1
+CT Mirror,https://ctmirror.org,output/CT_Mirror.png,2026-06-03 18:33:07,USA,HIGH,1
+CX Dive,https://customerexperiencedive.com,output/CX_Dive.png,2026-06-03 18:33:44,USA,HIGH,1
+Calgary Herald,https://calgaryherald.com,output/Calgary_Herald.png,2026-06-03 18:34:38,,HIGH,1
+CaliforniaCollapse.News,https://californiacollapse.news,output/CaliforniaCollapse.News.png,2026-06-03 18:34:22,USA,VERY LOW,0
+Canadaland,https://canadaland.com,output/Canadaland.png,2026-06-03 18:34:38,,HIGH,1
+Canberra Declaration,https://canberradeclaration.org.au,output/Canberra_Declaration.png,2026-06-03 18:34:40,,LOW,0
+Canton Repository,https://cantonrep.com,output/Canton_Repository.png,2026-06-03 18:35:56,USA,HIGH,1
+Cape Cod Times,https://capecodtimes.com,output/Cape_Cod_Times.png,2026-06-03 18:35:59,USA,HIGH,1
+Capital Gazette,https://capitalgazette.com,output/Capital_Gazette.png,2026-06-03 18:35:56,USA,HIGH,1
+Capital & Main,https://capitalandmain.com,output/Capital_Main.png,2026-06-03 18:35:11,USA,HIGH,1
+Capitol Fax,https://capitolfax.com,output/Capitol_Fax.png,2026-06-03 18:35:55,USA,HIGH,1
+Capitol News Illinois,https://capitolnewsillinois.com,output/Capitol_News_Illinois.png,2026-06-03 18:36:01,USA,HIGH,1
+Carbon Tracker Initiative,https://carbontracker.org,output/Carbon_Tracker_Initiative.png,2026-06-03 18:36:09,,HIGH,1
+Carnegie Endowment for International Peace,https://carnegieendowment.org,output/Carnegie_Endowment_for_International_Peace.png,2026-06-03 18:36:22,USA,HIGH,1
+Carolina Public Press,https://carolinapublicpress.org,output/Carolina_Public_Press.png,2026-06-03 18:36:08,USA,HIGH,1
+Casper Star-Tribune,https://trib.com,output/Casper_Star-Tribune.png,2026-06-03 18:36:52,USA,HIGH,1
+Castanet,https://castanet.net,output/Castanet.png,2026-06-03 18:36:50,,HIGH,1
+Castlegar News,https://castlegarnews.com,output/Castlegar_News.png,2026-06-03 18:36:25,,HIGH,1
+Castor Advance,https://castoradvance.com,output/Castor_Advance.png,2026-06-03 18:36:37,,HIGH,1
+Ceasefire Magazine,https://ceasefiremagazine.co.uk,output/Ceasefire_Magazine.png,2026-06-03 18:36:37,,HIGH,1
+Censored.news,https://censored.news,output/Censored.news.png,2026-06-03 18:37:24,USA,LOW,0
+Censorship.News,https://censorship.news,output/Censorship.News.png,2026-06-03 22:18:49,USA,VERY LOW,0
+Center for Advanced Defense Studies,https://c4ads.org,output/Center_for_Advanced_Defense_Studies.png,2026-06-03 18:37:24,USA,HIGH,1
+Center for Democracy and Technology,https://cdt.org,output/Center_for_Democracy_and_Technology.png,2026-06-03 18:37:24,USA,HIGH,1
+Center for Immigration Studies,https://cis.org,output/Center_for_Immigration_Studies.png,2026-06-03 18:37:47,USA,LOW,0
+Center for Inquiry,https://centerforinquiry.org,output/Center_for_Inquiry.png,2026-06-03 18:37:46,USA,HIGH,1
+Center for International Policy,https://internationalpolicy.org,output/Center_for_International_Policy.png,2026-06-03 18:37:47,USA,HIGH,1
+Center for Law and Social Policy,https://clasp.org,output/Center_for_Law_and_Social_Policy.png,2026-06-03 18:38:03,USA,HIGH,1
+Center for Popular Democracy,https://populardemocracy.org,output/Center_for_Popular_Democracy.png,2026-06-03 18:41:26,USA,HIGH,1
+Center for Strategic and International studies,https://csis.org,output/Center_for_Strategic_and_International_studies.png,2026-06-03 18:38:36,USA,VERY HIGH,1
+Center for a New American Security,https://cnas.org,output/Center_for_a_New_American_Security.png,2026-06-03 18:38:24,USA,HIGH,1
+Center on Budget and Policy Priorities,https://cbpp.org,output/Center_on_Budget_and_Policy_Priorities.png,2026-06-03 18:38:53,USA,HIGH,1
+Central Kentucky News-Journal,https://pmg-ky2.com/cknj/,output/Central_Kentucky_News-Journal.png,2026-06-03 18:40:09,USA,HIGH,1
+Chalkbeat,https://chalkbeat.org,output/Chalkbeat.png,2026-06-03 18:39:39,USA,HIGH,1
+Chambersburg Public Opinion,https://publicopiniononline.com,output/Chambersburg_Public_Opinion.png,2026-06-03 18:40:01,USA,HIGH,1
+Champaign News-Gazette,https://news-gazette.com,output/Champaign_News-Gazette.png,2026-06-03 18:40:28,USA,HIGH,1
+Channel 4 News,https://www.channel4.com/news/,output/Channel_4_News.png,2026-06-03 18:40:19,,HIGH,1
+Charity Navigator,https://charitynavigator.org,output/Charity_Navigator.png,2026-06-03 18:40:36,USA,HIGH,1
+Chatham Daily News,https://chathamdailynews.ca,output/Chatham_Daily_News.png,2026-06-03 18:41:01,,HIGH,1
+Check Your Fact,https://checkyourfact.com,output/Check_Your_Fact.png,2026-06-03 18:40:50,USA,HIGH,1
+Cheddar,https://cheddar.com,output/Cheddar.png,2026-06-03 18:41:22,USA,HIGH,1
+Cherokee Tribune,https://tribuneledgernews.com,output/Cherokee_Tribune.png,2026-06-03 18:41:34,,HIGH,1
+Chicago Reader,https://chicagoreader.com,output/Chicago_Reader.png,2026-06-03 18:41:28,USA,HIGH,1
+Chicago Tribune,https://chicagotribune.com,output/Chicago_Tribune.png,2026-06-03 18:42:45,USA,HIGH,1
+Chichester Observer,https://sussexexpress.co.uk/your-sussex/west-sussex/chichester,output/Chichester_Observer.png,2026-06-03 18:42:38,,HIGH,1
+Children's Health Defense,https://childrenshealthdefense.org,output/Children_s_Health_Defense.png,2026-06-03 18:42:16,USA,LOW,0
+Chillicothe Gazette,https://chillicothegazette.com,output/Chillicothe_Gazette.png,2026-06-03 18:42:56,USA,HIGH,1
+Chinook Observer,https://chinookobserver.com,output/Chinook_Observer.png,2026-06-03 18:43:16,USA,HIGH,1
+Christian Science,https://christianscience.com,output/Christian_Science.png,2026-06-03 18:43:12,USA,LOW,0
+Christian Science Monitor,https://csmonitor.com,output/Christian_Science_Monitor.png,2026-06-03 18:43:06,USA,HIGH,1
+Christian Truth Center,https://christiantruthcenter.com,output/Christian_Truth_Center.png,2026-06-03 18:43:11,,VERY LOW,0
+Christianity Today,https://christianitytoday.com,output/Christianity_Today.png,2026-06-03 18:59:28,USA,HIGH,1
+Cincinnati Enquirer,https://cincinnati.com,output/Cincinnati_Enquirer.png,2026-06-03 19:03:02,USA,HIGH,1
+CioDive,https://ciodive.com,output/CioDive.png,2026-06-03 18:59:05,USA,HIGH,1
+CitizenGo,https://citizengo.org,output/CitizenGo.png,2026-06-03 18:43:34,,LOW,0
+CityNews Toronto,https://toronto.citynews.ca,output/CityNews_Toronto.png,2026-06-03 18:59:07,,HIGH,1
+Civiqs,https://civiqs.com,output/Civiqs.png,2026-06-03 19:03:00,USA,HIGH,1
+Clarion Ledger,https://clarionledger.com,output/Clarion_Ledger.png,2026-06-03 22:20:39,USA,HIGH,1
+Clark Fork Valley Press,https://vp-mi.com,output/Clark_Fork_Valley_Press.png,2026-06-03 22:20:14,,HIGH,1
+Clarksville Leaf Chronicle,https://theleafchronicle.com,output/Clarksville_Leaf_Chronicle.png,2026-06-03 19:09:13,USA,HIGH,1
+Clean Technica,https://cleantechnica.com,output/Clean_Technica.png,2026-06-03 19:09:26,USA,HIGH,1
+ClimateScienceNews,https://climatesciencenews.com,output/ClimateScienceNews.png,2026-06-03 19:09:43,USA,VERY LOW,0
+Climate Justice Alliance,https://climatejusticealliance.org,output/Climate_Justice_Alliance.png,2026-06-03 19:09:48,USA,HIGH,1
+Climate Science & Policy Watch,https://whistleblower.org/,output/Climate_Science_Policy_Watch.png,2026-06-03 19:09:33,USA,HIGH,1
+Clover Chronicle,https://cloverchronicle.com,output/Clover_Chronicle.png,2026-06-03 19:09:54,,LOW,0
+Cochrane Times-Post,https://cochranetimespost.ca,output/Cochrane_Times-Post.png,2026-06-03 19:10:27,,HIGH,1
+Coda Story,https://codastory.com,output/Coda_Story.png,2026-06-03 19:10:51,USA,HIGH,1
+Colorado Free Press,https://coloradofreepress.com,output/Colorado_Free_Press.png,2026-06-03 22:20:39,USA,LOW,0
+Columbia Daily Herald,https://columbiadailyherald.com,output/Columbia_Daily_Herald.png,2026-06-03 19:11:24,USA,HIGH,1
+Columbia Journalism Review,https://cjr.org,output/Columbia_Journalism_Review.png,2026-06-03 19:11:57,USA,HIGH,1
+Columbus Dispatch,https://dispatch.com,output/Columbus_Dispatch.png,2026-06-03 19:12:12,USA,HIGH,1
+Committee for a Responsible Federal Budget,https://crfb.org,output/Committee_for_a_Responsible_Federal_Budget.png,2026-06-03 19:11:19,USA,HIGH,1
+Committee to Investigate Russia,https://investigaterussia.org,output/Committee_to_Investigate_Russia.png,2026-06-03 19:11:32,USA,HIGH,1
+Committee to Protect Journalists,https://cpj.org,output/Committee_to_Protect_Journalists.png,2026-06-03 19:11:39,USA,HIGH,1
+CommonWealth Beacon,https://commonwealthbeacon.org,output/CommonWealth_Beacon.png,2026-06-03 19:11:59,USA,HIGH,1
+CommonWealth fund,https://commonwealthfund.org,output/CommonWealth_fund.png,2026-06-03 19:12:26,USA,HIGH,1
+Common Cause,https://commoncause.org,output/Common_Cause.png,2026-06-03 19:11:50,USA,HIGH,1
+Common Dreams,https://commondreams.org,output/Common_Dreams.png,2026-06-03 19:13:22,USA,HIGH,1
+Commonweal Magazine,https://commonwealmagazine.org,output/Commonweal_Magazine.png,2026-06-03 19:12:28,USA,HIGH,1
+Concerned Women for America,https://concernedwomen.org,output/Concerned_Women_for_America.png,2026-06-03 19:12:58,USA,LOW,0
+Connecticut Centinal,https://connecticutcentinal.com,output/Connecticut_Centinal.png,2026-06-03 22:21:02,USA,LOW,0
+Conservative Free Press,https://conservativefreepress.com,output/Conservative_Free_Press.png,2026-06-03 19:13:46,USA,LOW,0
+Conspiracy Daily Update,https://conspiracydailyupdate.com,output/Conspiracy_Daily_Update.png,2026-06-03 19:13:47,,VERY LOW,0
+Constitution Daily,https://constitutioncenter.org,output/Constitution_Daily.png,2026-06-03 19:14:09,USA,HIGH,1
+ConstructionDive,https://constructiondive.com,output/ConstructionDive.png,2026-06-03 19:14:31,USA,HIGH,1
+Consumer Reports,https://consumerreports.org,output/Consumer_Reports.png,2026-06-03 19:14:15,USA,HIGH,1
+Cornwall Standard-Freeholder,https://standard-freeholder.com,output/Cornwall_Standard-Freeholder.png,2026-06-03 19:15:03,,HIGH,1
+Corpus Christi Caller-Times,https://caller.com,output/Corpus_Christi_Caller-Times.png,2026-06-03 19:15:50,USA,HIGH,1
+Coshocton Tribune,https://coshoctontribune.com,output/Coshocton_Tribune.png,2026-06-03 19:15:53,USA,HIGH,1
+Council on Foreign Relations,https://cfr.org,output/Council_on_Foreign_Relations.png,2026-06-03 19:15:40,USA,HIGH,1
+Courthouse News Service,https://courthousenews.com,output/Courthouse_News_Service.png,2026-06-03 19:15:24,USA,HIGH,1
+Covid Call to Humanity,https://covidcalltohumanity.org,output/Covid_Call_to_Humanity.png,2026-06-03 19:15:53,,VERY LOW,0
+Crains Detroit,https://crainsdetroit.com,output/Crains_Detroit.png,2026-06-03 19:16:48,USA,HIGH,1
+Cranbrook Townsman,https://cranbrooktownsman.com,output/Cranbrook_Townsman.png,2026-06-03 19:16:05,,HIGH,1
+Creation-Evolution Headlines,https://crev.info,output/Creation-Evolution_Headlines.png,2026-06-03 19:16:18,USA,LOW,0
+Creation Ministries International,https://creation.com,output/Creation_Ministries_International.png,2026-06-03 19:16:23,,LOW,0
+Creative Destruction Media - CD Media,https://creativedestructionmedia.com,output/Creative_Destruction_Media_-_CD_Media.png,2026-06-03 19:17:12,USA,LOW,0
+Creston Valley Advance,https://crestonvalleyadvance.ca,output/Creston_Valley_Advance.png,2026-06-03 19:16:39,,HIGH,1
+CrimethInc,https://crimethinc.com,output/CrimethInc.png,2026-06-03 19:16:52,USA,HIGH,1
+Cronkite News,https://cronkitenews.azpbs.org,output/Cronkite_News.png,2026-06-03 19:16:56,USA,HIGH,1
+CrossExamined.org,https://crossexamined.org,output/CrossExamined.org.png,2026-06-03 19:17:32,USA,LOW,0
+Culture Wars Magazine,https://culturewars.com,output/Culture_Wars_Magazine.png,2026-06-03 19:17:31,USA,LOW,0
+Cumberland News & Star,https://newsandstar.co.uk,output/Cumberland_News_Star.png,2026-06-03 19:18:32,,HIGH,1
+Current Affairs,https://currentaffairs.org,output/Current_Affairs.png,2026-06-03 19:17:41,USA,HIGH,1
+Curve Magazine,https://curvemag.com,output/Curve_Magazine.png,2026-06-03 19:18:09,USA,HIGH,1
+CyberWar.News,https://cyberwar.news,output/CyberWar.News.png,2026-06-03 19:18:11,USA,VERY LOW,0
+Cyberscoop,https://cyberscoop.com,output/Cyberscoop.png,2026-06-03 19:18:22,,HIGH,1
+CybersecurityDive,https://cybersecuritydive.com,output/CybersecurityDive.png,2026-06-03 19:18:44,USA,HIGH,1
+Cygnal Polling,https://cygn.al,output/Cygnal_Polling.png,2026-06-03 19:18:42,USA,HIGH,1
+DCReport.org,https://dcreport.org,output/DCReport.org.png,2026-06-03 19:18:50,USA,HIGH,1
+DHM Research,https://dhmresearch.com,output/DHM_Research.png,2026-06-03 19:18:58,USA,HIGH,1
+Daily Business Review,https://law.com/dailybusinessreview,output/Daily_Business_Review.png,2026-06-03 19:19:49,USA,HIGH,1
+Daily Camera,https://dailycamera.com,output/Daily_Camera.png,2026-06-03 22:22:27,USA,HIGH,1
+Daily Dot,https://dailydot.com,output/Daily_Dot.png,2026-06-03 19:20:12,USA,HIGH,1
+Daily Hampshire Gazette,https://gazettenet.com,output/Daily_Hampshire_Gazette.png,2026-06-03 19:19:10,USA,HIGH,1
+Daily Headlines,https://dailyheadlines.net,output/Daily_Headlines.png,2026-06-03 22:21:08,,LOW,0
+Daily Journal,https://dailyjournalonline.com,output/Daily_Journal.png,2026-06-03 19:20:14,USA,HIGH,1
+Daily Nonpareil,https://nonpareilonline.com,output/Daily_Nonpareil.png,2026-06-03 19:21:15,USA,HIGH,1
+Daily Torch,https://dailytorch.com,output/Daily_Torch.png,2026-06-03 19:20:42,USA,HIGH,1
+Daily Veracity,https://dailyveracity.com,output/Daily_Veracity.png,2026-06-03 19:21:06,USA,VERY LOW,0
+Dallas Voice,https://dallasvoice.com,output/Dallas_Voice.png,2026-06-03 19:21:25,USA,HIGH,1
+Dame Magazine,https://damemagazine.com,output/Dame_Magazine.png,2026-06-03 19:22:10,USA,HIGH,1
+Data for Progress,https://dataforprogress.org,output/Data_for_Progress.png,2026-06-03 19:22:02,USA,HIGH,1
+Daventry Express,https://daventryexpress.co.uk,output/Daventry_Express.png,2026-06-03 19:22:36,,HIGH,1
+Dayton Daily News,https://daytondailynews.com,output/Dayton_Daily_News.png,2026-06-03 19:23:17,USA,HIGH,1
+DeSmog,https://desmog.com,output/DeSmog.png,2026-06-03 19:22:21,,HIGH,1
+Deadline Hollywood,https://deadline.com,output/Deadline_Hollywood.png,2026-06-03 19:23:23,USA,HIGH,1
+Deadspin,https://deadspin.com,output/Deadspin.png,2026-06-03 19:23:31,USA,HIGH,1
+Death Penalty Information Center,https://deathpenaltyinfo.org,output/Death_Penalty_Information_Center.png,2026-06-03 19:23:07,USA,HIGH,1
+Debunking Denialism,https://debunkingdenialism.com,output/Debunking_Denialism.png,2026-06-03 19:23:13,,HIGH,1
+Defector,https://defector.com,output/Defector.png,2026-06-03 19:23:39,USA,HIGH,1
+DefenseScoop,https://defensescoop.com,output/DefenseScoop.png,2026-06-03 19:24:03,USA,HIGH,1
+Defense News,https://defensenews.com,output/Defense_News.png,2026-06-03 19:23:54,USA,HIGH,1
+Delaware Online - The News Journal,https://delawareonline.com,output/Delaware_Online_-_The_News_Journal.png,2026-06-03 19:25:19,USA,HIGH,1
+Democracy 21,https://democracy21.org,output/Democracy_21.png,2026-06-03 19:24:27,USA,HIGH,1
+Democracy Docket,https://democracydocket.com,output/Democracy_Docket.png,2026-06-03 19:25:20,USA,HIGH,1
+Democracy Fund Voice,https://democracyfundvoice.org,output/Democracy_Fund_Voice.png,2026-06-03 19:24:57,USA,HIGH,1
+Democracy Now,https://democracynow.org,output/Democracy_Now.png,2026-06-03 19:25:33,USA,HIGH,1
+Democrat and Chronicle,https://democratandchronicle.com,output/Democrat_and_Chronicle.png,2026-06-03 19:26:41,USA,HIGH,1
+Denton Record-Chronicle,https://dentonrc.com,output/Denton_Record-Chronicle.png,2026-06-03 19:26:20,USA,HIGH,1
+Denver Post,https://denverpost.com,output/Denver_Post.png,2026-06-03 19:26:51,USA,HIGH,1
+Desert Sun,https://desertsun.com,output/Desert_Sun.png,2026-06-03 19:28:15,USA,HIGH,1
+Detroit Free Press,https://freep.com,output/Detroit_Free_Press.png,2026-06-03 19:28:45,USA,HIGH,1
+Detroit Metro Times,https://metrotimes.com,output/Detroit_Metro_Times.png,2026-06-03 19:28:14,USA,HIGH,1
+Detroit News,https://detroitnews.com,output/Detroit_News.png,2026-06-03 19:29:07,USA,HIGH,1
+DigiTimes Asia,https://digitimes.com,output/DigiTimes_Asia.png,2026-06-03 19:28:35,,HIGH,1
+Digital Journal,https://digitaljournal.com,output/Digital_Journal.png,2026-06-03 19:28:24,,HIGH,1
+Discern Report,https://discernreport.com,output/Discern_Report.png,2026-06-03 19:29:27,USA,LOW,0
+Discovery Institute,https://discovery.org,output/Discovery_Institute.png,2026-06-03 19:29:05,USA,LOW,0
+Dissent Magazine,https://dissentmagazine.org,output/Dissent_Magazine.png,2026-06-03 19:29:25,USA,HIGH,1
+Doctors Without Borders,https://doctorswithoutborders.org,output/Doctors_Without_Borders.png,2026-06-03 19:29:43,,HIGH,1
+Downsizing the Federal Government,https://downsizinggovernment.org,output/Downsizing_the_Federal_Government.png,2026-06-03 19:29:38,USA,HIGH,1
+Duluth News Tribune,https://duluthnewstribune.com,output/Duluth_News_Tribune.png,2026-06-03 19:30:50,USA,HIGH,1
+ECU Center for Survey Research,https://surveyresearch.ecu.edu,output/ECU_Center_for_Survey_Research.png,2026-06-03 19:30:21,USA,HIGH,1
+ESG Dive,https://esgdive.com,output/ESG_Dive.png,2026-06-03 19:30:58,USA,HIGH,1
+E&E News,https://eenews.net,output/E_E_News.png,2026-06-03 19:30:02,USA,HIGH,1
+EarthJustice,https://earthjustice.org,output/EarthJustice.png,2026-06-03 19:30:47,USA,HIGH,1
+East-West Center,https://eastwestcenter.org,output/East-West_Center.png,2026-06-03 19:31:27,USA,HIGH,1
+East London and West Essex Guardian,https://guardian-series.co.uk,output/East_London_and_West_Essex_Guardian.png,2026-06-03 19:31:52,,HIGH,1
+East Lothian Courier,https://eastlothiancourier.com,output/East_Lothian_Courier.png,2026-06-03 19:32:19,,HIGH,1
+Echo Check,https://echocheck.org,output/Echo_Check.png,2026-06-03 19:32:06,USA,VERY LOW,0
+Eckville Echo,https://eckvilleecho.com,output/Eckville_Echo.png,2026-06-03 19:32:08,,HIGH,1
+Ecology News,https://ecology.news,output/Ecology_News.png,2026-06-03 19:32:44,USA,VERY LOW,0
+Econofact,https://econofact.org,output/Econofact.png,2026-06-03 19:32:15,USA,HIGH,1
+Economic Policy Institute,https://epi.org,output/Economic_Policy_Institute.png,2026-06-03 19:32:28,USA,HIGH,1
+Economist Intelligence Unit,https://eiu.com,output/Economist_Intelligence_Unit.png,2026-06-03 19:35:55,,HIGH,1
+EdScoop,https://edscoop.com,output/EdScoop.png,2026-06-03 19:33:00,USA,HIGH,1
+Edmonton Journal,https://edmontonjournal.com,output/Edmonton_Journal.png,2026-06-03 19:33:43,,HIGH,1
+Edmonton Sun,https://edmontonsun.com,output/Edmonton_Sun.png,2026-06-03 19:34:04,,HIGH,1
+Education Week,https://edweek.org,output/Education_Week.png,2026-06-03 19:34:17,USA,HIGH,1
+Educators Technology,https://educatorstechnology.com,output/Educators_Technology.png,2026-06-03 19:34:03,,HIGH,1
+Egberto Willies,https://egbertowillies.com,output/Egberto_Willies.png,2026-06-03 19:35:12,USA,HIGH,1
+El Nuevo Dia,https://elnuevodia.com,output/El_Nuevo_Dia.png,2026-06-03 19:35:14,,HIGH,1
+El Paso Times,https://elpasotimes.com,output/El_Paso_Times.png,2026-06-03 19:35:38,USA,HIGH,1
+Electoral-Vote.com,https://electoral-vote.com,output/Electoral-Vote.com.png,2026-06-03 19:35:30,,HIGH,1
+Elliot Lake Standard,https://elliotlakestandard.ca,output/Elliot_Lake_Standard.png,2026-06-03 19:36:10,,HIGH,1
+Ellwood City Ledger,https://ellwoodcityledger.com,output/Ellwood_City_Ledger.png,2026-06-03 19:36:56,USA,HIGH,1
+Empty Wheel,https://emptywheel.net,output/Empty_Wheel.png,2026-06-03 19:36:10,USA,HIGH,1
+Encyclopedia Britannica,https://britannica.com,output/Encyclopedia_Britannica.png,2026-06-03 19:36:31,USA,HIGH,1
+Enfield Independent,https://enfieldindependent.co.uk,output/Enfield_Independent.png,2026-06-03 19:37:24,,HIGH,1
+Engadget,https://engadget.com,output/Engadget.png,2026-06-03 19:40:14,USA,HIGH,1
+Enniskillen Impartial Reporter,https://impartialreporter.com,output/Enniskillen_Impartial_Reporter.png,2026-06-03 19:37:52,,HIGH,1
+Entertainment Weekly,https://ew.com,output/Entertainment_Weekly.png,2026-06-03 19:37:39,USA,HIGH,1
+Enumclaw Courier-Herald,https://courierherald.com,output/Enumclaw_Courier-Herald.png,2026-06-03 19:38:24,USA,HIGH,1
+Environmental Defense Fund,https://edf.org,output/Environmental_Defense_Fund.png,2026-06-03 19:38:02,USA,HIGH,1
+Erie Times-News,https://goerie.com,output/Erie_Times-News.png,2026-06-03 19:39:26,USA,HIGH,1
+Escape all these Things,https://escapeallthesethings.com,output/Escape_all_these_Things.png,2026-06-03 19:39:37,USA,LOW,0
+Eurasia Group,https://eurasiagroup.net,output/Eurasia_Group.png,2026-06-03 19:39:08,USA,HIGH,1
+Evesham Journal,https://eveshamjournal.co.uk,output/Evesham_Journal.png,2026-06-03 19:40:44,,HIGH,1
+Evonomics,https://evonomics.com,output/Evonomics.png,2026-06-03 19:40:49,USA,HIGH,1
+Exeter Lakeshore Times-Advance,https://lakeshoreadvance.com,output/Exeter_Lakeshore_Times-Advance.png,2026-06-03 19:40:59,,HIGH,1
+Exopolitics,https://exopolitics.org,output/Exopolitics.png,2026-06-03 19:41:06,USA,LOW,0
+Exposing the Truth,https://exposingtruth.com,output/Exposing_the_Truth.png,2026-06-03 19:41:04,,HIGH,1
+FDA.News,https://fda.news,output/FDA.News.png,2026-06-03 19:41:31,USA,VERY LOW,0
+FDD's Long War Journal,https://longwarjournal.org,output/FDD_s_Long_War_Journal.png,2026-06-03 19:41:37,USA,HIGH,1
+Facilities Dive,https://facilitiesdive.com,output/Facilities_Dive.png,2026-06-03 19:42:44,USA,HIGH,1
+FactCheck.org,https://factcheck.org,output/FactCheck.org.png,2026-06-03 19:42:15,USA,VERY HIGH,1
+FactCheckNI,https://factcheckni.org,output/FactCheckNI.png,2026-06-03 19:42:21,,HIGH,1
+Fact/Myth,https://factmyth.com,output/Fact_Myth.png,2026-06-03 19:43:13,USA,HIGH,1
+Factchecker.in,https://factchecker.in,output/Factchecker.in.png,2026-06-03 19:42:35,,HIGH,1
+Falmouth Packet,https://falmouthpacket.co.uk,output/Falmouth_Packet.png,2026-06-03 19:44:01,,HIGH,1
+FashionDive,https://fashiondive.com,output/FashionDive.png,2026-06-03 19:43:18,USA,HIGH,1
+FedScoop,https://fedscoop.com,output/FedScoop.png,2026-06-03 19:43:34,,HIGH,1
+Federal News Network,https://federalnewsnetwork.com,output/Federal_News_Network.png,2026-06-03 19:43:58,USA,HIGH,1
+Federal Way Mirror,https://federalwaymirror.com,output/Federal_Way_Mirror.png,2026-06-03 19:44:20,USA,HIGH,1
+Felix Rex,https://felixrex.net,output/Felix_Rex.png,2026-06-03 19:44:33,,LOW,0
+Fernie Free Press,https://thefreepress.ca,output/Fernie_Free_Press.png,2026-06-03 19:44:24,,HIGH,1
+First Coast News,https://firstcoastnews.com,output/First_Coast_News.png,2026-06-03 19:46:03,USA,HIGH,1
+Focus on the Family,https://focusonthefamily.com,output/Focus_on_the_Family.png,2026-06-03 19:45:40,USA,LOW,0
+FoodDive,https://fooddive.com,output/FoodDive.png,2026-06-03 19:45:38,USA,HIGH,1
+Foster's Daily Democrat,https://fosters.com,output/Foster_s_Daily_Democrat.png,2026-06-03 19:46:48,USA,HIGH,1
+France 24,https://france24.com,output/France_24.png,2026-06-03 19:49:21,,HIGH,1
+Fremont News-Messenger,https://thenews-messenger.com,output/Fremont_News-Messenger.png,2026-06-03 19:46:59,USA,HIGH,1
+Full Fact UK,https://fullfact.org,output/Full_Fact_UK.png,2026-06-03 19:46:16,,HIGH,1
+Fully Human,https://fully-human.org,output/Fully_Human.png,2026-06-03 19:46:52,,VERY LOW,0
+GZERO Media,https://gzeromedia.com,output/GZERO_Media.png,2026-06-03 19:47:38,USA,HIGH,1
+Gainesville Sun,https://gainesville.com,output/Gainesville_Sun.png,2026-06-03 19:48:16,USA,HIGH,1
+Gananoque Reporter,https://gananoquereporter.com,output/Gananoque_Reporter.png,2026-06-03 19:47:44,,HIGH,1
+Gephardt Daily,https://gephardtdaily.com,output/Gephardt_Daily.png,2026-06-03 19:48:47,,HIGH,1
+Glasgow Times,https://glasgowtimes.co.uk,output/Glasgow_Times.png,2026-06-03 19:50:16,,HIGH,1
+Global Citizen,https://globalcitizen.org,output/Global_Citizen.png,2026-06-03 19:49:32,USA,HIGH,1
+Goderich Signal-Star,https://goderichsignalstar.com,output/Goderich_Signal-Star.png,2026-06-03 19:49:45,,HIGH,1
+Grand Forks Gazette,https://grandforksgazette.ca,output/Grand_Forks_Gazette.png,2026-06-03 19:49:48,,HIGH,1
+Granite Grok,https://granitegrok.com,output/Granite_Grok.png,2026-06-03 19:50:03,USA,LOW,0
+Greenfield Recorder,https://recorder.com,output/Greenfield_Recorder.png,2026-06-03 19:50:24,USA,HIGH,1
+Greenock Telegraph,https://greenocktelegraph.co.uk,output/Greenock_Telegraph.png,2026-06-03 19:51:44,,HIGH,1
+Grey Bruce This Week,https://greybrucethisweek.ca,output/Grey_Bruce_This_Week.png,2026-06-03 19:51:25,,HIGH,1
+GroceryDive,https://grocerydive.com,output/GroceryDive.png,2026-06-03 19:51:44,USA,HIGH,1
+Gwinnett Daily Post,https://gwinnettdailypost.com,output/Gwinnett_Daily_Post.png,2026-06-03 19:52:25,,HIGH,1
+HRDive,https://hrdive.com,output/HRDive.png,2026-06-03 19:52:54,USA,HIGH,1
+Haaretz,https://haaretz.com,output/Haaretz.png,2026-06-03 19:53:06,,HIGH,1
+Halstead Gazette,https://halsteadgazette.co.uk,output/Halstead_Gazette.png,2026-06-03 19:53:01,,HIGH,1
+Hanover Evening Sun,https://eveningsun.com,output/Hanover_Evening_Sun.png,2026-06-03 19:53:59,USA,HIGH,1
+Hanover Post,https://thepost.on.ca,output/Hanover_Post.png,2026-06-03 19:53:44,,HIGH,1
+Harwich and Manningtree Standard,https://harwichandmanningtreestandard.co.uk,output/Harwich_and_Manningtree_Standard.png,2026-06-03 19:54:50,,HIGH,1
+Heartland Institute,https://heartland.org,output/Heartland_Institute.png,2026-06-03 19:54:36,USA,LOW,0
+HigherEd Dive,https://highereddive.com,output/HigherEd_Dive.png,2026-06-03 19:55:55,USA,HIGH,1
+History Today,https://historytoday.com,output/History_Today.png,2026-06-03 19:55:44,,HIGH,1
+Hong Kong Free Press,https://hongkongfp.com,output/Hong_Kong_Free_Press.png,2026-06-03 19:55:51,,HIGH,1
+Honolulu Civil Beat,https://civilbeat.org,output/Honolulu_Civil_Beat.png,2026-06-03 19:56:38,USA,HIGH,1
+Hoover Institution,https://hoover.org,output/Hoover_Institution.png,2026-06-03 19:57:19,USA,HIGH,1
+Hudson Institute,https://hudson.org,output/Hudson_Institute.png,2026-06-03 19:57:14,USA,HIGH,1
+Human Life International,https://hli.org,output/Human_Life_International.png,2026-06-03 19:57:33,USA,LOW,0
+IPM Newsroom,https://ipmnewsroom.org,output/IPM_Newsroom.png,2026-06-03 19:57:57,USA,HIGH,1
+Idaho Tribune,https://idahotribune.org,output/Idaho_Tribune.png,2026-06-03 19:57:53,USA,LOW,0
+If America Knew,https://ifamericaknew.org,output/If_America_Knew.png,2026-06-03 19:57:43,USA,HIGH,1
+IndexMundi,https://indexmundi.com,output/IndexMundi.png,2026-06-03 19:58:07,USA,HIGH,1
+Infoplease,https://infoplease.com,output/Infoplease.png,2026-06-03 19:59:03,,HIGH,1
+Innocence Project,https://innocenceproject.org,output/Innocence_Project.png,2026-06-03 19:58:50,USA,HIGH,1
+Inquisitr,https://inquisitr.com,output/Inquisitr.png,2026-06-03 19:59:47,,HIGH,1
+Inside Higher Ed,https://insidehighered.com,output/Inside_Higher_Ed.png,2026-06-03 19:59:49,USA,HIGH,1
+Institute for Fiscal Studies,https://ifs.org.uk,output/Institute_for_Fiscal_Studies.png,2026-06-03 19:59:46,,HIGH,1
+Institute for the Study of Globalization and Covert Politics,https://isgp-studies.com,output/Institute_for_the_Study_of_Globalization_and_Covert_Politics.png,2026-06-03 20:01:04,,LOW,0
+Intercessors for America,https://ifapray.org,output/Intercessors_for_America.png,2026-06-03 20:02:19,USA,LOW,0
+InvestigateWest,https://invw.org,output/InvestigateWest.png,2026-06-03 20:00:15,USA,HIGH,1
+Investopedia,https://investopedia.com,output/Investopedia.png,2026-06-03 20:01:15,USA,HIGH,1
+Israel21c,https://israel21c.org,output/Israel21c.png,2026-06-03 20:02:05,,HIGH,1
+J Street,https://jstreet.org,output/J_Street.png,2026-06-03 20:02:18,USA,HIGH,1
+Jewish Jounral,https://jewishjournal.com,output/Jewish_Jounral.png,2026-06-03 20:03:21,USA,HIGH,1
+Jewish Telegraphic Agency,https://www.jta.org/,output/Jewish_Telegraphic_Agency.png,2026-06-03 20:03:03,USA,HIGH,1
+Jewish Unpacked,https://jewishunpacked.com,output/Jewish_Unpacked.png,2026-06-03 20:02:44,USA,HIGH,1
+Johnstown Tribune-Democrat,https://tribdem.com,output/Johnstown_Tribune-Democrat.png,2026-06-03 20:04:10,USA,HIGH,1
+Judicial Watch,https://judicialwatch.org,output/Judicial_Watch.png,2026-06-03 20:03:28,USA,LOW,0
+K-12 Dive,https://k12dive.com,output/K-12_Dive.png,2026-06-03 20:04:39,USA,HIGH,1
+KAIT8-TV,https://kait8.com,output/KAIT8-TV.png,2026-06-03 20:05:03,USA,HIGH,1
+KANQ - NPR - Chanute,https://kansaspublicradio.org,output/KANQ_-_NPR_-_Chanute.png,2026-06-03 20:04:45,USA,HIGH,1
+KBKR - Duluth News,https://northernnewsnow.com,output/KBKR_-_Duluth_News.png,2026-06-03 20:06:19,USA,HIGH,1
+KBUT - NPR - Crested Butte,https://kbut.org,output/KBUT_-_NPR_-_Crested_Butte.png,2026-06-03 20:05:22,USA,HIGH,1
+KCFC - NPR - Boulder,https://cpr.org,output/KCFC_-_NPR_-_Boulder.png,2026-06-03 20:05:33,USA,HIGH,1
+KEYC - Mankato News,https://keyc.com,output/KEYC_-_Mankato_News.png,2026-06-03 20:07:07,USA,HIGH,1
+KMIR - NBC - Palm Springs,https://nbcpalmsprings.com,output/KMIR_-_NBC_-_Palm_Springs.png,2026-06-03 20:06:46,USA,HIGH,1
+KMTR - NBC16 - Springfield,https://nbc16.com,output/KMTR_-_NBC16_-_Springfield.png,2026-06-03 20:07:40,USA,HIGH,1
+KRCC - NPR - Colorado Springs,https://cpr.org/krcc,output/KRCC_-_NPR_-_Colorado_Springs.png,2026-06-03 20:07:21,USA,HIGH,1
+KRCG - NPR - Santa Rosa,https://norcalpublicmedia.org,output/KRCG_-_NPR_-_Santa_Rosa.png,2026-06-03 20:08:17,USA,HIGH,1
+KVAL - Eugene News,https://kval.com,output/KVAL_-_Eugene_News.png,2026-06-03 20:09:00,USA,HIGH,1
+Kentucky Lantern,https://kentuckylantern.com,output/Kentucky_Lantern.png,2026-06-03 20:08:32,USA,HIGH,1
+Kidderminster Shuttle,https://kidderminstershuttle.co.uk,output/Kidderminster_Shuttle.png,2026-06-03 20:09:41,,HIGH,1
+Kimberley Bulletin,https://kimberleybulletin.com,output/Kimberley_Bulletin.png,2026-06-03 20:08:50,,HIGH,1
+Kincardine News,https://kincardinenews.com,output/Kincardine_News.png,2026-06-03 20:09:22,,HIGH,1
+Kingston This Week,https://kingstonthisweek.com,output/Kingston_This_Week.png,2026-06-03 20:09:37,,HIGH,1
+Kirkland Lake Northern News,https://northernnews.ca,output/Kirkland_Lake_Northern_News.png,2026-06-03 20:09:42,,HIGH,1
+Knutsford Guardian,https://knutsfordguardian.co.uk,output/Knutsford_Guardian.png,2026-06-03 20:10:39,,HIGH,1
+Kyodo News Plus,https://english.kyodonews.net,output/Kyodo_News_Plus.png,2026-06-03 20:10:01,,HIGH,1
+LaGrange Daily News,https://lagrangenews.com,output/LaGrange_Daily_News.png,2026-06-03 20:10:41,USA,HIGH,1
+Lacombe Express,https://lacombeexpress.com,output/Lacombe_Express.png,2026-06-03 20:10:09,,HIGH,1
+Lake County Leader,https://leaderadvertiser.com,output/Lake_County_Leader.png,2026-06-03 20:10:39,USA,HIGH,1
+Lapham's Quarterly,https://laphamsquarterly.org,output/Lapham_s_Quarterly.png,2026-06-03 20:10:42,USA,HIGH,1
+Las Vegas Weekly,https://lasvegasweekly.com,output/Las_Vegas_Weekly.png,2026-06-03 20:11:34,USA,HIGH,1
+Law360,https://law360.com,output/Law360.png,2026-06-03 20:11:21,USA,HIGH,1
+Law for Palestine,https://law4palestine.org,output/Law_for_Palestine.png,2026-06-03 20:11:22,,HIGH,1
+Lead Stories,https://leadstories.com,output/Lead_Stories.png,2026-06-03 20:11:43,USA,VERY HIGH,1
+Ledbury Reporter,https://ledburyreporter.co.uk,output/Ledbury_Reporter.png,2026-06-03 20:12:50,,HIGH,1
+LegalDive,https://legaldive.com,output/LegalDive.png,2026-06-03 20:12:51,USA,HIGH,1
+Leicester Mercury,https://leicestermercury.co.uk,output/Leicester_Mercury.png,2026-06-03 20:12:58,,HIGH,1
+Liberty & Law,https://lawliberty.org,output/Liberty_Law.png,2026-06-03 20:13:35,USA,HIGH,1
+LifeWire,https://lifewire.com,output/LifeWire.png,2026-06-03 20:13:56,USA,HIGH,1
+Life Site News,https://lifesitenews.com,output/Life_Site_News.png,2026-06-03 20:13:55,,LOW,0
+Lithuanian National Radio and Television,https://lrt.lt/en/news-in-english,output/Lithuanian_National_Radio_and_Television.png,2026-06-03 20:14:05,,HIGH,1
+Logically,https://logically.ai,output/Logically.png,2026-06-03 20:14:06,,HIGH,1
+London Real,https://londonreal.tv,output/London_Real.png,2026-06-03 20:16:32,,LOW,0
+Lucknow Sentinel,https://lucknowsentinel.com,output/Lucknow_Sentinel.png,2026-06-03 20:15:08,,HIGH,1
+Macroevolution.net,https://macroevolution.net,output/Macroevolution.net.png,2026-06-03 20:14:26,USA,LOW,0
+Maine Morning Star,https://mainemorningstar.com,output/Maine_Morning_Star.png,2026-06-03 20:14:57,USA,HIGH,1
+Maldon Standard,https://maldonandburnhamstandard.co.uk,output/Maldon_Standard.png,2026-06-03 20:16:16,,HIGH,1
+Malvern Gazette,https://malverngazette.co.uk,output/Malvern_Gazette.png,2026-06-03 20:16:25,,HIGH,1
+Mansfield News-Journal,https://mansfieldnewsjournal.com,output/Mansfield_News-Journal.png,2026-06-03 20:16:35,USA,HIGH,1
+ManufacturingDive,https://manufacturingdive.com,output/ManufacturingDive.png,2026-06-03 20:16:56,USA,HIGH,1
+Marginal Revolution,https://marginalrevolution.com,output/Marginal_Revolution.png,2026-06-03 20:16:46,USA,HIGH,1
+Marietta Daily Journal,https://mdjonline.com,output/Marietta_Daily_Journal.png,2026-06-03 20:17:18,USA,HIGH,1
+Marion Star,https://marionstar.com,output/Marion_Star.png,2026-06-03 20:17:56,USA,HIGH,1
+MarketBeat,https://marketbeat.com,output/MarketBeat.png,2026-06-03 20:17:29,USA,HIGH,1
+MarketingDive,https://marketingdive.com,output/MarketingDive.png,2026-06-03 20:17:39,USA,HIGH,1
+MedTechDive,https://medtechdive.com,output/MedTechDive.png,2026-06-03 20:17:55,USA,HIGH,1
+Media Matters,https://mediamatters.org,output/Media_Matters.png,2026-06-03 20:17:49,USA,HIGH,1
+Melfort Journal,https://melfortjournal.com,output/Melfort_Journal.png,2026-06-03 20:18:45,,HIGH,1
+Men Going Their Own Way,https://mgtow.tv,output/Men_Going_Their_Own_Way.png,2026-06-03 20:18:57,USA,LOW,0
+Metro Weekly,https://metroweekly.com,output/Metro_Weekly.png,2026-06-03 20:18:28,USA,HIGH,1
+MichaelSalla.com,https://michaelsalla.com,output/MichaelSalla.com.png,2026-06-03 20:18:35,USA,LOW,0
+Mid-North Monitor,https://midnorthmonitor.com,output/Mid-North_Monitor.png,2026-06-03 20:19:21,,HIGH,1
+Middle East Forum,https://meforum.org,output/Middle_East_Forum.png,2026-06-03 20:19:21,USA,LOW,0
+Mind Matters,https://mindmatters.ai,output/Mind_Matters.png,2026-06-03 20:19:12,USA,LOW,0
+Mitchell Advocate,https://mitchelladvocate.com,output/Mitchell_Advocate.png,2026-06-03 20:20:15,,HIGH,1
+Mongabay,https://news.mongabay.com,output/Mongabay.png,2026-06-03 20:20:19,USA,HIGH,1
+MultiFamilyDive,https://multifamilydive.com,output/MultiFamilyDive.png,2026-06-03 20:20:54,USA,HIGH,1
+Muslim Skeptic,https://muslimskeptic.com,output/Muslim_Skeptic.png,2026-06-03 20:20:26,USA,LOW,0
+NBCNewYork.com,https://nbcnewyork.com,output/NBCNewYork.com.png,2026-06-03 20:21:27,USA,HIGH,1
+NNSL Media,https://nnsl.com,output/NNSL_Media.png,2026-06-03 20:21:05,,HIGH,1
+National Business Review,https://nbr.co.nz,output/National_Business_Review.png,2026-06-03 20:21:24,,HIGH,1
+National Security Archive,https://nsarchive.gwu.edu,output/National_Security_Archive.png,2026-06-03 20:21:38,USA,HIGH,1
+National union of Journalists,https://nuj.org.uk,output/National_union_of_Journalists.png,2026-06-03 20:21:46,,HIGH,1
+Natural Resource Governance Institute,https://resourcegovernance.org,output/Natural_Resource_Governance_Institute.png,2026-06-03 20:22:04,USA,HIGH,1
+Navy Times,https://navytimes.com,output/Navy_Times.png,2026-06-03 20:22:51,USA,HIGH,1
+Nebraska Examiner,https://nebraskaexaminer.com,output/Nebraska_Examiner.png,2026-06-03 20:22:30,USA,HIGH,1
+New Discourses,https://newdiscourses.com,output/New_Discourses.png,2026-06-03 20:22:31,USA,LOW,0
+New Lines Magazine,https://newlinesmag.com,output/New_Lines_Magazine.png,2026-06-03 20:22:52,USA,HIGH,1
+New Yorker,https://newyorker.com,output/New_Yorker.png,2026-06-03 20:23:54,USA,HIGH,1
+New Zealand Doctors Speaking Out with Science,https://nzdsos.com,output/New_Zealand_Doctors_Speaking_Out_with_Science.png,2026-06-03 20:22:41,,LOW,0
+News24,https://www.news24.com/,output/News24.png,2026-06-03 20:24:48,,HIGH,1
+No Labels,https://nolabels.org,output/No_Labels.png,2026-06-03 20:24:30,USA,HIGH,1
+Norfolk & Tillsonburg News,https://norfolkandtillsonburgnews.com,output/Norfolk_Tillsonburg_News.png,2026-06-03 20:24:51,,HIGH,1
+North Bay Nugget,https://nugget.ca,output/North_Bay_Nugget.png,2026-06-03 20:25:16,,HIGH,1
+North Dakota Monitor,https://northdakotamonitor.com,output/North_Dakota_Monitor.png,2026-06-03 20:25:05,USA,HIGH,1
+North Wales Chronicle,https://northwaleschronicle.co.uk,output/North_Wales_Chronicle.png,2026-06-03 20:26:09,,HIGH,1
+North Wales Pioneer,https://northwalespioneer.co.uk,output/North_Wales_Pioneer.png,2026-06-03 20:26:10,,HIGH,1
+Northumberland Gazette,https://northumberlandgazette.co.uk,output/Northumberland_Gazette.png,2026-06-03 20:26:19,,HIGH,1
+Northwest Florida Daily News,https://nwfdailynews.com,output/Northwest_Florida_Daily_News.png,2026-06-03 20:26:43,USA,HIGH,1
+Northwich Guardian,https://northwichguardian.co.uk,output/Northwich_Guardian.png,2026-06-03 20:27:22,,HIGH,1
+Nuclear Threat Initiative,https://nti.org,output/Nuclear_Threat_Initiative.png,2026-06-03 20:26:54,,HIGH,1
+Nunavut News,https://nunavutnews.com,output/Nunavut_News.png,2026-06-03 20:26:40,,HIGH,1
+OakRidger,https://oakridger.com,output/OakRidger.png,2026-06-03 20:28:06,USA,HIGH,1
+Oak Bay News,https://oakbaynews.com,output/Oak_Bay_News.png,2026-06-03 20:26:57,,HIGH,1
+Oaklandside,https://oaklandside.org,output/Oaklandside.png,2026-06-03 20:27:14,USA,HIGH,1
+Oklahoma Voice,https://oklahomavoice.com,output/Oklahoma_Voice.png,2026-06-03 20:27:25,USA,HIGH,1
+Open to Debate,https://opentodebate.org,output/Open_to_Debate.png,2026-06-03 20:28:07,,HIGH,1
+Organisation for Economic Co-operation and Development,https://oecd.org,output/Organisation_for_Economic_Co-operation_and_Development.png,2026-06-03 20:27:55,,HIGH,1
+Our World In Data,https://ourworldindata.org,output/Our_World_In_Data.png,2026-06-03 20:28:18,,HIGH,1
+Owen Sound Sun Times,https://owensoundsuntimes.com,output/Owen_Sound_Sun_Times.png,2026-06-03 20:28:59,,HIGH,1
+PA Media,https://pa.media,output/PA_Media.png,2026-06-03 20:28:25,,VERY HIGH,1
+Pacific Standard Magazine,https://psmag.com,output/Pacific_Standard_Magazine.png,2026-06-03 20:28:43,USA,HIGH,1
+PackagingDive,https://packagingdive.com,output/PackagingDive.png,2026-06-03 20:29:34,USA,HIGH,1
+Palm Beach Daily News,https://palmbeachdailynews.com,output/Palm_Beach_Daily_News.png,2026-06-03 20:29:59,USA,HIGH,1
+Paris Star,https://parisstaronline.com,output/Paris_Star.png,2026-06-03 20:30:10,,HIGH,1
+PaymentsDive,https://paymentsdive.com,output/PaymentsDive.png,2026-06-03 20:30:13,USA,HIGH,1
+Pembroke Observer & News,https://pembrokeobserver.com,output/Pembroke_Observer_News.png,2026-06-03 20:30:28,,HIGH,1
+Peninsula Daily News,https://peninsuladailynews.com,output/Peninsula_Daily_News.png,2026-06-03 20:30:59,USA,HIGH,1
+Penticton Western News,https://pentictonwesternnews.com,output/Penticton_Western_News.png,2026-06-03 20:30:27,,HIGH,1
+Peoria Journal Star,https://pjstar.com,output/Peoria_Journal_Star.png,2026-06-03 20:31:33,USA,HIGH,1
+Perry County Tribune,https://perrytribune.com,output/Perry_County_Tribune.png,2026-06-03 20:31:45,USA,HIGH,1
+Petersburg Progress-Index,https://progress-index.com,output/Petersburg_Progress-Index.png,2026-06-03 20:31:55,USA,HIGH,1
+Pew Research,https://pewresearch.org,output/Pew_Research.png,2026-06-03 20:31:23,USA,VERY HIGH,1
+PharmaVoice,https://pharmavoice.com,output/PharmaVoice.png,2026-06-03 20:31:57,USA,HIGH,1
+Pioneer Valley Advocate,https://valleyadvocate.com,output/Pioneer_Valley_Advocate.png,2026-06-03 20:32:19,USA,HIGH,1
+Platt County Journal-Republican,https://journal-republican.com,output/Platt_County_Journal-Republican.png,2026-06-03 20:32:18,,HIGH,1
+Plattsburgh Press-Republican,https://pressrepublican.com,output/Plattsburgh_Press-Republican.png,2026-06-03 20:32:46,USA,HIGH,1
+Politifact,https://politifact.com,output/Politifact.png,2026-06-03 20:33:12,USA,HIGH,1
+Polygon,https://polygon.com,output/Polygon.png,2026-06-03 20:32:50,USA,HIGH,1
+Ponoka News,https://ponokanews.com,output/Ponoka_News.png,2026-06-03 20:32:44,,HIGH,1
+Population Research Institute,https://pop.org,output/Population_Research_Institute.png,2026-06-03 20:33:10,USA,LOW,0
+Procon.org,https://procon.org,output/Procon.org.png,2026-06-03 20:33:52,USA,HIGH,1
+Project Syndicate,https://project-syndicate.org,output/Project_Syndicate.png,2026-06-03 20:34:10,,HIGH,1
+Project on Government Insight,https://pogo.org,output/Project_on_Government_Insight.png,2026-06-03 20:33:47,,HIGH,1
+Quartz,https://qz.com,output/Quartz.png,2026-06-03 20:35:12,USA,HIGH,1
+Queen Creek Tribune,https://queencreektribune.com,output/Queen_Creek_Tribune.png,2026-06-03 20:34:39,USA,HIGH,1
+RAIR Foundation USA,https://rairfoundation.com,output/RAIR_Foundation_USA.png,2026-06-03 20:35:18,USA,LOW,0
+RT News,https://rt.com,output/RT_News.png,2026-06-03 20:35:29,,VERY LOW,0
+Rabble.ca,https://rabble.ca,output/Rabble.ca.png,2026-06-03 20:35:38,,HIGH,1
+Rand Corporation,https://rand.org,output/Rand_Corporation.png,2026-06-03 20:35:37,USA,HIGH,1
+Rapid City Journal,https://rapidcityjournal.com,output/Rapid_City_Journal.png,2026-06-03 20:36:19,,HIGH,1
+Rappanhannock News,https://rappnews.com,output/Rappanhannock_News.png,2026-06-03 20:36:38,,HIGH,1
+Rappler,https://rappler.com,output/Rappler.png,2026-06-03 20:36:48,,HIGH,1
+RationalWiki,https://rationalwiki.org,output/RationalWiki.png,2026-06-03 20:36:26,USA,HIGH,1
+Raw Story,https://rawstory.com,output/Raw_Story.png,2026-06-03 20:37:32,USA,HIGH,1
+ReWire News Group,https://rewirenewsgroup.com,output/ReWire_News_Group.png,2026-06-03 20:36:53,USA,HIGH,1
+Reading Chronicle,https://readingchronicle.co.uk,output/Reading_Chronicle.png,2026-06-03 20:38:09,,HIGH,1
+Real Climate Science,https://realclimatescience.com,output/Real_Climate_Science.png,2026-06-03 20:38:07,USA,LOW,0
+Real News Network,https://therealnews.com,output/Real_News_Network.png,2026-06-03 20:37:02,USA,HIGH,1
+Red Deer Advocate,https://reddeeradvocate.com,output/Red_Deer_Advocate.png,2026-06-03 20:37:38,,HIGH,1
+Red Ice TV,https://redice.tv,output/Red_Ice_TV.png,2026-06-03 20:38:05,,LOW,0
+Red Pepper,https://redpepper.org.uk,output/Red_Pepper.png,2026-06-03 20:38:00,,HIGH,1
+Red State Watcher,https://redstatewatcher.com,output/Red_State_Watcher.png,2026-06-03 20:38:30,USA,LOW,0
+Reference.com,https://reference.com,output/Reference.com.png,2026-06-03 20:38:20,USA,HIGH,1
+Renew America,https://renewamerica.com,output/Renew_America.png,2026-06-03 20:39:42,USA,LOW,0
+Reno Gazette Journal,https://rgj.com,output/Reno_Gazette_Journal.png,2026-06-03 20:40:47,USA,HIGH,1
+Represent.us,https://represent.us,output/Represent.us.png,2026-06-03 20:40:39,,HIGH,1
+RestaurantDive,https://restaurantdive.com,output/RestaurantDive.png,2026-06-03 20:40:31,USA,HIGH,1
+RetailDive,https://retaildive.com,output/RetailDive.png,2026-06-03 20:41:41,USA,HIGH,1
+Reveal - Center for Investigative Reporting,https://revealnews.org,output/Reveal_-_Center_for_Investigative_Reporting.png,2026-06-03 20:40:40,USA,HIGH,1
+Revelstoke Review,https://revelstokereview.com,output/Revelstoke_Review.png,2026-06-03 20:40:57,,HIGH,1
+Rhode Island Current,https://rhodeislandcurrent.com,output/Rhode_Island_Current.png,2026-06-03 20:40:57,USA,HIGH,1
+RichmondSide,https://richmondside.org,output/RichmondSide.png,2026-06-03 20:41:16,USA,HIGH,1
+Richmond Times-Dispatch,https://richmond.com,output/Richmond_Times-Dispatch.png,2026-06-03 20:41:36,USA,HIGH,1
+Right Wing Watch,https://rightwingwatch.org,output/Right_Wing_Watch.png,2026-06-03 20:41:43,USA,HIGH,1
+Rimbey Review,https://rimbeyreview.com,output/Rimbey_Review.png,2026-06-03 20:41:33,,HIGH,1
+Riverdale Press,https://riverdalepress.com,output/Riverdale_Press.png,2026-06-03 20:42:45,USA,HIGH,1
+Roanoke Times,https://roanoke.com,output/Roanoke_Times.png,2026-06-03 20:42:31,USA,HIGH,1
+Rockdale Citizen,https://rockdalenewtoncitizen.com,output/Rockdale_Citizen.png,2026-06-03 20:42:52,,HIGH,1
+Rolling Stone,https://rollingstone.com,output/Rolling_Stone.png,2026-06-03 20:43:31,USA,HIGH,1
+Rome News-Tribune,https://northwestgeorgianews.com/rome/,output/Rome_News-Tribune.png,2026-06-03 20:43:44,,HIGH,1
+Roosevelt Institute,https://rooseveltinstitute.org,output/Roosevelt_Institute.png,2026-06-03 20:43:06,USA,HIGH,1
+Rossland News,https://rosslandnews.com,output/Rossland_News.png,2026-06-03 20:43:26,,HIGH,1
+SCOTUSblog,https://scotusblog.com,output/SCOTUSblog.png,2026-06-03 20:43:42,USA,HIGH,1
+Salmon Arm Observer,https://saobserver.net,output/Salmon_Arm_Observer.png,2026-06-03 20:44:11,,HIGH,1
+San Angelo Standard-Times,https://gosanangelo.com,output/San_Angelo_Standard-Times.png,2026-06-03 20:45:15,USA,HIGH,1
+San Antonio Report,https://sanantonioreport.org,output/San_Antonio_Report.png,2026-06-03 20:44:22,USA,HIGH,1
+San Francisco Examiner,https://sfexaminer.com,output/San_Francisco_Examiner.png,2026-06-03 20:46:17,,HIGH,1
+Santa Monica Observer,https://smobserved.com,output/Santa_Monica_Observer.png,2026-06-03 20:46:58,USA,LOW,0
+Sarasota Herald-Tribune,https://heraldtribune.com,output/Sarasota_Herald-Tribune.png,2026-06-03 20:47:49,USA,HIGH,1
+Sarnia Observer,https://theobserver.ca,output/Sarnia_Observer.png,2026-06-03 20:47:16,,HIGH,1
+Sarnia This Week,https://sarniathisweek.com,output/Sarnia_This_Week.png,2026-06-03 20:47:31,,HIGH,1
+Saskatoon StarPhoenix,https://thestarphoenix.com,output/Saskatoon_StarPhoenix.png,2026-06-03 20:48:13,,HIGH,1
+Sault Star,https://saultstar.com,output/Sault_Star.png,2026-06-03 20:48:00,,HIGH,1
+Sault This Week,https://saultthisweek.com,output/Sault_This_Week.png,2026-06-03 20:48:13,,HIGH,1
+Save Jersey,https://savejersey.com,output/Save_Jersey.png,2026-06-03 20:48:17,USA,HIGH,1
+Sayfie Review,https://sayfiereview.com,output/Sayfie_Review.png,2026-06-03 20:48:30,USA,HIGH,1
+Seaforth Huron Expositor,https://seaforthhuronexpositor.com,output/Seaforth_Huron_Expositor.png,2026-06-03 20:49:35,,HIGH,1
+Seeking Alpha,https://seekingalpha.com,output/Seeking_Alpha.png,2026-06-03 20:50:20,,HIGH,1
+Sentencing Project,https://sentencingproject.org,output/Sentencing_Project.png,2026-06-03 20:49:44,USA,HIGH,1
+Shoreline Beacon,https://shorelinebeacon.com,output/Shoreline_Beacon.png,2026-06-03 20:50:41,,HIGH,1
+Simcoe Reformer,https://simcoereformer.ca,output/Simcoe_Reformer.png,2026-06-03 20:50:57,,HIGH,1
+Similkameen Spotlight,https://similkameenspotlight.com,output/Similkameen_Spotlight.png,2026-06-03 20:50:37,,HIGH,1
+Slay News,https://slaynews.com,output/Slay_News.png,2026-06-03 20:52:10,USA,VERY LOW,0
+Sludge,https://readsludge.com,output/Sludge.png,2026-06-03 20:51:06,USA,HIGH,1
+SmartCitiesDive,https://smartcitiesdive.com,output/SmartCitiesDive.png,2026-06-03 20:51:38,USA,HIGH,1
+Snopes,https://snopes.com,output/Snopes.png,2026-06-03 20:51:51,USA,HIGH,1
+Somerset Daily American,https://dailyamerican.com,output/Somerset_Daily_American.png,2026-06-03 20:52:26,USA,HIGH,1
+South Carolina Daily Gazette,https://scdailygazette.com,output/South_Carolina_Daily_Gazette.png,2026-06-03 20:51:52,USA,HIGH,1
+South Whidbey Record,https://southwhidbeyrecord.com,output/South_Whidbey_Record.png,2026-06-03 20:52:48,USA,HIGH,1
+Southwest Orange Observer,https://orangeobserver.com/southwest-orange,output/Southwest_Orange_Observer.png,2026-06-03 20:52:18,USA,HIGH,1
+Spartanburg Herald-Journal,https://goupstate.com,output/Spartanburg_Herald-Journal.png,2026-06-03 20:53:36,USA,HIGH,1
+Spotlight Delaware,https://spotlightdelaware.org,output/Spotlight_Delaware.png,2026-06-03 20:52:25,USA,HIGH,1
+Sputnik,https://sputnikglobe.com,output/Sputnik.png,2026-06-03 20:53:00,,VERY LOW,0
+St. Albert Gazette,https://stalbertgazette.com,output/St._Albert_Gazette.png,2026-06-03 20:53:34,,HIGH,1
+St. George Spectrum,https://thespectrum.com,output/St._George_Spectrum.png,2026-06-03 20:54:09,USA,HIGH,1
+St. John's Telegram,https://saltwire.com/newfoundland-labrador/,output/St._John_s_Telegram.png,2026-06-03 20:53:59,,HIGH,1
+St. Thomas Times-Journal,https://stthomastimesjournal.com,output/St._Thomas_Times-Journal.png,2026-06-03 20:54:13,,HIGH,1
+StateScoop,https://statescoop.com,output/StateScoop.png,2026-06-03 20:54:31,USA,HIGH,1
+State of the Planet,https://news.climate.columbia.edu/,output/State_of_the_Planet.png,2026-06-03 20:53:59,USA,HIGH,1
+Stateline,https://stateline.org,output/Stateline.png,2026-06-03 20:54:15,USA,HIGH,1
+Stettler Independent,https://stettlerindependent.com,output/Stettler_Independent.png,2026-06-03 20:54:23,,HIGH,1
+Stratford Beacon-Herald,https://stratfordbeaconherald.com,output/Stratford_Beacon-Herald.png,2026-06-03 20:55:05,,HIGH,1
+Strathroy Age Dispatch,https://strathroyagedispatch.com,output/Strathroy_Age_Dispatch.png,2026-06-03 20:55:14,,HIGH,1
+Sudbury Star,https://thesudburystar.com,output/Sudbury_Star.png,2026-06-03 20:55:13,,HIGH,1
+Summerland Review,https://summerlandreview.com,output/Summerland_Review.png,2026-06-03 20:54:46,,HIGH,1
+SupplyChainDive,https://supplychaindive.com,output/SupplyChainDive.png,2026-06-03 20:55:36,USA,HIGH,1
+Sylvan Lake News,https://sylvanlakenews.com,output/Sylvan_Lake_News.png,2026-06-03 20:55:37,,HIGH,1
+Tax Foundation,https://taxfoundation.org,output/Tax_Foundation.png,2026-06-03 20:56:00,USA,HIGH,1
+Tharawat Magazine,https://tharawat-magazine.com,output/Tharawat_Magazine.png,2026-06-03 20:56:52,,HIGH,1
+TheJournal.ie,https://thejournal.ie,output/TheJournal.ie.png,2026-06-03 21:05:22,,HIGH,1
+TheRighting,https://therighting.com,output/TheRighting.png,2026-06-03 21:05:31,USA,HIGH,1
+The Australian Financial Review,https://afr.com,output/The_Australian_Financial_Review.png,2026-06-03 20:58:16,,HIGH,1
+The Bureau of Investigative Journalism,https://thebureauinvestigates.com,output/The_Bureau_of_Investigative_Journalism.png,2026-06-03 20:57:34,,HIGH,1
+The Canadian Press,https://thecanadianpress.com,output/The_Canadian_Press.png,2026-06-03 20:57:09,,HIGH,1
+The Citizen,https://www.citizen.co.za/,output/The_Citizen.png,2026-06-03 20:57:37,,HIGH,1
+The Colorado Herald,https://thecoloradoherald.com,output/The_Colorado_Herald.png,2026-06-03 20:58:07,,LOW,0
+The Colorado Sun,https://coloradosun.com,output/The_Colorado_Sun.png,2026-06-03 20:58:01,USA,HIGH,1
+The Dispatch,https://thedispatch.com,output/The_Dispatch.png,2026-06-03 20:58:45,USA,HIGH,1
+The Federation for American Immigration Reform,https://fairus.org,output/The_Federation_for_American_Immigration_Reform.png,2026-06-03 20:58:29,USA,LOW,0
+The Free Press,https://www.thefp.com/,output/The_Free_Press.png,2026-06-03 20:58:53,USA,HIGH,1
+The Jerusalem Report,https://jpost.com/jerusalem-report,output/The_Jerusalem_Report.png,2026-06-03 20:59:40,,HIGH,1
+The Jewish Press,https://jewishpress.com,output/The_Jewish_Press.png,2026-06-03 21:00:30,USA,HIGH,1
+The Kentucky Standard,https://pmg-ky2.com/kystandard/,output/The_Kentucky_Standard.png,2026-06-03 21:00:39,USA,HIGH,1
+The Logic of Science,https://thelogicofscience.com,output/The_Logic_of_Science.png,2026-06-03 20:59:49,USA,HIGH,1
+The Most Important News,https://themostimportantnews.com,output/The_Most_Important_News.png,2026-06-03 21:02:13,USA,LOW,0
+The Palm Beach Post,https://palmbeachpost.com,output/The_Palm_Beach_Post.png,2026-06-03 21:02:01,USA,HIGH,1
+The Patriotic Times,https://thepatriotictimes.com,output/The_Patriotic_Times.png,2026-06-03 21:02:00,USA,LOW,0
+The Perspective,https://theperspective.com,output/The_Perspective.png,2026-06-03 21:01:43,,HIGH,1
+The Phaser,https://thephaser.com,output/The_Phaser.png,2026-06-03 21:02:01,USA,VERY LOW,0
+The Post-Journal,https://www.post-journal.com/,output/The_Post-Journal.png,2026-06-03 21:02:17,USA,HIGH,1
+The Prepared,https://theprepared.com,output/The_Prepared.png,2026-06-03 21:02:42,USA,HIGH,1
+The Recount,https://therecount.com,output/The_Recount.png,2026-06-03 21:02:25,,HIGH,1
+The Solutions Project,https://thesolutionsproject.org,output/The_Solutions_Project.png,2026-06-03 21:03:25,USA,HIGH,1
+The South African,https://thesouthafrican.com,output/The_South_African.png,2026-06-03 21:03:29,,HIGH,1
+The Spinoff,https://thespinoff.co.nz,output/The_Spinoff.png,2026-06-03 21:03:50,,HIGH,1
+The Thinking Conservative,https://thethinkingconservative.com,output/The_Thinking_Conservative.png,2026-06-03 21:03:36,USA,LOW,0
+The Varsity,https://thevarsity.ca,output/The_Varsity.png,2026-06-03 21:03:48,,HIGH,1
+The Vindicator,https://vindy.com,output/The_Vindicator.png,2026-06-03 21:04:25,USA,HIGH,1
+The Voice,https://thevoice.us,output/The_Voice.png,2026-06-03 21:04:40,,HIGH,1
+ThinkPol,https://thinkpol.ca,output/ThinkPol.png,2026-06-03 21:06:08,,HIGH,1
+ThoughtCo,https://thoughtco.com,output/ThoughtCo.png,2026-06-03 21:06:04,USA,VERY HIGH,1
+Timmins Press,https://timminspress.com,output/Timmins_Press.png,2026-06-03 21:06:38,,HIGH,1
+Timmins Times,https://timminstimes.com,output/Timmins_Times.png,2026-06-03 21:06:47,,HIGH,1
+TorrentFreak,https://torrentfreak.com,output/TorrentFreak.png,2026-06-03 21:06:20,,HIGH,1
+Totality of Evidence,https://totalityofevidence.com,output/Totality_of_Evidence.png,2026-06-03 21:06:47,,VERY LOW,0
+Trading Economics,https://tradingeconomics.com,output/Trading_Economics.png,2026-06-03 21:06:38,,HIGH,1
+Trail Times,https://trailtimes.ca,output/Trail_Times.png,2026-06-03 21:07:00,,HIGH,1
+Trending Politics,https://trendingpolitics.com,output/Trending_Politics.png,2026-06-03 21:07:25,USA,LOW,0
+Tri-City News,https://tricitynews.com,output/Tri-City_News.png,2026-06-03 21:07:44,,HIGH,1
+Tri-County Independent,https://tricountyindependent.com,output/Tri-County_Independent.png,2026-06-03 21:08:25,USA,HIGH,1
+TruckingDive,https://truckingdive.com,output/TruckingDive.png,2026-06-03 21:08:06,USA,HIGH,1
+Truth for Health Foundation,https://truthforhealth.org,output/Truth_for_Health_Foundation.png,2026-06-03 21:08:53,USA,VERY LOW,0
+TruthorFiction.com,https://truthorfiction.com,output/TruthorFiction.com.png,2026-06-03 21:08:34,USA,VERY HIGH,1
+Tsarizm,https://tsarizm.com,output/Tsarizm.png,2026-06-03 21:09:17,USA,LOW,0
+Tsionizm,https://tsionizm.com,output/Tsionizm.png,2026-06-03 21:09:33,USA,LOW,0
+Turley Talks,https://turleytalks.com,output/Turley_Talks.png,2026-06-03 21:09:15,USA,LOW,0
+USHistory.org,https://ushistory.org,output/USHistory.org.png,2026-06-03 21:09:31,USA,HIGH,1
+USNI News,https://news.usni.org,output/USNI_News.png,2026-06-03 21:09:53,USA,HIGH,1
+US Backlash,https://usbacklash.org,output/US_Backlash.png,2026-06-03 21:09:48,USA,VERY LOW,0
+United Federation of Teachers,https://uft.org,output/United_Federation_of_Teachers.png,2026-06-03 21:10:07,USA,HIGH,1
+United States Institute of Peace,https://www.usip.org,output/United_States_Institute_of_Peace.png,2026-06-03 21:10:19,,HIGH,1
+Utah News Dispatch,https://utahnewsdispatch.com,output/Utah_News_Dispatch.png,2026-06-03 21:10:07,USA,HIGH,1
+Utica Observer-Dispatch,https://uticaod.com,output/Utica_Observer-Dispatch.png,2026-06-03 21:10:59,USA,HIGH,1
+UtilityDive,https://utilitydive.com,output/UtilityDive.png,2026-06-03 21:10:46,USA,HIGH,1
+VaccineDamage.News,https://vaccinedamage.news,output/VaccineDamage.News.png,2026-06-03 21:11:26,USA,VERY LOW,0
+VaccineInjuryNews,https://vaccineinjurynews.com,output/VaccineInjuryNews.png,2026-06-03 21:10:45,USA,VERY LOW,0
+Vaccine Impact,https://vaccineimpact.com,output/Vaccine_Impact.png,2026-06-03 21:10:32,USA,VERY LOW,0
+Vaccines and Christianity,https://vaccinesandchristianity.org,output/Vaccines_and_Christianity.png,2026-06-03 21:11:10,USA,VERY LOW,0
+Vaxxter,https://vaxxter.com,output/Vaxxter.png,2026-06-03 21:11:16,USA,LOW,0
+Vegan Society,https://vegansociety.com,output/Vegan_Society.png,2026-06-03 21:11:25,,HIGH,1
+Vera Files,https://verafiles.org,output/Vera_Files.png,2026-06-03 21:11:40,,HIGH,1
+Verify Fact Check,https://verifythis.com,output/Verify_Fact_Check.png,2026-06-03 21:11:34,USA,HIGH,1
+Victoria Advocate,https://victoriaadvocate.com,output/Victoria_Advocate.png,2026-06-03 21:11:51,USA,HIGH,1
+Vigilante.TV,https://vigilante.TV,output/Vigilante.TV.png,2026-06-03 21:12:05,,VERY LOW,0
+Visual Capitalist,https://visualcapitalist.com,output/Visual_Capitalist.png,2026-06-03 21:12:55,,HIGH,1
+Voice of America,https://voanews.com,output/Voice_of_America.png,2026-06-03 21:12:15,USA,HIGH,1
+WBEZ - NPR - Chicago,https://wbez.org,output/WBEZ_-_NPR_-_Chicago.png,2026-06-03 21:13:27,USA,HIGH,1
+WBND - South Bend News,https://abc57.com,output/WBND_-_South_Bend_News.png,2026-06-03 21:13:02,USA,HIGH,1
+WBST - NPR - Muncie,https://indianapublicradio.org,output/WBST_-_NPR_-_Muncie.png,2026-06-03 21:13:49,USA,HIGH,1
+WDJT - CBS - Milwaukee,https://cbs58.com,output/WDJT_-_CBS_-_Milwaukee.png,2026-06-03 21:13:32,USA,HIGH,1
+WFSU - NPR - Tallahassee,https://wfsu.org,output/WFSU_-_NPR_-_Tallahassee.png,2026-06-03 21:14:29,USA,HIGH,1
+WFYI - NPR - Indianapolis,https://wfyi.org,output/WFYI_-_NPR_-_Indianapolis.png,2026-06-03 21:14:04,USA,HIGH,1
+WGPB - Georgia Public Broadcasting,https://gpb.org,output/WGPB_-_Georgia_Public_Broadcasting.png,2026-06-03 21:14:45,USA,HIGH,1
+WJBC - 1230AM - Bloomington,https://wjbc.com,output/WJBC_-_1230AM_-_Bloomington.png,2026-06-03 21:14:23,USA,HIGH,1
+WJCT - NPR - Jacksonville,https://news.wjct.org,output/WJCT_-_NPR_-_Jacksonville.png,2026-06-03 21:14:42,USA,HIGH,1
+WLPR - NPR - Lowell,https://lakeshorepublicmedia.org,output/WLPR_-_NPR_-_Lowell.png,2026-06-03 21:14:42,USA,HIGH,1
+WLT Report,https://wltreport.com,output/WLT_Report.png,2026-06-03 21:15:33,USA,LOW,0
+WMNF - NPR - Tampa,https://wmnf.org,output/WMNF_-_NPR_-_Tampa.png,2026-06-03 21:15:41,USA,HIGH,1
+WNPR - Connecticut Public Radio - Hartford,https://ctpublic.org,output/WNPR_-_Connecticut_Public_Radio_-_Hartford.png,2026-06-03 21:15:04,USA,HIGH,1
+WOFL Fox 35 Orlando,https://fox35orlando.com,output/WOFL_Fox_35_Orlando.png,2026-06-03 21:16:17,USA,HIGH,1
+WPEC - CBS12.com,https://cbs12.com,output/WPEC_-_CBS12.com.png,2026-06-03 21:16:17,USA,HIGH,1
+WPNM - Leipsic News,https://hometownstations.com,output/WPNM_-_Leipsic_News.png,2026-06-03 21:16:46,USA,HIGH,1
+WPSD - Paducah News,https://wpsdlocal6.com,output/WPSD_-_Paducah_News.png,2026-06-03 21:16:20,USA,HIGH,1
+WSIU - NPR - Carbondale,https://wsiu.org,output/WSIU_-_NPR_-_Carbondale.png,2026-06-03 21:16:58,USA,HIGH,1
+WTXF-TV Fox 29,https://fox29.com,output/WTXF-TV_Fox_29.png,2026-06-03 21:18:38,USA,HIGH,1
+WUCR - NPR - Orlando,https://wucf.org,output/WUCR_-_NPR_-_Orlando.png,2026-06-03 21:18:07,USA,HIGH,1
+WUSF - NPR - Tampa,https://wusf.org,output/WUSF_-_NPR_-_Tampa.png,2026-06-03 21:18:02,USA,HIGH,1
+WalesOnline,https://walesonline.co.uk,output/WalesOnline.png,2026-06-03 21:18:34,,HIGH,1
+Wallaceburg Courier Press,https://wallaceburgcourierpress.com,output/Wallaceburg_Courier_Press.png,2026-06-03 21:18:53,,HIGH,1
+Walton Family Foundation,https://waltonfamilyfoundation.org,output/Walton_Family_Foundation.png,2026-06-03 21:18:26,USA,HIGH,1
+Washington Monthly,https://washingtonmonthly.com,output/Washington_Monthly.png,2026-06-03 21:18:33,USA,HIGH,1
+Washington Stand,https://washingtonstand.com,output/Washington_Stand.png,2026-06-03 21:18:55,USA,LOW,0
+Washington State Standard,https://washingtonstatestandard.com,output/Washington_State_Standard.png,2026-06-03 21:18:47,USA,HIGH,1
+Watertown Public Opinion,https://thepublicopinion.com,output/Watertown_Public_Opinion.png,2026-06-03 21:19:52,USA,HIGH,1
+Waynesboro Record-Herald,https://therecordherald.com,output/Waynesboro_Record-Herald.png,2026-06-03 21:20:16,USA,HIGH,1
+We Hunted the Mammoth,https://wehuntedthemammoth.com,output/We_Hunted_the_Mammoth.png,2026-06-03 21:19:19,USA,HIGH,1
+We The People Daily,https://wethepeopledaily.com,output/We_The_People_Daily.png,2026-06-03 21:20:24,USA,LOW,0
+Weatherford Democrat,https://weatherforddemocrat.com,output/Weatherford_Democrat.png,2026-06-03 21:21:24,USA,HIGH,1
+West Elgin Chronicle,https://thechronicle-online.com,output/West_Elgin_Chronicle.png,2026-06-03 21:20:37,,HIGH,1
+West K News,https://westknews.com,output/West_K_News.png,2026-06-03 21:20:35,,HIGH,1
+West Virginia Public Broadcasting,https://wvpublic.org,output/West_Virginia_Public_Broadcasting.png,2026-06-03 21:21:03,USA,HIGH,1
+West Virginia Watch,https://westvirginiawatch.com/,output/West_Virginia_Watch.png,2026-06-03 21:20:52,USA,HIGH,1
+Wetaskiwin Pipestone Flyer,https://pipestoneflyer.ca,output/Wetaskiwin_Pipestone_Flyer.png,2026-06-03 21:21:07,,HIGH,1
+Whidbey News-Times,https://whidbeynewstimes.com,output/Whidbey_News-Times.png,2026-06-03 21:21:46,USA,HIGH,1
+Whitefish Pilot,https://whitefishpilot.com,output/Whitefish_Pilot.png,2026-06-03 21:21:45,USA,HIGH,1
+Wiarton Echo,https://wiartonecho.com,output/Wiarton_Echo.png,2026-06-03 21:22:08,,HIGH,1
+Wichita Times Record-News,https://timesrecordnews.com,output/Wichita_Times_Record-News.png,2026-06-03 21:23:00,USA,HIGH,1
+Wilkes Journal-Patriot,https://journalpatriot.com,output/Wilkes_Journal-Patriot.png,2026-06-03 21:22:59,USA,HIGH,1
+Willoughby News-Herald,https://news-herald.com,output/Willoughby_News-Herald.png,2026-06-03 21:22:54,USA,HIGH,1
+Wiltshire Gazette & Herald,https://gazetteandherald.co.uk,output/Wiltshire_Gazette_Herald.png,2026-06-03 21:23:09,,HIGH,1
+Wolf Street,https://wolfstreet.com,output/Wolf_Street.png,2026-06-03 21:23:12,USA,HIGH,1
+Woodstock Sentinel-Review,https://woodstocksentinelreview.com,output/Woodstock_Sentinel-Review.png,2026-06-03 21:23:44,,HIGH,1
+WorkScoop,https://workscoop.com,output/WorkScoop.png,2026-06-03 21:23:17,USA,HIGH,1
+World Wide Fund for Nature,https://wwf.panda.org,output/World_Wide_Fund_for_Nature.png,2026-06-03 21:23:26,,HIGH,1
+Wyofile,https://wyofile.com,output/Wyofile.png,2026-06-03 21:23:22,USA,HIGH,1
+XYZ.net.au,https://xyz.net.au,output/XYZ.net.au.png,2026-06-03 21:24:26,,LOW,0
+X Strategies,https://xstrategies.com,output/X_Strategies.png,2026-06-03 21:24:08,USA,LOW,0
+Yankee Institute for Public Policy,https://yankeeinstitute.org,output/Yankee_Institute_for_Public_Policy.png,2026-06-03 21:24:12,USA,HIGH,1
+Yellow Hammer News,https://yellowhammernews.com,output/Yellow_Hammer_News.png,2026-06-03 21:24:47,USA,HIGH,1
+York Daily Record,https://ydr.com,output/York_Daily_Record.png,2026-06-03 21:26:12,USA,HIGH,1
+York Dispatch,https://yorkdispatch.com,output/York_Dispatch.png,2026-06-03 21:26:03,USA,HIGH,1
+Yukon News,https://yukon-news.com,output/Yukon_News.png,2026-06-03 21:25:28,,HIGH,1
+ZDNet,https://zdnet.com,output/ZDNet.png,2026-06-03 21:26:39,USA,HIGH,1
+Zanesville Times-Recorder,https://zanesvilletimesrecorder.com,output/Zanesville_Times-Recorder.png,2026-06-03 21:27:15,USA,HIGH,1
+Zebra Fact Check,https://zebrafactcheck.com,output/Zebra_Fact_Check.png,2026-06-03 21:26:19,USA,HIGH,1
+Zerohedge,https://zerohedge.com,output/Zerohedge.png,2026-06-03 21:27:11,,LOW,0
+azfamily.com,https://azfamily.com,output/azfamily.com.png,2026-06-03 21:27:50,USA,HIGH,1
+Sweetwater Advocate & Democrat,https://advocateanddemocrat.com,output/Sweetwater_Advocate_Democrat.png,2026-06-03 23:09:49,USA,HIGH,1
+KTUU-TV,https://alaskasnewssource.com,output/KTUU-TV.png,2026-06-03 23:42:23,USA,HIGH,1
+Aspen Institute,https://aspeninstitute.org,output/Aspen_Institute.png,2026-06-03 23:09:41,USA,HIGH,1
+The Athens News,https://athensnews.com,output/The_Athens_News.png,2026-06-03 23:10:32,USA,HIGH,1
+Americans United for Separation of Church and State,https://au.org,output/Americans_United_for_Separation_of_Church_and_State.png,2026-06-03 23:40:50,USA,HIGH,1
+Banbury Guardian,https://banburyguardian.co.uk,output/Banbury_Guardian.png,2026-06-03 23:41:54,,HIGH,1
+Bismarck Tribune,https://bismarcktribune.com,output/Bismarck_Tribune.png,2026-06-03 23:42:15,USA,HIGH,1
+Borgen Magazine,https://borgenmagazine.com,output/Borgen_Magazine.png,2026-06-03 23:48:13,USA,HIGH,1
+Bozeman Daily Chronicle,https://bozemandailychronicle.com,output/Bozeman_Daily_Chronicle.png,2026-06-03 23:12:29,USA,HIGH,1
+Bucks Herald,https://bucksherald.co.uk,output/Bucks_Herald.png,2026-06-03 23:44:09,,HIGH,1
+Burnley Express,https://burnleyexpress.net,output/Burnley_Express.png,2026-06-03 23:44:08,,HIGH,1
+Cleburne Times Review,https://cleburnetimesreview.com,output/Cleburne_Times_Review.png,2026-06-03 23:14:03,USA,HIGH,1
+The Watson Center,https://cnu.edu/wasoncenter/,output/The_Watson_Center.png,2026-06-03 23:44:40,USA,HIGH,1
+Daily Jeffersonian,https://daily-jeff.com,output/Daily_Jeffersonian.png,2026-06-03 23:15:19,USA,HIGH,1
+Elizabeth City Daily Advance,https://dailyadvance.com,output/Elizabeth_City_Daily_Advance.png,2026-06-03 23:17:00,USA,HIGH,1
+Daily Press,https://dailypress.com,output/Daily_Press.png,2026-06-03 23:46:25,USA,HIGH,1
+Daily Presser,https://dailypresser.com,output/Daily_Presser.png,2026-06-03 23:45:52,USA,LOW,0
+Deseret News,https://deseret.com,output/Deseret_News.png,2026-06-03 23:47:46,USA,HIGH,1
+Discoveries.News,https://discoveries.news,output/Discoveries.News.png,2026-06-03 23:46:25,USA,VERY LOW,0
+Easton Gazette,https://eastongazette.com,output/Easton_Gazette.png,2026-06-03 23:48:03,USA,LOW,0
+Elko Daily Free Press,https://elkodaily.com,output/Elko_Daily_Free_Press.png,2026-06-03 23:48:40,USA,HIGH,1
+Euronews,https://euronews.com,output/Euronews.png,2026-06-03 23:49:03,,HIGH,1
+Evil.News,https://evil.news,output/Evil.News.png,2026-06-03 23:48:41,USA,LOW,0
+Exposed by CMD,https://exposedbycmd.org,output/Exposed_by_CMD.png,2026-06-03 23:48:47,USA,HIGH,1
+Extinction.News,https://extinction.news,output/Extinction.News.png,2026-06-03 23:48:53,USA,VERY LOW,0
+FactCheck.News,https://factcheck.news,output/FactCheck.News.png,2026-06-03 23:48:56,USA,VERY LOW,0
+Gear.News,https://gear.news,output/Gear.News.png,2026-06-03 23:49:01,USA,VERY LOW,0
+George Record,https://georgiarecord.com,output/George_Record.png,2026-06-03 23:49:33,USA,LOW,0
+Gingrich 360,https://gingrich360.com,output/Gingrich_360.png,2026-06-03 23:49:17,USA,LOW,0
+Green America,https://greenamerica.org,output/Green_America.png,2026-06-03 23:50:09,USA,HIGH,1
+Greeneville Sun,https://greenevillesun.com,output/Greeneville_Sun.png,2026-06-03 23:50:56,USA,HIGH,1
+Hampshire Chronicle,https://hampshirechronicle.co.uk,output/Hampshire_Chronicle.png,2026-06-03 23:51:24,,HIGH,1
+Harrow Times,https://harrowtimes.co.uk,output/Harrow_Times.png,2026-06-03 23:51:19,,HIGH,1
+HealthRangerInvenstions.com,https://healthrangerinventions.com,output/HealthRangerInvenstions.com.png,2026-06-03 23:50:45,USA,VERY LOW,0
+Helensburgh Advertiser,https://helensburghadvertiser.co.uk,output/Helensburgh_Advertiser.png,2026-06-03 23:53:19,,HIGH,1
+Herbs.News,https://herbs.news,output/Herbs.News.png,2026-06-03 23:51:08,USA,VERY LOW,0
+Hereford Times,https://herefordtimes.com,output/Hereford_Times.png,2026-06-03 23:52:52,,HIGH,1
+Hexham Courant,https://hexham-courant.co.uk,output/Hexham_Courant.png,2026-06-03 23:53:41,,HIGH,1
+Hope Not Hate,https://hopenothate.org.uk,output/Hope_Not_Hate.png,2026-06-03 23:17:29,,HIGH,1
+HotelDive,https://hoteldive.com,output/HotelDive.png,2026-06-03 23:53:24,USA,HIGH,1
+Thomasville Times,https://hpenews.com/thomasville_times/,output/Thomasville_Times.png,2026-06-03 23:19:06,USA,HIGH,1
+Ilkley Gazette,https://ilkleygazette.co.uk,output/Ilkley_Gazette.png,2026-06-03 23:54:32,,HIGH,1
+Santa Barbara Independent,https://independent.com,output/Santa_Barbara_Independent.png,2026-06-03 23:53:53,USA,HIGH,1
+The Irish News,https://irishnews.com,output/The_Irish_News.png,2026-06-03 23:54:02,,HIGH,1
+Israel Unwired,https://israelunwired.com,output/Israel_Unwired.png,2026-06-03 23:20:48,USA,LOW,0
+Lancaster Eagle-Gazette,https://lancastereaglegazette.com,output/Lancaster_Eagle-Gazette.png,2026-06-03 23:21:20,USA,HIGH,1
+Mississippi Today,https://mississippitoday.org,output/Mississippi_Today.png,2026-06-03 23:22:06,USA,HIGH,1
+Loudon County News-Herald,https://news-herald.net,output/Loudon_County_News-Herald.png,2026-06-03 23:23:10,USA,HIGH,1
+Iroquois Times-Republic,https://newsbug.info/iroquois_countys_times-republic/,output/Iroquois_Times-Republic.png,2026-06-03 23:22:37,,HIGH,1
+Springfield Sun,https://pmg-ky2.com/springfield/,output/Springfield_Sun.png,2026-06-03 23:23:57,USA,HIGH,1
+Port Clinton News-Herald,https://portclintonnewsherald.com,output/Port_Clinton_News-Herald.png,2026-06-03 23:24:43,USA,HIGH,1
+Rocky Mount Telegram,https://rockymounttelegram.com,output/Rocky_Mount_Telegram.png,2026-06-03 23:26:25,USA,HIGH,1
+San Marcos Daily Record,https://sanmarcosrecord.com,output/San_Marcos_Daily_Record.png,2026-06-03 23:26:34,,HIGH,1
+Rogersville Review,https://therogersvillereview.com,output/Rogersville_Review.png,2026-06-03 23:29:17,USA,HIGH,1
+Transylvania Times,https://transylvaniatimes.com,output/Transylvania_Times.png,2026-06-03 23:29:36,USA,HIGH,1
+Vinton County Courier,https://vintonjacksoncourier.com,output/Vinton_County_Courier.png,2026-06-03 23:29:36,USA,HIGH,1
+Irvine Times,https://irvinetimes.com,output/irvinetimes.com.png,2026-06-03 23:55:33,,HIGH,1
+Huntsville Item,https://itemonline.com,output/itemonline.com.png,2026-06-03 23:55:20,USA,HIGH,1
+Keighley News,https://keighleynews.co.uk,output/keighleynews.co.uk.png,2026-06-03 23:56:01,,HIGH,1
+Largs & Millport News,https://largsandmillportnews.com,output/largsandmillportnews.com.png,2026-06-03 23:56:40,,HIGH,1
+Lebanon Daily News,https://ldnews.com,output/ldnews.com.png,2026-06-03 23:56:56,USA,HIGH,1
+Regina Leader-Post,https://leaderpost.com,output/leaderpost.com.png,2026-06-03 23:57:21,,HIGH,1
+Leigh Journal,https://leighjournal.co.uk,output/leighjournal.co.uk.png,2026-06-03 23:58:05,,HIGH,1
+Ludlow Advertiser,https://ludlowadvertiser.co.uk,output/ludlowadvertiser.co.uk.png,2026-06-03 23:58:32,,HIGH,1
+The MacArthur Foundation,https://macfound.org,output/macfound.org.png,2026-06-03 23:58:28,USA,HIGH,1
+MedicalTyranny,https://medicaltyranny.com,output/medicaltyranny.com.png,2026-06-03 23:57:36,USA,VERY LOW,0
+San Jose Mercury News,https://mercurynews.com,output/mercurynews.com.png,2026-06-04 00:00:11,USA,HIGH,1
+Miami Independent,https://miamiindependent.com,output/miamiindependent.com.png,2026-06-03 23:59:39,USA,LOW,0
+National File,https://nationalfile.com,output/nationalfile.com.png,2026-06-03 23:59:13,USA,LOW,0
+Newark Advocate,https://newarkadvocate.com,output/newarkadvocate.com.png,2026-06-04 00:01:36,USA,HIGH,1
+Newport Daily News,https://newportri.com,output/newportri.com.png,2026-06-04 00:01:30,USA,HIGH,1
+Yahoo News,https://news.yahoo.com,output/news.yahoo.com.png,2026-06-04 00:02:16,USA,HIGH,1
+News Addicts,https://newsaddicts.com,output/newsaddicts.com.png,2026-06-04 00:02:28,USA,LOW,0
+NoTricksZone,https://notrickszone.com,output/notrickszone.com.png,2026-06-04 00:03:53,,LOW,0
+Pandemic News,https://pandemic.news,output/pandemic.news.png,2026-06-04 00:01:52,USA,VERY LOW,0
+Public Religion Research Institute,https://prri.org,output/prri.org.png,2026-06-04 00:02:56,USA,VERY HIGH,1
+Religion News Service,https://religionnews.com,output/religionnews.com.png,2026-06-04 00:04:53,USA,HIGH,1
+Roll Call,https://rollcall.com,output/rollcall.com.png,2026-06-04 00:05:56,USA,VERY HIGH,1
+Ruth Institute,https://ruthinstitute.org,output/ruthinstitute.org.png,2026-06-04 00:05:14,USA,LOW,0
+Savannah Morning News,https://savannahnow.com,output/savannahnow.com.png,2026-06-04 00:08:34,USA,HIGH,1
+ScienceClowns,https://scienceclowns.com,output/scienceclowns.com.png,2026-06-04 00:07:35,USA,VERY LOW,0
+Fitchburg Sentinel & Enterprise,https://sentinelandenterprise.com,output/sentinelandenterprise.com.png,2026-06-04 00:08:58,USA,HIGH,1
+Dekalb Daily Chronicle,https://shawlocal.com/daily-chronicle/,output/shawlocal.com_daily-chronicle.png,2026-06-04 00:09:23,USA,HIGH,1
+Salt Lake Tribune,https://sltrib.com,output/sltrib.com.png,2026-06-04 00:09:47,USA,HIGH,1
+Austin American-Statesman,https://statesman.com,output/statesman.com.png,2026-06-04 00:10:35,USA,HIGH,1
+Survival.News,https://survival.news,output/survival.news.png,2026-06-04 00:09:12,USA,VERY LOW,0
+Survive The News,https://survivethenews.com,output/survivethenews.com.png,2026-06-04 00:10:08,USA,LOW,0
+TechGiants.News,https://techgiants.news,output/techgiants.news.png,2026-06-04 00:09:39,USA,VERY LOW,0
+Technocrats.News,https://technocrats.news,output/technocrats.news.png,2026-06-04 00:09:52,USA,VERY LOW,0
+Tellico Village Connection,https://tellicovillageconnection.com,output/tellicovillageconnection.com.png,2026-06-04 00:11:45,USA,HIGH,1
+The Bearded Patriot,https://thebeardedpatriot.com,output/thebeardedpatriot.com.png,2026-06-04 00:10:27,USA,LOW,0
+The Gateway Pundit,https://thegatewaypundit.com,output/thegatewaypundit.com.png,2026-06-04 00:10:53,USA,VERY LOW,0
+The Last American Vagabond,https://thelastamericanvagabond.com,output/thelastamericanvagabond.com.png,2026-06-04 00:11:18,USA,LOW,0
+Them.us,https://them.us,output/them.us.png,2026-06-04 00:12:17,USA,HIGH,1
+The Province,https://theprovince.com,output/theprovince.com.png,2026-06-04 00:12:05,,HIGH,1
+TheSpectator.info,https://thespectator.info,output/thespectator.info.png,2026-06-04 00:11:59,USA,VERY LOW,0
+Trentonian,https://trentonian.ca,output/trentonian.ca.png,2026-06-04 00:12:42,,HIGH,1
+The Wellness Company,https://twc.health,output/twc.health.png,2026-06-04 00:13:38,USA,LOW,0
+Tyranny.News,https://tyranny.news,output/tyranny.news.png,2026-06-04 00:12:22,USA,VERY LOW,0
+Red River Valley News,https://valleynewslive.com,output/valleynewslive.com.png,2026-06-04 00:13:54,USA,HIGH,1
+Variety Magazine,https://variety.com,output/variety.com.png,2026-06-04 00:13:58,USA,HIGH,1
+The Washington Spectator,https://washingtonspectator.org,output/washingtonspectator.org.png,2026-06-04 00:13:56,USA,HIGH,1
+Watauga Democrat,https://wataugademocrat.com,output/wataugademocrat.com.png,2026-06-04 00:16:01,USA,HIGH,1
+Western Mass News,https://westernmassnews.com,output/westernmassnews.com.png,2026-06-04 00:16:05,USA,HIGH,1
+Denver Westword,https://westword.com,output/westword.com.png,2026-06-04 00:15:55,USA,HIGH,1
+WSAZ News Channel,https://wsaz.com,output/wsaz.com.png,2026-06-04 00:17:48,USA,HIGH,1
+WSVN,https://wsvn.com,output/wsvn.com.png,2026-06-04 00:16:48,USA,HIGH,1
+Yadkin Ripple,https://yadkinripple.com,output/yadkinripple.com.png,2026-06-03 23:32:06,USA,HIGH,1
+Yorkshire Post,https://yorkshirepost.co.uk,output/yorkshirepost.co.uk.png,2026-06-04 00:18:14,,HIGH,1
