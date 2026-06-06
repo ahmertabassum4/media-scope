@@ -1,0 +1,201 @@
+media_name,url,image_path,timestamp,country,factuality,trustworthiness
+100 Mile Free Press,https://100milefreepress.net,sub-samples/100_Mile_Free_Press.png,2026-06-05 01:48:52,,HIGH,1
+247Sports,https://247sports.com,sub-samples/247Sports.png,2026-06-05 01:48:52,,HIGH,1
+ABC News/Washington Post Polling,https://langerresearch.com,sub-samples/ABC_News_Washington_Post_Polling.png,2026-06-05 01:48:52,,VERY HIGH,1
+Adams.News,https://adams.news,sub-samples/Adams.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Addiction.News,https://addiction.news,sub-samples/Addiction.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Air Force Times,https://airforcetimes.com,sub-samples/Air_Force_Times.png,2026-06-05 01:48:52,USA,HIGH,1
+Alan Guttmacher Institute,https://guttmacher.org,sub-samples/Alan_Guttmacher_Institute.png,2026-06-05 01:48:52,USA,HIGH,1
+Albuquerque Journal,https://abqjournal.com,sub-samples/Albuquerque_Journal.png,2026-06-05 01:48:52,USA,HIGH,1
+Alliance Defending Freedom,https://adflegal.org,sub-samples/Alliance_Defending_Freedom.png,2026-06-05 01:48:52,USA,LOW,0
+Alpha News,https://alphanews.org,sub-samples/Alpha_News.png,2026-06-05 01:48:52,USA,LOW,0
+Aluminum.News,https://aluminum.news,sub-samples/Aluminum.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+America First Legal,https://aflegal.org,sub-samples/America_First_Legal.png,2026-06-05 01:48:52,USA,LOW,0
+American Free Press,https://americanfreepress.net,sub-samples/American_Free_Press.png,2026-06-05 01:48:52,USA,LOW,0
+American Heritage,https://americanheritage.com,sub-samples/American_Heritage.png,2026-06-05 01:48:52,USA,HIGH,1
+American Intelligence Media,https://aim4truth.org,sub-samples/American_Intelligence_Media.png,2026-06-05 01:48:52,USA,VERY LOW,0
+"American Society for the Defense of Tradition, Family, and Property",https://tfp.org,sub-samples/American_Society_for_the_Defense_of_Tradition_Family_and_Property.png,2026-06-05 01:48:52,USA,LOW,0
+American Thinker,https://americanthinker.com,sub-samples/American_Thinker.png,2026-06-05 01:48:52,USA,LOW,0
+Americans for Truth,https://americansfortruth.com,sub-samples/Americans_for_Truth.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Answers in Genesis,https://answersingenesis.org,sub-samples/Answers_in_Genesis.png,2026-06-05 01:48:52,USA,LOW,0
+Antioxidants.News,https://antioxidants.news,sub-samples/Antioxidants.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Arizona Capitol Times,https://azcapitoltimes.com,sub-samples/Arizona_Capitol_Times.png,2026-06-05 01:48:52,USA,HIGH,1
+Arizona Republic,https://azcentral.com,sub-samples/Arizona_Republic.png,2026-06-05 01:48:52,USA,HIGH,1
+Armed Forces Press,https://armedforces.press,sub-samples/Armed_Forces_Press.png,2026-06-05 01:48:52,USA,LOW,0
+Austin American-Statesman,https://statesman.com,sub-samples/Austin_American-Statesman.png,2026-06-05 01:48:52,USA,HIGH,1
+Australian National Review,https://australiannationalreview.com,sub-samples/Australian_National_Review.png,2026-06-05 01:48:52,,LOW,0
+Awakening.News,https://awakening.news,sub-samples/Awakening.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Ballotpedia,https://ballotpedia.org,sub-samples/Ballotpedia.png,2026-06-05 01:48:52,USA,VERY HIGH,1
+Banned.News,https://banned.news,sub-samples/Banned.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Bare Naked Islam,https://barenakedislam.com,sub-samples/Bare_Naked_Islam.png,2026-06-05 01:48:52,USA,LOW,0
+Biased.News,https://biased.news,sub-samples/Biased.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Big Government News,https://biggovernment.news,sub-samples/Big_Government_News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Biggleswade Chronicle,https://biggleswadetoday.co.uk,sub-samples/Biggleswade_Chronicle.png,2026-06-05 01:48:52,,HIGH,1
+Bill & Melinda Gates Foundation,https://gatesfoundation.org,sub-samples/Bill_Melinda_Gates_Foundation.png,2026-06-05 01:48:52,USA,HIGH,1
+BillionBibles.org,https://billionbibles.org,sub-samples/BillionBibles.org.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Bioterrorism.News,https://bioterrorism.news,sub-samples/Bioterrorism.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Bleeping Computer,https://bleepingcomputer.com,sub-samples/Bleeping_Computer.png,2026-06-05 01:48:52,USA,HIGH,1
+Boston.com,https://boston.com,sub-samples/Boston.com.png,2026-06-05 01:48:52,USA,HIGH,1
+Boundless,https://boundless.com,sub-samples/Boundless.png,2026-06-05 01:48:52,USA,HIGH,1
+Breakthrough Institute,https://thebreakthrough.org,sub-samples/Breakthrough_Institute.png,2026-06-05 01:48:52,USA,HIGH,1
+Bullshido,https://bullshido.net,sub-samples/Bullshido.png,2026-06-05 01:48:52,USA,HIGH,1
+CDC.News,https://cdc.news,sub-samples/CDC.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+CX Dive,https://customerexperiencedive.com,sub-samples/CX_Dive.png,2026-06-05 01:48:52,USA,HIGH,1
+CaliforniaCollapse.News,https://californiacollapse.news,sub-samples/CaliforniaCollapse.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Canton Repository,https://cantonrep.com,sub-samples/Canton_Repository.png,2026-06-05 01:48:52,USA,HIGH,1
+Capital Gazette,https://capitalgazette.com,sub-samples/Capital_Gazette.png,2026-06-05 01:48:52,USA,HIGH,1
+Ceasefire Magazine,https://ceasefiremagazine.co.uk,sub-samples/Ceasefire_Magazine.png,2026-06-05 01:48:52,,HIGH,1
+Censored.news,https://censored.news,sub-samples/Censored.news.png,2026-06-05 01:48:52,USA,LOW,0
+Censorship.News,https://censorship.news,sub-samples/Censorship.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Center for Immigration Studies,https://cis.org,sub-samples/Center_for_Immigration_Studies.png,2026-06-05 01:48:52,USA,LOW,0
+Center for Law and Social Policy,https://clasp.org,sub-samples/Center_for_Law_and_Social_Policy.png,2026-06-05 01:48:52,USA,HIGH,1
+Center for Popular Democracy,https://populardemocracy.org,sub-samples/Center_for_Popular_Democracy.png,2026-06-05 01:48:52,USA,HIGH,1
+Center for Strategic and International studies,https://csis.org,sub-samples/Center_for_Strategic_and_International_studies.png,2026-06-05 01:48:52,USA,VERY HIGH,1
+Cherokee Tribune,https://tribuneledgernews.com,sub-samples/Cherokee_Tribune.png,2026-06-05 01:48:52,,HIGH,1
+Christian Science,https://christianscience.com,sub-samples/Christian_Science.png,2026-06-05 01:48:52,USA,LOW,0
+Christian Truth Center,https://christiantruthcenter.com,sub-samples/Christian_Truth_Center.png,2026-06-05 01:48:52,,VERY LOW,0
+CitizenGo,https://citizengo.org,sub-samples/CitizenGo.png,2026-06-05 01:48:52,,LOW,0
+Clarksville Leaf Chronicle,https://theleafchronicle.com,sub-samples/Clarksville_Leaf_Chronicle.png,2026-06-05 01:48:52,USA,HIGH,1
+ClimateScienceNews,https://climatesciencenews.com,sub-samples/ClimateScienceNews.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Clover Chronicle,https://cloverchronicle.com,sub-samples/Clover_Chronicle.png,2026-06-05 01:48:52,,LOW,0
+Colorado Free Press,https://coloradofreepress.com,sub-samples/Colorado_Free_Press.png,2026-06-05 01:48:52,USA,LOW,0
+Committee to Investigate Russia,https://investigaterussia.org,sub-samples/Committee_to_Investigate_Russia.png,2026-06-05 01:48:52,USA,HIGH,1
+Concerned Women for America,https://concernedwomen.org,sub-samples/Concerned_Women_for_America.png,2026-06-05 01:48:52,USA,LOW,0
+Connecticut Centinal,https://connecticutcentinal.com,sub-samples/Connecticut_Centinal.png,2026-06-05 01:48:52,USA,LOW,0
+Conspiracy Daily Update,https://conspiracydailyupdate.com,sub-samples/Conspiracy_Daily_Update.png,2026-06-05 01:48:52,,VERY LOW,0
+Constitution Daily,https://constitutioncenter.org,sub-samples/Constitution_Daily.png,2026-06-05 01:48:52,USA,HIGH,1
+Corpus Christi Caller-Times,https://caller.com,sub-samples/Corpus_Christi_Caller-Times.png,2026-06-05 01:48:52,USA,HIGH,1
+Covid Call to Humanity,https://covidcalltohumanity.org,sub-samples/Covid_Call_to_Humanity.png,2026-06-05 01:48:52,,VERY LOW,0
+Cranbrook Townsman,https://cranbrooktownsman.com,sub-samples/Cranbrook_Townsman.png,2026-06-05 01:48:52,,HIGH,1
+Creation-Evolution Headlines,https://crev.info,sub-samples/Creation-Evolution_Headlines.png,2026-06-05 01:48:52,USA,LOW,0
+Creation Ministries International,https://creation.com,sub-samples/Creation_Ministries_International.png,2026-06-05 01:48:52,,LOW,0
+Creative Destruction Media - CD Media,https://creativedestructionmedia.com,sub-samples/Creative_Destruction_Media_-_CD_Media.png,2026-06-05 01:48:52,USA,LOW,0
+Creston Valley Advance,https://crestonvalleyadvance.ca,sub-samples/Creston_Valley_Advance.png,2026-06-05 01:48:52,,HIGH,1
+Cronkite News,https://cronkitenews.azpbs.org,sub-samples/Cronkite_News.png,2026-06-05 01:48:52,USA,HIGH,1
+Culture Wars Magazine,https://culturewars.com,sub-samples/Culture_Wars_Magazine.png,2026-06-05 01:48:52,USA,LOW,0
+CyberWar.News,https://cyberwar.news,sub-samples/CyberWar.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+DCReport.org,https://dcreport.org,sub-samples/DCReport.org.png,2026-06-05 01:48:52,USA,HIGH,1
+Daily Dot,https://dailydot.com,sub-samples/Daily_Dot.png,2026-06-05 01:48:52,USA,HIGH,1
+Daily Headlines,https://dailyheadlines.net,sub-samples/Daily_Headlines.png,2026-06-05 01:48:52,,LOW,0
+Daily Press,https://dailypress.com,sub-samples/Daily_Press.png,2026-06-05 01:48:52,USA,HIGH,1
+Daily Veracity,https://dailyveracity.com,sub-samples/Daily_Veracity.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Deadline Hollywood,https://deadline.com,sub-samples/Deadline_Hollywood.png,2026-06-05 01:48:52,USA,HIGH,1
+Democracy 21,https://democracy21.org,sub-samples/Democracy_21.png,2026-06-05 01:48:52,USA,HIGH,1
+Discern Report,https://discernreport.com,sub-samples/Discern_Report.png,2026-06-05 01:48:52,USA,LOW,0
+Discoveries.News,https://discoveries.news,sub-samples/Discoveries.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Downsizing the Federal Government,https://downsizinggovernment.org,sub-samples/Downsizing_the_Federal_Government.png,2026-06-05 01:48:52,USA,HIGH,1
+ESG Dive,https://esgdive.com,sub-samples/ESG_Dive.png,2026-06-05 01:48:52,USA,HIGH,1
+E&E News,https://eenews.net,sub-samples/E_E_News.png,2026-06-05 01:48:52,USA,HIGH,1
+East-West Center,https://eastwestcenter.org,sub-samples/East-West_Center.png,2026-06-05 01:48:52,USA,HIGH,1
+East London and West Essex Guardian,https://guardian-series.co.uk,sub-samples/East_London_and_West_Essex_Guardian.png,2026-06-05 01:48:52,,HIGH,1
+Echo Check,https://echocheck.org,sub-samples/Echo_Check.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Ecology News,https://ecology.news,sub-samples/Ecology_News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Economist Intelligence Unit,https://eiu.com,sub-samples/Economist_Intelligence_Unit.png,2026-06-05 01:48:52,,HIGH,1
+Edmonton Journal,https://edmontonjournal.com,sub-samples/Edmonton_Journal.png,2026-06-05 01:48:52,,HIGH,1
+El Nuevo Dia,https://elnuevodia.com,sub-samples/El_Nuevo_Dia.png,2026-06-05 01:48:52,,HIGH,1
+El Paso Times,https://elpasotimes.com,sub-samples/El_Paso_Times.png,2026-06-05 01:48:52,USA,HIGH,1
+Escape all these Things,https://escapeallthesethings.com,sub-samples/Escape_all_these_Things.png,2026-06-05 01:48:52,USA,LOW,0
+Exopolitics,https://exopolitics.org,sub-samples/Exopolitics.png,2026-06-05 01:48:52,USA,LOW,0
+Extinction.News,https://extinction.news,sub-samples/Extinction.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+FDA.News,https://fda.news,sub-samples/FDA.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Facilities Dive,https://facilitiesdive.com,sub-samples/Facilities_Dive.png,2026-06-05 01:48:52,USA,HIGH,1
+FactCheck.News,https://factcheck.news,sub-samples/FactCheck.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+FactCheck.org,https://factcheck.org,sub-samples/FactCheck.org.png,2026-06-05 01:48:52,USA,VERY HIGH,1
+Fernie Free Press,https://thefreepress.ca,sub-samples/Fernie_Free_Press.png,2026-06-05 01:48:52,,HIGH,1
+Fully Human,https://fully-human.org,sub-samples/Fully_Human.png,2026-06-05 01:48:52,,VERY LOW,0
+Gear.News,https://gear.news,sub-samples/Gear.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+George Record,https://georgiarecord.com,sub-samples/George_Record.png,2026-06-05 01:48:52,USA,LOW,0
+Gingrich 360,https://gingrich360.com,sub-samples/Gingrich_360.png,2026-06-05 01:48:52,USA,LOW,0
+Glasgow Times,https://glasgowtimes.co.uk,sub-samples/Glasgow_Times.png,2026-06-05 01:48:52,,HIGH,1
+Haaretz,https://haaretz.com,sub-samples/Haaretz.png,2026-06-05 01:48:52,,HIGH,1
+Hanover Evening Sun,https://eveningsun.com,sub-samples/Hanover_Evening_Sun.png,2026-06-05 01:48:52,USA,HIGH,1
+HealthRangerInvenstions.com,https://healthrangerinventions.com,sub-samples/HealthRangerInvenstions.com.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Herbs.News,https://herbs.news,sub-samples/Herbs.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Investopedia,https://investopedia.com,sub-samples/Investopedia.png,2026-06-05 01:48:52,USA,HIGH,1
+Iroquois Times-Republic,https://newsbug.info/iroquois_countys_times-republic/,sub-samples/Iroquois_Times-Republic.png,2026-06-05 01:48:52,,HIGH,1
+Israel Unwired,https://israelunwired.com,sub-samples/Israel_Unwired.png,2026-06-05 01:48:52,USA,LOW,0
+KAIT8-TV,https://kait8.com,sub-samples/KAIT8-TV.png,2026-06-05 01:48:52,USA,HIGH,1
+Knutsford Guardian,https://knutsfordguardian.co.uk,sub-samples/Knutsford_Guardian.png,2026-06-05 01:48:52,,HIGH,1
+LaGrange Daily News,https://lagrangenews.com,sub-samples/LaGrange_Daily_News.png,2026-06-05 01:48:52,USA,HIGH,1
+Lead Stories,https://leadstories.com,sub-samples/Lead_Stories.png,2026-06-05 01:48:52,USA,VERY HIGH,1
+Leicester Mercury,https://leicestermercury.co.uk,sub-samples/Leicester_Mercury.png,2026-06-05 01:48:52,,HIGH,1
+LifeWire,https://lifewire.com,sub-samples/LifeWire.png,2026-06-05 01:48:52,USA,HIGH,1
+Life Site News,https://lifesitenews.com,sub-samples/Life_Site_News.png,2026-06-05 01:48:52,,LOW,0
+Loudon County News-Herald,https://news-herald.net,sub-samples/Loudon_County_News-Herald.png,2026-06-05 01:48:52,USA,HIGH,1
+Macroevolution.net,https://macroevolution.net,sub-samples/Macroevolution.net.png,2026-06-05 01:48:52,USA,LOW,0
+MarketBeat,https://marketbeat.com,sub-samples/MarketBeat.png,2026-06-05 01:48:52,USA,HIGH,1
+MedicalTyranny,https://medicaltyranny.com,sub-samples/MedicalTyranny.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Melfort Journal,https://melfortjournal.com,sub-samples/Melfort_Journal.png,2026-06-05 01:48:52,,HIGH,1
+Men Going Their Own Way,https://mgtow.tv,sub-samples/Men_Going_Their_Own_Way.png,2026-06-05 01:48:52,USA,LOW,0
+Miami Independent,https://miamiindependent.com,sub-samples/Miami_Independent.png,2026-06-05 01:48:52,USA,LOW,0
+Middle East Forum,https://meforum.org,sub-samples/Middle_East_Forum.png,2026-06-05 01:48:52,USA,LOW,0
+Mongabay,https://news.mongabay.com,sub-samples/Mongabay.png,2026-06-05 01:48:52,USA,HIGH,1
+New Discourses,https://newdiscourses.com,sub-samples/New_Discourses.png,2026-06-05 01:48:52,USA,LOW,0
+New Zealand Doctors Speaking Out with Science,https://nzdsos.com,sub-samples/New_Zealand_Doctors_Speaking_Out_with_Science.png,2026-06-05 01:48:52,,LOW,0
+Owen Sound Sun Times,https://owensoundsuntimes.com,sub-samples/Owen_Sound_Sun_Times.png,2026-06-05 01:48:52,,HIGH,1
+PA Media,https://pa.media,sub-samples/PA_Media.png,2026-06-05 01:48:52,,VERY HIGH,1
+Pandemic News,https://pandemic.news,sub-samples/Pandemic_News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Peninsula Daily News,https://peninsuladailynews.com,sub-samples/Peninsula_Daily_News.png,2026-06-05 01:48:52,USA,HIGH,1
+Petersburg Progress-Index,https://progress-index.com,sub-samples/Petersburg_Progress-Index.png,2026-06-05 01:48:52,USA,HIGH,1
+Pew Research,https://pewresearch.org,sub-samples/Pew_Research.png,2026-06-05 01:48:52,USA,VERY HIGH,1
+Public Religion Research Institute,https://prri.org,sub-samples/Public_Religion_Research_Institute.png,2026-06-05 01:48:52,USA,VERY HIGH,1
+RT News,https://rt.com,sub-samples/RT_News.png,2026-06-05 01:48:52,,VERY LOW,0
+Rappanhannock News,https://rappnews.com,sub-samples/Rappanhannock_News.png,2026-06-05 01:48:52,,HIGH,1
+Raw Story,https://rawstory.com,sub-samples/Raw_Story.png,2026-06-05 01:48:52,USA,HIGH,1
+Real Climate Science,https://realclimatescience.com,sub-samples/Real_Climate_Science.png,2026-06-05 01:48:52,USA,LOW,0
+Red Ice TV,https://redice.tv,sub-samples/Red_Ice_TV.png,2026-06-05 01:48:52,,LOW,0
+Red River Valley News,https://valleynewslive.com,sub-samples/Red_River_Valley_News.png,2026-06-05 01:48:52,USA,HIGH,1
+Renew America,https://renewamerica.com,sub-samples/Renew_America.png,2026-06-05 01:48:52,USA,LOW,0
+Roll Call,https://rollcall.com,sub-samples/Roll_Call.png,2026-06-05 01:48:52,USA,VERY HIGH,1
+Rome News-Tribune,https://northwestgeorgianews.com/rome/,sub-samples/Rome_News-Tribune.png,2026-06-05 01:48:52,,HIGH,1
+Rossland News,https://rosslandnews.com,sub-samples/Rossland_News.png,2026-06-05 01:48:52,,HIGH,1
+Ruth Institute,https://ruthinstitute.org,sub-samples/Ruth_Institute.png,2026-06-05 01:48:52,USA,LOW,0
+Santa Monica Observer,https://smobserved.com,sub-samples/Santa_Monica_Observer.png,2026-06-05 01:48:52,USA,LOW,0
+ScienceClowns,https://scienceclowns.com,sub-samples/ScienceClowns.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Sentencing Project,https://sentencingproject.org,sub-samples/Sentencing_Project.png,2026-06-05 01:48:52,USA,HIGH,1
+Shoreline Beacon,https://shorelinebeacon.com,sub-samples/Shoreline_Beacon.png,2026-06-05 01:48:52,,HIGH,1
+Sludge,https://readsludge.com,sub-samples/Sludge.png,2026-06-05 01:48:52,USA,HIGH,1
+Sputnik,https://sputnikglobe.com,sub-samples/Sputnik.png,2026-06-05 01:48:52,,VERY LOW,0
+St. George Spectrum,https://thespectrum.com,sub-samples/St._George_Spectrum.png,2026-06-05 01:48:52,USA,HIGH,1
+Stettler Independent,https://stettlerindependent.com,sub-samples/Stettler_Independent.png,2026-06-05 01:48:52,,HIGH,1
+Strathroy Age Dispatch,https://strathroyagedispatch.com,sub-samples/Strathroy_Age_Dispatch.png,2026-06-05 01:48:52,,HIGH,1
+Survival.News,https://survival.news,sub-samples/Survival.News_1.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Survive The News,https://survivethenews.com,sub-samples/Survive_The_News.png,2026-06-05 01:48:52,USA,LOW,0
+TechGiants.News,https://techgiants.news,sub-samples/TechGiants.News_1.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Technocrats.News,https://technocrats.news,sub-samples/Technocrats.News_1.png,2026-06-05 01:48:52,USA,VERY LOW,0
+TheSpectator.info,https://thespectator.info,sub-samples/TheSpectator.info_1.png,2026-06-05 01:48:52,USA,VERY LOW,0
+The Bearded Patriot,https://thebeardedpatriot.com,sub-samples/The_Bearded_Patriot.png,2026-06-05 01:48:52,USA,LOW,0
+The Colorado Herald,https://thecoloradoherald.com,sub-samples/The_Colorado_Herald.png,2026-06-05 01:48:52,,LOW,0
+The Dispatch,https://thedispatch.com,sub-samples/The_Dispatch.png,2026-06-05 01:48:52,USA,HIGH,1
+The Federation for American Immigration Reform,https://fairus.org,sub-samples/The_Federation_for_American_Immigration_Reform.png,2026-06-05 01:48:52,USA,LOW,0
+The Gateway Pundit,https://thegatewaypundit.com,sub-samples/The_Gateway_Pundit.png,2026-06-05 01:48:52,USA,VERY LOW,0
+The Phaser,https://thephaser.com,sub-samples/The_Phaser.png,2026-06-05 01:48:52,USA,VERY LOW,0
+The Post-Journal,https://www.post-journal.com/,sub-samples/The_Post-Journal.png,2026-06-05 01:48:52,USA,HIGH,1
+Them.us,https://them.us,sub-samples/Them.us_1.png,2026-06-05 01:48:52,USA,HIGH,1
+ThoughtCo,https://thoughtco.com,sub-samples/ThoughtCo.png,2026-06-05 01:48:52,USA,VERY HIGH,1
+TorrentFreak,https://torrentfreak.com,sub-samples/TorrentFreak.png,2026-06-05 01:48:52,,HIGH,1
+Trentonian,https://trentonian.ca,sub-samples/Trentonian.png,2026-06-05 01:48:52,,HIGH,1
+Tri-City News,https://tricitynews.com,sub-samples/Tri-City_News.png,2026-06-05 01:48:52,,HIGH,1
+TruckingDive,https://truckingdive.com,sub-samples/TruckingDive.png,2026-06-05 01:48:52,USA,HIGH,1
+Truth for Health Foundation,https://truthforhealth.org,sub-samples/Truth_for_Health_Foundation.png,2026-06-05 01:48:52,USA,VERY LOW,0
+TruthorFiction.com,https://truthorfiction.com,sub-samples/TruthorFiction.com.png,2026-06-05 01:48:52,USA,VERY HIGH,1
+Turley Talks,https://turleytalks.com,sub-samples/Turley_Talks.png,2026-06-05 01:48:52,USA,LOW,0
+Tyranny.News,https://tyranny.news,sub-samples/Tyranny.News_1.png,2026-06-05 01:48:52,USA,VERY LOW,0
+US Backlash,https://usbacklash.org,sub-samples/US_Backlash.png,2026-06-05 01:48:52,USA,VERY LOW,0
+UtilityDive,https://utilitydive.com,sub-samples/UtilityDive.png,2026-06-05 01:48:52,USA,HIGH,1
+VaccineDamage.News,https://vaccinedamage.news,sub-samples/VaccineDamage.News.png,2026-06-05 01:48:52,USA,VERY LOW,0
+VaccineInjuryNews,https://vaccineinjurynews.com,sub-samples/VaccineInjuryNews.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Vaccine Impact,https://vaccineimpact.com,sub-samples/Vaccine_Impact.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Vaccines and Christianity,https://vaccinesandchristianity.org,sub-samples/Vaccines_and_Christianity.png,2026-06-05 01:48:52,USA,VERY LOW,0
+Vigilante.TV,https://vigilante.TV,sub-samples/Vigilante.TV.png,2026-06-05 01:48:52,,VERY LOW,0
+WBEZ - NPR - Chicago,https://wbez.org,sub-samples/WBEZ_-_NPR_-_Chicago.png,2026-06-05 01:48:52,USA,HIGH,1
+WBND - South Bend News,https://abc57.com,sub-samples/WBND_-_South_Bend_News.png,2026-06-05 01:48:52,USA,HIGH,1
+Washington Stand,https://washingtonstand.com,sub-samples/Washington_Stand.png,2026-06-05 01:48:52,USA,LOW,0
+We Hunted the Mammoth,https://wehuntedthemammoth.com,sub-samples/We_Hunted_the_Mammoth.png,2026-06-05 01:48:52,USA,HIGH,1
+Wichita Times Record-News,https://timesrecordnews.com,sub-samples/Wichita_Times_Record-News.png,2026-06-05 01:48:52,USA,HIGH,1
+Wyofile,https://wyofile.com,sub-samples/Wyofile.png,2026-06-05 01:48:52,USA,HIGH,1
+XYZ.net.au,https://xyz.net.au,sub-samples/XYZ.net.au.png,2026-06-05 01:48:52,,LOW,0
+X Strategies,https://xstrategies.com,sub-samples/X_Strategies.png,2026-06-05 01:48:52,USA,LOW,0
+Yadkin Ripple,https://yadkinripple.com,sub-samples/Yadkin_Ripple.png,2026-06-05 01:48:52,USA,HIGH,1
+Zerohedge,https://zerohedge.com,sub-samples/Zerohedge.png,2026-06-05 01:48:52,,LOW,0
+azfamily.com,https://azfamily.com,sub-samples/azfamily.com.png,2026-06-05 01:48:52,USA,HIGH,1

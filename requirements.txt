@@ -3,3 +3,7 @@ greenlet==3.5.1
 playwright==1.60.0
 pyee==13.0.1
 typing_extensions==4.15.0
+pandas==2.2.2
+scikit-learn==1.6.1
+matplotlib==3.10.0
+seaborn==0.13.2
