@@ -1,4 +1,4 @@
-# If u want to run this just run (python run_inference.py --prompt simple) for using the simple prompt template or (python run_inference.py --prompt engineered) for prompt engineered prompt
+# If u want to run this just run (python inference_test.py --prompt simple) for using the simple prompt template or (python run_inference_test.py --prompt engineered) for prompt engineered prompt
 
 import os
 import csv
@@ -9,6 +9,9 @@ import argparse
 import requests
 from pathlib import Path
 from dotenv import load_dotenv
+# Imports to fix images that are too large
+from PIL import Image
+import io
 
 load_dotenv()
 API_KEY = os.getenv("OPENROUTER_KEY")
@@ -79,9 +82,16 @@ PROMPTS = {
 }
 
 # Helpers functions
-def encode_image(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode("utf-8")
+def encode_image(path: str, max_height = 8000):
+    with Image.open(path) as img:
+        w, h = img.size
+        if h > max_height:
+            ratio = max_height / h
+            img = img.resize((int(w * ratio), max_height), Image.LANCZOS)
+        
+        buf = io.BytesIO()
+        img.save(buf, format="PNG")
+        return base64.b64encode(buf.getvalue()).decode("utf-8")
 
 
 def query_model(model_id, system, user_text, image_b64):
@@ -112,7 +122,14 @@ def query_model(model_id, system, user_text, image_b64):
         timeout=60,
     )
     resp.raise_for_status()
-    return resp.json()["choices"][0]["message"]["content"]
+
+    data = resp.json()
+    
+    if "choices" not in data:
+        # Print the actual error so we can see what's happening
+        raise ValueError(f"No choices in response: {data.get('error', data)}")
+    
+    return data["choices"][0]["message"]["content"]
 
 # Pull the first token out of the response and normalise to FACTUAL / NOT FACTUAL / UNKNOWN
 def parse_verdict(response_text):
