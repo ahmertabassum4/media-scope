@@ -45,39 +45,100 @@ USER_SIMPLE = (
     "(3–5 sentences), citing only what is visible in the screenshot."
 )
 
-SYSTEM_ENGINEERED = (
-    "You are a media credibility analyst performing a visual audit of a website's "
-    "homepage. Your sole evidence is the provided screenshot. Do not draw on any "
-    "prior knowledge of the outlet — evaluate only what is visibly present.\n\n"
-    "Assess the page against these five dimensions:\n\n"
-    "1. TRANSPARENCY & ATTRIBUTION — visible bylines, author names, dates, "
-    "masthead, or named institutional affiliation. Absence is a negative signal.\n\n"
-    "2. PROFESSIONAL PRESENTATION — consistent typography, structured layout, "
-    "coherent colour scheme, high-quality imagery, absence of visual clutter "
-    "or broken design.\n\n"
-    "3. ADVERTISING INTEGRITY — excessive, intrusive, or deceptive ads "
-    "(pop-ups, banners mimicking editorial content). High ad-to-content ratio "
-    "is a red flag.\n\n"
-    "4. HEADLINE & CONTENT TONE — sensationalist, emotionally manipulative, "
-    "or conspiratorial language; excessive capitalisation or alarming punctuation. "
-    "Measured, neutral tone is a positive signal.\n\n"
-    "5. EDITORIAL STRUCTURE — clear separation of news, opinion, and advertising; "
-    "visible section navigation; structured article listings with dates and "
-    "categories.\n\n"
-    "After assessing each dimension, render a holistic binary verdict."
-)
+SYSTEM_ENGINEERED = """
+You are a media-credibility analyst conducting a visual audit of a news source's
+homepage. Your only evidence is the single screenshot provided. Evaluate strictly
+what is visible; do not use any prior knowledge of the outlet, and do not infer the
+outlet's identity from its name, logo, or URL.
 
-USER_ENGINEERED = (
-    "Examine this website screenshot and determine whether the source is likely "
-    "FACTUAL or NOT FACTUAL.\n\n"
-    "Your response must begin with exactly one word on its own line: either "
-    "\"FACTUAL\" or \"NOT FACTUAL\". Then provide a structured assessment "
-    "covering all five dimensions (1–2 sentences each), followed by a brief "
-    "holistic justification. Base everything solely on what is visible."
-)
+Your task is to predict whether the source would be rated as factually RELIABLE or
+UNRELIABLE by professional raters. Internalise three facts about this task before you
+begin:
+
+1. PROFESSIONAL APPEARANCE IS A WEAK SIGNAL. Unreliable outlets routinely copy the
+   design conventions of legitimate news — mastheads, section navigation, clean
+   typography, bylines — precisely to manufacture a trustworthy first impression.
+   Layout quality, colour scheme, and visual polish are easily faked and must NOT,
+   on their own, drive your verdict. A slick site can be unreliable; a plain or
+   cluttered site can be reliable.
+
+2. CONTENT AND FRAMING ARE STRONG SIGNALS. What the page chooses to cover, and the
+   language it uses to cover it, are far harder to disguise. Weight these heavily.
+
+3. DEFAULT TO RELIABLE ABSENCE OF EVIDENCE. Most visible cues are ambiguous. Only
+   move toward UNRELIABLE when you can point to concrete, visible red flags — not
+   merely a generic or unfamiliar look. Resist the tendency to over-flag a source as
+   unreliable on the basis of aesthetics or tone alone.
+
+Assess the homepage against five dimensions, in descending order of importance:
+
+A. CONTENT, TOPICAL FOCUS & FRAMING (most diagnostic). Two things matter here.
+   (i) Topic selection: does the visible coverage cluster around conspiratorial,
+   pseudoscientific, hyper-partisan, or single-issue advocacy themes (e.g.
+   anti-vaccine, election fraud, "deep state," miracle cures, ethnonationalist or
+   apocalyptic framing)? One-sided thematic obsession is strong evidence of
+   unreliability; broad, mundane, multi-topic coverage is evidence of reliability.
+   (ii) Framing of ordinary topics: even when topics are mainstream, look for
+   one-sided framing, framing by omission, or moral/identity-loaded language
+   (heavy appeals to loyalty vs. betrayal, patriot vs. traitor, purity vs.
+   contamination). A page can cover normal news yet present every item through a
+   single ideological lens - this is a negative signal.
+
+B. HEADLINE LANGUAGE, TONE & SPECIFICITY. Negative signals: sensationalism,
+   emotionally manipulative or fear-based wording, ALL-CAPS, exclamation- or
+   rhetorical-question framing, loaded or derogatory terms, headlines that
+   editorialise rather than report, and conspicuously simple, low-vocabulary, or
+   vague phrasing. Positive signals: measured, neutral tone AND concrete
+   specificity - named people, places, dates, institutions, and verifiable
+   particulars. Specific, attributable, fact-grounded headlines indicate
+   reliability; vague, abstract, or emotionally totalising headlines do not, even
+   when their tone seems calm.
+
+C. TRANSPARENCY & ATTRIBUTION. Look for visible signs of accountability: bylines
+   and datelines on stories; a clear masthead and section/category navigation;
+   named editorial responsibility; and any visible ownership, funding, or "About"
+   disclosure (often in the header or footer). Presence of these is a weakly
+   positive signal (they are easily faked); their conspicuous absence - anonymous
+   articles, no datelines, no organisational identity - is a mild negative signal.
+
+D. ADVERTISING & MONETISATION INTEGRITY. Assess both the volume and the
+   character of advertising. Negative signals: a high ad-to-content ratio;
+   ads blended to mimic editorial articles ("chumbox" clickbait grids,
+   "you won't believe..." teasers); and low-quality or predatory ad
+   categories - casinos and gambling, diet pills and weight-loss "tricks,"
+   miracle cures and supplements, "one weird trick" eyesight/blood-sugar
+   ads, crypto and get-rich schemes, sexual or shock content. Clear
+   separation and labelling of advertising, or mainstream/brand-name
+   advertisers, is a mild positive signal. IMPORTANT: junk programmatic ads
+   alone are weak evidence - legitimate but low-budget local outlets often
+   serve the same ad networks. Treat predatory ads as a contributing
+   negative that strengthens a verdict already supported by dimensions A or
+   B, not as sufficient grounds on their own.
+
+E. SYNTHETIC OR MANIPULATED IMAGERY. Are lead images plausibly AI-generated or
+   doctored (uncanny faces, physically impossible details, emotionally inflammatory
+   composites presented as real events)? Visible reliance on such imagery is a
+   negative signal. Be conservative: only flag clear cases.
+
+Weigh the dimensions together, giving A and B the most influence, then render a single
+binary verdict. A source can fail on polish yet pass overall, or look polished yet fail
+on content.
+"""
+
+USER_ENGINEERED = """
+Examine this homepage screenshot and judge whether the source is likely FACTUAL
+(reliable) or NOT FACTUAL (unreliable).
+
+Your response MUST begin with exactly one word on its own line: either "FACTUAL" or
+"NOT FACTUAL". Then, on the following lines, give a brief structured assessment of one
+to two sentences for each of the five dimensions (A Content, B Headlines, C
+Transparency, D Ads/Opinion, E Imagery), citing only what is visible in the screenshot.
+Conclude with one sentence stating which signals were decisive. If a dimension is not
+visible or not assessable, write "not visible" rather than guessing.
+"""
 
 PROMPTS = {
-    "simple": (SYSTEM_SIMPLE,     USER_SIMPLE),
+    "simple": (SYSTEM_SIMPLE, USER_SIMPLE),
     "engineered": (SYSTEM_ENGINEERED, USER_ENGINEERED),
 }
 
@@ -221,7 +282,7 @@ def run(prompt_name, limit):
                     out_f.write(json.dumps(record) + "\n")
                     out_f.flush()
 
-                    status = "Good" if verdict != "UNKNOWN" else "?"
+                    status = "Successful" if verdict != "UNKNOWN" else "?"
                     print(f"  [{i+1}/{len(rows)}] {status} {verdict:<14} {media_name}")
 
                 except requests.HTTPError as e:
