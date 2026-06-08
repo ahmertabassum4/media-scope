@@ -13,22 +13,25 @@ Ugrip/
 │   └── 2291eng_dedup.zip       # Compressed archive of the above
 │
 ├── output/                     # 866 screenshots — HIGH / LOW / VERY HIGH / VERY LOW sources
-├── Mixed_output/               # ~1,177 screenshots — MIXED factuality sources
+├── Mixed_output/               # 1,177 screenshots — MIXED factuality sources
 ├── rerun_output/               # Screenshots from rerun of previously failed URLs
 ├── error_output/               # Screenshots from retries with 60,000ms timeout
 ├── errors/                     # Screenshots captured but showing error pages (bot blocks, 403s, etc.)
 │
-├── snapshot_index.csv          # Index of 866 successful screenshots (non-MIXED)
-├── mixed-snapshots.csv         # Index of ~1,177 successful screenshots (MIXED only)
-├── snapshots.csv               # Merged index: snapshot_index.csv + mixed-snapshots.csv
+├── tmp/                        # Source index files (inputs to postprocessing.py)
+│   ├── snapshot_index.csv      # 866 successful screenshots — non-MIXED sources
+│   ├── mixed-snapshots.csv     # 1,177 successful screenshots — MIXED sources
+│   ├── errors.csv              # 179 failed/problematic URLs — non-MIXED sources
+│   ├── mixed-errors.csv        # 116 failed/problematic URLs — MIXED sources
+│   └── Mixed_output/           # Mirror of Mixed_output/ used during post-processing
 │
-├── errors.csv                  # Failed/problematic URLs from non-MIXED sources (179 entries)
-├── mixed-errors.csv            # Failed/problematic URLs from MIXED sources (116 entries)
-├── error.csv                   # Merged errors: errors.csv + mixed-errors.csv
+├── snapshots.csv               # FINAL merged snapshot index (2,050 rows)
+├── error.csv                   # FINAL merged error log (240 rows)
+│                               # Invariant: snapshots.csv + error.csv = 2,290 (one row per JSON source)
 │
 ├── snapshot.py                 # Core screenshot engine (single URL)
 ├── batch_snapshot.py           # Batch runner — currently targets MIXED factuality sources
-├── postprocessing.py           # Post-processing: build mixed-snapshots.csv, merge CSVs
+├── postprocessing.py           # Post-processing: build mixed-snapshots.csv, merge & deduplicate CSVs
 ├── cleaning.ipynb              # Notebook for cleaning, enriching, and analysing snapshot metadata
 └── README.md
 ```
@@ -67,72 +70,63 @@ Each file in `data/2291eng_dedup/` is a JSON object for one media source:
 | LOW | 120 |
 | VERY LOW | 61 |
 | VERY HIGH | 15 |
+| **Total** | **2,290** |
 
 ---
 
 ## Output CSVs
 
-### `snapshot_index.csv`
+### Final merged outputs
 
-Index of all **866 successfully captured** screenshots from non-MIXED sources.
+These are the two authoritative files. Together they cover every JSON source exactly once:
+
+> **`rows(snapshots.csv)` + `rows(error.csv)` = 2,290**
+
+#### `snapshots.csv` — 2,050 rows
+
+All successfully captured screenshots across all factuality classes.
 
 | Column | Description |
 |---|---|
 | `media_name` | Human-readable name of the media source |
 | `url` | Homepage URL |
-| `image_path` | Relative path to the PNG file in `output/` |
+| `image_path` | Relative path to the PNG file |
 | `timestamp` | Capture time (`YYYY-MM-DD HH:MM:SS`) |
 | `country` | Country of origin from MBFC data |
-| `factuality` | Factuality rating (`HIGH`, `LOW`, `VERY HIGH`, `VERY LOW`) |
-| `trustworthiness` | Binary label: `1` = HIGH or VERY HIGH, `0` = LOW or VERY LOW |
+| `factuality` | Factuality rating (`HIGH`, `LOW`, `VERY HIGH`, `VERY LOW`, `MIXED`) |
+| `trustworthiness` | Binary label: `1` = HIGH/VERY HIGH, `0` = LOW/VERY LOW, empty = MIXED (not yet labelled) |
 
-### `mixed-snapshots.csv`
+#### `error.csv` — 240 rows
 
-Index of all **~1,177 successfully captured** screenshots from MIXED sources. Same columns as `snapshot_index.csv`. `trustworthiness` is empty for all rows (not yet labelled).
+All sources that could not be successfully captured, across all factuality classes.
 
-### `snapshots.csv`
-
-Full merged index combining `snapshot_index.csv` and `mixed-snapshots.csv`. Same columns. Use this for training/analysis across all factuality classes.
+| Column | Description |
+|---|---|
+| `filename` | PNG filename if a screenshot was taken (visual error), else empty |
+| `name` | Media source name |
+| `url` | Homepage URL |
+| `issue` | Category of the problem (see table below) |
+| `timestamp` | Capture time if available, else empty |
+| `factuality` | Factuality rating of the source |
 
 ---
 
-### `errors.csv`
+### Source files (`tmp/`)
 
-Failed or problematic URLs from **non-MIXED** sources (179 entries).
+These are the per-class, per-status input files that `postprocessing.py` reads to produce the merged outputs above.
 
-| Column | Description |
-|---|---|
-| `filename` | Media source name |
-| `url` | Homepage URL |
-| `issue` | Category of the problem (see table below) |
-| `timestamp` | Capture time if an error screenshot exists, else empty |
+| File | Rows | Covers |
+|---|---:|---|
+| `tmp/snapshot_index.csv` | 866 | non-MIXED successful captures |
+| `tmp/mixed-snapshots.csv` | 1,177 | MIXED successful captures |
+| `tmp/errors.csv` | 179 | non-MIXED failures |
+| `tmp/mixed-errors.csv` | 116 | MIXED failures |
 
-### `mixed-errors.csv`
+**Note:** These four files sum to 2,338 — more than 2,290. `postprocessing.py` removes the 48 excess rows during merging (see [Deduplication](#deduplication) below).
 
-Failed or problematic URLs from **MIXED** sources (116 entries). Same issue categories plus two additional columns.
+---
 
-| Column | Description |
-|---|---|
-| `filename` | PNG filename if a screenshot was taken, else empty |
-| `name` | Media source name |
-| `url` | Homepage URL |
-| `issue` | Category of the problem |
-| `factuality` | Always `MIXED` |
-
-### `error.csv`
-
-Full merged error log combining `errors.csv` and `mixed-errors.csv` (295 total entries). Columns are the union of both sources; missing fields are left empty.
-
-| Column | Description |
-|---|---|
-| `filename` | PNG filename if a screenshot was taken, else empty |
-| `name` | Media source name |
-| `url` | Homepage URL |
-| `issue` | Category of the problem |
-| `timestamp` | Capture time if available |
-| `factuality` | Factuality rating of the source |
-
-**Issue categories:**
+### Issue categories (`error.csv`)
 
 | Issue | Cause |
 |---|---|
@@ -152,6 +146,42 @@ Full merged error log combining `errors.csv` and `mixed-errors.csv` (295 total e
 | DNS failure | Domain does not exist |
 | SSL/TLS certificate error | Certificate invalid or expired |
 | Connection reset / timed out | Network-level failure |
+
+---
+
+## Deduplication
+
+The raw source files contain three categories of duplicate rows that `postprocessing.py` resolves before writing the final merged CSVs.
+
+### 1 — Shared URLs (11 pairs)
+
+Eleven pairs of JSON source files point to the same `media link` URL (two different MBFC entries for the same website). These are treated as two distinct sources sharing one captured image. Both sources appear in `snapshots.csv` with the same `image_path`.
+
+```
+https://emirates247.com        → 2 JSON entries
+https://micatholictribune.com  → 2 JSON entries
+... (9 more pairs)
+```
+
+### 2 — Cross-file duplicates (56 URLs)
+
+56 URLs appear in both `snapshot_index.csv` (successful capture) and `errors.csv` (recorded from a failed retry run). The successful capture takes priority: these rows are kept in `snapshots.csv` and removed from `error.csv`.
+
+### 3 — Internal duplicates (3 URLs)
+
+Two URLs appear twice in the snapshot source files and one URL appears twice in the error source files, likely from overlapping capture runs. First occurrence is kept, duplicate is dropped.
+
+### Summary
+
+| Category | Rows removed |
+|---|---:|
+| Cross-file duplicates (snap wins over error) | 56 |
+| Internal duplicates in error source files | 1 |
+| Internal duplicates in snapshot source files | 2 |
+| — offset by shared-URL pairs (each adds +1 row) | −11 |
+| **Net reduction** | **48** |
+
+`2,338 (raw) − 48 (removed) + 0 (added) = 2,290 ✓`
 
 ---
 
@@ -241,27 +271,29 @@ All runs append results to `<output_dir>/batch_log.jsonl`.
 
 ### Post-processing — `postprocessing.py`
 
-Builds `mixed-snapshots.csv` and produces the final merged CSVs.
+Builds `tmp/mixed-snapshots.csv` and produces the final deduplicated merged CSVs.
 
 ```bash
-# Run all steps
+# Run all steps (recommended)
 python postprocessing.py
 
-# Only build mixed-snapshots.csv (from Mixed_output/batch_log.jsonl)
+# Only build tmp/mixed-snapshots.csv (from tmp/Mixed_output/batch_log.jsonl)
 python postprocessing.py --step index
-
-# Only merge error CSVs → error.csv
-python postprocessing.py --step merge-errors
 
 # Only merge snapshot CSVs → snapshots.csv
 python postprocessing.py --step merge-snaps
+
+# Only merge error CSVs → error.csv
+python postprocessing.py --step merge-errors
 ```
 
-| Step | Input | Output |
+| Step | Reads from `tmp/` | Writes |
 |---|---|---|
-| `index` | `Mixed_output/batch_log.jsonl`, `mixed-errors.csv`, source JSONs | `mixed-snapshots.csv` |
-| `merge-errors` | `errors.csv` + `mixed-errors.csv` | `error.csv` |
+| `index` | `Mixed_output/batch_log.jsonl`, `mixed-errors.csv`, source JSONs | `tmp/mixed-snapshots.csv` |
 | `merge-snaps` | `snapshot_index.csv` + `mixed-snapshots.csv` | `snapshots.csv` |
+| `merge-errors` | `errors.csv` + `mixed-errors.csv` + source JSONs | `error.csv` |
+
+Running all steps also prints a verification line confirming `snapshots.csv + error.csv == 2,290`.
 
 ---
 
@@ -289,9 +321,9 @@ For example: `BBC_News_20260604_120000.png`, `New_York_Times_20260604_130500.png
 2. Review images (cleaning.ipynb)
         ↓ detect blank/error/bot-blocked screenshots
         ↓ move bad ones → errors/
-        ↓ record in errors.csv
+        ↓ record in tmp/errors.csv
 
-3. python batch_snapshot.py --from-csv errors.csv --output rerun_output
+3. python batch_snapshot.py --from-csv tmp/errors.csv --output rerun_output
         ↓ retry failed URLs
 
 4. python batch_snapshot.py \
@@ -307,15 +339,16 @@ For example: `BBC_News_20260604_120000.png`, `New_York_Times_20260604_130500.png
         ↓ captures all 1,293 MIXED sources → Mixed_output/
         ↓ logs every attempt → Mixed_output/batch_log.jsonl
 
-2. Visual review (automated via workflow)
+2. Visual review (automated)
         ↓ detect blank/error/bot-blocked screenshots
         ↓ move bad ones → errors/
-        ↓ record in mixed-errors.csv
+        ↓ record in tmp/mixed-errors.csv
 
 3. python postprocessing.py
-        ↓ builds mixed-snapshots.csv (clean MIXED screenshots index)
-        ↓ merges errors.csv + mixed-errors.csv → error.csv
-        ↓ merges snapshot_index.csv + mixed-snapshots.csv → snapshots.csv
+        ↓ builds tmp/mixed-snapshots.csv
+        ↓ deduplicates and merges all source CSVs
+        ↓ writes snapshots.csv (2,050 rows) + error.csv (240 rows)
+        ↓ verifies: snapshots.csv + error.csv == 2,290 ✓
 ```
 
 ---
@@ -326,11 +359,11 @@ A Jupyter notebook for post-processing and analysing the captured screenshots.
 
 **What it does:**
 
-1. Loads `snapshot_index.csv` into a pandas DataFrame
+1. Loads `tmp/snapshot_index.csv` into a pandas DataFrame
 2. Strips timestamps from image filenames and updates paths in the CSV
 3. Parses and formats the `timestamp` column to `YYYY-MM-DD HH:MM:SS`
 4. Adds a `trustworthiness` binary column (`1` = HIGH/VERY HIGH factuality, `0` = LOW/VERY LOW)
-5. Saves the enriched DataFrame back to `snapshot_index.csv`
+5. Saves the enriched DataFrame back to `tmp/snapshot_index.csv`
 6. Plots the trustworthiness distribution across the captured dataset
 
 **Trustworthiness distribution (non-MIXED sources):**
@@ -355,13 +388,14 @@ A Jupyter notebook for post-processing and analysing the captured screenshots.
 | Successfully captured (`output/`) | 866 |
 | — Trustworthy (HIGH / VERY HIGH) | 716 |
 | — Untrustworthy (LOW / VERY LOW) | 150 |
-| Failed / problematic (`errors.csv`) | 179 |
+| Failed / problematic (`tmp/errors.csv`) | 179 |
 | **MIXED captures** | |
-| Successfully captured (`Mixed_output/`) | ~1,177 |
+| Successfully captured (`Mixed_output/`) | 1,177 |
 | — trustworthiness | *not yet labelled* |
-| Failed / problematic (`mixed-errors.csv`) | 116 |
+| Failed / problematic (`tmp/mixed-errors.csv`) | 116 |
 | — Capture-time errors (network/SSL/timeout) | 80 |
 | — Visual errors (bot block, blank, 403, etc.) | 36 |
-| **Merged totals** | |
-| Total clean screenshots (`snapshots.csv`) | ~2,043 |
-| Total error records (`error.csv`) | 295 |
+| **Final merged outputs** | |
+| Clean screenshots (`snapshots.csv`) | **2,050** |
+| Error records (`error.csv`) | **240** |
+| **Total (= JSON source count)** | **2,290 ✓** |

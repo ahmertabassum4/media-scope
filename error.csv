@@ -1,262 +1,148 @@
 filename,name,url,issue,timestamp,factuality
-Above Top Secret,,https://abovetopsecret.com,"Blank — pure white, nothing rendered",,
-Africa Check,,https://africacheck.org,Bot check — Cloudflare Verify you are human,,
-America Magazine,,https://americamagazine.org,Bot check — wp.com Checking your browser,,
-Anonymous Wire,,https://anonymouswire.com,Account suspended,,
-Anthropocene Magazine,,https://anthropocenemagazine.org,403 Forbidden (Cloudflare),,
-Arkansas Democrat-Gazette,,https://arkansasonline.com,Bot check — Cloudflare Verify you are human,,
-Americans United for Separation of Church and State,,https://au.org,403 Forbidden (Cloudflare),,
-The Austin Chronicle,,https://austinchronicle.com,Bot check — wp.com Checking your browser,,
-Bangor Daily News,,https://bangordailynews.com,Bot check — wp.com Checking your browser,,
-BerkeleySide,,https://berkeleyside.org,Bot check — wp.com Checking your browser,,
-Better Government Association,,https://bettergov.org,Bot check — wp.com Checking your browser,,
-Boy Genius Report,,https://bgr.com,Too large to analyze,,
-Big League Politics,,https://bigleaguepolitics.com,"Blank — pure white, nothing rendered",,
-Bipartisan Report,,https://bipartisanreport.com,Cloudflare — Web server is down (521),,
-Bismarck Tribune,,https://bismarcktribune.com,Bot detected — Challenge failed: Bot detected,,
-Borgen Magazine,,https://borgenmagazine.com,403 Forbidden (Cloudflare),,
-Brampton Guardian,,https://bramptonguardian.com,Bot detected — Challenge failed: Bot detected,,
-Breaking Defense,,https://breakingdefense.com,403 Forbidden (nginx),,
-C-Span,,https://c-span.org,Human verification — Let's confirm you are human,,
-Central Florida Post,,https://centralfloridapost.com,403 Forbidden (Cloudflare),,
-Chicago Reporter,,https://chicagoreporter.com,Bot check — wp.com Checking your browser,,
-Christian Action Network,,https://christianaction.org,403 Forbidden (Cloudflare),,
-Clash Daily,,https://clashdaily.com,Bot check — Cloudflare Verify you are human,,
-Concord Monitor,,https://concordmonitor.com,Bot check — wp.com Checking your browser,,
-Congress.gov,,https://congress.gov,Bot check — Cloudflare Verify you are human,,
-Conservative Firing Line,,https://conservativefiringline.com,Bot check — Cloudflare Verify you are human,,
-Cook Political Reports,,https://cookpolitical.com,Bot check — Cloudflare Verify you are human,,
-Daily Mail,,https://dailymail.co.uk,Access denied (CDN),,
-Defense One,,https://defenseone.com,Too large to analyze,,
-Defiant America,,https://defiantamerica.com,"Cloudflare — Sorry, you have been blocked",,
-Economics.Help,,https://economicshelp.org,403 Forbidden (Cloudflare),,
-Activist Mommy/Elizabeth Johnston,,https://elizabethjohnston.org,403 Forbidden (Cloudflare),,
-Fairness and Accuracy in Reporting,,https://fair.org,403 Forbidden (nginx),,
-Fair360,,https://fair360.com,403 Forbidden (nginx),,
-Finextra,,https://finextra.com,Bot check — Cloudflare Verify you are human,,
-The Gay Center,,https://gaycenter.org,403 Forbidden (nginx),,
-Colorado Springs Gazette,,https://gazette.com,"Cloudflare — Sorry, you have been blocked",,
-Gothamist,,https://gothamist.com,Bot check — Cloudflare Verify you are human,,
-Great Awakening,,https://greatawakening.win,"Cloudflare — Sorry, you have been blocked",,
-IndustryWeek,,https://industryweek.com,Bot check — Cloudflare Verify you are human,,
-Institute for New Economic Thinking,,https://ineteconomics.org,Bot check — Cloudflare Verify you are human,,
-InsideNoVA,,https://insidenova.com,Bot detected — Challenge failed: Bot detected,,
-Inside Philanthropy,,https://insidephilanthropy.com,403 Forbidden (Cloudflare),,
-Jacksonville Daily News,,https://jdnews.com,Bot detected — Challenge failed: Bot detected,,
-Joplin Globe,,https://joplinglobe.com,Bot detected — Challenge failed: Bot detected,,
-Kunstler.com,,https://kunstler.com,Subscription popup only (Substack),,
-Loudoun Times-Mirror,,https://loudountimes.com,Bot detected — Challenge failed: Bot detected,,
-Mississippi Free Press,,https://mississippifreepress.org,Bot detected — Challenge failed: Bot detected,,
-Rensselaer Republican,,https://newsbug.info/rensselaer_republican/,Bot detected — Challenge failed: Bot detected,,
-Pike County News Watchman,,https://newswatchman.com,Bot detected — Challenge failed: Bot detected,,
-Walker County Messenger,,https://northwestgeorgianews.com/catoosa_walker_news/,Bot detected — Challenge failed: Bot detected,,
-Polk County Standard-Journal,,https://northwestgeorgianews.com/polk_standard_journal/,Bot detected — Challenge failed: Bot detected,,
-KNWO - NPR - Cottonwood,,https://nwpb.org,Bot check — Cloudflare Verify you are human,,
-OnTheWight,,https://onthewight.com,Bot check — Cloudflare Verify you are human,,
-Lebanon Enterprise,,https://pmg-ky2.com/lebanon/,Bot detected — Challenge failed: Bot detected,,
-Popular Information,,https://popular.info,Subscription popup only (Substack),,
-Poynter Institute,,https://poynter.org,Bot check — Cloudflare Verify you are human,,
-Center for Media and Democracy,,https://prwatch.org,Bot check — Cloudflare Verify you are human,,
-Quad City Times,,https://qctimes.com,Bot detected — Challenge failed: Bot detected,,
-Queerty,,https://queerty.com,Bot check — Cloudflare Verify you are human,,
-RealClearPolling,,https://realclearpolling.com,Bot check — Cloudflare Verify you are human,,
-Salem News,,https://salemnews.com,Bot detected — Challenge failed: Bot detected,,
-San Diego Reader,,https://sandiegoreader.com,Bot check — Cloudflare Verify you are human,,
-Santa Maria Times,,https://santamariatimes.com,Bot detected — Challenge failed: Bot detected,,
-Sciencing,,https://sciencing.com,Too large to analyze,,
-Seattle Times,,https://seattletimes.com,Bot check — Max challenge attempts exceeded,,
-2nd Amendment Daily News,,https://secondamendmentdaily.com,Cloudflare — Invalid SSL certificate (526),,
-Sharon Herald,,https://sharonherald.com,Bot detected — Challenge failed: Bot detected,,
-Stillwater County News,,https://stillwatercountynews.com,Bot detected — Challenge failed: Bot detected,,
-Stilwell Democrat,,https://stilwelldemocrat.com,Bot detected — Challenge failed: Bot detected,,
-Stillwater News Press,,https://stwnewspress.com,Bot detected — Challenge failed: Bot detected,,
-Tax Policy Center,,https://taxpolicycenter.org,"Cloudflare — Sorry, you have been blocked",,
-Texas Tribune,,https://texastribune.org,Bot check — wp.com Checking your browser,,
-Baton Rouge Advocate,,https://theadvocate.com,Bot detected — Challenge failed: Bot detected,,
-The City,,https://thecity.nyc,Bot check — wp.com Checking your browser,,
-The Stokes News,,https://thestokesnews.com,Bot detected — Challenge failed: Bot detected,,
-Chattanooga Times Free Press,,https://timesfreepress.com,Bot check — Cloudflare Verify you are human,,
-Vaccine Safety Research Foundation,,https://vacsafety.org,403 Forbidden (Cloudflare),,
-Vigilant News,,https://vigilantnews.com,Cloudflare — Invalid SSL certificate (526),,
-WABE - NPR - Atlanta,,https://wabe.org,Bot check — Cloudflare Verify you are human,,
-Washington Times-Herald,,https://washtimesherald.com,Bot detected — Challenge failed: Bot detected,,
-Conservative Tribune,,https://westernjournal.com/commentary,Bot check — Cloudflare Verify you are human,,
-Al.com,,https://www.al.com,Bot check — Cloudflare Verify you are human,,
-Congressional Budget Office,,https://www.cbo.gov/,Bot check — Cloudflare Verify you are human,,
-Yadkin Ripple,,https://yadkinripple.com,Bot detected — Challenge failed: Bot detected,,
-Newzoh,,https://newzoh.com,DNS failure — domain does not exist,,
-Sputnik News Agency - India,,https://Sputniknews.in,DNS failure — domain does not exist,,
-Denver Westword,,https://westword.com,Page load timeout,2026-06-04 00:15:55,
-Yahoo News,,https://news.yahoo.com,Page load timeout,2026-06-04 00:02:16,
-Isle of Wight County Press,,https://countypress.co.uk,Page load timeout,,
-Savannah Morning News,,https://savannahnow.com,Page load timeout,2026-06-04 00:08:34,
-Just One Focus,,https://justonefocus.org,DNS failure — domain does not exist,,
-Keighley News,,https://keighleynews.co.uk,Page load timeout,2026-06-03 23:56:01,
-Huntsville Item,,https://itemonline.com,Page load timeout,2026-06-03 23:55:20,
-National Law Review,,https://natlawreview.com,Page load timeout,,
-Regina Leader-Post,,https://leaderpost.com,Page load timeout,2026-06-03 23:57:21,
-Tellico Village Connection,,https://tellicovillageconnection.com,Capture error,2026-06-04 00:11:45,
-NoTricksZone,,https://notrickszone.com,Page load timeout,2026-06-04 00:03:53,
-Thompson Citizen,,https://thompsoncitizen.net,DNS failure — domain does not exist,,
-The Washington Spectator,,https://washingtonspectator.org,Page load timeout,2026-06-04 00:13:56,
-CreationWiki,,https://creationwiki.org,Capture error,,
-Trentonian,,https://trentonian.ca,Page load timeout,2026-06-04 00:12:42,
-Epping Forest Guardian,,https://Eppingforestguardian.co.uk,Page load timeout,,
-Rense,,https://rense.com,Page load timeout,,
-Lebanon Daily News,,https://ldnews.com,Page load timeout,2026-06-03 23:56:56,
-WSAZ News Channel,,https://wsaz.com,Page load timeout,2026-06-04 00:17:48,
-The Breach,,https://breachmedia.ca,Navigation during capture,,
-The Gateway Pundit,,https://thegatewaypundit.com,Page load timeout,2026-06-04 00:10:53,
-San Bernadino Sun,,https://sbsun.com,Page load timeout,,
-Eurasia Review,,https://eurasiareview.com,DNS failure — domain does not exist,,
-Milford Mercury,,https://milfordmercury.co.uk,Page load timeout,,
-The Quint,,https://thequint.com,DNS failure — domain does not exist,,
-BOOMLIVE,,https://boomlive.in,Connection reset by server,,
-San Diego Union Tribune,,https://sandiegouniontribune.com,Page load timeout,,
-Daily Stormer,,https://dailystormer.in,DNS failure — domain does not exist,,
-Wide Awake Media,,https://wide-awake-media.com,DNS failure — domain does not exist,,
-TheSpectator.info,,https://thespectator.info,Page load timeout,2026-06-04 00:11:59,
-Newark Advocate,,https://newarkadvocate.com,Page load timeout,2026-06-04 00:01:36,
-Above the Law,,https://abovethelaw.com,Capture error,,
-The MacArthur Foundation,,https://macfound.org,Page load timeout,2026-06-03 23:58:28,
-Ealing Times,,https://ealingtimes.co.uk,Page load timeout,,
-Roll Call,,https://rollcall.com,Page load timeout,2026-06-04 00:05:56,
-Technocrats.News,,https://technocrats.news,Page load timeout,2026-06-04 00:09:52,
-Watauga Democrat,,https://wataugademocrat.com,Page load timeout,2026-06-04 00:16:01,
-Pandemic News,,https://pandemic.news,Page load timeout,2026-06-04 00:01:52,
-The Province,,https://theprovince.com,Page load timeout,2026-06-04 00:12:05,
-Austin American-Statesman,,https://statesman.com,Page load timeout,2026-06-04 00:10:35,
-D.C. Circuit Breaker,,https://dccircuitbreaker.org,SSL/TLS certificate error,,
-Salt Lake Tribune,,https://sltrib.com,Page load timeout,2026-06-04 00:09:47,
-Dallas Morning News,,https://dallasnews.com,Page load timeout,,
-Eagle Tribune,,https://eagletribune.com,Capture error,,
-Yorkshire Post,,https://yorkshirepost.co.uk,Page load timeout,2026-06-04 00:18:14,
-DeadState,,https://deadstate.org,DNS failure — domain does not exist,,
-WSVN,,https://wsvn.com,Connection timed out,2026-06-04 00:16:48,
-Relevant Magazine,,https://relevantmagazine.com,Page load timeout,,
-Leigh Journal,,https://leighjournal.co.uk,Page load timeout,2026-06-03 23:58:05,
-Bristol World,,https://bristolworld.com,Page load timeout,,
-Ruth Institute,,https://ruthinstitute.org,Page load timeout,2026-06-04 00:05:14,
-LaRouche PAC,,https://larouchepac.com,DNS failure — domain does not exist,,
-Public Religion Research Institute,,https://prri.org,Page load timeout,2026-06-04 00:02:56,
-ABC News,,https://abcnews.go.com,Connection reset by server,,
-Committee for Economic development,,https://ced.org,SSL/TLS certificate error,,
-ScienceClowns,,https://scienceclowns.com,Page load timeout,2026-06-04 00:07:35,
-Fitchburg Sentinel & Enterprise,,https://sentinelandenterprise.com,Page load timeout,2026-06-04 00:08:58,
-Survival.News,,https://survival.news,Page load timeout,2026-06-04 00:09:12,
-The Patriot Light,,https://thepatriotlight.com,DNS failure — domain does not exist,,
-RadarOnline,,https://radaronline.com,Page load timeout,,
-Monadnock Ledger-Transcript,,https://home.ledgertranscript.com,Capture error,,
-TechGiants.News,,https://techgiants.news,Page load timeout,2026-06-04 00:09:39,
-Blackpool Gazette,,https://blackpoolgazette.co.uk,Page load timeout,,
-East Bay Times,,https://eastbaytimes.com,Page load timeout,,
-911Truth.org,,https://911truth.org,Capture error,,
-Red River Valley News,,https://valleynewslive.com,Page load timeout,2026-06-04 00:13:54,
-Dekalb Daily Chronicle,,https://shawlocal.com/daily-chronicle/,Page load timeout,2026-06-04 00:09:23,
-MedicalTyranny,,https://medicaltyranny.com,Capture error,2026-06-03 23:57:36,
-Tyranny.News,,https://tyranny.news,Page load timeout,2026-06-04 00:12:22,
-National File,,https://nationalfile.com,Page load timeout,2026-06-03 23:59:13,
-TheQanons.com,,https://theqanons.com,DNS failure — domain does not exist,,
-Variety Magazine,,https://variety.com,Page load timeout,2026-06-04 00:13:58,
-Irvine Times,,https://irvinetimes.com,Page load timeout,2026-06-03 23:55:33,
-The Mountain Times,,https://wataugademocrat.com/mountaintimes/,Capture error,,
-News Addicts,,https://newsaddicts.com,Page load timeout,2026-06-04 00:02:28,
-WayneDupree.com,,https://waynedupree.com,SSL/TLS certificate error,,
-Alt News,,https://altnews.in,DNS failure — domain does not exist,,
-The Bearded Patriot,,https://thebeardedpatriot.com,Page load timeout,2026-06-04 00:10:27,
-Religion News Service,,https://religionnews.com,Page load timeout,2026-06-04 00:04:53,
-Largs & Millport News,,https://largsandmillportnews.com,Page load timeout,2026-06-03 23:56:40,
-Western Mass News,,https://westernmassnews.com,Page load timeout,2026-06-04 00:16:05,
-San Jose Mercury News,,https://mercurynews.com,Page load timeout,2026-06-04 00:00:11,
-Survive The News,,https://survivethenews.com,Page load timeout,2026-06-04 00:10:08,
-Ludlow Advertiser,,https://ludlowadvertiser.co.uk,Page load timeout,2026-06-03 23:58:32,
-Miami Independent,,https://miamiindependent.com,Page load timeout,2026-06-03 23:59:39,
-Newport Daily News,,https://newportri.com,Page load timeout,2026-06-04 00:01:30,
-Health Helpline,,https://health-helpline.co.nz,DNS failure — domain does not exist,,
-YnetNews,,https://ynetnews.com,Capture error,,
-Bay Area Reporter,,https://ebar.com,Capture error,,
-The Last American Vagabond,,https://thelastamericanvagabond.com,Page load timeout,2026-06-04 00:11:18,
-The Wellness Company,,https://twc.health,Page load timeout,2026-06-04 00:13:38,
-Them.us,,https://them.us,Page load timeout,2026-06-04 00:12:17,
-Angry_White_Men_20260608_165010.png,Angry White Men,https://angrywhitemen.org,Domain hijacked — redirects to unrelated Indonesian gambling site (MURAH4D),,MIXED
-Deep_Left_Field_20260608_175958.png,Deep Left Field,https://deepleftfield.info,Domain parked / for sale,,MIXED
-Democracy_Guardian_20260608_180214.png,Democracy Guardian,https://democracyguardian.com,Domain hijacked — loads unrelated gambling/casino spam site (CIPIT88),,MIXED
-Dnyuz_20260608_180621.png,Dnyuz,https://dnyuz.com,"Blank — image dimensions too large to render, page content unverifiable",,MIXED
-Earth_First_Journal_20260608_181303.png,Earth First Journal,https://earthfirstjournal.news,401 Authorization Required (nginx),,MIXED
-Everyday_Feminism_20260608_182604.png,Everyday Feminism,https://everydayfeminism.com,"Cloudflare — Sorry, you have been blocked",,MIXED
-Free_Speech_Union_20260608_184307.png,Free Speech Union,https://freespeechunion.org,Cookie consent modal blocking page — content area blank/unrendered below modal,,MIXED
-Khaleej_Times_20260608_195844.png,Khaleej Times,https://khaleejtimes.com,Bot check — Cloudflare Verify you are human,,MIXED
-LA_Weekly_20260608_195944.png,LA Weekly,https://laweekly.com,Bot check — Cloudflare Verify you are human,,MIXED
-Marijuana_Policy_Project_20260608_201002.png,Marijuana Policy Project,https://mpp.org,Bot check — Cloudflare Performing security verification,,MIXED
-MarketScreener_20260608_201052.png,MarketScreener,https://marketscreener.com,Access Denied (Akamai edgesuite),,MIXED
-Minding_the_Campus_20260608_201647.png,Minding the Campus,https://mindingthecampus.org,Bot check — Cloudflare Verify you are human,,MIXED
-National_Catholic_Reporter_20260608_203649.png,National Catholic Reporter,https://ncronline.org,Bot check — Cloudflare Verify you are human,,MIXED
-National_Health_Freedom_Coalition_20260608_203747.png,National Health Freedom Coalition,https://nationalhealthfreedom.org,403 Forbidden (Amazon CloudFront),,MIXED
-National_Interest_20260608_203756.png,National Interest,https://nationalinterest.org,403 Forbidden (nginx),,MIXED
-Narratively_20260608_203619.png,Narratively,https://narratively.com,Subscription popup only,,MIXED
-Newsrael_20260608_204206.png,Newsrael,https://newsrael.com,Subscription popup only — full-screen 'Get Access Now' registration gate (Step 1 of 4),,MIXED
-Ocala-News_20260608_210007.png,Ocala-News,https://ocala-news.com,"Page rendering failure — all images rotated sideways, layout broken/corrupted",,MIXED
-Quadrant_Magazine_20260608_211437.png,Quadrant Magazine,https://quadrant.org.au,Bot check — Cloudflare Performing security verification,,MIXED
-Radio_Free_Europe_Radio_Liberty_20260608_211514.png,Radio Free Europe / Radio Liberty,https://rferl.org,Access denied (Akamai edgesuite),,MIXED
-Radio_Free_Europe_Radio_Liberty_20260608_211520.png,Radio Free Europe / Radio Liberty,https://rferl.org,Access denied (Akamai edgesuite),,MIXED
-Reader_s_Digest_20260608_211625.png,Reader's Digest,https://rd.com,Bot check — Cloudflare Verify you are human,,MIXED
-Regated_News_20260608_212108.png,Regated News,https://regated.com,Bot check — Cloudflare Verify you are human,,MIXED
-Ring_of_Fire_20260608_212320.png,Ring of Fire,https://trofire.com,Domain parked / for sale,,MIXED
-ThePrint_20260608_221655.png,ThePrint,https://theprint.in,403 Forbidden (nginx),,MIXED
-The_Flyover_20260608_220825.png,The Flyover,https://jointheflyover.com,"Blank — page failed to render, only random text visible",,MIXED
-The_New_Daily_20260608_221326.png,The New Daily,https://thenewdaily.com.au,Bot check — Cloudflare Verify you are human,,MIXED
-The_People_s_Dispatch_20260608_221502.png,The People's Dispatch,https://peoplesdispatch.org,Bot check — Cloudflare Verify you are human,,MIXED
-The_US_Sun_20260608_221622.png,The US Sun,https://the-sun.com,Bot detected — Verification failed. Please try again,,MIXED
-This_Is_Money_20260608_221704.png,This Is Money,https://thisismoney.co.uk,Access denied (Akamai EdgeSuite),,MIXED
-Trump_Train_News_20260608_222131.png,Trump Train News,https://trumptrainnews.com,"Blank — only logo/splash screen rendered, no news content",,MIXED
-URL_Media_20260608_222231.png,URL Media,https://url-media.com,"Blank — mostly white page, content failed to load",,MIXED
-WABC_Radio_-_New_York_20260608_222733.png,WABC Radio - New York,https://wabcradio.com,403 Forbidden,,MIXED
-YourTango_20260608_224426.png,YourTango,https://yourtango.com,"Blank — geo-redirect/country-selector page rendered, no usable website content",,MIXED
+2nd Amendment Daily News,2nd Amendment Daily News,https://secondamendmentdaily.com,Cloudflare — Invalid SSL certificate (526),,LOW
+911Truth.org,911Truth.org,https://911truth.org,Capture error,,LOW
+ABC News,ABC News,https://abcnews.go.com,Connection reset by server,,HIGH
 ,Abort73,https://abort73.com,SSL/TLS certificate error,,MIXED
-,Aish.com,https://Aish.com,Connection reset by server,,MIXED
+Above Top Secret,Above Top Secret,https://abovetopsecret.com,"Blank — pure white, nothing rendered",,LOW
+Above the Law,Above the Law,https://abovethelaw.com,Capture error,,HIGH
+Activist Mommy/Elizabeth Johnston,Activist Mommy/Elizabeth Johnston,https://elizabethjohnston.org,403 Forbidden (Cloudflare),,LOW
+Africa Check,Africa Check,https://africacheck.org,Bot check — Cloudflare Verify you are human,,VERY HIGH
 ,Africa News,https://africanews.com,Page load timeout,,MIXED
-,Al Mayadeen,https://english.almayadeen.net,Connection reset by server,,MIXED
+,Aish.com,https://Aish.com,Connection reset by server,,MIXED
 ,Al Jazeera,https://aljazeera.com,Page load timeout,,MIXED
+,Al Mayadeen,https://english.almayadeen.net,Connection reset by server,,MIXED
+Al.com,Al.com,https://www.al.com,Bot check — Cloudflare Verify you are human,,HIGH
+Alt News,Alt News,https://altnews.in,DNS failure — domain does not exist,,HIGH
+America Magazine,America Magazine,https://americamagazine.org,Bot check — wp.com Checking your browser,,HIGH
 ,American Alliance for Equal Rights,https://americanallianceforequalrights.org,Navigation during capture,,MIXED
 ,Amoskeag Times,https://amoskeagtimes.com,SSL/TLS certificate error,,MIXED
 ,Anadolu Agency,https://aa.com.tr,Navigation during capture,,MIXED
+Angry_White_Men_20260608_165010.png,Angry White Men,https://angrywhitemen.org,Domain hijacked — redirects to unrelated Indonesian gambling site (MURAH4D),,MIXED
+Anonymous Wire,Anonymous Wire,https://anonymouswire.com,Account suspended,,LOW
+Anthropocene Magazine,Anthropocene Magazine,https://anthropocenemagazine.org,403 Forbidden (Cloudflare),,HIGH
+Arkansas Democrat-Gazette,Arkansas Democrat-Gazette,https://arkansasonline.com,Bot check — Cloudflare Verify you are human,,HIGH
 ,Asian Dawn,https://asian-dawn.com,DNS failure — domain does not exist,,MIXED
 ,Augusta-Richmond Herald,https://augustarichmondherald.com,SSL/TLS certificate error,,MIXED
-,Bellingcat,https://bellingcat.com,Connection reset by server,,MIXED
+BOOMLIVE,BOOMLIVE,https://boomlive.in,Connection reset by server,,HIGH
+Bangor Daily News,Bangor Daily News,https://bangordailynews.com,Bot check — wp.com Checking your browser,,HIGH
+Baton Rouge Advocate,Baton Rouge Advocate,https://theadvocate.com,Bot detected — Challenge failed: Bot detected,,HIGH
+Bay Area Reporter,Bay Area Reporter,https://ebar.com,Capture error,,HIGH
 ,Beliefnet,https://beliefnet.com,Page load timeout,,MIXED
+,Bellingcat,https://bellingcat.com,Connection reset by server,,MIXED
+BerkeleySide,BerkeleySide,https://berkeleyside.org,Bot check — wp.com Checking your browser,,HIGH
+Better Government Association,Better Government Association,https://bettergov.org,Bot check — wp.com Checking your browser,,HIGH
+Big League Politics,Big League Politics,https://bigleaguepolitics.com,"Blank — pure white, nothing rendered",,LOW
+Bipartisan Report,Bipartisan Report,https://bipartisanreport.com,Cloudflare — Web server is down (521),,LOW
+Blackpool Gazette,Blackpool Gazette,https://blackpoolgazette.co.uk,Page load timeout,,HIGH
+Boy Genius Report,Boy Genius Report,https://bgr.com,Too large to analyze,,HIGH
+Brampton Guardian,Brampton Guardian,https://bramptonguardian.com,Bot detected — Challenge failed: Bot detected,,HIGH
+Breaking Defense,Breaking Defense,https://breakingdefense.com,403 Forbidden (nginx),,HIGH
+Bristol World,Bristol World,https://bristolworld.com,Page load timeout,,HIGH
 ,Bucks County Standard,https://buckscountystandard.com,SSL/TLS certificate error,,MIXED
 ,BuzzLoving,https://buzzloving.com,Page load timeout,,MIXED
+C-Span,C-Span,https://c-span.org,Human verification — Let's confirm you are human,,VERY HIGH
+Center for Media and Democracy,Center for Media and Democracy,https://prwatch.org,Bot check — Cloudflare Verify you are human,,HIGH
+Central Florida Post,Central Florida Post,https://centralfloridapost.com,403 Forbidden (Cloudflare),,LOW
 ,Central Pennsylvania Times,https://centralpatimes.com,SSL/TLS certificate error,,MIXED
 ,Change.org,https://change.org,Connection reset by server,,MIXED
+Chattanooga Times Free Press,Chattanooga Times Free Press,https://timesfreepress.com,Bot check — Cloudflare Verify you are human,,HIGH
+Chicago Reporter,Chicago Reporter,https://chicagoreporter.com,Bot check — wp.com Checking your browser,,HIGH
+Christian Action Network,Christian Action Network,https://christianaction.org,403 Forbidden (Cloudflare),,LOW
+Clash Daily,Clash Daily,https://clashdaily.com,Bot check — Cloudflare Verify you are human,,LOW
 ,Cobb News,https://cobbnewsga.com,SSL/TLS certificate error,,MIXED
+Colorado Springs Gazette,Colorado Springs Gazette,https://gazette.com,"Cloudflare — Sorry, you have been blocked",,HIGH
+Committee for Economic development,Committee for Economic development,https://ced.org,SSL/TLS certificate error,,HIGH
+Concord Monitor,Concord Monitor,https://concordmonitor.com,Bot check — wp.com Checking your browser,,HIGH
+Congress.gov,Congress.gov,https://congress.gov,Bot check — Cloudflare Verify you are human,,VERY HIGH
 ,Congressional Agenda,https://congressionalagenda.com,Navigation during capture,,MIXED
+Congressional Budget Office,Congressional Budget Office,https://www.cbo.gov/,Bot check — Cloudflare Verify you are human,,VERY HIGH
 ,Conservapedia,https://conservapedia.com,Page load timeout,,MIXED
+Conservative Firing Line,Conservative Firing Line,https://conservativefiringline.com,Bot check — Cloudflare Verify you are human,,VERY LOW
+Conservative_Review_20260608_174445.png,Conservative Review,https://conservativereview.com,Domain hijacked — page contains only third-party sponsored/clickbait ad thumbnails with no site content,,MIXED
+Conservative Tribune,Conservative Tribune,https://westernjournal.com/commentary,Bot check — Cloudflare Verify you are human,,VERY LOW
+Consortium_News_20260608_174458.png,Consortium News,https://consortiumnews.com,"Blank — page did not render; screenshot shows only archive sidebar date links, no main content",,MIXED
+Cook Political Reports,Cook Political Reports,https://cookpolitical.com,Bot check — Cloudflare Verify you are human,,HIGH
 ,Copper Courier,https://coppercourier.com,Page load timeout,,MIXED
+CreationWiki,CreationWiki,https://creationwiki.org,Capture error,,LOW
+D.C. Circuit Breaker,D.C. Circuit Breaker,https://dccircuitbreaker.org,SSL/TLS certificate error,,HIGH
 ,Daily Caller,https://dailycaller.com,Page load timeout,,MIXED
 ,Daily Honker,https://dailyhonker.com,Page load timeout,,MIXED
-,Daily Sound and Fury,https://dailysoundandfury.com,SSL/TLS certificate error,,MIXED
+Daily Mail,Daily Mail,https://dailymail.co.uk,Access denied (CDN),,LOW
 ,Daily Signal,https://dailysignal.com,Page load timeout,,MIXED
+,Daily Sound and Fury,https://dailysoundandfury.com,SSL/TLS certificate error,,MIXED
+Daily Stormer,Daily Stormer,https://dailystormer.in,DNS failure — domain does not exist,,VERY LOW
+Dallas Morning News,Dallas Morning News,https://dallasnews.com,Page load timeout,,HIGH
+DeadState,DeadState,https://deadstate.org,DNS failure — domain does not exist,,HIGH
+Deep_Left_Field_20260608_175958.png,Deep Left Field,https://deepleftfield.info,Domain parked / for sale,,MIXED
+Defense One,Defense One,https://defenseone.com,Too large to analyze,,HIGH
+Defiant America,Defiant America,https://defiantamerica.com,"Cloudflare — Sorry, you have been blocked",,LOW
 ,Delaware Valley Sun,https://delawarevalleysun.com,SSL/TLS certificate error,,MIXED
+Democracy_Guardian_20260608_180214.png,Democracy Guardian,https://democracyguardian.com,Domain hijacked — loads unrelated gambling/casino spam site (CIPIT88),,MIXED
 ,Dissident Voice,https://dissidentvoice.org,DNS failure — domain does not exist,,MIXED
+Dnyuz_20260608_180621.png,Dnyuz,https://dnyuz.com,"Blank — image dimensions too large to render, page content unverifiable",,MIXED
+Eagle Tribune,Eagle Tribune,https://eagletribune.com,Capture error,,HIGH
+Ealing Times,Ealing Times,https://ealingtimes.co.uk,Page load timeout,,HIGH
+Earth_First_Journal_20260608_181303.png,Earth First Journal,https://earthfirstjournal.news,401 Authorization Required (nginx),,MIXED
+East Bay Times,East Bay Times,https://eastbaytimes.com,Page load timeout,,HIGH
+Economics.Help,Economics.Help,https://economicshelp.org,403 Forbidden (Cloudflare),,HIGH
+Epping Forest Guardian,Epping Forest Guardian,https://Eppingforestguardian.co.uk,Page load timeout,,HIGH
+Eurasia Review,Eurasia Review,https://eurasiareview.com,DNS failure — domain does not exist,,HIGH
 ,Everett Times,https://everetttimes.com,SSL/TLS certificate error,,MIXED
+Everyday_Feminism_20260608_182604.png,Everyday Feminism,https://everydayfeminism.com,"Cloudflare — Sorry, you have been blocked",,MIXED
+,Factly,https://factly.in,Page load timeout,,MIXED
+Fair360,Fair360,https://fair360.com,403 Forbidden (nginx),,HIGH
+Fairness and Accuracy in Reporting,Fairness and Accuracy in Reporting,https://fair.org,403 Forbidden (nginx),,HIGH
+Finextra,Finextra,https://finextra.com,Bot check — Cloudflare Verify you are human,,HIGH
+Free_Speech_Union_20260608_184307.png,Free Speech Union,https://freespeechunion.org,Cookie consent modal blocking page — content area blank/unrendered below modal,,MIXED
+Gothamist,Gothamist,https://gothamist.com,Bot check — Cloudflare Verify you are human,,HIGH
 ,Grand Rapids News,https://grandrapidsminews.com,SSL/TLS certificate error,,MIXED
+Great Awakening,Great Awakening,https://greatawakening.win,"Cloudflare — Sorry, you have been blocked",,VERY LOW
 ,Gulf News,https://gulfnews.com,Page load timeout,,MIXED
 ,Gunster News,https://gunsternews.com,DNS failure — domain does not exist,,MIXED
+Health Helpline,Health Helpline,https://health-helpline.co.nz,DNS failure — domain does not exist,,LOW
 ,Henderson Times,https://hendersontimes.org,SSL/TLS certificate error,,MIXED
+IndustryWeek,IndustryWeek,https://industryweek.com,Bot check — Cloudflare Verify you are human,,HIGH
+Inside Philanthropy,Inside Philanthropy,https://insidephilanthropy.com,403 Forbidden (Cloudflare),,HIGH
+InsideNoVA,InsideNoVA,https://insidenova.com,Bot detected — Challenge failed: Bot detected,,HIGH
+Institute for New Economic Thinking,Institute for New Economic Thinking,https://ineteconomics.org,Bot check — Cloudflare Verify you are human,,HIGH
 ,Iowa Media,https://iowa.media,Page load timeout,,MIXED
-,Factly,https://factly.in,Page load timeout,,MIXED
+Isle of Wight County Press,Isle of Wight County Press,https://countypress.co.uk,Page load timeout,,HIGH
+Jacksonville Daily News,Jacksonville Daily News,https://jdnews.com,Bot detected — Challenge failed: Bot detected,,HIGH
+Joplin Globe,Joplin Globe,https://joplinglobe.com,Bot detected — Challenge failed: Bot detected,,HIGH
+Just One Focus,Just One Focus,https://justonefocus.org,DNS failure — domain does not exist,,VERY LOW
 ,Just The News,https://justthenews.com,Page load timeout,,MIXED
+KNWO - NPR - Cottonwood,KNWO - NPR - Cottonwood,https://nwpb.org,Bot check — Cloudflare Verify you are human,,HIGH
+KNWO - NPR - Cottonwood,KNWO - NPR - Cottonwood,https://nwpb.org,Bot check — Cloudflare Verify you are human,,HIGH
+Khaleej_Times_20260608_195844.png,Khaleej Times,https://khaleejtimes.com,Bot check — Cloudflare Verify you are human,,MIXED
+Kunstler.com,Kunstler.com,https://kunstler.com,Subscription popup only (Substack),,LOW
+LA_Weekly_20260608_195944.png,LA Weekly,https://laweekly.com,Bot check — Cloudflare Verify you are human,,MIXED
 ,La Crosse Leader,https://lacrosseleader.org,SSL/TLS certificate error,,MIXED
+LaRouche PAC,LaRouche PAC,https://larouchepac.com,DNS failure — domain does not exist,,LOW
 ,Lancaster Courier,https://lancastercourier.com,SSL/TLS certificate error,,MIXED
+Lebanon Enterprise,Lebanon Enterprise,https://pmg-ky2.com/lebanon/,Bot detected — Challenge failed: Bot detected,,HIGH
+Loudoun Times-Mirror,Loudoun Times-Mirror,https://loudountimes.com,Bot detected — Challenge failed: Bot detected,,HIGH
 ,Macomb Digest,https://macombdigest.com,SSL/TLS certificate error,,MIXED
 ,Macon Report,https://maconreport.com,SSL/TLS certificate error,,MIXED
+Marijuana_Policy_Project_20260608_201002.png,Marijuana Policy Project,https://mpp.org,Bot check — Cloudflare Performing security verification,,MIXED
+MarketScreener_20260608_201052.png,MarketScreener,https://marketscreener.com,Access Denied (Akamai edgesuite),,MIXED
 ,Mecklenburg Herald,https://mecklenburgherald.com,SSL/TLS certificate error,,MIXED
 ,Mexico City Post,https://themexicocitypost.com,DNS failure — domain does not exist,,MIXED
 ,Mid Michigan Standard,https://midmichiganstd.com,SSL/TLS certificate error,,MIXED
 ,Mile High Sentinel,https://milehighsentinel.com,SSL/TLS certificate error,,MIXED
+Milford Mercury,Milford Mercury,https://milfordmercury.co.uk,Page load timeout,,HIGH
 ,Milwaukee Metro Times,https://milwaukeemetrotimes.com,SSL/TLS certificate error,,MIXED
+Minding_the_Campus_20260608_201647.png,Minding the Campus,https://mindingthecampus.org,Bot check — Cloudflare Verify you are human,,MIXED
 ,Minnesota Citizens Concerned for Life,https://mccl.org,SSL/TLS certificate error,,MIXED
+Mississippi Free Press,Mississippi Free Press,https://mississippifreepress.org,Bot detected — Challenge failed: Bot detected,,HIGH
+Monadnock Ledger-Transcript,Monadnock Ledger-Transcript,https://home.ledgertranscript.com,Capture error,,HIGH
 ,NORML,https://norml.org,SSL/TLS certificate error,,MIXED
+Narratively_20260608_203619.png,Narratively,https://narratively.com,Subscription popup only,,MIXED
+National_Catholic_Reporter_20260608_203649.png,National Catholic Reporter,https://ncronline.org,Bot check — Cloudflare Verify you are human,,MIXED
+National_Health_Freedom_Coalition_20260608_203747.png,National Health Freedom Coalition,https://nationalhealthfreedom.org,403 Forbidden (Amazon CloudFront),,MIXED
+National_Interest_20260608_203756.png,National Interest,https://nationalinterest.org,403 Forbidden (nginx),,MIXED
+National Law Review,National Law Review,https://natlawreview.com,Page load timeout,,HIGH
+Newsrael_20260608_204206.png,Newsrael,https://newsrael.com,Subscription popup only — full-screen 'Get Access Now' registration gate (Step 1 of 4),,MIXED
+Newzoh,Newzoh,https://newzoh.com,DNS failure — domain does not exist,,LOW
 ,No Left Turn in Education,https://noleftturn.us,Page load timeout,,MIXED
 ,Northeast Herald,https://northeastherald.org,SSL/TLS certificate error,,MIXED
 ,Northern Clark County Herald,https://northernclarkcountyherald.com,SSL/TLS certificate error,,MIXED
@@ -264,33 +150,92 @@ YourTango_20260608_224426.png,YourTango,https://yourtango.com,"Blank — geo-red
 ,Northwest Lake Times,https://nwlaketimes.com,SSL/TLS certificate error,,MIXED
 ,OTP Tribune,https://otptribune.com,SSL/TLS certificate error,,MIXED
 ,Oakland Times,https://oaklandtimes.org,SSL/TLS certificate error,,MIXED
+Ocala-News_20260608_210007.png,Ocala-News,https://ocala-news.com,"Page rendering failure — all images rotated sideways, layout broken/corrupted",,MIXED
+OnTheWight,OnTheWight,https://onthewight.com,Bot check — Cloudflare Verify you are human,,HIGH
 ,Out Magazine,https://out.com,Connection reset by server,,MIXED
 ,Piedmont Tribune,https://piedmonttribune.com,SSL/TLS certificate error,,MIXED
+Pike County News Watchman,Pike County News Watchman,https://newswatchman.com,Bot detected — Challenge failed: Bot detected,,HIGH
 ,Pima Times,https://pimatimes.com,SSL/TLS certificate error,,MIXED
+Polk County Standard-Journal,Polk County Standard-Journal,https://northwestgeorgianews.com/polk_standard_journal/,Bot detected — Challenge failed: Bot detected,,HIGH
+Popular Information,Popular Information,https://popular.info,Subscription popup only (Substack),,HIGH
+Poynter Institute,Poynter Institute,https://poynter.org,Bot check — Cloudflare Verify you are human,,HIGH
+Quad City Times,Quad City Times,https://qctimes.com,Bot detected — Challenge failed: Bot detected,,HIGH
+Quadrant_Magazine_20260608_211437.png,Quadrant Magazine,https://quadrant.org.au,Bot check — Cloudflare Performing security verification,,MIXED
+Queerty,Queerty,https://queerty.com,Bot check — Cloudflare Verify you are human,,HIGH
+RadarOnline,RadarOnline,https://radaronline.com,Page load timeout,,LOW
+Radio_Free_Europe_Radio_Liberty_20260608_211514.png,Radio Free Europe / Radio Liberty,https://rferl.org,Access denied (Akamai edgesuite),,MIXED
+Radio_Free_Europe_Radio_Liberty_20260608_211514.png,Radio Free Europe / Radio Liberty,https://rferl.org,Access denied (Akamai edgesuite),,MIXED
+Reader_s_Digest_20260608_211625.png,Reader's Digest,https://rd.com,Bot check — Cloudflare Verify you are human,,MIXED
+RealClearPolling,RealClearPolling,https://realclearpolling.com,Bot check — Cloudflare Verify you are human,,HIGH
 ,RedState,https://redstate.com,Page load timeout,,MIXED
+Regated_News_20260608_212108.png,Regated News,https://regated.com,Bot check — Cloudflare Verify you are human,,MIXED
+Relevant Magazine,Relevant Magazine,https://relevantmagazine.com,Page load timeout,,HIGH
+Rense,Rense,https://rense.com,Page load timeout,,VERY LOW
+Rensselaer Republican,Rensselaer Republican,https://newsbug.info/rensselaer_republican/,Bot detected — Challenge failed: Bot detected,,HIGH
+Ring_of_Fire_20260608_212320.png,Ring of Fire,https://trofire.com,Domain parked / for sale,,MIXED
 ,Rock Valley Times,https://rockvalleytimes.com,SSL/TLS certificate error,,MIXED
 ,Rockinghamd Journal,https://rockinghamjournal.com,SSL/TLS certificate error,,MIXED
+Salem News,Salem News,https://salemnews.com,Bot detected — Challenge failed: Bot detected,,HIGH
+San Bernadino Sun,San Bernadino Sun,https://sbsun.com,Page load timeout,,HIGH
+San Diego Reader,San Diego Reader,https://sandiegoreader.com,Bot check — Cloudflare Verify you are human,,HIGH
+San Diego Union Tribune,San Diego Union Tribune,https://sandiegouniontribune.com,Page load timeout,,HIGH
+Santa Maria Times,Santa Maria Times,https://santamariatimes.com,Bot detected — Challenge failed: Bot detected,,HIGH
 ,Savannah Sun Times,https://savannahsuntimes.com,SSL/TLS certificate error,,MIXED
+Sciencing,Sciencing,https://sciencing.com,Too large to analyze,,HIGH
 ,ScoopWhoop,https://scoopwhoop.com,SSL/TLS certificate error,,MIXED
 ,Seacoast Standard,https://seacoaststandard.org,SSL/TLS certificate error,,MIXED
+Seattle Times,Seattle Times,https://seattletimes.com,Bot check — Max challenge attempts exceeded,,HIGH
+Sharon Herald,Sharon Herald,https://sharonherald.com,Bot detected — Challenge failed: Bot detected,,HIGH
 ,South Middlesex Times,https://southmiddlesextimes.com,SSL/TLS certificate error,,MIXED
 ,Southeastern Times,https://southeasterntimes.org,SSL/TLS certificate error,,MIXED
 ,Southern Colorado Times,https://southerncoloradotimes.com,SSL/TLS certificate error,,MIXED
+Sputnik News Agency - India,Sputnik News Agency - India,https://Sputniknews.in,DNS failure — domain does not exist,,VERY LOW
+Stillwater County News,Stillwater County News,https://stillwatercountynews.com,Bot detected — Challenge failed: Bot detected,,HIGH
+Stillwater News Press,Stillwater News Press,https://stwnewspress.com,Bot detected — Challenge failed: Bot detected,,HIGH
+Stilwell Democrat,Stilwell Democrat,https://stilwelldemocrat.com,Bot detected — Challenge failed: Bot detected,,HIGH
 ,Summerlin Reporter,https://summerlinreporter.com,SSL/TLS certificate error,,MIXED
+Tax Policy Center,Tax Policy Center,https://taxpolicycenter.org,"Cloudflare — Sorry, you have been blocked",,HIGH
+Texas Tribune,Texas Tribune,https://texastribune.org,Bot check — wp.com Checking your browser,,HIGH
+The Austin Chronicle,The Austin Chronicle,https://austinchronicle.com,Bot check — wp.com Checking your browser,,HIGH
+The Breach,The Breach,https://breachmedia.ca,Navigation during capture,,HIGH
+The City,The City,https://thecity.nyc,Bot check — wp.com Checking your browser,,HIGH
+The_Flyover_20260608_220825.png,The Flyover,https://jointheflyover.com,"Blank — page failed to render, only random text visible",,MIXED
+The Gay Center,The Gay Center,https://gaycenter.org,403 Forbidden (nginx),,HIGH
 ,The Limited Times,https://newsrnd.com,Connection reset by server,,MIXED
+The Mountain Times,The Mountain Times,https://wataugademocrat.com/mountaintimes/,Capture error,,HIGH
+The_New_Daily_20260608_221326.png,The New Daily,https://thenewdaily.com.au,Bot check — Cloudflare Verify you are human,,MIXED
+The Patriot Light,The Patriot Light,https://thepatriotlight.com,DNS failure — domain does not exist,,LOW
+The_People_s_Dispatch_20260608_221502.png,The People's Dispatch,https://peoplesdispatch.org,Bot check — Cloudflare Verify you are human,,MIXED
 ,The Politics Brief,https://thepoliticsbrief.com,Connection reset by server,,MIXED
+The Quint,The Quint,https://thequint.com,DNS failure — domain does not exist,,HIGH
+The Stokes News,The Stokes News,https://thestokesnews.com,Bot detected — Challenge failed: Bot detected,,HIGH
+The_US_Sun_20260608_221622.png,The US Sun,https://the-sun.com,Bot detected — Verification failed. Please try again,,MIXED
 ,TheGreggJarrett.com,https://thegreggjarrett.com,DNS failure — domain does not exist,,MIXED
+ThePrint_20260608_221655.png,ThePrint,https://theprint.in,403 Forbidden (nginx),,MIXED
+TheQanons.com,TheQanons.com,https://theqanons.com,DNS failure — domain does not exist,,VERY LOW
+This_Is_Money_20260608_221704.png,This Is Money,https://thisismoney.co.uk,Access denied (Akamai EdgeSuite),,MIXED
+Thompson Citizen,Thompson Citizen,https://thompsoncitizen.net,DNS failure — domain does not exist,,HIGH
 ,Three Rivers Gazette,https://threeriversgazette.com,SSL/TLS certificate error,,MIXED
 ,Times of South Africa,https://timeslive.co.za,SSL/TLS certificate error,,MIXED
 ,Tri-City Record,https://tri-cityrecord.org,SSL/TLS certificate error,,MIXED
 ,Triangle News,https://trianglenews.org,SSL/TLS certificate error,,MIXED
+Trump_Train_News_20260608_222131.png,Trump Train News,https://trumptrainnews.com,"Blank — only logo/splash screen rendered, no news content",,MIXED
 ,Two Rivers News,https://tworiversnews.org,SSL/TLS certificate error,,MIXED
+URL_Media_20260608_222231.png,URL Media,https://url-media.com,"Blank — mostly white page, content failed to load",,MIXED
 ,Upper Peninsula Times,https://upperpeninsulatimes.com,SSL/TLS certificate error,,MIXED
+Vaccine Safety Research Foundation,Vaccine Safety Research Foundation,https://vacsafety.org,403 Forbidden (Cloudflare),,LOW
 ,Valley Gazette,https://valleygazette.org,SSL/TLS certificate error,,MIXED
+Vigilant News,Vigilant News,https://vigilantnews.com,Cloudflare — Invalid SSL certificate (526),,LOW
+WABC_Radio_-_New_York_20260608_222733.png,WABC Radio - New York,https://wabcradio.com,403 Forbidden,,MIXED
+WABE - NPR - Atlanta,WABE - NPR - Atlanta,https://wabe.org,Bot check — Cloudflare Verify you are human,,HIGH
 ,WFTW - 1260 AM - Fort Walton Beach,https://wftw.com,Capture error,,MIXED
+Walker County Messenger,Walker County Messenger,https://northwestgeorgianews.com/catoosa_walker_news/,Bot detected — Challenge failed: Bot detected,,HIGH
+Washington Times-Herald,Washington Times-Herald,https://washtimesherald.com,Bot detected — Challenge failed: Bot detected,,HIGH
 ,Washoe Gazette,https://washoegazette.com,SSL/TLS certificate error,,MIXED
 ,Wayne Herald,https://wayneherald.org,SSL/TLS certificate error,,MIXED
+WayneDupree.com,WayneDupree.com,https://waynedupree.com,SSL/TLS certificate error,,LOW
+Wide Awake Media,Wide Awake Media,https://wide-awake-media.com,DNS failure — domain does not exist,,LOW
 ,Wisconsin Lake Times,https://wisconsinlaketimes.com,SSL/TLS certificate error,,MIXED
+YnetNews,YnetNews,https://ynetnews.com,Capture error,,HIGH
+YourTango_20260608_224426.png,YourTango,https://yourtango.com,"Blank — geo-redirect/country-selector page rendered, no usable website content",,MIXED
 ,Yuma Standard,https://yumastandard.com,SSL/TLS certificate error,,MIXED
-Conservative_Review_20260608_174445.png,Conservative Review,https://conservativereview.com,Domain hijacked — page contains only third-party sponsored/clickbait ad thumbnails with no site content,,MIXED
-Consortium_News_20260608_174458.png,Consortium News,https://consortiumnews.com,"Blank — page did not render; screenshot shows only archive sidebar date links, no main content",,MIXED

@@ -8,7 +8,15 @@ Steps:
                       • Excludes error entries (listed in mixed-errors.csv)
                       • trustworthiness = empty for all MIXED entries
   2. merge-errors — Merge errors.csv + mixed-errors.csv → error.csv
+                      • Deduplicates by URL (first occurrence wins)
+                      • Removes URLs already in snapshots.csv (successful capture takes priority)
+                      • Adds sources with no media link as "No URL available"
+                      • Enriches factuality from JSON source files
+                      • Final row count: exactly (total_jsons - rows_in_snapshots.csv)
   3. merge-snaps  — Merge snapshot_index.csv + mixed-snapshots.csv → snapshots.csv
+                      • Deduplicates by URL (first occurrence wins)
+
+Invariant enforced: rows(snapshots.csv) + rows(error.csv) == total JSON files in DATA_DIR
 
 Usage:
     python postprocessing.py                        # run all steps
@@ -26,10 +34,10 @@ from pathlib import Path
 
 DATA_DIR        = Path("data/2291eng_dedup")
 BATCH_LOG       = Path("tmp/Mixed_output/batch_log.jsonl")
-MIXED_ERRORS    = Path("mixed-errors.csv")
-ERRORS_CSV      = Path("errors.csv")
-SNAPSHOT_INDEX  = Path("snapshot_index.csv")
-MIXED_SNAPSHOTS = Path("mixed-snapshots.csv")
+MIXED_ERRORS    = Path("tmp/mixed-errors.csv")
+ERRORS_CSV      = Path("tmp/errors.csv")
+SNAPSHOT_INDEX  = Path("tmp/snapshot_index.csv")
+MIXED_SNAPSHOTS = Path("tmp/mixed-snapshots.csv")
 ERROR_OUT       = Path("error.csv")
 SNAPSHOTS_OUT   = Path("snapshots.csv")
 
@@ -46,19 +54,29 @@ def parse_timestamp(image_path: str) -> str:
     return f"{d[:4]}-{d[4:6]}-{d[6:]} {t[:2]}:{t[2:4]}:{t[4:]}"
 
 
-def build_url_to_country(data_dir: Path) -> dict:
-    """Read all source JSON files and return a url → country mapping."""
-    mapping = {}
-    for json_file in data_dir.glob("*.json"):
+def load_source_metadata(data_dir: Path) -> tuple[dict, list]:
+    """
+    Read all source JSON files.
+    Returns:
+      url_meta   — dict of url → {name, country, factuality} (for lookups; deduped by URL)
+      all_sources — list of ALL sources including duplicate-URL entries (len == total JSON files)
+    """
+    url_meta = {}
+    all_sources = []
+    for json_file in sorted(data_dir.glob("*.json")):
         try:
             data = json.loads(json_file.read_text(encoding="utf-8"))
         except Exception:
             continue
         url = (data.get("media link") or "").strip()
+        name = (data.get("media name") or json_file.stem).strip()
         country = (data.get("country") or "").strip()
-        if url:
-            mapping[url] = country
-    return mapping
+        factuality = (data.get("factuality") or "").strip().upper()
+        entry = {"name": name, "url": url, "country": country, "factuality": factuality}
+        all_sources.append(entry)
+        if url and url not in url_meta:
+            url_meta[url] = entry
+    return url_meta, all_sources
 
 
 def load_error_filenames(errors_csv: Path) -> set:
@@ -77,8 +95,8 @@ def load_error_filenames(errors_csv: Path) -> set:
 def build_mixed_snapshots():
     print("Step 1: Building mixed-snapshots.csv ...")
 
-    url_to_country = build_url_to_country(DATA_DIR)
-    print(f"  Loaded country data for {len(url_to_country)} sources")
+    url_meta, _ = load_source_metadata(DATA_DIR)
+    print(f"  Loaded metadata for {len(url_meta)} sources")
 
     error_filenames = load_error_filenames(MIXED_ERRORS)
     print(f"  Excluding {len(error_filenames)} error filenames")
@@ -101,12 +119,13 @@ def build_mixed_snapshots():
                 continue
 
             url = entry["url"]
+            meta = url_meta.get(url, {})
             rows.append({
                 "media_name":      entry.get("name", ""),
                 "url":             url,
                 "image_path":      entry["path"],
                 "timestamp":       parse_timestamp(entry["path"]),
-                "country":         url_to_country.get(url, ""),
+                "country":         meta.get("country", ""),
                 "factuality":      "MIXED",
                 "trustworthiness": "",
             })
@@ -120,14 +139,70 @@ def build_mixed_snapshots():
     print(f"  Skipped: {skipped_captures} capture errors, {skipped_errors} visual errors")
 
 
-def merge_errors():
-    """Merge errors.csv + mixed-errors.csv → error.csv (union of all columns)."""
-    print("Step 2: Merging error CSVs → error.csv ...")
+def merge_snapshots():
+    """
+    Merge snapshot_index.csv + mixed-snapshots.csv → snapshots.csv.
 
-    # errors.csv columns:       filename, url, issue, timestamp
-    # mixed-errors.csv columns: filename, name, url, issue, factuality
-    # merged columns:           filename, name, url, issue, timestamp, factuality
+    One row per JSON source file (not per URL). The 11 pairs of JSON files that share
+    a URL each get their own row — both point to the same captured image.
+    """
+    print("Step 2: Merging snapshot CSVs → snapshots.csv ...")
 
+    if not MIXED_SNAPSHOTS.exists():
+        print(f"  ERROR: {MIXED_SNAPSHOTS} not found — run --step index first", file=sys.stderr)
+        return
+
+    # Build url → snapshot row lookup from existing index CSVs
+    url_to_snap = {}
+    for path in (SNAPSHOT_INDEX, MIXED_SNAPSHOTS):
+        with open(path, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                url = r.get("url", "").strip()
+                if url and url not in url_to_snap:
+                    url_to_snap[url] = r
+    print(f"  Unique captured URLs: {len(url_to_snap)}")
+
+    # Emit one row per JSON source whose URL was captured (all_sources preserves duplicates)
+    _, all_sources = load_source_metadata(DATA_DIR)
+    rows = []
+    for src in all_sources:
+        url = src["url"]
+        if url in url_to_snap:
+            snap = dict(url_to_snap[url])
+            snap["url"] = url
+            rows.append(snap)
+
+    with open(SNAPSHOTS_OUT, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=SNAPSHOT_COLUMNS)
+        writer.writeheader()
+        writer.writerows(rows)
+
+    captured_urls = set(url_to_snap.keys())
+    print(f"  Written {len(rows)} rows → {SNAPSHOTS_OUT}")
+    return captured_urls
+
+
+def merge_errors(captured_urls: set = None):
+    """
+    Merge errors.csv + mixed-errors.csv → error.csv.
+
+    One row per JSON source file whose URL was NOT successfully captured.
+    Uses the JSON source files as ground truth so the invariant holds:
+      rows(snapshots.csv) + rows(error.csv) == total JSON files in DATA_DIR
+    """
+    print("Step 3: Merging error CSVs → error.csv ...")
+
+    _, all_sources = load_source_metadata(DATA_DIR)
+
+    if captured_urls is None:
+        if SNAPSHOTS_OUT.exists():
+            with open(SNAPSHOTS_OUT, newline="", encoding="utf-8") as f:
+                captured_urls = {r["url"].strip() for r in csv.DictReader(f)}
+        else:
+            captured_urls = set()
+    print(f"  Captured URLs (excluded from errors): {len(captured_urls)}")
+
+    # Build url → best error row lookup from both error CSVs
     def load(path):
         if not path.exists():
             print(f"  WARN: {path} not found, skipping", file=sys.stderr)
@@ -135,66 +210,65 @@ def merge_errors():
         with open(path, newline="", encoding="utf-8") as f:
             return list(csv.DictReader(f))
 
-    errors_rows = load(ERRORS_CSV)
-    mixed_rows  = load(MIXED_ERRORS)
+    url_to_err = {}
+    for r in load(ERRORS_CSV) + load(MIXED_ERRORS):
+        url = r.get("url", "").strip()
+        if url and url not in url_to_err:
+            url_to_err[url] = r
 
-    print(f"  {ERRORS_CSV}: {len(errors_rows)} rows")
-    print(f"  {MIXED_ERRORS}: {len(mixed_rows)} rows")
-
+    # Emit one row per JSON source whose URL was NOT captured
     all_rows = []
-    for r in errors_rows:
+    not_in_either = 0
+
+    for src in all_sources:
+        url = src["url"]
+        if url in captured_urls:
+            continue
+
+        err = url_to_err.get(url, {})
+        factuality = err.get("factuality", "").strip() or src["factuality"]
+        name = (err.get("name") or err.get("filename") or src["name"]).strip()
+        issue = err.get("issue", "").strip() or "Not captured"
+
         all_rows.append({
-            "filename":    r.get("filename", ""),
-            "name":        r.get("name", ""),
-            "url":         r.get("url", ""),
-            "issue":       r.get("issue", ""),
-            "timestamp":   r.get("timestamp", ""),
-            "factuality":  r.get("factuality", ""),
+            "filename":   err.get("filename", ""),
+            "name":       name,
+            "url":        url,
+            "issue":      issue,
+            "timestamp":  err.get("timestamp", ""),
+            "factuality": factuality,
         })
-    for r in mixed_rows:
-        all_rows.append({
-            "filename":    r.get("filename", ""),
-            "name":        r.get("name", ""),
-            "url":         r.get("url", ""),
-            "issue":       r.get("issue", ""),
-            "timestamp":   r.get("timestamp", ""),
-            "factuality":  r.get("factuality", ""),
-        })
+
+        if not err:
+            not_in_either += 1
 
     with open(ERROR_OUT, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=ERROR_COLUMNS)
         writer.writeheader()
         writer.writerows(all_rows)
 
-    print(f"  Written {len(all_rows)} total rows → {ERROR_OUT}")
+    print(f"  Sources not in any error CSV (labelled 'Not captured'): {not_in_either}")
+    print(f"  Written {len(all_rows)} rows → {ERROR_OUT}")
 
 
-def merge_snapshots():
-    """Merge snapshot_index.csv + mixed-snapshots.csv → snapshots.csv."""
-    print("Step 3: Merging snapshot CSVs → snapshots.csv ...")
+def verify():
+    """Verify that snapshots.csv + error.csv == total JSON files."""
+    print("\nVerification:")
+    total_jsons = sum(1 for _ in DATA_DIR.glob("*.json"))
 
-    if not MIXED_SNAPSHOTS.exists():
-        print(f"  ERROR: {MIXED_SNAPSHOTS} not found — run --step index first", file=sys.stderr)
-        return
+    with open(SNAPSHOTS_OUT, newline="", encoding="utf-8") as f:
+        snap_count = sum(1 for _ in csv.DictReader(f))
+    with open(ERROR_OUT, newline="", encoding="utf-8") as f:
+        err_count = sum(1 for _ in csv.DictReader(f))
 
-    rows = []
-    with open(SNAPSHOT_INDEX, newline="", encoding="utf-8") as f:
-        rows.extend(csv.DictReader(f))
-    print(f"  {SNAPSHOT_INDEX}: {len(rows)} rows")
+    combined = snap_count + err_count
+    status = "OK" if combined == total_jsons else "MISMATCH"
 
-    mixed_rows = []
-    with open(MIXED_SNAPSHOTS, newline="", encoding="utf-8") as f:
-        mixed_rows.extend(csv.DictReader(f))
-    print(f"  {MIXED_SNAPSHOTS}: {len(mixed_rows)} rows")
-
-    rows.extend(mixed_rows)
-
-    with open(SNAPSHOTS_OUT, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=SNAPSHOT_COLUMNS)
-        writer.writeheader()
-        writer.writerows(rows)
-
-    print(f"  Written {len(rows)} total rows → {SNAPSHOTS_OUT}")
+    print(f"  snapshots.csv rows : {snap_count}")
+    print(f"  error.csv rows     : {err_count}")
+    print(f"  Combined           : {combined}")
+    print(f"  JSON files         : {total_jsons}")
+    print(f"  Status             : {status} {'✓' if status == 'OK' else f'(diff: {combined - total_jsons:+d})'}")
 
 
 def main():
@@ -210,11 +284,15 @@ def main():
     if args.step in ("index", "all"):
         build_mixed_snapshots()
 
-    if args.step in ("merge-errors", "all"):
-        merge_errors()
-
+    snap_urls = None
     if args.step in ("merge-snaps", "all"):
-        merge_snapshots()
+        snap_urls = merge_snapshots()
+
+    if args.step in ("merge-errors", "all"):
+        merge_errors(snap_urls)
+
+    if args.step == "all":
+        verify()
 
     print("\nDone.")
 
