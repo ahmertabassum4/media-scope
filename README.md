@@ -11,15 +11,24 @@ Ugrip/
 ├── data/
 │   ├── 2291eng_dedup/          # 2,290 JSON files, one per media source
 │   └── 2291eng_dedup.zip       # Compressed archive of the above
-├── output/                     # 866 successful screenshots (named by media name)
+│
+├── output/                     # 866 screenshots — HIGH / LOW / VERY HIGH / VERY LOW sources
+├── Mixed_output/               # ~1,177 screenshots — MIXED factuality sources
 ├── rerun_output/               # Screenshots from rerun of previously failed URLs
 ├── error_output/               # Screenshots from retries with 60,000ms timeout
 ├── errors/                     # Screenshots captured but showing error pages (bot blocks, 403s, etc.)
-├── snapshot_index.csv          # Index of all successful screenshots with metadata + trustworthiness
-├── errors.csv                  # Index of all failed/problematic URLs
-├── shots/                      # Ad-hoc single snapshots (from snapshot.py CLI)
+│
+├── snapshot_index.csv          # Index of 866 successful screenshots (non-MIXED)
+├── mixed-snapshots.csv         # Index of ~1,177 successful screenshots (MIXED only)
+├── snapshots.csv               # Merged index: snapshot_index.csv + mixed-snapshots.csv
+│
+├── errors.csv                  # Failed/problematic URLs from non-MIXED sources (179 entries)
+├── mixed-errors.csv            # Failed/problematic URLs from MIXED sources (116 entries)
+├── error.csv                   # Merged errors: errors.csv + mixed-errors.csv
+│
 ├── snapshot.py                 # Core screenshot engine (single URL)
-├── batch_snapshot.py           # Batch runner over the full dataset
+├── batch_snapshot.py           # Batch runner — currently targets MIXED factuality sources
+├── postprocessing.py           # Post-processing: build mixed-snapshots.csv, merge CSVs
 ├── cleaning.ipynb              # Notebook for cleaning, enriching, and analysing snapshot metadata
 └── README.md
 ```
@@ -59,36 +68,69 @@ Each file in `data/2291eng_dedup/` is a JSON object for one media source:
 | VERY LOW | 61 |
 | VERY HIGH | 15 |
 
-Sources with `MIXED` or `MOSTLY FACTUAL` are excluded from capture (1,293 excluded, 997 qualifying).
-
 ---
 
 ## Output CSVs
 
 ### `snapshot_index.csv`
 
-Index of all **866 successfully captured** screenshots.
+Index of all **866 successfully captured** screenshots from non-MIXED sources.
 
 | Column | Description |
 |---|---|
 | `media_name` | Human-readable name of the media source |
 | `url` | Homepage URL |
 | `image_path` | Relative path to the PNG file in `output/` |
-| `timestamp` | File modification time (`YYYY-MM-DD HH:MM:SS`) |
+| `timestamp` | Capture time (`YYYY-MM-DD HH:MM:SS`) |
 | `country` | Country of origin from MBFC data |
 | `factuality` | Factuality rating (`HIGH`, `LOW`, `VERY HIGH`, `VERY LOW`) |
-| `trustworthiness` | Binary label: `1` = HIGH or VERY HIGH factuality, `0` = LOW or VERY LOW |
+| `trustworthiness` | Binary label: `1` = HIGH or VERY HIGH, `0` = LOW or VERY LOW |
+
+### `mixed-snapshots.csv`
+
+Index of all **~1,177 successfully captured** screenshots from MIXED sources. Same columns as `snapshot_index.csv`. `trustworthiness` is empty for all rows (not yet labelled).
+
+### `snapshots.csv`
+
+Full merged index combining `snapshot_index.csv` and `mixed-snapshots.csv`. Same columns. Use this for training/analysis across all factuality classes.
+
+---
 
 ### `errors.csv`
 
-Index of all **179 failed or problematic** URLs (together with `snapshot_index.csv` covers all 997 qualifying sources minus duplicates).
+Failed or problematic URLs from **non-MIXED** sources (179 entries).
 
 | Column | Description |
 |---|---|
 | `filename` | Media source name |
 | `url` | Homepage URL |
 | `issue` | Category of the problem (see table below) |
-| `timestamp` | File modification time if an error screenshot exists, else empty |
+| `timestamp` | Capture time if an error screenshot exists, else empty |
+
+### `mixed-errors.csv`
+
+Failed or problematic URLs from **MIXED** sources (116 entries). Same issue categories plus two additional columns.
+
+| Column | Description |
+|---|---|
+| `filename` | PNG filename if a screenshot was taken, else empty |
+| `name` | Media source name |
+| `url` | Homepage URL |
+| `issue` | Category of the problem |
+| `factuality` | Always `MIXED` |
+
+### `error.csv`
+
+Full merged error log combining `errors.csv` and `mixed-errors.csv` (295 total entries). Columns are the union of both sources; missing fields are left empty.
+
+| Column | Description |
+|---|---|
+| `filename` | PNG filename if a screenshot was taken, else empty |
+| `name` | Media source name |
+| `url` | Homepage URL |
+| `issue` | Category of the problem |
+| `timestamp` | Capture time if available |
+| `factuality` | Factuality rating of the source |
 
 **Issue categories:**
 
@@ -102,11 +144,13 @@ Index of all **179 failed or problematic** URLs (together with `snapshot_index.c
 | Cloudflare — Invalid SSL certificate (526) | Origin server has invalid SSL cert |
 | Cloudflare — Web server is down (521) | Origin server not responding |
 | Account suspended | Hosting account suspended |
-| Access denied (CDN) | CDN-level IP block |
 | Blank — pure white | Page loaded but rendered nothing |
+| Domain parked / for sale | Domain no longer active |
+| Domain hijacked | Domain redirects to unrelated content |
 | Subscription popup only | Paywall/newsletter modal blocked content |
 | Page load timeout | Page did not load within timeout |
 | DNS failure | Domain does not exist |
+| SSL/TLS certificate error | Certificate invalid or expired |
 | Connection reset / timed out | Network-level failure |
 
 ---
@@ -165,34 +209,59 @@ Screenshots are saved as `<MediaName>_<timestamp>.png` (e.g. `BBC_News_20260604_
 
 ### Batch Run — `batch_snapshot.py`
 
-Captures all 997 qualifying sources. Skips already-captured URLs by default.
+Currently configured to capture all **MIXED** factuality sources (1,293 sources). Skips already-captured URLs by default.
 
 ```bash
-# Standard run — skips already-captured
-python batch_snapshot.py
+# Capture all MIXED sources → Mixed_output/
+python batch_snapshot.py --output Mixed_output
 
 # Re-capture everything
-python batch_snapshot.py --force
+python batch_snapshot.py --output Mixed_output --force
 
 # Retry only URLs that previously timed out
-python batch_snapshot.py --retry-timeouts --timeout 60000
+python batch_snapshot.py --output Mixed_output --retry-timeouts --timeout 60000
 
-# Rerun from a CSV file (must have a 'url' column)
-python batch_snapshot.py --from-csv errors.csv --output rerun_output --timeout 30000
-
-# Retry all error-status URLs across multiple log files
+# Retry all error-status URLs across log files
 python batch_snapshot.py \
-  --from-logs output/batch_log.jsonl rerun_output/batch_log.jsonl \
-  --output error_output --timeout 60000
+  --from-logs Mixed_output/batch_log.jsonl \
+  --output Mixed_output --timeout 60000
 
 # Preview URLs without capturing
 python batch_snapshot.py --dry-run
 
 # Tune parallelism (default: 4 workers)
-python batch_snapshot.py --workers 6
+python batch_snapshot.py --workers 8
 ```
 
+To switch to a different factuality class, change `TARGET_FACTUALITY` at the top of `batch_snapshot.py`.
+
 All runs append results to `<output_dir>/batch_log.jsonl`.
+
+---
+
+### Post-processing — `postprocessing.py`
+
+Builds `mixed-snapshots.csv` and produces the final merged CSVs.
+
+```bash
+# Run all steps
+python postprocessing.py
+
+# Only build mixed-snapshots.csv (from Mixed_output/batch_log.jsonl)
+python postprocessing.py --step index
+
+# Only merge error CSVs → error.csv
+python postprocessing.py --step merge-errors
+
+# Only merge snapshot CSVs → snapshots.csv
+python postprocessing.py --step merge-snaps
+```
+
+| Step | Input | Output |
+|---|---|---|
+| `index` | `Mixed_output/batch_log.jsonl`, `mixed-errors.csv`, source JSONs | `mixed-snapshots.csv` |
+| `merge-errors` | `errors.csv` + `mixed-errors.csv` | `error.csv` |
+| `merge-snaps` | `snapshot_index.csv` + `mixed-snapshots.csv` | `snapshots.csv` |
 
 ---
 
@@ -206,21 +275,21 @@ Screenshots are saved as:
 
 For example: `BBC_News_20260604_120000.png`, `New_York_Times_20260604_130500.png`.
 
-The `snapshot_index.csv` maps every file back to its URL, country, and factuality rating.
-
 ---
 
 ## Workflow
+
+### Phase 1 — Non-MIXED sources (HIGH / LOW / VERY HIGH / VERY LOW)
 
 ```
 1. python batch_snapshot.py
         ↓ captures all 997 qualifying sources → output/
         ↓ logs every attempt → output/batch_log.jsonl
 
-2. Analyse images (cleaning.ipynb)
+2. Review images (cleaning.ipynb)
         ↓ detect blank/error/bot-blocked screenshots
         ↓ move bad ones → errors/
-        ↓ update errors.csv
+        ↓ record in errors.csv
 
 3. python batch_snapshot.py --from-csv errors.csv --output rerun_output
         ↓ retry failed URLs
@@ -229,6 +298,24 @@ The `snapshot_index.csv` maps every file back to its URL, country, and factualit
      --from-logs output/batch_log.jsonl rerun_output/batch_log.jsonl \
      --output error_output --timeout 60000
         ↓ retry persistent errors with higher timeout
+```
+
+### Phase 2 — MIXED sources
+
+```
+1. python batch_snapshot.py --output Mixed_output
+        ↓ captures all 1,293 MIXED sources → Mixed_output/
+        ↓ logs every attempt → Mixed_output/batch_log.jsonl
+
+2. Visual review (automated via workflow)
+        ↓ detect blank/error/bot-blocked screenshots
+        ↓ move bad ones → errors/
+        ↓ record in mixed-errors.csv
+
+3. python postprocessing.py
+        ↓ builds mixed-snapshots.csv (clean MIXED screenshots index)
+        ↓ merges errors.csv + mixed-errors.csv → error.csv
+        ↓ merges snapshot_index.csv + mixed-snapshots.csv → snapshots.csv
 ```
 
 ---
@@ -246,7 +333,7 @@ A Jupyter notebook for post-processing and analysing the captured screenshots.
 5. Saves the enriched DataFrame back to `snapshot_index.csv`
 6. Plots the trustworthiness distribution across the captured dataset
 
-**Trustworthiness distribution (from captured sources):**
+**Trustworthiness distribution (non-MIXED sources):**
 
 | Factuality | Count | Trustworthiness |
 |---|---:|---|
@@ -262,9 +349,19 @@ A Jupyter notebook for post-processing and analysing the captured screenshots.
 | Metric | Count |
 |---|---:|
 | Total sources in dataset | 2,290 |
-| Qualifying sources (non-MIXED) | 997 |
+| — MIXED sources | 1,293 |
+| — Non-MIXED sources (HIGH / LOW / VERY HIGH / VERY LOW) | 997 |
+| **Non-MIXED captures** | |
 | Successfully captured (`output/`) | 866 |
 | — Trustworthy (HIGH / VERY HIGH) | 716 |
 | — Untrustworthy (LOW / VERY LOW) | 150 |
 | Failed / problematic (`errors.csv`) | 179 |
-| Error screenshots (`errors/`) | 81 |
+| **MIXED captures** | |
+| Successfully captured (`Mixed_output/`) | ~1,177 |
+| — trustworthiness | *not yet labelled* |
+| Failed / problematic (`mixed-errors.csv`) | 116 |
+| — Capture-time errors (network/SSL/timeout) | 80 |
+| — Visual errors (bot block, blank, 403, etc.) | 36 |
+| **Merged totals** | |
+| Total clean screenshots (`snapshots.csv`) | ~2,043 |
+| Total error records (`error.csv`) | 295 |
