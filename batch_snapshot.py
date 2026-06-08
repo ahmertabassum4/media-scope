@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-batch_snapshot.py — Snapshot every media source whose factuality is not
-MIXED or MOSTLY FACTUAL.
+batch_snapshot.py — Snapshot every media source whose factuality is MIXED.
 
 Usage:
     python batch_snapshot.py                                                    # skip already-captured (default)
@@ -19,7 +18,6 @@ Usage:
 import argparse
 import csv
 import json
-import os
 import re
 import sys
 import time
@@ -28,7 +26,7 @@ from pathlib import Path
 
 from snapshot import take_snapshot
 
-EXCLUDED_FACTUALITY = {"MIXED", "MOSTLY FACTUAL"}
+TARGET_FACTUALITY = {"MIXED"}
 DATA_DIR = Path("data/2291eng_dedup")
 
 
@@ -42,7 +40,7 @@ def load_qualifying_sources(data_dir: Path) -> list[dict]:
             continue
 
         factuality = (data.get("factuality") or "").strip().upper()
-        if factuality in EXCLUDED_FACTUALITY:
+        if factuality not in TARGET_FACTUALITY:
             continue
 
         media_link = (data.get("media link") or "").strip()
@@ -168,7 +166,7 @@ def main():
         print(f"Loaded {len(sources)} URLs from {args.from_csv}")
     else:
         sources = load_qualifying_sources(data_dir)
-        print(f"Found {len(sources)} qualifying sources (factuality not in {EXCLUDED_FACTUALITY})")
+        print(f"Found {len(sources)} qualifying sources with factuality in {TARGET_FACTUALITY}")
 
     if args.retry_timeouts:
         timeout_urls = load_timeout_urls(log_path)

@@ -11,3 +11,4 @@ errors/*.png
 *.jpg
 *.jpeg
 *.gif
+tmp/
