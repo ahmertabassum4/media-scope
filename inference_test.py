@@ -9,6 +9,7 @@ import argparse
 import requests
 from pathlib import Path
 from dotenv import load_dotenv
+
 # Imports to fix images that are too large
 from PIL import Image
 import io

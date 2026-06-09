@@ -1,0 +1,13 @@
+task,dimension,model,prompt,accuracy,macro_f1,n,NOT FACTUAL_precision,NOT FACTUAL_recall,NOT FACTUAL_f1,NOT FACTUAL_support,FACTUAL_precision,FACTUAL_recall,FACTUAL_f1,FACTUAL_support
+joint,trustworthiness,claude-sonnet-4-6,engineered,0.9598,0.9598,199,0.9691,0.9495,0.9592,99,0.951,0.97,0.9604,100
+joint,trustworthiness,claude-sonnet-4-6,simple,0.9447,0.9447,199,0.949,0.9394,0.9442,99,0.9406,0.95,0.9453,100
+joint,trustworthiness,gemini-2-5-flash-lite,engineered,0.9137,0.9137,197,0.901,0.9286,0.9146,98,0.9271,0.899,0.9128,99
+joint,trustworthiness,gemini-2-5-flash-lite,simple,0.865,0.8635,200,0.962,0.76,0.8492,100,0.8017,0.97,0.8778,100
+joint,trustworthiness,gemma-4-31b,engineered,0.84,0.8368,200,0.9722,0.7,0.814,100,0.7656,0.98,0.8596,100
+joint,trustworthiness,gemma-4-31b,simple,0.775,0.7748,200,0.8395,0.68,0.7514,100,0.7373,0.87,0.7982,100
+joint,trustworthiness,gpt-5-5,engineered,0.965,0.965,200,0.9895,0.94,0.9641,100,0.9429,0.99,0.9659,100
+joint,trustworthiness,gpt-5-5,simple,0.97,0.97,200,0.9796,0.96,0.9697,100,0.9608,0.98,0.9703,100
+joint,trustworthiness,kimi-k2-6,engineered,1.0,1.0,4,1.0,1.0,1.0,1,1.0,1.0,1.0,3
+joint,trustworthiness,kimi-k2-6,simple,0.9849,0.9849,199,0.9898,0.9798,0.9848,99,0.9802,0.99,0.9851,100
+joint,trustworthiness,qwen2-5-vl-72b,engineered,0.92,0.92,200,0.9375,0.9,0.9184,100,0.9038,0.94,0.9216,100
+joint,trustworthiness,qwen2-5-vl-72b,simple,0.905,0.905,200,0.8932,0.92,0.9064,100,0.9175,0.89,0.9036,100

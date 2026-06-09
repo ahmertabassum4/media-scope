@@ -1,0 +1,12 @@
+task,model,prompt,accuracy,macro_f1,n,CONSPIRACY_precision,CONSPIRACY_recall,CONSPIRACY_f1,CONSPIRACY_support,PSEUDOSCIENCE_precision,PSEUDOSCIENCE_recall,PSEUDOSCIENCE_f1,PSEUDOSCIENCE_support,LEGITIMATE_precision,LEGITIMATE_recall,LEGITIMATE_f1,LEGITIMATE_support
+genre,claude-sonnet-4-6,engineered,0.2111,0.3733,199,0.6889,0.5254,0.5962,59,0.7857,0.3929,0.5238,28,0.0,0.0,0.0,0
+genre,claude-sonnet-4-6,simple,0.2211,0.3849,199,0.7273,0.5424,0.6214,59,0.7059,0.4286,0.5333,28,0.0,0.0,0.0,0
+genre,gemini-2-5-flash-lite,engineered,0.11,0.2127,200,0.5806,0.3,0.3956,60,0.8,0.1429,0.2424,28,0.0,0.0,0.0,0
+genre,gemini-2-5-flash-lite,simple,0.055,0.1481,200,0.5833,0.1167,0.1944,60,1.0,0.1429,0.25,28,0.0,0.0,0.0,0
+genre,gemma-4-31b,engineered,0.0769,0.1693,39,0.6667,0.1333,0.2222,15,1.0,0.1667,0.2857,6,0.0,0.0,0.0,0
+genre,gemma-4-31b,simple,0.12,0.2658,200,0.64,0.2667,0.3765,60,0.8,0.2857,0.4211,28,0.0,0.0,0.0,0
+genre,gpt-5-5,engineered,0.2475,0.4394,198,0.7174,0.55,0.6226,60,0.8421,0.5926,0.6957,27,0.0,0.0,0.0,0
+genre,gpt-5-5,simple,0.24,0.4184,200,0.7021,0.55,0.6168,60,0.7895,0.5357,0.6383,28,0.0,0.0,0.0,0
+genre,kimi-k2-6,simple,0.2576,0.435,198,0.7347,0.6102,0.6667,59,0.7895,0.5357,0.6383,28,0.0,0.0,0.0,0
+genre,qwen2-5-vl-72b,engineered,0.2412,0.4319,199,0.7209,0.5167,0.6019,60,0.8095,0.6071,0.6939,28,0.0,0.0,0.0,0
+genre,qwen2-5-vl-72b,simple,0.23,0.3394,200,0.5846,0.6333,0.608,60,0.7273,0.2857,0.4103,28,0.0,0.0,0.0,0
