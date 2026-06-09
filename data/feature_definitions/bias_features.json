@@ -1,0 +1,902 @@
+[
+  {
+    "key": "d01_anti_immigration_border",
+    "name": "Anti-immigration / border-threat framing",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "PRESENT requires at least one lexicon-matched anti-immigration / border-threat term ('border invasion','migrant crime','build the wall','mass deportation' framed approvingly) rendered as readable on-page text in a headline or section label. Neutral terms ('immigration','migrants') do NOT trigger; coordinate with d19 so a given phrase is counted once.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d02_pro_gun_2a",
+    "name": "Pro-gun / Second Amendment framing",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "PRESENT requires a lexicon-matched pro-gun / Second-Amendment phrase ('Second Amendment','gun rights','concealed carry','firearms freedom','shall not be infringed') rendered as readable on-page text in a headline, nav, tagline, or hero caption. Bare firearm imagery is scored under d25, not here.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d03_anti_vaccine_medical_freedom",
+    "name": "Anti-vaccine / medical-freedom framing",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline or section presents vaccines/public-health measures as harmful (e.g. 'COVID vaccine caused deaths', 'vaccine injury', 'medical freedom', 'plandemic'). PRESENT requires at least one such lexicon-matched anti-vaccine phrase as rendered on-page text.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d04_pro_life_anti_abortion",
+    "name": "Pro-life / anti-abortion framing",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline or section frames abortion negatively or uses pro-life coded wording (e.g. 'pro-life', 'unborn', 'defund Planned Parenthood', 'abortion is murder'). PRESENT requires a lexicon-matched anti-abortion term as on-page text.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d05_election_integrity_fraud",
+    "name": "Election-fraud / 'stolen election' framing",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "PRESENT requires a lexicon-matched election-fraud term ('voter fraud','rigged election','stop the steal','ballot harvesting','stolen election') visibly rendered as on-page text in a headline, link label, or banner. Anchor: use an outlet where the term is the visible headline text, not merely an inferred linked article.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d06_anti_dei_anti_woke",
+    "name": "Anti-DEI / anti-woke framing",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "PRESENT requires a lexicon-matched anti-DEI/anti-woke term used as a topical attack in a HEADLINE or SECTION LABEL ('woke agenda','go woke go broke','critical race theory','gender ideology'). Stand-alone slur tokens covered by d18 do not double-count here.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d07_anti_islam",
+    "name": "Anti-Islam framing",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "PRESENT requires a lexicon-matched anti-Islam term ('Stop Islam','War Against Islam','Sharia Law' as threat) rendered as readable on-page HEADLINE or BODY text. Nav-category instances are scored by d21 to avoid double-counting; drop the context-dependent 'Islamophobia used dismissively' clause as not lexicon-determinable.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d08_christian_nationalist",
+    "name": "Christian-nationalist religious framing",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "PRESENT requires at least one lexicon-matched Christian-nationalist token rendered as readable on-page text in a headline, nav label, or tagline ('Christian nation','biblical worldview','Jesus vs. Muhammad','religious liberty' in culture-war sense, Bible-vs-Quran nav). No lexicon match => ABSENT, regardless of general religious tone.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d09_anti_globalist",
+    "name": "Anti-globalist / sovereignty framing",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "PRESENT requires a lexicon-matched anti-globalist/sovereignty term ('globalist agenda','New World Order','Great Reset','UN takeover','deep state','America First') rendered as readable on-page text. Shared tokens with d20 are counted once; anchor must show the term as visible headline/banner text.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d10_crime_law_and_order",
+    "name": "Crime / law-and-order framing",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "PRESENT requires a lexicon-matched law-and-order term rendered as on-page text ('crime wave','soft-on-crime DA','back the blue','defund the police' attacked). City-specific 'lawlessness in X' counts only if X is a lexicon-coded place name; do not infer a city's partisanship from outside knowledge.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d11_anti_climate_pro_fossil",
+    "name": "Anti-climate-policy / pro-fossil-energy framing",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline or section attacks climate policy or champions fossil fuels (e.g. 'climate hoax', 'Green New Deal scam', 'EV mandate', 'drill baby drill', 'war on coal/oil'). PRESENT requires a lexicon-matched anti-climate-policy term as rendered on-page text.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d12_partisan_figure_polarity_right",
+    "name": "Net polarity of named figures leans right-favorable",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "PRESENT requires at least two lexicon-matched named political figures/parties visible in on-page headlines or photo captions whose summed lexicon left/right side-scores net right. Score side membership only; favorability/role toward each figure is scored separately by d13-d16 and is not part of this feature.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d13_right_figure_flattering_photo",
+    "name": "Flattering photo of right-coded figure",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "PRESENT requires a photo whose subject is a lexicon-right figure identified via a visible on-page name caption/headline, shown with at least one explicit favorable cue (smiling, waving, at podium/rally, presidential framing) and no derisive crop. If the figure is not named in visible text, score UNCLEAR rather than relying on face recognition.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d14_left_figure_unflattering_photo",
+    "name": "Unflattering / mocking photo of left-coded figure",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "PRESENT requires a photo/caricature/cartoon whose subject is a lexicon-left figure identified via a visible on-page name caption/headline, rendered with an explicit derogatory cue (grotesque caricature, unflattering mid-expression crop, mocking cartoon framing). If the subject is not named in visible text, score UNCLEAR; do not identify faces from world-knowledge.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d15_sympathetic_headline_right_figure",
+    "name": "Sympathetic / celebratory headline toward right figure",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline frames a LEXICON-right figure/party positively or as winning/vindicated ('Trump SLAMS...', 'exposes', praise of GOP action). Lexicon maps target->right; observer reads the wording as approving or as attacking the figure's opponents on their behalf.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d16_hostile_headline_left_figure",
+    "name": "Hostile headline toward left-coded figure/party",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline frames a LEXICON-left figure or party (Biden, Harris, 'Democrats', a named Democrat) with hostile/accusatory or derisive wording ('exposed', 'caught', 'radical', 'fails', 'disaster'). Lexicon maps target->left; observer reads wording as hostile.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d17_patriot_identity_terms",
+    "name": "Right-coded patriot / loyalty identity terms",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "Visible headline/nav/tag/ad text contains right-coded in-group loyalty or betrayal terms: 'patriot(s)', 'America First', 'RINO', 'traitor', 'Western civilization', 'God and country', 'real Americans', 'WE WANT YOU'. PRESENT requires a lexicon-matched term as readable on-page text.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d18_culture_war_pejoratives",
+    "name": "Right-coded culture-war pejoratives",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "PRESENT requires a lexicon-matched right-coded culture-war slur token ('woke','groomer','DEI'-as-slur,'cancel culture','radical left') rendered as readable on-page text and not inside quotation marks attributing it to an opponent. Topical headline attacks are scored by d06; shared tokens count once.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d19_immigration_terms",
+    "name": "Right-coded immigration framing terms",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "PRESENT requires a lexicon-matched right-coded immigration token rendered as readable on-page text ('illegal aliens','illegals','invasion','open borders','great replacement','anchor babies'). Neutral 'immigration'/'migrants' do not trigger. Coordinate with d01 so a phrase is counted once across the two features.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d20_gov_conspiracy_terms",
+    "name": "Right-coded government/elite conspiracy terms",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "PRESENT requires a lexicon-matched right-coded hidden-power conspiracy token rendered as readable on-page text ('deep state','great reset','new world order','the cabal','Soros'-as-villain,'plandemic','scamdemic'). Tokens shared with d09 are counted once.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d21_religious_anti_islam_terms",
+    "name": "Right-coded religious / anti-Islam nav terms",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "PRESENT requires a lexicon-matched anti-Islam / Christian-nationalist token appearing as a NAV CATEGORY or SECTION LABEL ('Stop Islam','War Against Islam','Sharia Law'-as-threat,'Sharia creep'). Match literal lexicon phrases only; do not infer sarcasm. Headline/body instances are scored by d07 to avoid double-counting.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d22_right_coded_name_token",
+    "name": "Right-coded outlet name token",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "The outlet's masthead/logo/title contains a lexicon-flagged right-coded token (e.g. Patriot, Liberty, Freedom, American, Renaissance, Firearms, Eagle, Faith). Scored by matching the visible name string against the fixed lexicon.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d23_right_mission_tagline",
+    "name": "Right-leaning visible mission / tagline",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "PRESENT requires a visibly-rendered tagline or self-description string (masthead, hero subhead, or on-page mission line) whose lexicon-scored tokens net right ('defending Western civilization', pro-2A mission, Christian-nationalist phrasing). If no tagline/self-description is visible on the landing page, score ABSENT, not inferred. Do not double-count tokens already fired by d02/d08/d22.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d24_us_flag_patriotic_motif",
+    "name": "US flag / patriotic motif imagery",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": false,
+    "present_means": "PRESENT requires a US flag, eagle, red-white-blue bunting, Statue of Liberty, or stars-and-stripes graphic used as a BRANDING/masthead/hero/ad motif (not an incidental in-photo flag or a neutral civic-info badge). Treat as a weak right-leaning indicator only; incidental flags in news photos => ABSENT for this feature.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d25_firearms_ammunition_imagery",
+    "name": "Firearms / ammunition imagery",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": false,
+    "present_means": "A photographic or illustrated gun, rifle, handgun, scope, ammunition/bullet/cartridge, or shooting-range scene is visible as a hero image, thumbnail, ad, or footer graphic. PRESENT requires an actual depicted weapon or rounds, not the word 'gun'.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d26_christian_religious_imagery",
+    "name": "Christian / religious imagery (cross, Bible)",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": false,
+    "present_means": "A Christian-specific visual symbol is clearly visible in logo, hero, recurring thumbnails, or ads: a cross/crucifix, an open Bible, praying hands, a clearly Christian church facade with a cross/steeple, or a depiction of Jesus/saints. PRESENT requires the visible iconography itself; religious words, denominational names, or crowd/worship photos without a Christian symbol do NOT count. Re-anchor to an outlet whose screenshot actually displays a cross or Bible image.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d27_classical_western_civ_statuary",
+    "name": "Classical / 'Western civilization' statuary imagery",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": false,
+    "present_means": "A Greco-Roman or Renaissance marble statue, bust, column/temple architecture, or classical-painting motif is visible in the masthead, hero, or recurring branding. PRESENT requires the visible statue/column/classical-art element.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d28_military_police_imagery",
+    "name": "Military / police / soldier imagery",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": false,
+    "present_means": "A pro-military/pro-police PARTISAN visual is clearly visible (not the weapon itself): a 'thin blue line' / 'Back the Blue' flag or graphic, camouflage used as a branding/palette element, tactical body-armor gear featured promotionally, or troops/police framed as heroic defenders in hero or ads. A single routine news photo of a uniformed officer, soldier, or vehicle in ordinary crime/defense coverage does NOT count. Re-anchor to a screenshot where thin-blue-line or camo branding is actually visible.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d29_gold_investment_ads",
+    "name": "Gold / precious-metal investment ad",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": false,
+    "present_means": "At least one visible ad or sidebar/footer block sells gold, silver, precious-metal coins, bullion, or a 'gold IRA' / hard-money 'protect-your-savings' pitch, with recognizable gold-coin or bullion imagery or a 'METAL'-style label. Generic crypto/Bitcoin exchange ads do NOT count unless framed as anti-dollar/hard-money.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d30_prepper_survival_product",
+    "name": "Prepper / survival product or content",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": false,
+    "present_means": "A visible ad, product block, or promoted item targets survivalist/prepper readiness: long-term emergency/'survival' food, off-grid/bug-out/survival kits, emergency water filtration, home-defense, EMP/'when the grid goes down', or doomsday-framed self-sufficiency. Ordinary gardening, cooking, or homesteading content without emergency/collapse framing does NOT count.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d31_supplement_detox_cure_ad",
+    "name": "Supplement / detox / 'miracle cure' ad",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": false,
+    "present_means": "A visible fear-based health ad selling supplements, detox, weight-loss, blood-sugar/diabetes, or alt-medicine 'miracle cure' products with clickbait framing ('The Truth About...', 'Doctors hate this'). Common right-audience monetization.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d32_sympathetic_headline_right_figure_2",
+    "name": "Right-coded figure framed as vindicated/winning",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline names a LEXICON-right figure/party (lookup allowed) AND pairs it with an explicit approving/triumphant marker in the visible text: all-caps win words ('WINS','DESTROYS','OWNS','SLAMS'[ally]), vindication framing ('finally vindicated','proven right','exposes the [opponent]'), or celebratory praise. PRESENT requires both the lexicon-right target and a legible positive/triumphant cue; neutral mentions or factual result reporting are ABSENT/UNCLEAR.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d33_anti_immigrant_visual",
+    "name": "Anti-immigrant threat imagery",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": false,
+    "present_means": "A visible photo/graphic depicts immigration as a threat scene: a large crowd pressing at/breaching a border fence or wall, a 'caravan'/'invasion'-styled mass-migration image, or an alarm-composed border tile, AND the adjacent visible headline uses restrictionist/threat words ('invasion','illegals','flood','overrun','border crisis'). PRESENT requires BOTH the threat-composed image and the visible restrictionist text; an ordinary border/migrant news photo without threat composition or wording is ABSENT/UNCLEAR.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d34_abortion_rights_framing",
+    "name": "Abortion-rights / reproductive-justice framing",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline or section conveys pro-access VALENCE toward abortion \u2014 treating restriction/bans as harm or championing access (e.g. 'protect abortion access', 'post-Roe fallout', framing a ban as an attack on rights). Scored for legible supportive-of-access framing, NOT for the mere presence of reproductive vocabulary (that is d47). A bare section label like 'Abortion 101' counts only when surrounding visible content makes the supportive valence legible.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d35_climate_action_framing",
+    "name": "Climate-action / pro-mitigation urgency framing",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline or section frames climate change as a crisis DEMANDING action \u2014 both (a) acceptance of climate science and (b) urgency/call-to-act language ('climate crisis/emergency','time to act','must cut emissions'). PRESENT requires the urgency+call-to-act valence; neutral 'clean energy'/'energy transition' business mentions without urgency framing are ABSENT and bare crisis terms are scored under d48.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d36_anti_fossil_fuel_framing",
+    "name": "Anti-fossil-fuel / oil-industry-critical framing",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "Visible text attacks or delegitimizes the fossil-fuel industry: 'Oil Companies in Disguise', 'stranded assets', 'keep it in the ground', or headlines casting oil/gas/coal firms as bad actors. The negative valence toward fossil-fuel firms must be legible.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d37_lgbtq_rights_framing",
+    "name": "LGBTQ+ rights affirmative framing",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "Visible headlines, section labels, or imagery affirmatively support LGBTQ+ rights: 'trans rights', 'LGBTQ', 'gender-affirming care' framed positively, or coverage casting anti-LGBTQ policy as discriminatory. Supportive valence must be readable.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d38_racial_justice_equity_framing",
+    "name": "Racial-justice / equity / DEI-positive framing",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline or section uses racial-justice/equity vocabulary with APPROVING valence \u2014 treating discrimination, 'systemic racism', or inequity as the problem to fix, or 'DEI'/'diversity' as a positive value. PRESENT requires the pro-equity valence (anti-DEI/anti-'woke' framing is ABSENT here); pure term presence without valence is scored under d46. Re-anchor to a screenshot whose visible text is actually about racial justice/DEI rather than reproductive justice.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d39_gun_control_framing",
+    "name": "Gun-control / gun-safety framing",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline or section frames firearms as a problem requiring regulation with legible pro-regulation valence ('gun safety','gun violence','common-sense gun laws','assault-weapons ban' presented favorably) AND no celebration of firearms on screen. Distinguish from d49: d39 scores the regulatory-framing/valence, d49 scores bare left-coded gun terms; do not count the same headline for both. Verify the anchor actually shows this framing.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d40_immigrant_rights_framing",
+    "name": "Immigrant-rights / pro-immigration framing",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "Visible text frames immigrants sympathetically or attacks restrictionist policy: 'immigrant rights', 'asylum seekers', 'Dreamers', or headlines casting deportation/ICE/border crackdowns as harmful. The pro-immigrant valence must be legible (not 'illegals'/'invasion' framing).",
+    "verdict": "keep"
+  },
+  {
+    "key": "d41_labor_inequality_framing",
+    "name": "Labor / economic-inequality / pro-worker framing",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline or section takes labor's side or frames inequality as injustice: sympathetic strike/union coverage, 'living wage','corporate greed','workers exploited','rigged economy', or framing layoffs/low pay as injustice. PRESENT requires the pro-worker / anti-inequality valence in the visible text; neutral or anti-union economic/business reporting using the same nouns ('union','strike','inequality') is ABSENT/UNCLEAR.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d42_social_safety_net_framing",
+    "name": "Social-safety-net / public-program supportive framing",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline or section supports government social programs or frames cuts/benefit reductions to them as harmful: defending or expanding Medicaid/SNAP/food assistance/public healthcare, or 'GOP/budget cuts hurt [program/recipients]' framing. PRESENT requires the pro-program or anti-cut valence; neutral mentions of public schools, clinics, or a 'physician shortage' without that valence are ABSENT/UNCLEAR.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d43_anti_trump_gop_accountability",
+    "name": "Anti-Trump / anti-GOP accountability framing",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline critically frames a LEXICON-right figure/party (lookup allowed) as a wrongdoer or threat \u2014 scandal, 'cuts that hurt', accountability, or condemnation aimed at Trump/GOP. PRESENT requires legible critical valence toward the right target in the visible text. Do NOT require checking the whole page for absence of Democrat-critical coverage (that one-sidedness belongs to an intensity feature).",
+    "verdict": "fix"
+  },
+  {
+    "key": "d44_misinformation_opponent_framing",
+    "name": "'Misinformation/disinformation' framing of opponents",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline/section applies a delegitimizing-epistemic label ('misinformation','disinformation','conspiracy theory','lies','debunked') to a claim or actor that the LEXICON resolves as right-coded (e.g. a named right figure/issue in the same headline). If the target's lean cannot be resolved from the visible text via the lexicon, score UNCLEAR rather than PRESENT \u2014 do not infer the target's politics from outside knowledge.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d45_opponent_delegitimizing_terms",
+    "name": "Left-coded delegitimizing labels for the right",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "Visible text applies a left-coded delegitimizing label ('fascist','far-right','extremist','white supremacist','authoritarian','election denier','insurrectionist') to a target the LEXICON resolves as US-right (named figure/party/movement). If the labeled target is absent from the lexicon or its lean is not resolvable from the visible text, score UNCLEAR, not PRESENT.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d46_equity_identity_terms",
+    "name": "Left-coded equity / identity terms",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "Visible headline/nav/tag/section text contains left-coded social-justice identity terms: 'equity', 'marginalized', 'BIPOC', 'systemic racism', 'inclusion', 'underrepresented', 'social justice', 'lived experience', 'communities of color'. Must be readable text.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d47_reproductive_terms",
+    "name": "Left-coded reproductive-rights terms",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "Visible text uses left-coded reproductive-rights framing: 'reproductive justice', 'reproductive rights', 'abortion access', 'medication abortion', 'bodily autonomy', 'post-Roe', 'forced birth', 'Abortion 101'. Must be readable text.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d48_climate_crisis_terms",
+    "name": "Left-coded climate-crisis framing terms",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "Visible headline/nav/tag text uses left-coded climate-urgency terms: 'climate crisis', 'climate emergency', 'climate justice', 'low-carbon future', 'fossil fuel' as villain, 'just transition', 'climate denial'. Must be readable text framing climate as crisis/justice.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d49_gun_violence_frame",
+    "name": "Left-coded 'gun violence' / gun-control framing terms",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "Visible text uses left-coded firearm framing: 'gun violence', 'gun safety', 'gun reform', 'assault weapons', 'epidemic of gun violence', 'common-sense gun laws'. The polar opposite of right-coded 'Second Amendment'/'gun rights'. PRESENT only for the left-coded variant as readable text.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d50_right_figure_unflattering_photo",
+    "name": "Unflattering / mocking photo of right-coded figure",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A visible POLITICAL CARTOON or editorial CARICATURE (drawn/illustrated, not a photograph) depicts a LEXICON-right figure (lookup allowed) with clearly derogatory exaggeration \u2014 grotesque/mocking caricature. Ordinary press PHOTOGRAPHS, even unflattering candid frames, are ABSENT/UNCLEAR because mocking intent cannot be reliably read from a single static photo.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d51_left_figure_flattering_photo",
+    "name": "Flattering photo of left-coded figure",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A photo on the page depicts a person whose face/caption the LEXICON codes as left-wing (e.g. Biden, Harris, a named Democratic official), shown in a clearly positive visual register: smiling, posed heroically (low angle, flag/podium, crowd cheering), or captioned approvingly. ABSENT if the figure is unidentifiable, shown neutrally (standard headshot), or shown negatively. Lexicon supplies figure->left; observer records only that a positive visual register (smile/heroic pose/approving caption) co-occurs with that identified figure.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d52_hostile_headline_right_figure",
+    "name": "Hostile headline toward right-coded figure/party",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline names an individual the LEXICON codes as right-wing (e.g. Trump or a named Republican) AND contains a lexicon-flagged hostility/negative-valence term ('lies','misinformation','attacks','threatens','scandal','extremism','rips','slams'). Both the right-coded name and the lexicon-listed hostility term must be readable in the same headline. Party-only subjects are scored under d60, not here.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d53_sympathetic_headline_left_figure",
+    "name": "Sympathetic / celebratory headline toward left figure",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline names a figure/party the LEXICON codes as left-wing AND contains a lexicon-flagged approving/championing term ('fights for','defends','champions','stands up for','wins','vindicated') OR frames that figure as a victim of a lexicon-right actor. Both the left-coded name and the lexicon-listed approving term must be readable in the same headline.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d54_pride_rainbow_socialjustice_motif",
+    "name": "Pride / rainbow & social-justice motif imagery",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": false,
+    "present_means": "A literal pride/rainbow flag or rainbow stripe band, trans-flag (blue/pink/white) color band, raised-fist or BLM graphic, or an equals-sign equality symbol is visibly rendered in branding, hero, a thumbnail, or an ad. PRESENT requires the rendered symbol/flag/fist itself; topical words ('LGBTQ','equality') without the visual symbol are ABSENT. (Anchor: use a screenshot that actually displays such a symbol; ReWire does not show one and should not be the anchor.)",
+    "verdict": "fix"
+  },
+  {
+    "key": "d55_protest_activism_imagery",
+    "name": "Protest / activism / march imagery",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": false,
+    "present_means": "A photo/illustration of a crowd protest, march, rally, or demonstrators holding signs/placards is visible in hero or thumbnails AND any legible sign/banner text matches a LEXICON left-coded slogan/cause (climate, abortion rights, BLM, immigrant rights). PRESENT requires both the crowd/march scene and at least one lexicon-left-coded legible cue; a march scene with no legible left-coded cue is scored ABSENT for this left-direction feature (consider a separate direction-agnostic 'protest imagery' intensity feature instead).",
+    "verdict": "fix"
+  },
+  {
+    "key": "d56_green_climate_imagery_palette",
+    "name": "Green/blue climate & nature imagery and palette",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": false,
+    "present_means": "At least one unambiguous renewable-energy or nature object is visible in hero/thumbnails/chrome (wind turbine, solar panel, green-leaf/forest, ocean, or stylized green-planet motif), AND the surrounding palette is predominantly green/blue. PRESENT requires the concrete renewable/nature object, not palette alone; a green/blue palette with no nature/energy object is ABSENT.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d57_left_coded_name_token",
+    "name": "Left-coded outlet name token",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "The visible masthead/logo/title string contains a token the fixed LEXICON explicitly codes left (per the audited token list, e.g. 'Progressive','Justice','Equity','Rewire','Solidarity'). Scored only by exact case-insensitive match of the rendered name against the lexicon's left-token list. Generic words not in the lexicon (e.g. 'People','Reflector','News') do NOT count even if illustratively similar.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d58_left_mission_tagline",
+    "name": "Left-leaning visible mission / tagline",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A visible tagline, mission line, or self-description whose lexicon-scored ideology leans left (e.g. 'reproductive justice', 'low-carbon future', 'equity', climate/clean-energy advocacy framing). Scored against the lexicon.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d59_membership_solidarity_cta",
+    "name": "Mission-driven membership / donation appeal",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": false,
+    "present_means": "A prominent reader-funded membership/donation appeal is visible AND its surrounding copy ties support to a LEXICON-left cause or movement-community framing ('reproductive justice','climate','equity','join the movement'). Generic 'become a member'/'donate'/'support independent journalism' with no lexicon-left cause attached is ABSENT for this left-direction feature.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d60_hostile_headline_right_party_collective",
+    "name": "Right party named as negative collective subject",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A right party label ('Republicans'/'GOP'/'MAGA') appears in a headline as the subject of a negative action ('Republicans block...', 'GOP cuts...', 'MAGA threatens...'). Lexicon maps the label->right; observer confirms the blame framing aimed at the right.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d61_hostile_headline_left_party_collective",
+    "name": "Left party named as negative collective subject",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "A left party label ('Democrats'/'the left'/'liberals') appears in a headline as the subject of a negative action ('Democrats push radical...', 'the left wants...'). Lexicon maps the label->left; observer confirms the blame framing aimed at the left.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d62_administration_criticism_sitting_president",
+    "name": "Critical 'administration' framing of sitting president",
+    "axis": "direction",
+    "lean": "neutral",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline criticizes a NAMED administration ('the Trump administration','the Biden administration') with a lexicon-flagged negative term (cuts, threats, rollbacks, harm). Direction = opposite of the named figure's LEXICON lean (criticized lexicon-right admin -> left; lexicon-left admin -> right). Unnamed 'the administration' with no named figure is UNCLEAR (cannot resolve incumbent from a static screenshot).",
+    "verdict": "fix"
+  },
+  {
+    "key": "d63_left_activist_recruitment_cta",
+    "name": "Activist recruitment / take-action CTA",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": false,
+    "present_means": "A visible take-action/recruitment CTA ('Take Action','Join the movement','Sign the petition','Get involved') appears AND is adjacent to lexicon-left cause text (climate, reproductive/civil rights, equity). PRESENT requires the CTA AND the lexicon-left cause tie in the same module; a generic 'Take Action' with no lexicon-left cause is ABSENT for this left feature.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d64_right_anti_establishment_media_distrust",
+    "name": "Right-coded mainstream-media distrust framing",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "Visible text disparages mainstream media/'fake news'/'the MSM'/'legacy media' as deceitful, or frames the outlet as the suppressed-truth alternative ('what they won't tell you', 'mainstream media lies'). Lexicon maps these terms to right; PRESENT requires a matched media-distrust term as readable text.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d65_right_economy_taxes_framing",
+    "name": "Anti-tax / small-government economic framing",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline contains a lexicon-flagged right-coded economic term that is inherently valenced ('big government','out-of-control spending','job-killing regulations','free market','tax-and-spend','government overreach'). Match the readable term against the lexicon's right economic list; neutral nouns like 'taxes' or 'spending' alone, without a loaded lexicon term, do NOT count (avoid requiring a separate approval judgment).",
+    "verdict": "fix"
+  },
+  {
+    "key": "d66_left_corporate_accountability_framing",
+    "name": "Corporate-accountability / anti-corporate framing",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "Visible headlines frame corporations/billionaires/Wall Street as harmful actors needing accountability ('corporate greed', 'price gouging', 'billionaires', 'big oil', 'tax the rich', 'hold corporations accountable'). PRESENT requires a lexicon-matched anti-corporate term as readable text.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d67_right_anti_trans_specific_framing",
+    "name": "Anti-trans / 'gender ideology' specific framing",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "Visible text attacks transgender people or gender-affirming care specifically ('gender ideology', 'transing kids', 'biological reality', 'trans agenda', anti-'pronouns' mockery). PRESENT requires a lexicon-matched anti-trans term used disparagingly as readable text.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d68_left_democracy_threat_framing",
+    "name": "'Threat to democracy' framing of the right",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline applies a lexicon-flagged democracy-threat term ('threat to democracy','authoritarian','Project 2025','attack on democracy','constitutional crisis') to a target the LEXICON codes right (Trump/GOP/MAGA/named Republican). PRESENT requires the matched term AND a lexicon-right target in the same readable headline; the term applied to a left target or no target is ABSENT for this left feature.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d69_right_anti_socialism_framing",
+    "name": "Anti-socialism / 'radical left' economic-threat framing",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "Visible text frames the left as socialist/communist/Marxist threats ('socialism', 'communist', 'Marxist', 'radical left agenda', 'they want to control you'). PRESENT requires a lexicon-matched anti-socialism term used as threat-framing in readable text.",
+    "verdict": "keep"
+  },
+  {
+    "key": "d70_left_healthcare_right_framing",
+    "name": "Healthcare-as-a-right / universal-coverage framing",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline/tagline contains an inherently pro-public-healthcare lexicon phrase ('healthcare is a right','Medicare for All','universal coverage','single-payer'). Bare topical mentions ('Medicaid','healthcare access') in neutral reporting do NOT count without one of the lexicon advocacy phrases; PRESENT requires the matched advocacy phrase as readable text.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d71_right_traditional_family_framing",
+    "name": "Traditional-family / pro-natalist values framing",
+    "axis": "direction",
+    "lean": "right",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline contains a lexicon-flagged traditional-values term that is unambiguously culture-war-coded ('traditional family values','nuclear family','gender ideology','woke indoctrination in schools','parental rights' ONLY when co-occurring with a lexicon-right culture term). Generic child-safety phrasing without a lexicon culture-war co-term is ABSENT.",
+    "verdict": "fix"
+  },
+  {
+    "key": "d72_left_voting_rights_framing",
+    "name": "Voting-rights / anti-suppression framing",
+    "axis": "direction",
+    "lean": "left",
+    "lexicon_dependent": true,
+    "present_means": "A visible headline/label contains a lexicon-flagged left-coded voting term ('voter suppression','protect the vote','expand access to the ballot','restore voting rights'). Neutral civic modules ('Voter Guide','polling locations','how to register') do NOT count; PRESENT requires the matched advocacy term as readable text.",
+    "verdict": "fix"
+  },
+  {
+    "key": "i01_right_issue_topic_monopoly",
+    "name": "Single right-coded issue saturates page",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": true,
+    "present_means": "A large majority of the visible headline/section slots map to the SAME right-coded issue cluster from the lexicon, with near-absence of countervailing or neutral topics. PRESENT requires one right-coded topic to visibly dominate rather than appear as one of many balanced subjects.",
+    "verdict": "keep"
+  },
+  {
+    "key": "i02_single_left_issue_saturation",
+    "name": "Single left-coded issue saturates page",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": true,
+    "present_means": "A large majority of the visible tiles/headlines/sections center on ONE left-coded wedge issue (e.g. abortion, climate) rather than a diverse news mix. PRESENT when a majority of visible story blocks share one left cause-topic.",
+    "verdict": "keep"
+  },
+  {
+    "key": "i03_one_sided_no_counter_topic",
+    "name": "Absence of any opposing-side topic",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": true,
+    "present_means": "No balance signal is visible: the page shows NO explicit both-sides cue (both-party coverage, an op-ed/'Community Voices'/'multiple viewpoints' section, or a visible opposite-side headline) AND its visible political topics all map to one LEXICON side. Score PRESENT only when at least one clearly partisan topic is visible and no balance cue is present; if any opposite-side headline or balance section is visible -> ABSENT (e.g. Alabama_Political_Reporter both-party op-eds -> ABSENT). Use the visible-balance-cue check rather than exhaustively proving zero opposite-side tiles.",
+    "verdict": "fix"
+  },
+  {
+    "key": "i04_coded_term_density",
+    "name": "High density of coded lexicon terms",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": true,
+    "present_means": "Counting all visible headlines/nav/tags/ads, three or more distinct lexicon-coded political terms (of EITHER side) appear across the screenshot, indicating saturation of charged vocabulary rather than incidental use. Direction-agnostic: count only how many lexicon hits are visibly rendered.",
+    "verdict": "keep"
+  },
+  {
+    "key": "i05_coded_term_one_sidedness",
+    "name": "One-sided coded vocabulary (all hits same side)",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": true,
+    "present_means": "At least two distinct lexicon-coded terms are visible AND every visible coded term maps to the SAME side of the lexicon (all left-coded or all right-coded), with zero coded terms from the opposing side. Signals one-sided framing regardless of which side.",
+    "verdict": "keep"
+  },
+  {
+    "key": "i06_one_sided_figure_valence",
+    "name": "One-sided valence: only one side's figures attacked",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": true,
+    "present_means": "Across all visible headlines/photos that name a lexicon-coded political figure or party, every instance carrying a visible negative cue (a lexicon-flagged derogatory/attack term such as 'corrupt','disaster','caught','slammed', a scare-quote, or an unflattering/mugshot-style photo) targets figures the lexicon maps to ONE side only, with no negatively-cued instance targeting the opposing side. PRESENT only if at least two such negatively-cued figure mentions are visible and all map to the same side.",
+    "verdict": "fix"
+  },
+  {
+    "key": "i07_hero_villain_personalization",
+    "name": "Hero/villain personalization of one named figure",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": true,
+    "present_means": "The SAME lexicon-coded political figure is named or pictured in at least two visible items, and every visible item mentioning that figure carries a same-direction surface cue (all items pair the name with lexicon-flagged positive terms / flattering photos, OR all with lexicon-flagged negative terms / unflattering photos), with no mixed-valence item. PRESENT = one named figure recurs with uniform observable valence.",
+    "verdict": "fix"
+  },
+  {
+    "key": "i08_uniform_directional_headlines",
+    "name": "All political headlines lean one way",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": true,
+    "present_means": "Among visible headlines that contain at least one lexicon-flagged charged term (a figure/party plus a lexicon-flagged positive or negative modifier), every such headline resolves to the SAME directional valence (all pro-left/anti-right OR all pro-right/anti-left) with no opposite-valence headline present. PRESENT requires at least two qualifying headlines all leaning the same way.",
+    "verdict": "fix"
+  },
+  {
+    "key": "i09_both_parties_present",
+    "name": "Both major parties/figures appear",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": true,
+    "present_means": "Headlines or nav visibly name figures/parties from BOTH the left and right side of the fixed lexicon (at least one lexicon-LEFT entity AND at least one lexicon-RIGHT entity shown). PRESENT = two-sided coverage, a balance signal toward LESS extreme.",
+    "verdict": "keep"
+  },
+  {
+    "key": "i10_labeled_opinion_section",
+    "name": "Dedicated labeled opinion section",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "The page shows an explicit, visually separated opinion/editorial zone with a section label such as 'Opinion', 'Columns & Editorials', 'Op-Ed', 'Commentary', or 'Editorial Board', distinct from the news area. PRESENT indicates opinion is fenced off from straight news, a balance signal toward LESS extreme.",
+    "verdict": "keep"
+  },
+  {
+    "key": "i11_opinion_not_segregated",
+    "name": "Opinion blurred into news grid",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "The page presents headlines in one undifferentiated grid/list with NO visible section label such as 'Opinion','Editorial','Op-Ed','Commentary', or 'Columns' separating any items, i.e. no opinion zone is demarcated anywhere on the page. PRESENT = zero opinion/editorial section labels visible (clean complement of the labeled-opinion-section feature).",
+    "verdict": "fix"
+  },
+  {
+    "key": "i12_multiviewpoint_oped_diversity",
+    "name": "Multiple opposing op-ed viewpoints shown",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": true,
+    "present_means": "Within a visibly labeled opinion/columns/community-voices area, the column/op-ed headlines collectively contain at least one lexicon-LEFT-coded term AND at least one lexicon-RIGHT-coded term (charged terms from both sides appear among the opinion items), rather than all opinion headlines coding to a single side. PRESENT = opinion-area headlines show both-side lexicon coding.",
+    "verdict": "fix"
+  },
+  {
+    "key": "i13_balanced_section_taxonomy",
+    "name": "Neutral standard-section navigation",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": true,
+    "present_means": "The primary navigation/sections are conventional neutral newsroom categories (e.g. News, Politics, Sports, Weather, Business, Local, Obituaries) with NO lexicon-flagged ideologically-loaded category labels. PRESENT = neutral content taxonomy, a balance signal toward LESS extreme.",
+    "verdict": "keep"
+  },
+  {
+    "key": "i14_opinion_dominates_over_news",
+    "name": "Opinion outweighs straight news",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "Counting only observable surface markers, items carrying an opinion cue (an 'Opinion'/'Commentary'/'Column' label, a political-cartoon image, or a revelation/'The Truth About'-style frame) visibly OUTNUMBER items carrying a straight-news cue (a visible dateline or wire/reporter byline). PRESENT = opinion-cued items exceed news-cued items on the page.",
+    "verdict": "fix"
+  },
+  {
+    "key": "i15_allcaps_headline_density",
+    "name": "ALL-CAPS headline density",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "At least two headline or link items rendered fully or predominantly in ALL-CAPS letters (whole words capitalized, not just title-case or a single acronym). Counted across visible headline text only.",
+    "verdict": "keep"
+  },
+  {
+    "key": "i16_breaking_alarm_banner",
+    "name": "BREAKING / alarm banner graphic",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "A large standalone alarm-style banner or stamp GRAPHIC (e.g. an image-rendered 'BREAKING NEWS' banner, siren/alert flourish, or oversized all-caps red urgency bar) is visible and is sized clearly larger than the surrounding body/headline text. PRESENT = such an oversized alarm graphic is present, regardless of whether it is dated.",
+    "verdict": "fix"
+  },
+  {
+    "key": "i17_alarm_trigger_words",
+    "name": "Alarm / urgency trigger words",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "One or more headlines visibly contain an urgency/shock trigger word from the set: BREAKING, SHOCKING, EXPOSED, BOMBSHELL, ALERT, WARNING, URGENT, CAUGHT, BUSTED, SLAMMED, DESTROYED.",
+    "verdict": "keep"
+  },
+  {
+    "key": "i18_exclamation_marks",
+    "name": "Exclamation marks in headlines/ads",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "One or more exclamation marks ('!') visible within headline text, ad copy, or call-to-action labels on the page.",
+    "verdict": "keep"
+  },
+  {
+    "key": "i19_scare_quotes",
+    "name": "Scare quotes around terms",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "Quotation marks enclose a span of three or fewer words embedded mid-headline, with NO accompanying attribution (no 'said/says', named speaker, or colon introducing a quote). PRESENT = at least one such short unattributed quoted span, treated as scare quotes; full attributed quotations do not count.",
+    "verdict": "fix"
+  },
+  {
+    "key": "i20_question_accusation_headline",
+    "name": "Rhetorical question / accusation headline",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "At least one headline ends in a question mark '?' and is NOT a plainly informational/service question (excludes who/what/when/where/how-to factual queries). PRESENT = a rhetorical or yes/no insinuating question headline ('Is X hiding the truth?', 'Did X really...?') is visible.",
+    "verdict": "fix"
+  },
+  {
+    "key": "i21_the_truth_about_clickbait",
+    "name": "'The Truth About' / revelation clickbait",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "Headline uses a revelation/hidden-knowledge frame such as 'The Truth About...', 'What They Don't Want You to Know', 'The Real Reason', 'Finally Revealed'.",
+    "verdict": "keep"
+  },
+  {
+    "key": "i22_conspiratorial_framing",
+    "name": "Conspiratorial / cover-up framing",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "A visible headline/banner contains one or more items from the fixed conspiratorial-trigger set: 'cover-up','cover up','coverup','deep state','globalist(s)','plandemic','what they don't want you to know','they don't want you to know','hidden agenda','secret agenda','suppressed','silenced','exposed the plot'. Coded political terms in this set are matched via the controlled lexicon. PRESENT = at least one such literal phrase is visible.",
+    "verdict": "fix"
+  },
+  {
+    "key": "i23_fear_threat_appeal",
+    "name": "Fear / existential-threat appeal",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "A visible headline or ad/CTA contains a catastrophe/threat lexeme from the fixed set ('death','dead','die','collapse','crash','war','crisis','catastrophe','disaster','survival','prepper','before it's too late','end of','wiped out') framed as a danger to the reader. PRESENT = at least one such fear/threat lexeme is visible in text (imagery-only alarm is scored separately).",
+    "verdict": "fix"
+  },
+  {
+    "key": "i24_hyperbole_superlatives",
+    "name": "Hyperbolic absolutes / superlatives",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "Headlines use absolute/superlative hyperbole such as 'never', 'always', 'everyone', 'completely', 'totally', 'worst ever', 'unprecedented', 'insane', 'epic'.",
+    "verdict": "keep"
+  },
+  {
+    "key": "i25_high_emotional_headline_density",
+    "name": "High overall emotional-headline density",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "A majority of visible headlines (more than half of the items in the main list/grid) carry at least one emotional/sensational marker (caps, '!', '?', trigger word, hyperbole), versus a calm neutral page where few or none do.",
+    "verdict": "keep"
+  },
+  {
+    "key": "i26_alarming_dark_imagery",
+    "name": "Dark alarming / sci-fi sensational imagery",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "The palette/imagery is dark and ominous: black/near-black backgrounds with high-contrast sci-fi, apocalyptic, glowing-red or threatening photo treatments (storm/explosion/biohazard/silhouette motifs). PRESENT when the page's dominant mood is visually alarming rather than a clean light editorial layout.",
+    "verdict": "keep"
+  },
+  {
+    "key": "i27_alarming_red_black_palette",
+    "name": "Alarming red/black dominant chrome palette",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "Red and/or black is the clearly dominant color of the page chrome (header bar, section dividers, primary CTA buttons, banners), and the chrome is NOT a conventional red-white-blue or muted newspaper masthead. PRESENT = aggressive red/black chrome dominates without a balancing neutral/patriotic palette.",
+    "verdict": "fix"
+  },
+  {
+    "key": "i28_aggressive_capture_box",
+    "name": "Aggressive newsletter / donation capture box",
+    "axis": "intensity",
+    "lean": "neutral",
+    "lexicon_dependent": false,
+    "present_means": "A newsletter/donation signup appears as a large, high-contrast boxed module (not a small inline footer link), prominently placed in the header, sidebar, or above-the-fold area and visibly larger/louder than surrounding signup links, optionally with urgent copy ('Get Your Free Email Newsletter','Sign Up','WE WANT YOU'). PRESENT = an oversized attention-grabbing capture box is visible in the frame.",
+    "verdict": "fix"
+  }
+]

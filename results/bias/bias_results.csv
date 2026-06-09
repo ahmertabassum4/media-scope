@@ -1,0 +1,8 @@
+result,model,feature_set,features,accuracy,macro_f1,notes,selected_features
+Everything,Soft voting ensemble,direct+reasoning+outlet,253,0.566089,0.577965,Uses direct + reasoning features and outlet type,
+Reasoning no outlet,CatBoost,direct+reasoning,100,0.552416,0.553230,Uses direct + reasoning features,
+Easy features,XGBoost,direct features + counts,140,0.446673,0.401705,Uses direct features and simple counts only,
+Easy compact,SVC,direct compact,5,0.450319,0.383635,Smallest high-accuracy direct-feature model,"agg_all_d_present_count,d16_hostile_headline_left_figure,agg_right_issue_absent_count,agg_right_d_present_rate,agg_right_d_present_count"
+4-feature compact,XGBoost,direct compact,4,0.444850,0.357485,Near the compact accuracy winner,"agg_all_d_present_count,d16_hostile_headline_left_figure,agg_right_issue_absent_count,agg_right_d_present_rate"
+3-feature compact,SVC,direct compact,3,0.436645,0.327520,Smallest reasonable compact model,"agg_right_d_absent_rate,agg_right_d_present_count,agg_all_d_absent_count"
+Best compact macro-F1,Logistic regression,direct compact,5,0.419325,0.425112,Better class balance but lower accuracy,"agg_right_d_absent_rate,agg_right_d_present_count,agg_all_d_absent_count,agg_all_d_absent_rate,agg_right_d_absent_count"

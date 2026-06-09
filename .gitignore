@@ -1,0 +1,28 @@
+# Secrets — never commit
+.env
+.env.*
+
+# Generated data / results
+gemini_features.csv
+gemini_results.csv
+*.zip
+.DS_Store
+agent_bias_*
+benchmark_*.py
+compact_clean_*.csv
+feature_engineering_benchmark.csv
+catboost_info/
+
+# Screenshots & scraped data
+screenshots/
+high_factuality/
+low_factuality/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.cache/
+.matplotlib-cache/
