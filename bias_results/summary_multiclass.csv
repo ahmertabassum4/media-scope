@@ -1,0 +1,7 @@
+task,model,prompt,n,accuracy,macro_f1
+bias,claude-sonnet-4-6,engineered,198,0.4293,0.4195
+bias,gemini-2-5-flash-lite,engineered,198,0.2626,0.1822
+bias,gemma-4-31b,engineered,190,0.3474,0.2942
+bias,gpt-5-5,engineered,198,0.4192,0.4161
+bias,kimi-k2-6,engineered,84,0.2738,0.2059
+bias,qwen2-5-vl-72b,engineered,183,0.3115,0.2567

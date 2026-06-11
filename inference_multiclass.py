@@ -18,9 +18,9 @@ import io
 load_dotenv()
 API_KEY = os.getenv("OPENROUTER_KEY")
 
-SAMPLE_INDEX = "snapshot_sample_index.csv"
-IMAGE_DIR    = "snapshot-samples"
-RESULTS_DIR  = Path("results")
+SAMPLE_INDEX = "snapshot_sample_bias_index.csv"
+IMAGE_DIR    = "sample_snapshots_bias"
+RESULTS_DIR  = Path("bias_results")
 
 MODELS = {
     "claude-sonnet-4-6":  "anthropic/claude-sonnet-4-6",

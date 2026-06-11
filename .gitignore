@@ -14,3 +14,6 @@ errors/*.png
 *.gif
 .env
 TODO.txt
+mixed-subset/
+Mixed_output/
+sample_snapshots_bias/

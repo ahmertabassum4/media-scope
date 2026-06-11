@@ -18,7 +18,7 @@ from sklearn.metrics import (
     confusion_matrix,
 )
 
-RESULTS_DIR = "results"
+RESULTS_DIR = "bias_results"
 PLOTS_DIR   = "eval_plots"
 
 # Fixed label order per task, so every plot and table is consistent.

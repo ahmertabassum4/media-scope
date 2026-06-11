@@ -16,9 +16,9 @@ from inference_multiclass import encode_image, query_model, load_index, MODELS
 
 load_dotenv()
 
-SAMPLE_INDEX = "snapshot_sample_index.csv"
-IMAGE_DIR    = "snapshot-samples"
-RESULTS_DIR  = Path("results")
+SAMPLE_INDEX = "snapshot_sample_bias_index.csv"
+IMAGE_DIR    = "sample_snapshots_bias"
+RESULTS_DIR  = Path("bias_results")
 
 # Dimensions predicted jointly. Each maps to (ground-truth column, label set).
 # The keyed-line label (e.g. "FACTUALITY") is the dict key, upper-cased.
@@ -39,7 +39,7 @@ logo, or URL.
 
 You must make THREE independent judgements about the same page:
 
-  (1) FACTUALITY — the factual-reliability tier:  VERY LOW / LOW / HIGH / VERY HIGH
+  (1) FACTUALITY — the factual-reliability tier:  VERY LOW / LOW / MIXED / HIGH / VERY HIGH
   (2) GENRE      — the dominant content category:  CONSPIRACY / PSEUDOSCIENCE /
                                                     IMPOSTER / OTHER
   (3) BIAS       — the political leaning:           LEFT / LEFT-CENTER / LEAST BIASED /

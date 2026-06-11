@@ -16,8 +16,8 @@ from sklearn.metrics import (
     confusion_matrix,
 )
 
-RESULTS_DIR = "results"
-PLOTS_DIR   = "eval_plots"
+RESULTS_DIR = "bias_results"
+PLOTS_DIR   = "bias_eval_plots"
 
 DIM_LABELS = {
     "factuality": ["VERY LOW", "LOW", "HIGH", "VERY HIGH"],
