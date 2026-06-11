@@ -1,7 +1,0 @@
-task,dimension,model,prompt,accuracy,macro_f1,n,VERY LOW_precision,VERY LOW_recall,VERY LOW_f1,VERY LOW_support,LOW_precision,LOW_recall,LOW_f1,LOW_support,HIGH_precision,HIGH_recall,HIGH_f1,HIGH_support,VERY HIGH_precision,VERY HIGH_recall,VERY HIGH_f1,VERY HIGH_support
-joint,factuality,claude-sonnet-4-6,engineered,0.9279,0.6068,111,0.8333,0.8333,0.8333,6,0.5,0.8333,0.625,6,0.9894,0.949,0.9688,98,0.0,0.0,0.0,1
-joint,factuality,gemini-2-5-flash-lite,engineered,0.9009,0.5633,111,1.0,0.6667,0.8,6,0.4,0.6667,0.5,6,0.9684,0.9388,0.9534,98,0.0,0.0,0.0,1
-joint,factuality,gemma-4-31b,engineered,0.8198,0.4544,111,0.75,0.5,0.6,6,0.2857,0.3333,0.3077,6,0.9451,0.8776,0.9101,98,0.0,0.0,0.0,1
-joint,factuality,gpt-5-5,engineered,0.9459,0.5825,111,0.6667,1.0,0.8,6,0.6,0.5,0.5455,6,0.9897,0.9796,0.9846,98,0.0,0.0,0.0,1
-joint,factuality,kimi-k2-6,engineered,0.875,0.4496,104,0.6,0.5,0.5455,6,0.2857,0.3333,0.3077,6,0.9451,0.9451,0.9451,91,0.0,0.0,0.0,1
-joint,factuality,qwen2-5-vl-72b,engineered,0.9009,0.5787,111,0.8571,1.0,0.9231,6,0.3333,0.6667,0.4444,6,0.9783,0.9184,0.9474,98,0.0,0.0,0.0,1
