@@ -1,0 +1,13 @@
+task,model,prompt,n,accuracy,macro_f1
+factuality,claude-sonnet-4-6,engineered,199,0.4573,0.4795
+factuality,claude-sonnet-4-6,simple,199,0.593,0.5808
+factuality,gemini-2-5-flash-lite,engineered,199,0.2462,0.1022
+factuality,gemini-2-5-flash-lite,simple,199,0.4322,0.4217
+factuality,gemma-4-31b,engineered,199,0.3518,0.3657
+factuality,gemma-4-31b,simple,199,0.4221,0.3867
+factuality,gpt-5-5,engineered,199,0.5377,0.5301
+factuality,gpt-5-5,simple,199,0.6784,0.5915
+factuality,kimi-k2-6,engineered,197,0.3198,0.3349
+factuality,kimi-k2-6,simple,197,0.599,0.5702
+factuality,qwen2-5-vl-72b,engineered,199,0.4523,0.4493
+factuality,qwen2-5-vl-72b,simple,199,0.4874,0.4335
