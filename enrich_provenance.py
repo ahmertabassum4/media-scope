@@ -740,25 +740,30 @@ async def run(files, concurrency, timeout, archive, use_browser, retries, recycl
         except Exception as e:
             return {"file": f.name, "status": "fetch_error", "error": str(e)}
 
+    BATCH = concurrency * 4
     try:
-        tasks = [asyncio.create_task(guarded(f)) for f in files]
-        for fut in asyncio.as_completed(tasks):
-            r = await fut
-            done += 1
-            if r["status"] == "ok":
-                ok += 1
-                if r.get("method") in by_method:
-                    by_method[r["method"]] += 1
-                print(f"[{done}/{total}] {r['status']:11s} {r['file']}")
-            elif r["status"] == "skip":
-                skip += 1
-                print(f"[{done}/{total}] {r['status']:11s} {r['file']}  "
-                      f"-- {r.get('reason','')}")
-            else:
-                err += 1
-                failed_files.append(r["file"])
-                msg = (r.get("error") or "")[:90]
-                print(f"[{done}/{total}] {r['status']:11s} {r['file']}  -- {msg}")
+        i = 0
+        while i < total:
+            chunk = files[i : i + BATCH]
+            tasks = [asyncio.create_task(guarded(f)) for f in chunk]
+            for fut in asyncio.as_completed(tasks):
+                r = await fut
+                done += 1
+                if r["status"] == "ok":
+                    ok += 1
+                    if r.get("method") in by_method:
+                        by_method[r["method"]] += 1
+                    print(f"[{done}/{total}] {r['status']:11s} {r['file']}")
+                elif r["status"] == "skip":
+                    skip += 1
+                    print(f"[{done}/{total}] {r['status']:11s} {r['file']}  "
+                          f"-- {r.get('reason','')}")
+                else:
+                    err += 1
+                    failed_files.append(r["file"])
+                    msg = (r.get("error") or "")[:90]
+                    print(f"[{done}/{total}] {r['status']:11s} {r['file']}  -- {msg}")
+            i += BATCH
     finally:
         if supervisor is not None:
             await supervisor.close()

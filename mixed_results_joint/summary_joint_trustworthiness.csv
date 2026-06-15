@@ -8,6 +8,6 @@ joint,trustworthiness,gemma-4-31b,simple,0.7035,0.6883,199,0.902,0.6525,0.7572,1
 joint,trustworthiness,gpt-5-5,engineered,0.8995,0.8848,199,0.969,0.8865,0.9259,141,0.7714,0.931,0.8438,58
 joint,trustworthiness,gpt-5-5,simple,0.9548,0.9455,199,0.9714,0.9645,0.968,141,0.9153,0.931,0.9231,58
 joint,trustworthiness,kimi-k2-6,engineered,0.7514,0.7138,185,0.832,0.8062,0.8189,129,0.5932,0.625,0.6087,56
-joint,trustworthiness,kimi-k2-6,simple,0.9259,0.9101,162,0.9316,0.9646,0.9478,113,0.9111,0.8367,0.8723,49
+joint,trustworthiness,kimi-k2-6,simple,0.9184,0.9,196,0.9296,0.9565,0.9429,138,0.8889,0.8276,0.8571,58
 joint,trustworthiness,qwen2-5-vl-72b,engineered,0.7688,0.7526,199,0.9358,0.7234,0.816,141,0.5667,0.8793,0.6892,58
 joint,trustworthiness,qwen2-5-vl-72b,simple,0.8241,0.8038,199,0.9344,0.8085,0.8669,141,0.6494,0.8621,0.7407,58

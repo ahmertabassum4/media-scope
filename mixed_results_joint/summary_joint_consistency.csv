@@ -1,5 +1,5 @@
 model,prompt,problem_genre_n,genre_factuality_consistency
-kimi-k2-6,simple,71,1.0
+kimi-k2-6,simple,86,1.0
 claude-sonnet-4-6,simple,90,1.0
 gemini-2-5-flash-lite,engineered,10,1.0
 gemma-4-31b,simple,47,1.0
