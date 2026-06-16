@@ -1,0 +1,7 @@
+feature,meaning,extraction_difficulty
+s010_scare_quotes__present,Headlines or labels use scare quotes around terms,easy
+s072_loaded_category_tags__present,Navigation/category/tag text uses loaded wording,easy_to_medium
+s004_sensational_verbs__present,Headlines use sensational verbs such as slams or destroys,easy_to_medium
+s023_no_owner_identified__present,No visible owner or publisher identity,easy_to_medium
+s085_standard_sections__present,Normal news sections such as News Sports Business Opinion Local or Weather are visible,easy
+s097_suspicious_url__present,Domain or URL looks suspicious or imitative,easy

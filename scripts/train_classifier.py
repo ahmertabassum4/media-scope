@@ -1,5 +1,6 @@
 import argparse
 import json
+import numbers
 import re
 import sys
 from pathlib import Path
@@ -61,10 +62,24 @@ def _normalize_label(value: object) -> str:
 
 
 def _feature_sort_key(key: str) -> tuple[int, str]:
-    match = re.match(r"s0*(\d+)_", key)
+    match = re.match(r"[a-z]+0*(\d+)_", key)
     if match:
         return int(match.group(1)), key
     return 10_000, key
+
+
+def _numeric_items(value: object, prefix: str = ""):
+    if isinstance(value, dict):
+        for key, item in value.items():
+            key = re.sub(r"[^a-zA-Z0-9_]+", "_", str(key)).strip("_").lower()
+            if not key:
+                continue
+            name = f"{prefix}__{key}" if prefix else key
+            yield from _numeric_items(item, name)
+    elif isinstance(value, bool):
+        yield prefix, int(value)
+    elif isinstance(value, numbers.Number):
+        yield prefix, value
 
 
 def _build_metadata_lookup(metadata_dir: Path) -> dict:
@@ -223,15 +238,11 @@ def load_jsonl_data(path: Path, metadata_dir: Path) -> tuple[pd.DataFrame, list[
 
             derived = parsed.get("derived", {})
             if isinstance(derived, dict):
-                for key, value in derived.items():
-                    if key in DERIVED_NUMERIC_KEYS:
-                        record[key] = value
-                        numeric_keys.add(key)
-                    elif key in CATEGORY_NUMERIC_PREFIXES and isinstance(value, dict):
-                        for category, category_value in value.items():
-                            category_key = f"{key}__{category}"
-                            record[category_key] = category_value
-                            numeric_keys.add(category_key)
+                for key, value in _numeric_items(derived):
+                    if not key:
+                        continue
+                    record[key] = value
+                    numeric_keys.add(key)
 
             rows.append(record)
 
@@ -378,7 +389,13 @@ def main():
     args = parser.parse_args()
 
     df, signal_keys, count_keys, core_keys, verdict_col = load_data(args.features_file, args.metadata_dir)
-    source_name = "Sonnet" if "sonnet" in args.features_file.name.lower() else "Gemini"
+    name_lower = args.features_file.name.lower()
+    if "sonnet" in name_lower:
+        source_name = "Sonnet"
+    elif "metadata" in name_lower:
+        source_name = "Metadata"
+    else:
+        source_name = "Gemini"
     if not args.include_category_counts:
         count_keys = [k for k in count_keys if not k.startswith(CATEGORY_NUMERIC_PREFIXES)]
     if not args.include_core_checks:
