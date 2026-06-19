@@ -1,0 +1,52 @@
+services:
+  models:
+    build:
+      context: ./models
+    env_file:
+      - .env
+    environment:
+      BIAS_OPENROUTER_MODEL: ${BIAS_OPENROUTER_MODEL:-openai/gpt-5.5}
+      FACTUALITY_OPENROUTER_MODEL: ${FACTUALITY_OPENROUTER_MODEL:-openai/gpt-5.5}
+      FLAGS_use_mkldnn: "0"
+      FLAGS_use_onednn: "0"
+      PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: "True"
+    ports:
+      - "${MODELS_PORT:-8001}:8001"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8001/health').read()"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+    env_file:
+      - .env
+    environment:
+      MODELS_API_URL: ${MODELS_API_URL:-http://models:8001}
+      MODELS_REQUEST_TIMEOUT_SECONDS: ${MODELS_REQUEST_TIMEOUT_SECONDS:-360}
+      MAX_UPLOAD_MB: ${MAX_UPLOAD_MB:-20}
+      DATA_DIR: /data
+      CORS_ORIGINS: ${CORS_ORIGINS:-*}
+    volumes:
+      - ./data:/data:ro
+    depends_on:
+      models:
+        condition: service_healthy
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health').read()"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+
+  frontend:
+    build:
+      context: ./frontend
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "${FRONTEND_PORT:-8080}:80"
