@@ -3,7 +3,7 @@ __pycache__/
 cleaning.ipynb
 error_output/
 rerun_output/
-data/
+raw_data/
 .env
 .DS_Store
 output/

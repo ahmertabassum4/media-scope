@@ -1,17 +1,20 @@
 #!/usr/bin/env python3
 """
-batch_snapshot.py — Snapshot every media source whose factuality is MIXED.
+batch_snapshot.py — Snapshot every media source listed in a questionable-sources CSV.
+
+Default source : tmp/questionable_sources_with_dates.csv  (columns: media_source_name, media_source_url)
+Default output : tmp/questionable_sources/
 
 Usage:
     python batch_snapshot.py                                                    # skip already-captured (default)
     python batch_snapshot.py --force                                            # re-capture even if screenshot exists
     python batch_snapshot.py --retry-timeouts                                   # only retry previous timeout errors
     python batch_snapshot.py --retry-timeouts --timeout 60000                   # retry with higher timeout
-    python batch_snapshot.py --from-csv output/image_issues.csv                 # rerun URLs listed in a CSV
+    python batch_snapshot.py --from-csv output/image_issues.csv                 # rerun URLs listed in a CSV (must have 'url' column)
     python batch_snapshot.py --from-csv output/image_issues.csv --output rerun_output --timeout 30000
     python batch_snapshot.py --from-logs output/batch_log.jsonl rerun_output/batch_log.jsonl --output error_output --timeout 60000
     python batch_snapshot.py --workers 4                                        # parallel workers (default 4)
-    python batch_snapshot.py --output shots                                     # custom output dir (default: output)
+    python batch_snapshot.py --output shots                                     # custom output dir
     python batch_snapshot.py --dry-run                                          # print URLs without capturing
 """
 
@@ -26,35 +29,20 @@ from pathlib import Path
 
 from snapshot import take_snapshot
 
-TARGET_FACTUALITY = {"MIXED"}
-DATA_DIR = Path("data/2291eng_dedup")
+SOURCES_CSV = Path("tmp/questionable_sources_with_dates.csv")
+DEFAULT_OUTPUT = Path("tmp/questionable_sources")
 
 
-def load_qualifying_sources(data_dir: Path) -> list[dict]:
+def load_questionable_sources(csv_path: Path) -> list[dict]:
+    """Load sources from questionable_sources_with_dates.csv using media_source_url and media_source_name."""
     sources = []
-    for json_file in sorted(data_dir.glob("*.json")):
-        try:
-            data = json.loads(json_file.read_text(encoding="utf-8"))
-        except Exception as e:
-            print(f"[WARN] Could not parse {json_file.name}: {e}", file=sys.stderr)
-            continue
-
-        factuality = (data.get("factuality") or "").strip().upper()
-        if factuality not in TARGET_FACTUALITY:
-            continue
-
-        media_link = (data.get("media link") or "").strip()
-        if not media_link:
-            continue
-
-        sources.append(
-            {
-                "name": data.get("media name", json_file.stem),
-                "url": media_link,
-                "factuality": factuality,
-                "source_file": json_file.name,
-            }
-        )
+    with open(csv_path, newline="", encoding="utf-8") as fh:
+        for row in csv.DictReader(fh):
+            url = row.get("media_source_url", "").strip()
+            if not url:
+                continue
+            name = row.get("media_source_name", "").strip() or url
+            sources.append({"name": name, "url": url, "factuality": ""})
     return sources
 
 
@@ -112,7 +100,8 @@ def load_csv_sources(csv_path: Path) -> list[dict]:
         for row in csv.DictReader(fh):
             url = row.get("url", "").strip()
             if url:
-                sources.append({"name": url, "url": url, "factuality": ""})
+                name = row.get("name", "").strip() or url
+                sources.append({"name": name, "url": url, "factuality": ""})
     return sources
 
 
@@ -133,9 +122,9 @@ def capture_one(source: dict, output_dir: Path, timeout_ms: int) -> dict:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Batch snapshot media sources by factuality filter.")
-    parser.add_argument("--data-dir", default=str(DATA_DIR), help="Directory containing source JSON files")
-    parser.add_argument("-o", "--output", default="output", help="Output directory for screenshots (default: output)")
+    parser = argparse.ArgumentParser(description="Batch snapshot questionable media sources.")
+    parser.add_argument("--sources-csv", default=str(SOURCES_CSV), help="CSV with media_source_name and media_source_url columns")
+    parser.add_argument("-o", "--output", default=str(DEFAULT_OUTPUT), help=f"Output directory for screenshots (default: {DEFAULT_OUTPUT})")
     parser.add_argument("--workers", type=int, default=4, help="Parallel browser workers (default: 4)")
     parser.add_argument("--timeout", type=int, default=30000, help="Per-page timeout in ms (default: 30000)")
     parser.add_argument("--force", action="store_true", help="Re-capture even if a screenshot already exists")
@@ -145,7 +134,6 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="Print qualifying URLs without capturing")
     args = parser.parse_args()
 
-    data_dir = Path(args.data_dir)
     output_dir = Path(args.output)
     log_path = output_dir / "batch_log.jsonl"
 
@@ -154,8 +142,8 @@ def main():
         if not error_urls:
             print("No error-status URLs found in the provided logs. Nothing to run.")
             return 0
-        # Enrich with media names from the JSON source files
-        url_to_name = {s["url"]: s["name"] for s in load_qualifying_sources(data_dir)}
+        # Enrich names from the questionable sources CSV
+        url_to_name = {s["url"]: s["name"] for s in load_questionable_sources(Path(args.sources_csv))}
         sources = [
             {"name": url_to_name.get(url, url), "url": url, "factuality": ""}
             for url in sorted(error_urls)
@@ -165,8 +153,8 @@ def main():
         sources = load_csv_sources(Path(args.from_csv))
         print(f"Loaded {len(sources)} URLs from {args.from_csv}")
     else:
-        sources = load_qualifying_sources(data_dir)
-        print(f"Found {len(sources)} qualifying sources with factuality in {TARGET_FACTUALITY}")
+        sources = load_questionable_sources(Path(args.sources_csv))
+        print(f"Loaded {len(sources)} sources from {args.sources_csv}")
 
     if args.retry_timeouts:
         timeout_urls = load_timeout_urls(log_path)
@@ -184,7 +172,7 @@ def main():
 
     if args.dry_run:
         for s in sources:
-            print(f"[{s['factuality']:12s}] {s['url']}  ({s['name']})")
+            print(f"{s['url']}  ({s['name']})")
         return 0
 
     output_dir.mkdir(parents=True, exist_ok=True)
