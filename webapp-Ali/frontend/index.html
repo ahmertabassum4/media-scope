@@ -3,15 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <title>Media Bias & Factuality</title>
+    <title>Media bias and Factuality</title>
+    <link rel="stylesheet" href="/styles.css?v=20260623-url-reason-5class" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <main class="app-shell">
+      <section class="workspace" aria-label="Media classification workspace">
+        <div class="topbar">
+          <h1>Media bias and Factuality</h1>
+          <div id="healthBadge" class="status-badge">Checking API</div>
+        </div>
+
+        <div class="mode-switch" role="tablist" aria-label="Mode">
+          <button class="mode-button active" type="button" data-mode="analyze" role="tab" aria-selected="true">Analyze</button>
+          <button class="mode-button" type="button" data-mode="game" role="tab" aria-selected="false">Game</button>
+        </div>
+
+        <section id="analyzeView" class="mode-view active" aria-label="Analyze image">
+          <div class="main-grid">
+            <section class="upload-panel" aria-label="Upload image">
+              <form id="uploadForm">
+                <label id="dropZone" class="drop-zone" for="imageInput">
+                  <input id="imageInput" name="image" type="file" accept="image/png,image/jpeg,image/webp,image/bmp,image/tiff" />
+                  <span class="drop-title">Drop image or browse</span>
+                  <span id="fileMeta" class="drop-meta">PNG, JPG, WEBP, BMP, TIFF</span>
+                </label>
+                <button id="submitButton" class="primary-button" type="submit">Analyze</button>
+                <div class="url-field">
+                  <span class="url-or">or analyze a live page by URL</span>
+                  <input id="urlInput" name="url" class="url-input" type="url" inputmode="url"
+                         placeholder="https://example.com" autocomplete="off" />
+                </div>
+              </form>
+
+              <div class="image-frame preview-wrap">
+                <img id="previewImage" alt="" />
+                <div id="evidenceOverlay" class="evidence-overlay" aria-hidden="true"></div>
+                <div id="emptyPreview" class="empty-preview">No image selected</div>
+              </div>
+            </section>
+
+            <section class="results-panel" aria-label="Results">
+              <div class="result-card bias-card">
+                <div class="card-head">
+                  <h2>Bias</h2>
+                </div>
+                <div id="biasLabel" class="result-label">-</div>
+                <div class="spectrum-wrap">
+                  <div class="spectrum bias-spectrum" aria-hidden="true">
+                    <div id="biasMarker" class="spectrum-marker"></div>
+                  </div>
+                  <div class="spectrum-ticks bias-ticks">
+                    <span>left</span>
+                    <span>center</span>
+                    <span>right</span>
+                  </div>
+                </div>
+                <div id="biasEvidence" class="evidence-list"></div>
+              </div>
+
+              <div class="result-card factuality-card">
+                <div class="card-head">
+                  <h2>Factuality</h2>
+                </div>
+                <div id="factualityLabel" class="result-label">-</div>
+                <div class="spectrum-wrap">
+                  <div class="spectrum factuality-spectrum" aria-hidden="true">
+                    <div id="factualityMarker" class="spectrum-marker"></div>
+                  </div>
+                  <div class="spectrum-ticks factuality-ticks">
+                    <span>very low</span>
+                    <span>low</span>
+                    <span>mixed</span>
+                    <span>high</span>
+                    <span>very high</span>
+                  </div>
+                </div>
+                <div id="factualityEvidence" class="evidence-list"></div>
+              </div>
+
+              <div class="result-card reasoning-card">
+                <div class="card-head">
+                  <h2>Reasoning</h2>
+                  <button id="explainButton" class="secondary-button" type="button" disabled>Explain</button>
+                </div>
+                <div id="reasoningText" class="reasoning-text">Run an analysis, then click Explain for a combined factuality and bias rationale.</div>
+              </div>
+
+              <div id="errorBox" class="error-box" role="alert"></div>
+            </section>
+          </div>
+        </section>
+
+        <section id="gameView" class="mode-view" aria-label="Game mode">
+          <div class="game-grid">
+            <section class="game-stage" aria-label="Game image">
+              <div class="image-frame game-image-frame">
+                <img id="gameImage" alt="" />
+                <div id="gameEmpty" class="empty-preview">Loading</div>
+              </div>
+            </section>
+
+            <section class="game-controls" aria-label="Game controls">
+              <div id="biasSliderGroup" class="game-slider-group">
+                <div class="slider-head">
+                  <h2>Bias</h2>
+                  <div id="gameBiasValue" class="slider-value">least biased</div>
+                </div>
+                <div class="game-spectrum-panel">
+                  <div class="spectrum bias-spectrum" aria-hidden="true"></div>
+                  <input id="biasSlider" class="spectrum-slider" type="range" min="0" max="4" step="1" value="2" aria-label="Bias" />
+                  <div class="spectrum-ticks game-bias-ticks">
+                    <span>left</span>
+                    <span>left-center</span>
+                    <span>least biased</span>
+                    <span>right-center</span>
+                    <span>right</span>
+                  </div>
+                </div>
+              </div>
+
+              <div id="factualitySliderGroup" class="game-slider-group">
+                <div class="slider-head">
+                  <h2>Factuality</h2>
+                  <div id="gameFactualityValue" class="slider-value">high</div>
+                </div>
+                <div class="game-spectrum-panel">
+                  <div class="spectrum factuality-spectrum" aria-hidden="true"></div>
+                  <input id="factualitySlider" class="spectrum-slider" type="range" min="0" max="4" step="1" value="2" aria-label="Factuality" />
+                  <div class="spectrum-ticks game-factuality-ticks">
+                    <span>very low</span>
+                    <span>low</span>
+                    <span>mixed</span>
+                    <span>high</span>
+                    <span>very high</span>
+                  </div>
+                </div>
+              </div>
+
+              <button id="checkGameButton" class="primary-button" type="button" disabled>Check</button>
+              <div class="game-feedback-row">
+                <div id="gameResult" class="game-result" aria-live="polite"></div>
+                <button id="nextGameButton" class="secondary-button" type="button" hidden>Next image</button>
+              </div>
+              <div id="gameErrorBox" class="error-box" role="alert"></div>
+            </section>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="/app.js?v=20260623-url-reason-5class"></script>
   </body>
 </html>

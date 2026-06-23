@@ -1,64 +1,79 @@
-# MediaScope webapp
+# Media bias and Factuality
 
-Factuality prediction for a news homepage screenshot. Serves the trained **MLP**
-(`mediascope_artifacts/mlp.pt`) over the exact 1198-dim feature vector from the notebook:
-`[DINOv2 768 | provenance 32 | LLM verdict one-hot 14 | MiniLM rationale 384]`.
-Bias is not wired up — the UI shows it as a "coming soon" placeholder.
+Microservice web application for media bias and factuality classification from a
+screenshot **or** a live URL.
 
-Each `/analyze` makes one internal OpenRouter call (`openai/gpt-5.5`, the engineered joint
-prompt from `inference_joint.py`) to build verdict + rationale features. `/explain` makes a
-second call afterwards for a plain-language paragraph.
+## Services
 
-## 1. Paste your OpenRouter key
+- `frontend`: nginx static UI on port `8080`
+- `backend`: FastAPI API on port `8000` (also captures URL screenshots + provenance)
+- `models`: FastAPI model inference service on port `8001`
 
-```
-cp backend/.env.example backend/.env
-```
+## Features
 
-Open `backend/.env` and paste your key after the `=`:
+- Analyze a homepage by **uploading an image** or **entering a URL**.
+  - URL mode captures a full-page screenshot (Playwright/Chromium) and crawls provenance
+    so the metadata factuality model can run; image mode uses the image-only model.
+- Bias + factuality labels with **bounding-box evidence overlays** on the screenshot.
+- On-demand **Reasoning**: an "Explain" button requests a combined factuality + bias
+  rationale grounded in the screenshot and the highlighted evidence regions.
+- Play a labeling game using screenshots and true labels from `data/manifest.json`.
+- No request or image caching is used in the backend game endpoints.
 
-```
-OPENROUTER_API_KEY=sk-or-...
-```
+## Factuality models (place before running)
 
-(Loaded in `backend/llm.py`, marked with a comment.)
+The factuality head is a 5-class MLP trained in Colab (see the training notebook's export
+cells). Drop these four files into `models/models/` next to the bias `.joblib`:
 
-## 2. Backend
+- `factuality_metadata_mlp.pt`  — full features incl. provenance (used for URL analyses)
+- `factuality_image_mlp.pt`     — screenshot-only features (used for image uploads)
+- `factuality_config.json`      — labels, dims, hidden/dropout, feature order
+- `factuality_prov_stats.json`  — provenance keys + standardization stats
 
-```
-cd backend
-python -m venv venv && source venv/bin/activate
-pip install -r requirements.txt
-playwright install chromium     # only if not already installed
-uvicorn main:app --port 8000
-```
+The `models` service loads them on startup, so they must be present before
+`docker compose up`.
 
-On boot it validates the artifacts (PROV_DIM==32, mu/sd len 32, MLP first Linear
-in_features==1198) and loads DINOv2 + MiniLM. First run downloads those weights.
+## Run
 
-## 3. Frontend
-
-```
-cd frontend
-npm install
-npm run dev
+```bash
+docker compose up -d --build
 ```
 
-Open the printed URL (default http://localhost:5173). Vite proxies `/analyze` and
-`/explain` to `http://localhost:8000`.
+Open:
 
-## Use
+- UI: `http://localhost:8080`
+- Backend health: `http://localhost:8000/api/health`
+- Models health: `http://localhost:8001/health`
 
-- Drag-and-drop or browse a homepage screenshot, then **Analyze**, **or**
-- Paste a homepage URL and **Capture** — Playwright takes a full-page screenshot and
-  feeds the same pipeline (URL mode also fetches live provenance; uploads use a zero
-  provenance vector, matching the notebook's degraded rows).
+## Configuration
 
-Factuality renders first; the GPT-5.5 explanation streams into the card below.
+The app reads `.env` from this folder. Use `.env.example` as a template.
 
-## New dependencies vs the repo
+Required for LLM inference:
 
-Backend adds: `fastapi`, `uvicorn`, `timm`, `sentence-transformers`, `torch`,
-`python-multipart`, `beautifulsoup4`, `tldextract`, `python-whois` (Playwright,
-pandas, scikit-learn, pillow already in the project). Frontend: Vite + React + TS +
-Tailwind.
+```bash
+OPENROUTER_API_KEY=...
+```
+
+Without the key, the containers can start, but the production hybrid inference path cannot complete LLM-backed predictions.
+
+## Inference Methods
+
+- Bias: `nested_stack::core_gpt55_ocr_text_siglip` (gpt-5.5 + OCR + SigLIP stack)
+- Factuality: Ali's MLP over DINOv2 visual + joint-verdict one-hot + MiniLM rationale
+  (+ provenance for the metadata variant). A joint-verdict LLM call supplies the verdict
+  one-hot and rationale; a separate LLM call supplies the evidence bounding boxes.
+
+## Game Data
+
+The game uses `data/manifest.json` and `data/images/*.jpg`.
+
+Current dataset:
+
+- 65 screenshots
+- bias labels: `left`, `left-center`, `least biased`, `right-center`, `right`
+- factuality labels: `very low`, `low`, `mixed`, `high`, `very high` (slider is 5-class;
+  the bundled ground-truth labels are 4-class, so `mixed` is never the correct answer
+  until MIXED-labeled items are added to the manifest).
+
+Images are first-screen 16:9 viewport crops generated from the source screenshots to keep the web experience responsive.
