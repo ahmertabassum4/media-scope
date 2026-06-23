@@ -231,6 +231,7 @@ function resetAnalyze() {
 function clearEvidence() {
   evidenceOverlay.innerHTML = "";
   evidenceOverlay.classList.remove("visible");
+  evidenceOverlay.removeAttribute("style");
   Object.values(evidenceLists).forEach((node) => {
     node.innerHTML = "";
     node.classList.remove("visible");
@@ -269,24 +270,24 @@ function renderResult(data) {
 }
 
 function displayedImageBox(imageInfo) {
-  const frameWidth = previewWrap.clientWidth;
-  const frameHeight = previewWrap.clientHeight;
+  // Measure the image as the browser actually rendered it (CSS decides whether it is
+  // fit-to-width-and-scroll for tall URL captures or contained for short images), so the
+  // overlay always lines up regardless of layout mode.
+  const width = previewImage.offsetWidth;
+  const height = previewImage.offsetHeight;
   const imageWidth = imageInfo.original_size.width;
   const imageHeight = imageInfo.original_size.height;
-  if (!frameWidth || !frameHeight || !imageWidth || !imageHeight) {
+  if (!width || !height || !imageWidth || !imageHeight) {
     return null;
   }
-  const frameRatio = frameWidth / frameHeight;
-  const imageRatio = imageWidth / imageHeight;
-
-  if (frameRatio > imageRatio) {
-    const height = frameHeight;
-    const width = height * imageRatio;
-    return { left: (frameWidth - width) / 2, top: 0, width, height, imageWidth, imageHeight };
-  }
-  const width = frameWidth;
-  const height = width / imageRatio;
-  return { left: 0, top: (frameHeight - height) / 2, width, height, imageWidth, imageHeight };
+  return {
+    left: previewImage.offsetLeft,
+    top: previewImage.offsetTop,
+    width,
+    height,
+    imageWidth,
+    imageHeight,
+  };
 }
 
 function renderEvidence(data) {
@@ -301,10 +302,17 @@ function renderEvidence(data) {
 
   const imageBox = displayedImageBox(data.image);
   if (!imageBox) return;
+  // Size the overlay to exactly cover the rendered image and anchor it at the image's
+  // origin. For tall, scrollable captures this keeps boxes from being clipped to the
+  // visible frame and lets them scroll with the screenshot.
+  evidenceOverlay.style.left = `${imageBox.left}px`;
+  evidenceOverlay.style.top = `${imageBox.top}px`;
+  evidenceOverlay.style.width = `${imageBox.width}px`;
+  evidenceOverlay.style.height = `${imageBox.height}px`;
   for (const item of allItems) {
     const [x1, y1, x2, y2] = item.bbox;
-    const left = imageBox.left + (x1 / imageBox.imageWidth) * imageBox.width;
-    const top = imageBox.top + (y1 / imageBox.imageHeight) * imageBox.height;
+    const left = (x1 / imageBox.imageWidth) * imageBox.width;
+    const top = (y1 / imageBox.imageHeight) * imageBox.height;
     const width = ((x2 - x1) / imageBox.imageWidth) * imageBox.width;
     const height = ((y2 - y1) / imageBox.imageHeight) * imageBox.height;
     const box = document.createElement("div");
