@@ -1,0 +1,457 @@
+[
+  {
+    "id": "247sports",
+    "source": "247Sports",
+    "image": "001_247sports.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "addiction-news",
+    "source": "Addiction.News",
+    "image": "002_addiction-news.jpg",
+    "bias": "right",
+    "factuality": "very low"
+  },
+  {
+    "id": "american-free-press",
+    "source": "American Free Press",
+    "image": "003_american-free-press.jpg",
+    "bias": "right",
+    "factuality": "low"
+  },
+  {
+    "id": "american-heritage",
+    "source": "American Heritage",
+    "image": "004_american-heritage.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "american-intelligence-media",
+    "source": "American Intelligence Media",
+    "image": "005_american-intelligence-media.jpg",
+    "bias": "right",
+    "factuality": "very low"
+  },
+  {
+    "id": "american-thinker",
+    "source": "American Thinker",
+    "image": "006_american-thinker.jpg",
+    "bias": "right",
+    "factuality": "low"
+  },
+  {
+    "id": "antioxidants-news",
+    "source": "Antioxidants.News",
+    "image": "007_antioxidants-news.jpg",
+    "bias": "right",
+    "factuality": "very low"
+  },
+  {
+    "id": "austin-american-statesman",
+    "source": "Austin American-Statesman",
+    "image": "008_austin-american-statesman.jpg",
+    "bias": "left-center",
+    "factuality": "high"
+  },
+  {
+    "id": "awakening-news",
+    "source": "Awakening.News",
+    "image": "009_awakening-news.jpg",
+    "bias": "right",
+    "factuality": "very low"
+  },
+  {
+    "id": "ballotpedia",
+    "source": "Ballotpedia",
+    "image": "010_ballotpedia.jpg",
+    "bias": "least biased",
+    "factuality": "very high"
+  },
+  {
+    "id": "banned-news",
+    "source": "Banned.News",
+    "image": "011_banned-news.jpg",
+    "bias": "right",
+    "factuality": "very low"
+  },
+  {
+    "id": "biggleswade-chronicle",
+    "source": "Biggleswade Chronicle",
+    "image": "012_biggleswade-chronicle.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "californiacollapse-news",
+    "source": "CaliforniaCollapse.News",
+    "image": "013_californiacollapse-news.jpg",
+    "bias": "right",
+    "factuality": "very low"
+  },
+  {
+    "id": "capital-gazette",
+    "source": "Capital Gazette",
+    "image": "014_capital-gazette.jpg",
+    "bias": "left-center",
+    "factuality": "high"
+  },
+  {
+    "id": "cherokee-tribune",
+    "source": "Cherokee Tribune",
+    "image": "015_cherokee-tribune.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "concerned-women-for-america",
+    "source": "Concerned Women for America",
+    "image": "016_concerned-women-for-america.jpg",
+    "bias": "right",
+    "factuality": "low"
+  },
+  {
+    "id": "conspiracy-daily-update",
+    "source": "Conspiracy Daily Update",
+    "image": "017_conspiracy-daily-update.jpg",
+    "bias": "right",
+    "factuality": "very low"
+  },
+  {
+    "id": "constitution-daily",
+    "source": "Constitution Daily",
+    "image": "018_constitution-daily.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "corpus-christi-caller-times",
+    "source": "Corpus Christi Caller-Times",
+    "image": "019_corpus-christi-caller-times.jpg",
+    "bias": "left-center",
+    "factuality": "high"
+  },
+  {
+    "id": "covid-call-to-humanity",
+    "source": "Covid Call to Humanity",
+    "image": "020_covid-call-to-humanity.jpg",
+    "bias": "right",
+    "factuality": "very low"
+  },
+  {
+    "id": "east-london-and-west-essex-guardian",
+    "source": "East London and West Essex Guardian",
+    "image": "021_east-london-and-west-essex-guardian.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "east-west-center",
+    "source": "East-West Center",
+    "image": "022_east-west-center.jpg",
+    "bias": "left-center",
+    "factuality": "high"
+  },
+  {
+    "id": "economist-intelligence-unit",
+    "source": "Economist Intelligence Unit",
+    "image": "023_economist-intelligence-unit.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "el-nuevo-dia",
+    "source": "El Nuevo Dia",
+    "image": "024_el-nuevo-dia.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "escape-all-these-things",
+    "source": "Escape all these Things",
+    "image": "025_escape-all-these-things.jpg",
+    "bias": "right",
+    "factuality": "low"
+  },
+  {
+    "id": "factcheck-org",
+    "source": "FactCheck.org",
+    "image": "026_factcheck-org.jpg",
+    "bias": "least biased",
+    "factuality": "very high"
+  },
+  {
+    "id": "gingrich-360",
+    "source": "Gingrich 360",
+    "image": "027_gingrich-360.jpg",
+    "bias": "right",
+    "factuality": "low"
+  },
+  {
+    "id": "healthrangerinvenstions-com",
+    "source": "HealthRangerInvenstions.com",
+    "image": "028_healthrangerinvenstions-com.jpg",
+    "bias": "right",
+    "factuality": "very low"
+  },
+  {
+    "id": "investopedia",
+    "source": "Investopedia",
+    "image": "029_investopedia.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "iroquois-times-republic",
+    "source": "Iroquois Times-Republic",
+    "image": "030_iroquois-times-republic.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "israel-unwired",
+    "source": "Israel Unwired",
+    "image": "031_israel-unwired.jpg",
+    "bias": "right",
+    "factuality": "low"
+  },
+  {
+    "id": "knutsford-guardian",
+    "source": "Knutsford Guardian",
+    "image": "032_knutsford-guardian.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "lead-stories",
+    "source": "Lead Stories",
+    "image": "033_lead-stories.jpg",
+    "bias": "least biased",
+    "factuality": "very high"
+  },
+  {
+    "id": "marketbeat",
+    "source": "MarketBeat",
+    "image": "034_marketbeat.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "new-zealand-doctors-speaking-out-with-science",
+    "source": "New Zealand Doctors Speaking Out with Science",
+    "image": "035_new-zealand-doctors-speaking-out-with-science.jpg",
+    "bias": "right",
+    "factuality": "low"
+  },
+  {
+    "id": "pa-media",
+    "source": "PA Media",
+    "image": "036_pa-media.jpg",
+    "bias": "least biased",
+    "factuality": "very high"
+  },
+  {
+    "id": "pew-research",
+    "source": "Pew Research",
+    "image": "037_pew-research.jpg",
+    "bias": "least biased",
+    "factuality": "very high"
+  },
+  {
+    "id": "public-religion-research-institute",
+    "source": "Public Religion Research Institute",
+    "image": "038_public-religion-research-institute.jpg",
+    "bias": "least biased",
+    "factuality": "very high"
+  },
+  {
+    "id": "rappanhannock-news",
+    "source": "Rappanhannock News",
+    "image": "039_rappanhannock-news.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "raw-story",
+    "source": "Raw Story",
+    "image": "040_raw-story.jpg",
+    "bias": "left",
+    "factuality": "high"
+  },
+  {
+    "id": "red-river-valley-news",
+    "source": "Red River Valley News",
+    "image": "041_red-river-valley-news.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "roll-call",
+    "source": "Roll Call",
+    "image": "042_roll-call.jpg",
+    "bias": "least biased",
+    "factuality": "very high"
+  },
+  {
+    "id": "rome-news-tribune",
+    "source": "Rome News-Tribune",
+    "image": "043_rome-news-tribune.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "rossland-news",
+    "source": "Rossland News",
+    "image": "044_rossland-news.jpg",
+    "bias": "left-center",
+    "factuality": "high"
+  },
+  {
+    "id": "scienceclowns",
+    "source": "ScienceClowns",
+    "image": "045_scienceclowns.jpg",
+    "bias": "right",
+    "factuality": "very low"
+  },
+  {
+    "id": "sentencing-project",
+    "source": "Sentencing Project",
+    "image": "046_sentencing-project.jpg",
+    "bias": "left-center",
+    "factuality": "high"
+  },
+  {
+    "id": "sludge",
+    "source": "Sludge",
+    "image": "047_sludge.jpg",
+    "bias": "left",
+    "factuality": "high"
+  },
+  {
+    "id": "survival-news",
+    "source": "Survival.News",
+    "image": "048_survival-news.jpg",
+    "bias": "right",
+    "factuality": "very low"
+  },
+  {
+    "id": "survive-the-news",
+    "source": "Survive The News",
+    "image": "049_survive-the-news.jpg",
+    "bias": "right",
+    "factuality": "low"
+  },
+  {
+    "id": "techgiants-news",
+    "source": "TechGiants.News",
+    "image": "050_techgiants-news.jpg",
+    "bias": "right",
+    "factuality": "very low"
+  },
+  {
+    "id": "the-federation-for-american-immigration-reform",
+    "source": "The Federation for American Immigration Reform",
+    "image": "051_the-federation-for-american-immigration-reform.jpg",
+    "bias": "right",
+    "factuality": "low"
+  },
+  {
+    "id": "thespectator-info",
+    "source": "TheSpectator.info",
+    "image": "052_thespectator-info.jpg",
+    "bias": "right",
+    "factuality": "very low"
+  },
+  {
+    "id": "thoughtco",
+    "source": "ThoughtCo",
+    "image": "053_thoughtco.jpg",
+    "bias": "least biased",
+    "factuality": "very high"
+  },
+  {
+    "id": "torrentfreak",
+    "source": "TorrentFreak",
+    "image": "054_torrentfreak.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "trentonian",
+    "source": "Trentonian",
+    "image": "055_trentonian.jpg",
+    "bias": "right-center",
+    "factuality": "high"
+  },
+  {
+    "id": "tri-city-news",
+    "source": "Tri-City News",
+    "image": "056_tri-city-news.jpg",
+    "bias": "left-center",
+    "factuality": "high"
+  },
+  {
+    "id": "truckingdive",
+    "source": "TruckingDive",
+    "image": "057_truckingdive.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "turley-talks",
+    "source": "Turley Talks",
+    "image": "058_turley-talks.jpg",
+    "bias": "right",
+    "factuality": "low"
+  },
+  {
+    "id": "tyranny-news",
+    "source": "Tyranny.News",
+    "image": "059_tyranny-news.jpg",
+    "bias": "right",
+    "factuality": "very low"
+  },
+  {
+    "id": "us-backlash",
+    "source": "US Backlash",
+    "image": "060_us-backlash.jpg",
+    "bias": "right",
+    "factuality": "very low"
+  },
+  {
+    "id": "utilitydive",
+    "source": "UtilityDive",
+    "image": "061_utilitydive.jpg",
+    "bias": "least biased",
+    "factuality": "high"
+  },
+  {
+    "id": "wbnd-south-bend-news",
+    "source": "WBND - South Bend News",
+    "image": "062_wbnd-south-bend-news.jpg",
+    "bias": "left-center",
+    "factuality": "high"
+  },
+  {
+    "id": "wyofile",
+    "source": "Wyofile",
+    "image": "063_wyofile.jpg",
+    "bias": "left",
+    "factuality": "high"
+  },
+  {
+    "id": "xyz-net-au",
+    "source": "XYZ.net.au",
+    "image": "064_xyz-net-au.jpg",
+    "bias": "right",
+    "factuality": "low"
+  },
+  {
+    "id": "zerohedge",
+    "source": "Zerohedge",
+    "image": "065_zerohedge.jpg",
+    "bias": "right",
+    "factuality": "low"
+  }
+]
