@@ -1,0 +1,39 @@
+{
+  "FACTUALITY": [
+    "VERY LOW",
+    "LOW",
+    "MIXED",
+    "HIGH",
+    "VERY HIGH"
+  ],
+  "BIAS": [
+    "LEFT",
+    "LEFT-CENTER",
+    "LEAST BIASED",
+    "RIGHT-CENTER",
+    "RIGHT"
+  ],
+  "GENRE": [
+    "CONSPIRACY",
+    "PSEUDOSCIENCE",
+    "IMPOSTER",
+    "OTHER"
+  ],
+  "N_FACT": 5,
+  "PROV_DIM": 32,
+  "VERDICT_DIM": 14,
+  "VIS_DIM": 768,
+  "RAT_DIM": 384,
+  "IN_DIM": 1198,
+  "feature_order": [
+    "vis",
+    "prov",
+    "verdict",
+    "rat"
+  ],
+  "hidden": 256,
+  "dropout": 0.4,
+  "test_acc_sage": 0.8392857142857143,
+  "test_acc_mlp": 0.8214285714285714,
+  "seed": 14
+}

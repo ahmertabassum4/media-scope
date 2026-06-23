@@ -1,0 +1,32 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+torch
+timm
+sentence-transformers
+playwright
+python-dotenv
+beautifulsoup4
+tldextract
+python-whois
+pillow
+requests
+numpy
+python-multipart
+
+# --- bias prediction pipeline (vendored from Oleg branch) ---
+# Heavy: paddleocr/paddlepaddle pull large wheels; transformers downloads the
+# SigLIP weights (google/siglip-base-patch16-224, ~370MB) on first /bias call.
+# scikit-learn pinned to the version the bias artifacts were pickled with — sklearn
+# does NOT guarantee cross-version pickle compat (1.7 removed LogisticRegression.multi_class).
+scikit-learn==1.8.0
+# scikit-image is a transitive paddleocr dep; <0.24 is not NumPy-2 compatible (ABI mismatch).
+scikit-image>=0.24
+joblib
+openai
+paddleocr
+paddlepaddle
+opencv-python-headless
+transformers
+safetensors
+sentencepiece
+protobuf
