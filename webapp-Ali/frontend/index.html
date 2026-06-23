@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Media bias and Factuality</title>
-    <link rel="stylesheet" href="/styles.css?v=20260623-url-reason-5class" />
+    <link rel="stylesheet" href="/styles.css?v=20260623-ui-clear-loading" />
   </head>
   <body>
     <main class="app-shell">
@@ -28,17 +28,25 @@
                   <span class="drop-title">Drop image or browse</span>
                   <span id="fileMeta" class="drop-meta">PNG, JPG, WEBP, BMP, TIFF</span>
                 </label>
-                <button id="submitButton" class="primary-button" type="submit">Analyze</button>
+                <button id="submitButton" class="primary-button" type="submit">
+                  <span class="button-label">Analyze</span>
+                </button>
                 <div class="url-field">
                   <span class="url-or">or analyze a live page by URL</span>
                   <input id="urlInput" name="url" class="url-input" type="url" inputmode="url"
                          placeholder="https://example.com" autocomplete="off" />
                 </div>
+                <button id="clearButton" class="secondary-button clear-button" type="button">Clear</button>
               </form>
 
               <div class="image-frame preview-wrap">
+                <button id="clearImageButton" class="image-clear" type="button" title="Remove image" aria-label="Remove image" hidden>&times;</button>
                 <img id="previewImage" alt="" />
                 <div id="evidenceOverlay" class="evidence-overlay" aria-hidden="true"></div>
+                <div id="loadingOverlay" class="loading-overlay" aria-hidden="true">
+                  <div class="spinner" aria-hidden="true"></div>
+                  <div id="loadingStatus" class="loading-status">Analyzing</div>
+                </div>
                 <div id="emptyPreview" class="empty-preview">No image selected</div>
               </div>
             </section>
@@ -152,6 +160,6 @@
         </section>
       </section>
     </main>
-    <script src="/app.js?v=20260623-url-reason-5class"></script>
+    <script src="/app.js?v=20260623-ui-clear-loading"></script>
   </body>
 </html>

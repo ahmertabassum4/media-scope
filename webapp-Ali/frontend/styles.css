@@ -670,6 +670,141 @@ form {
   overflow-wrap: anywhere;
 }
 
+.clear-button {
+  grid-column: 1 / -1;
+  min-height: 40px;
+}
+
+/* Remove-image (x) control on the preview */
+.image-clear {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 4;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(20, 25, 34, 0.72);
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(20, 25, 34, 0.25);
+}
+
+.image-clear:hover {
+  background: var(--danger);
+}
+
+.image-clear[hidden] {
+  display: none;
+}
+
+/* Loading overlay + spinner shown over the preview while analyzing */
+.loading-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.74);
+  backdrop-filter: blur(2px);
+}
+
+.preview-wrap.loading .loading-overlay {
+  display: flex;
+}
+
+.preview-wrap.loading .image-clear {
+  display: none;
+}
+
+.spinner {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 4px solid rgba(20, 25, 34, 0.15);
+  border-top-color: var(--teal);
+  animation: spin 0.9s linear infinite;
+}
+
+.loading-status {
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 760;
+  letter-spacing: 0.2px;
+}
+
+.loading-status::after {
+  content: "";
+  animation: ellipsis 1.4s steps(4, end) infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ellipsis {
+  0% { content: ""; }
+  25% { content: "."; }
+  50% { content: ".."; }
+  75% { content: "..."; }
+  100% { content: ""; }
+}
+
+/* Button spinner while analyzing */
+.primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.primary-button.is-loading::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  border-top-color: #ffffff;
+  animation: spin 0.8s linear infinite;
+}
+
+/* Result cards pulse (wave) while analyzing so the page is not static */
+@keyframes cardPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.results-panel.loading .result-card {
+  animation: cardPulse 1.3s ease-in-out infinite;
+}
+
+.results-panel.loading .result-card:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.results-panel.loading .result-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner,
+  .primary-button.is-loading::before,
+  .results-panel.loading .result-card,
+  .loading-status::after {
+    animation: none;
+  }
+}
+
 .error-box {
   display: none;
   border: 1px solid rgba(180, 35, 24, 0.35);

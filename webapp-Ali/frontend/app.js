@@ -4,11 +4,15 @@ const urlInput = document.getElementById("urlInput");
 const dropZone = document.getElementById("dropZone");
 const fileMeta = document.getElementById("fileMeta");
 const button = document.getElementById("submitButton");
+const clearButton = document.getElementById("clearButton");
+const clearImageButton = document.getElementById("clearImageButton");
 const explainButton = document.getElementById("explainButton");
 const reasoningText = document.getElementById("reasoningText");
+const resultsPanel = document.querySelector(".results-panel");
 const previewWrap = document.querySelector(".preview-wrap");
 const previewImage = document.getElementById("previewImage");
 const evidenceOverlay = document.getElementById("evidenceOverlay");
+const loadingStatus = document.getElementById("loadingStatus");
 const errorBox = document.getElementById("errorBox");
 const healthBadge = document.getElementById("healthBadge");
 const modeButtons = document.querySelectorAll(".mode-button");
@@ -118,9 +122,61 @@ function clearError(box) {
   box.classList.remove("visible");
 }
 
-function setLoading(isLoading) {
+const statusSteps = {
+  url: [
+    "Capturing the page",
+    "Reading provenance",
+    "Running the models",
+    "Scoring bias & factuality",
+    "Almost there",
+  ],
+  image: [
+    "Reading the image",
+    "Running the models",
+    "Finding evidence regions",
+    "Scoring bias & factuality",
+    "Almost there",
+  ],
+};
+
+let statusTimer = null;
+
+function startStatusCycle(mode) {
+  const steps = statusSteps[mode] || statusSteps.image;
+  let index = 0;
+  loadingStatus.textContent = steps[0];
+  stopStatusCycle();
+  statusTimer = window.setInterval(() => {
+    index = Math.min(index + 1, steps.length - 1);
+    loadingStatus.textContent = steps[index];
+    if (index === steps.length - 1) {
+      stopStatusCycle();
+    }
+  }, 2800);
+}
+
+function stopStatusCycle() {
+  if (statusTimer !== null) {
+    window.clearInterval(statusTimer);
+    statusTimer = null;
+  }
+}
+
+function setLoading(isLoading, mode) {
   button.disabled = isLoading;
-  button.textContent = isLoading ? "Analyzing" : "Analyze";
+  clearButton.disabled = isLoading;
+  button.classList.toggle("is-loading", isLoading);
+  const label = button.querySelector(".button-label");
+  if (label) {
+    label.textContent = isLoading ? "Analyzing" : "Analyze";
+  }
+  previewWrap.classList.toggle("loading", isLoading);
+  resultsPanel.classList.toggle("loading", isLoading);
+  if (isLoading) {
+    startStatusCycle(mode);
+  } else {
+    stopStatusCycle();
+  }
 }
 
 function resetReasoning() {
@@ -138,6 +194,7 @@ function updatePreview(file) {
     fileMeta.textContent = "PNG, JPG, WEBP, BMP, TIFF";
     previewImage.removeAttribute("src");
     previewWrap.classList.remove("has-image");
+    clearImageButton.hidden = true;
     return;
   }
   if (urlInput) {
@@ -146,6 +203,29 @@ function updatePreview(file) {
   fileMeta.textContent = `${file.name} - ${(file.size / 1024 / 1024).toFixed(2)} MB`;
   previewImage.src = URL.createObjectURL(file);
   previewWrap.classList.add("has-image");
+  clearImageButton.hidden = false;
+}
+
+// Full reset of the analyze view so the user can start a fresh analysis.
+function resetAnalyze() {
+  lastAnalyzeData = null;
+  input.value = "";
+  if (urlInput) {
+    urlInput.value = "";
+  }
+  fileMeta.textContent = "PNG, JPG, WEBP, BMP, TIFF";
+  previewImage.removeAttribute("src");
+  previewWrap.classList.remove("has-image");
+  clearImageButton.hidden = true;
+  clearEvidence();
+  resetReasoning();
+  clearError(errorBox);
+  setText("biasLabel", "");
+  setText("factualityLabel", "");
+  setResultColor("bias", "");
+  setResultColor("factuality", "");
+  markers.bias.classList.remove("visible");
+  markers.factuality.classList.remove("visible");
 }
 
 function clearEvidence() {
@@ -167,6 +247,7 @@ function renderResult(data) {
   if (data.screenshot_b64) {
     previewImage.src = `data:image/png;base64,${data.screenshot_b64}`;
     previewWrap.classList.add("has-image");
+    clearImageButton.hidden = false;
   }
 
   setText("biasLabel", data.bias.label);
@@ -276,7 +357,7 @@ function renderEvidenceList(task, result) {
 
 async function analyze({ file, url }) {
   clearError(errorBox);
-  setLoading(true);
+  setLoading(true, url ? "url" : "image");
   const body = new FormData();
   if (url) {
     body.append("url", url);
@@ -517,6 +598,8 @@ form.addEventListener("submit", (event) => {
 });
 
 explainButton.addEventListener("click", requestReasoning);
+clearButton.addEventListener("click", resetAnalyze);
+clearImageButton.addEventListener("click", resetAnalyze);
 
 for (const eventName of ["dragenter", "dragover"]) {
   dropZone.addEventListener(eventName, (event) => {
