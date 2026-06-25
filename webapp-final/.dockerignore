@@ -1,0 +1,23 @@
+# Keep the Docker build context (and the Space repo) lean. Only exclude things that are
+# NOT loaded at runtime. Model weights under models/models/ ARE needed — don't ignore them.
+.git
+.gitignore
+**/.DS_Store
+**/__pycache__
+**/*.pyc
+.pytest_cache
+
+# Local env / secrets — provided as Space secrets instead.
+.env
+
+# Source artifacts and archives not used by the running app.
+mediascope_artifacts/
+mediascope_artifacts.zip
+*.zip
+memes/
+docker-compose.yml
+
+# Unused model-dir extras (the live load paths are the .json/.npy/.joblib files only).
+models/models/_old_mlp_backup/
+models/models/factuality_artifacts/
+models/graph_vision_models/

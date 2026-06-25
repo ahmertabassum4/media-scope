@@ -2,7 +2,7 @@
 
 Feature blocks (order must match training):
 
-- ``vis``     : DINOv2 ViT-B/14 image embedding (VIS_DIM, raw, not normalised)
+- ``vis``     : DINOv2 ViT-B/14 image embedding (VIS_DIM, L2-normalised)
 - ``prov``    : standardised provenance vector (PROV_DIM) — metadata model only
 - ``verdict`` : joint-verdict one-hot [factuality | bias | genre] (VERDICT_DIM)
 - ``rat``     : MiniLM rationale embedding (RAT_DIM, mean-pooled + L2 normalised)
@@ -26,6 +26,13 @@ from PIL import Image
 DINOV2_ID = "vit_base_patch14_dinov2.lvd142m"
 MINILM_ID = "sentence-transformers/all-MiniLM-L6-v2"
 
+
+def select_device():
+    """Use CUDA (e.g. the Space's T4) when present, else CPU. Cached per process."""
+    import torch
+
+    return torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 # Canonical label orderings from the training notebook. Used as a fallback when the
 # exported factuality_config.json omits these keys; the verdict one-hot layout
 # [factuality | bias | genre] must match the order the MLP was trained on.
@@ -42,13 +49,20 @@ def norm_label(value: Any) -> str:
 
 class FactualityFeatures:
     def __init__(self, model_dir: Path, config: dict[str, Any]) -> None:
-        stats = json.loads((model_dir / "factuality_prov_stats.json").read_text(encoding="utf-8"))
-        self.prov_keys = list(stats["PROV_KEYS"])
-        self.mu = np.asarray(stats["mu"], dtype=np.float32)
-        self.sd = np.asarray(stats["sd"], dtype=np.float32)
+        # Provenance stats are only present for the legacy MLP models; the vision-only
+        # graph model does not use provenance, so this is optional.
+        prov_stats_path = model_dir / "factuality_prov_stats.json"
+        if prov_stats_path.exists():
+            stats = json.loads(prov_stats_path.read_text(encoding="utf-8"))
+            self.prov_keys = list(stats["PROV_KEYS"])
+            self.mu = np.asarray(stats["mu"], dtype=np.float32)
+            self.sd = np.asarray(stats["sd"], dtype=np.float32)
+        else:
+            self.prov_keys = []
+            self.mu = self.sd = None
 
         self.vis_dim = int(config["VIS_DIM"])
-        self.prov_dim = int(config["PROV_DIM"])
+        self.prov_dim = int(config.get("PROV_DIM", 0))
         self.verdict_dim = int(config["VERDICT_DIM"])
         self.rat_dim = int(config["RAT_DIM"])
         self.factuality = list(config.get("FACTUALITY", DEFAULT_FACTUALITY))
@@ -62,7 +76,14 @@ class FactualityFeatures:
         self._dino = None
         self._dino_tf = None
         self._minilm: tuple[Any, Any] | None = None
+        self._device = None
         self._lock = threading.Lock()
+
+    @property
+    def device(self):
+        if self._device is None:
+            self._device = select_device()
+        return self._device
 
     # ---- lazy encoders (heavy; loaded on first use, shared across requests) ----
     def _ensure_dino(self) -> None:
@@ -75,7 +96,7 @@ class FactualityFeatures:
                 model = timm.create_model(DINOV2_ID, pretrained=True, num_classes=0).eval()
                 cfg = timm.data.resolve_data_config({}, model=model)
                 self._dino_tf = timm.data.create_transform(**cfg)
-                self._dino = model
+                self._dino = model.to(self.device)
 
     def _ensure_minilm(self) -> None:
         if self._minilm is not None:
@@ -85,7 +106,7 @@ class FactualityFeatures:
                 from transformers import AutoModel, AutoTokenizer
 
                 tokenizer = AutoTokenizer.from_pretrained(MINILM_ID)
-                model = AutoModel.from_pretrained(MINILM_ID).eval()
+                model = AutoModel.from_pretrained(MINILM_ID).eval().to(self.device)
                 self._minilm = (tokenizer, model)
 
     # ---- feature blocks ----
@@ -94,10 +115,12 @@ class FactualityFeatures:
 
         self._ensure_dino()
         try:
-            tensor = self._dino_tf(image.convert("RGB")).unsqueeze(0)
+            tensor = self._dino_tf(image.convert("RGB")).unsqueeze(0).to(self.device)
             with torch.no_grad():
-                emb = self._dino(tensor).squeeze(0).cpu().numpy()
-            return emb.astype(np.float32)
+                emb = self._dino(tensor).squeeze(0).cpu().numpy().astype(np.float32)
+            # Raw DINOv2 embedding. The graph-vision model standardises it itself with the
+            # training vis_mu/vis_sd (see factuality_graph.GraphVisionFactuality).
+            return emb
         except Exception:
             return np.zeros(self.vis_dim, dtype=np.float32)
 
@@ -139,6 +162,7 @@ class FactualityFeatures:
         self._ensure_minilm()
         tokenizer, model = self._minilm
         inputs = tokenizer([text or ""], padding=True, truncation=True, max_length=256, return_tensors="pt")
+        inputs = {k: v.to(self.device) for k, v in inputs.items()}
         with torch.no_grad():
             output = model(**inputs)
         mask = inputs["attention_mask"].unsqueeze(-1).float()

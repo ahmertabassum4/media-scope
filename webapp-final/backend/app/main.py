@@ -11,6 +11,7 @@ from fastapi.responses import FileResponse, JSONResponse
 
 from app.config import load_settings
 from app.game import GameDataset
+from app.responses import ResponseLogger
 from app.schemas import (
     AnalyzeResponse,
     GameAnswerRequest,
@@ -24,8 +25,21 @@ from app.schemas import (
 
 settings = load_settings()
 game_dataset = GameDataset(Path(settings.data_dir))
+response_logger = ResponseLogger(
+    csv_path=settings.responses_csv_path,
+    repo_id=settings.responses_repo_id,
+    token=settings.hf_token,
+    private=settings.responses_repo_private,
+    flush_every=settings.responses_flush_every,
+    flush_interval_seconds=settings.responses_flush_interval_seconds,
+)
 
 app = FastAPI(title="Media Classification Backend", version="1.1.0")
+
+
+@app.on_event("shutdown")
+def _flush_responses() -> None:
+    response_logger.close()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origins,
@@ -151,4 +165,5 @@ def answer_game_item(answer: GameAnswerRequest) -> GameAnswerResult:
         result = game_dataset.grade(answer.id, answer.bias, answer.factuality)
     except LookupError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
+    response_logger.log(result, answer.session_id)
     return GameAnswerResult(**result)

@@ -1,0 +1,29 @@
+{
+  "FACTUALITY": [
+    "VERY LOW",
+    "LOW",
+    "MIXED",
+    "HIGH",
+    "VERY HIGH"
+  ],
+  "N_FACT": 5,
+  "VIS_DIM": 768,
+  "PROV_DIM": 32,
+  "VERDICT_DIM": 14,
+  "RAT_DIM": 384,
+  "META_IN_DIM": 1198,
+  "IMAGE_IN_DIM": 1166,
+  "hidden": 256,
+  "dropout": 0.4,
+  "feature_order_meta": [
+    "vis",
+    "prov",
+    "verdict",
+    "rat"
+  ],
+  "feature_order_image": [
+    "vis",
+    "verdict",
+    "rat"
+  ]
+}

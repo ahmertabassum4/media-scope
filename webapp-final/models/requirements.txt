@@ -7,13 +7,17 @@ python-dotenv==1.2.2
 pillow==12.0.0
 numpy==2.2.6
 scikit-learn==1.8.0
+xgboost
 joblib==1.5.3
 paddleocr==3.7.0
 paddlepaddle==3.2.1
 opencv-python-headless==4.13.0.92
---extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.10.0+cpu
-torchvision==0.25.0+cpu
+# CUDA 12.4 wheels so DINOv2 / SigLIP / MiniLM run on the Space's T4 GPU.
+# These wheels also run on CPU-only machines (local dev), just without acceleration.
+# For a pure-CPU deployment swap the index back to .../whl/cpu and re-add the +cpu suffix.
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.10.0
+torchvision==0.25.0
 transformers==5.3.0
 safetensors==0.7.0
 sentencepiece==0.2.1

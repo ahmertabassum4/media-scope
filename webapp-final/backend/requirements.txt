@@ -4,6 +4,8 @@ python-multipart==0.0.20
 pydantic==2.12.5
 python-dotenv==1.2.2
 httpx==0.28.1
+# Persist game answers to a private HF Dataset repo.
+huggingface_hub>=0.25,<1.0
 # URL capture (screenshot) + provenance crawl for the metadata factuality model
 playwright>=1.45,<2.0
 beautifulsoup4>=4.12,<5.0

@@ -1,7 +1,22 @@
+---
+title: MediaScope
+emoji: 📰
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+short_description: Media bias & factuality classifier + labeling game
+---
+
 # Media bias and Factuality
 
 Microservice web application for media bias and factuality classification from a
 screenshot **or** a live URL.
+
+> **Deploying to Hugging Face Spaces?** See [DEPLOY.md](DEPLOY.md). On Spaces the three
+> services are merged into one container (root `Dockerfile` + `deploy/`) served on port
+> `7860`, GPU-accelerated on a T4, and game answers are saved to a private HF Dataset.
 
 ## Services
 

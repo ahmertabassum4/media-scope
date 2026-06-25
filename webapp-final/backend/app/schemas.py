@@ -77,6 +77,7 @@ class GameAnswerRequest(BaseModel):
     id: str
     bias: str
     factuality: str
+    session_id: str | None = None
 
 
 class GameAnswerResult(BaseModel):

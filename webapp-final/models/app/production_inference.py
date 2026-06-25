@@ -13,8 +13,8 @@ from PIL import Image
 from app.config import Settings
 from app.evidence import PaddleEvidenceExtractor, candidate_data_url, evidence_regions_to_api, regions_prompt_table
 from app.factuality_features import FactualityFeatures
+from app.factuality_graph import GraphVisionFactuality
 from app.factuality_llm import explain, joint_verdict
-from app.factuality_mlp import FactualityModels
 from app.image_utils import TARGET_ASPECT_RATIO, crop_to_first_screen, image_to_data_url, resize_for_llm
 from app.openrouter import OpenRouterVisionClient
 
@@ -64,8 +64,9 @@ class ProductionClassifier:
     def __init__(self, settings: Settings, model_dir: Path) -> None:
         self.settings = settings
         self.bias_artifact = joblib.load(model_dir / "bias_core_gpt55_ocr_text_siglip.joblib")
-        self.factuality_models = FactualityModels(model_dir)
-        self.factuality_features = FactualityFeatures(model_dir, self.factuality_models.config)
+        config = json.loads((model_dir / "factuality_config.json").read_text(encoding="utf-8"))
+        self.factuality = GraphVisionFactuality(model_dir)
+        self.factuality_features = FactualityFeatures(model_dir, config)
         self.openrouter = (
             OpenRouterVisionClient(
                 api_key=settings.openrouter_api_key,
@@ -190,20 +191,24 @@ class ProductionClassifier:
             except Exception:
                 evidence = []
 
-            # Joint verdict over the FULL screenshot -> verdict one-hot + rationale (MLP features).
+            # Joint verdict over the FULL screenshot -> verdict one-hot + rationale.
             full_data_url = image_to_data_url(image, self.settings.max_llm_image_width)
             verdicts, rationale = joint_verdict(
                 self.openrouter, self.settings.factuality_openrouter_model, full_data_url
             )
-            features = self.factuality_features.assemble(image, verdicts, rationale, provenance)
-            use_metadata = provenance is not None
-            label, confidences = self.factuality_models.predict(features, use_metadata=use_metadata)
+            # Vision-only graph model: raw DINOv2 + verdict one-hot + rationale embedding,
+            # diffused over the training corpus' visual@0.80 graph, then XGBoost. Provenance
+            # is unused, so URL captures and image uploads share this path.
+            raw_vis = self.factuality_features.visual_embedding(image)
+            verdict_oh = self.factuality_features.verdict_onehot(verdicts)
+            rat = self.factuality_features.rationale_embedding(rationale)
+            label, confidences = self.factuality.predict(raw_vis, verdict_oh, rat)
             llm_label = (verdicts.get("factuality") or "").lower()
             return {
                 "task": "factuality",
                 "label": label,
                 "llm_label": llm_label or None,
-                "model": f"{self.factuality_models.name}:{'metadata' if use_metadata else 'image'}",
+                "model": self.factuality.name,
                 "error": None,
                 "evidence": evidence,
                 "confidences": confidences,

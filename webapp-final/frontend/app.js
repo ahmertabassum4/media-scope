@@ -104,6 +104,21 @@ let currentGameItem = null;
 let gameSelection = { bias: labels.bias[2], factuality: labels.factuality[2] };
 let lastAnalyzeData = null;
 
+// Stable per-browser id so answers from one player can be grouped in the dataset.
+function getSessionId() {
+  try {
+    let id = localStorage.getItem("mediascopeSessionId");
+    if (!id) {
+      id = (crypto.randomUUID && crypto.randomUUID()) ||
+        `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+      localStorage.setItem("mediascopeSessionId", id);
+    }
+    return id;
+  } catch (_) {
+    return null; // private mode / storage blocked: server falls back to a random id
+  }
+}
+
 function setText(id, value) {
   fields[id].textContent = value || "-";
 }
@@ -591,6 +606,7 @@ async function checkGameAnswer() {
         id: currentGameItem.id,
         bias: gameSelection.bias,
         factuality: gameSelection.factuality,
+        session_id: getSessionId(),
       }),
     });
     const data = await response.json();
