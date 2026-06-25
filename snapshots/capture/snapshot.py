@@ -3,9 +3,9 @@
 snapshot.py — Take a snapshot (screenshot) of a website and save it to disk.
 
 Usage:
-    python snapshot.py https://www.bbc.com
-    python snapshot.py https://www.reuters.com --output shots --full-page
-    python snapshot.py https://example.com --width 1440 --height 900 --format jpeg
+    python snapshots/capture/snapshot.py https://www.bbc.com
+    python snapshots/capture/snapshot.py https://www.reuters.com --output shots --full-page
+    python snapshots/capture/snapshot.py https://example.com --width 1440 --height 900 --format jpeg
 
 Requires:
     pip install playwright

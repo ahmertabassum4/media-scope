@@ -3,12 +3,14 @@ import csv
 import random
 import shutil
 from datetime import datetime
+from pathlib import Path
 
 random.seed(14)
 
-SNAPSHOT_INDEX = "snapshot_index.csv"
-OUTPUT_DIR     = "output"
-DEST_DIR       = "snapshot-samples"
+ROOT = Path(__file__).resolve().parents[2]
+SNAPSHOT_INDEX = ROOT / "tmp" / "snapshot_index.csv"
+OUTPUT_DIR     = ROOT / "output"
+DEST_DIR       = ROOT / "snapshot-samples"
 
 SAMPLE_SIZES = {
     "VERY LOW":  50,
@@ -29,7 +31,7 @@ for filename, row in all_rows.items():
     factuality_level = row["factuality"].strip().upper()
     if factuality_level not in buckets:
         continue
-    filepath = os.path.join(OUTPUT_DIR, filename)
+    filepath = OUTPUT_DIR / filename
     if os.path.exists(filepath):
         buckets[factuality_level].append(filename)
 
@@ -42,13 +44,13 @@ for factuality_level, n in SAMPLE_SIZES.items():
         print(f"Only {len(pool)} available for {factuality_level}, requested {n}")
         n = len(pool)
     for fname in random.sample(pool, n):
-        shutil.copy(os.path.join(OUTPUT_DIR, fname), os.path.join(DEST_DIR, fname))
+        shutil.copy(OUTPUT_DIR / fname, DEST_DIR / fname)
         sampled_filenames.add(fname)
     print(f"{factuality_level}: copied {n} images")
 
 # CSV for the samples
 now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-out_csv = "snapshot_sample_index.csv"
+out_csv = ROOT / "snapshots" / "data" / "snapshot_sample_index.csv"
 
 fieldnames = ["media_name", "url", "image_path", "timestamp", "country", "factuality", "trustworthiness"]
 

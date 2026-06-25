@@ -19,10 +19,10 @@ Steps:
 Invariant enforced: rows(snapshots.csv) + rows(error.csv) == total JSON files in DATA_DIR
 
 Usage:
-    python postprocessing.py                        # run all steps
-    python postprocessing.py --step index           # only build mixed-snapshots.csv
-    python postprocessing.py --step merge-errors    # only merge error CSVs
-    python postprocessing.py --step merge-snaps     # only merge snapshot CSVs
+    python snapshots/postprocessing/postprocessing.py                        # run all steps
+    python snapshots/postprocessing/postprocessing.py --step index           # only build mixed-snapshots.csv
+    python snapshots/postprocessing/postprocessing.py --step merge-errors    # only merge error CSVs
+    python snapshots/postprocessing/postprocessing.py --step merge-snaps     # only merge snapshot CSVs
 """
 
 import argparse
@@ -32,14 +32,15 @@ import re
 import sys
 from pathlib import Path
 
-DATA_DIR        = Path("data/2291eng_dedup")
-BATCH_LOG       = Path("tmp/Mixed_output/batch_log.jsonl")
-MIXED_ERRORS    = Path("tmp/mixed-errors.csv")
-ERRORS_CSV      = Path("tmp/errors.csv")
-SNAPSHOT_INDEX  = Path("tmp/snapshot_index.csv")
-MIXED_SNAPSHOTS = Path("tmp/mixed-snapshots.csv")
-ERROR_OUT       = Path("error.csv")
-SNAPSHOTS_OUT   = Path("snapshots.csv")
+ROOT            = Path(__file__).resolve().parents[2]
+DATA_DIR        = ROOT / "raw_data" / "2291eng_dedup"
+BATCH_LOG       = ROOT / "tmp" / "Mixed_output" / "batch_log.jsonl"
+MIXED_ERRORS    = ROOT / "tmp" / "mixed-errors.csv"
+ERRORS_CSV      = ROOT / "tmp" / "errors.csv"
+SNAPSHOT_INDEX  = ROOT / "tmp" / "snapshot_index.csv"
+MIXED_SNAPSHOTS = ROOT / "tmp" / "mixed-snapshots.csv"
+ERROR_OUT       = ROOT / "snapshots" / "data" / "error.csv"
+SNAPSHOTS_OUT   = ROOT / "snapshots" / "data" / "snapshots.csv"
 
 SNAPSHOT_COLUMNS = ["media_name", "url", "image_path", "timestamp", "country", "factuality", "trustworthiness"]
 ERROR_COLUMNS    = ["filename", "name", "url", "issue", "timestamp", "factuality"]

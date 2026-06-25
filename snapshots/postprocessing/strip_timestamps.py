@@ -2,6 +2,9 @@
 """
 strip_timestamps.py — Remove _YYYYMMDD_HHMMSS suffix from filenames in
 tmp/questionable_sources/ and update image_path in tmp/qs_snapshots.csv.
+
+Run from project root:
+    python snapshots/postprocessing/strip_timestamps.py
 """
 
 import csv
@@ -9,8 +12,9 @@ import re
 import sys
 from pathlib import Path
 
-QS_DIR     = Path("tmp/questionable_sources")
-CSV_PATH   = Path("tmp/qs_snapshots.csv")
+ROOT       = Path(__file__).resolve().parents[2]
+QS_DIR     = ROOT / "tmp" / "questionable_sources"
+CSV_PATH   = ROOT / "tmp" / "qs_snapshots.csv"
 TS_PATTERN = re.compile(r"(_\d{8}_\d{6})(\.\w+)$")
 
 

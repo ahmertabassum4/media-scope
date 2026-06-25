@@ -6,16 +6,16 @@ Default source : tmp/questionable_sources_with_dates.csv  (columns: media_source
 Default output : tmp/questionable_sources/
 
 Usage:
-    python batch_snapshot.py                                                    # skip already-captured (default)
-    python batch_snapshot.py --force                                            # re-capture even if screenshot exists
-    python batch_snapshot.py --retry-timeouts                                   # only retry previous timeout errors
-    python batch_snapshot.py --retry-timeouts --timeout 60000                   # retry with higher timeout
-    python batch_snapshot.py --from-csv output/image_issues.csv                 # rerun URLs listed in a CSV (must have 'url' column)
-    python batch_snapshot.py --from-csv output/image_issues.csv --output rerun_output --timeout 30000
-    python batch_snapshot.py --from-logs output/batch_log.jsonl rerun_output/batch_log.jsonl --output error_output --timeout 60000
-    python batch_snapshot.py --workers 4                                        # parallel workers (default 4)
-    python batch_snapshot.py --output shots                                     # custom output dir
-    python batch_snapshot.py --dry-run                                          # print URLs without capturing
+    python snapshots/capture/batch_snapshot.py                                                    # skip already-captured (default)
+    python snapshots/capture/batch_snapshot.py --force                                            # re-capture even if screenshot exists
+    python snapshots/capture/batch_snapshot.py --retry-timeouts                                   # only retry previous timeout errors
+    python snapshots/capture/batch_snapshot.py --retry-timeouts --timeout 60000                   # retry with higher timeout
+    python snapshots/capture/batch_snapshot.py --from-csv output/image_issues.csv                 # rerun URLs listed in a CSV (must have 'url' column)
+    python snapshots/capture/batch_snapshot.py --from-csv output/image_issues.csv --output rerun_output --timeout 30000
+    python snapshots/capture/batch_snapshot.py --from-logs output/batch_log.jsonl rerun_output/batch_log.jsonl --output error_output --timeout 60000
+    python snapshots/capture/batch_snapshot.py --workers 4                                        # parallel workers (default 4)
+    python snapshots/capture/batch_snapshot.py --output shots                                     # custom output dir
+    python snapshots/capture/batch_snapshot.py --dry-run                                          # print URLs without capturing
 """
 
 import argparse
