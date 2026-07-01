@@ -18,6 +18,12 @@ screenshots/
 high_factuality/
 low_factuality/
 
+# Large data kept locally but excluded from git history
+data/screenshots/
+data/features/
+data/embeddings/
+data/reference/
+
 # Python
 __pycache__/
 *.pyc

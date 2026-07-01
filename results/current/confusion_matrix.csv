@@ -1,0 +1,55 @@
+model,experiment,truth,pred,count
+full,Full,LOW,LOW,79
+full,Full,LOW,MIXED,5
+full,Full,LOW,HIGH,9
+full,Full,MIXED,LOW,50
+full,Full,MIXED,MIXED,216
+full,Full,MIXED,HIGH,29
+full,Full,HIGH,LOW,16
+full,Full,HIGH,MIXED,6
+full,Full,HIGH,HIGH,151
+no_ocr,Removed OCR,LOW,LOW,75
+no_ocr,Removed OCR,LOW,MIXED,4
+no_ocr,Removed OCR,LOW,HIGH,14
+no_ocr,Removed OCR,MIXED,LOW,48
+no_ocr,Removed OCR,MIXED,MIXED,210
+no_ocr,Removed OCR,MIXED,HIGH,37
+no_ocr,Removed OCR,HIGH,LOW,31
+no_ocr,Removed OCR,HIGH,MIXED,1
+no_ocr,Removed OCR,HIGH,HIGH,141
+no_features,Removed 51 features,LOW,LOW,82
+no_features,Removed 51 features,LOW,MIXED,4
+no_features,Removed 51 features,LOW,HIGH,7
+no_features,Removed 51 features,MIXED,LOW,47
+no_features,Removed 51 features,MIXED,MIXED,220
+no_features,Removed 51 features,MIXED,HIGH,28
+no_features,Removed 51 features,HIGH,LOW,14
+no_features,Removed 51 features,HIGH,MIXED,8
+no_features,Removed 51 features,HIGH,HIGH,151
+ocr_only,Only OCR,LOW,LOW,83
+ocr_only,Only OCR,LOW,MIXED,2
+ocr_only,Only OCR,LOW,HIGH,8
+ocr_only,Only OCR,MIXED,LOW,45
+ocr_only,Only OCR,MIXED,MIXED,223
+ocr_only,Only OCR,MIXED,HIGH,27
+ocr_only,Only OCR,HIGH,LOW,13
+ocr_only,Only OCR,HIGH,MIXED,10
+ocr_only,Only OCR,HIGH,HIGH,150
+dino_only,Only DINOv2,LOW,LOW,60
+dino_only,Only DINOv2,LOW,MIXED,10
+dino_only,Only DINOv2,LOW,HIGH,23
+dino_only,Only DINOv2,MIXED,LOW,45
+dino_only,Only DINOv2,MIXED,MIXED,208
+dino_only,Only DINOv2,MIXED,HIGH,42
+dino_only,Only DINOv2,HIGH,LOW,41
+dino_only,Only DINOv2,HIGH,MIXED,15
+dino_only,Only DINOv2,HIGH,HIGH,117
+features_only,Only 51 features,LOW,LOW,73
+features_only,Only 51 features,LOW,MIXED,5
+features_only,Only 51 features,LOW,HIGH,15
+features_only,Only 51 features,MIXED,LOW,48
+features_only,Only 51 features,MIXED,MIXED,211
+features_only,Only 51 features,MIXED,HIGH,36
+features_only,Only 51 features,HIGH,LOW,34
+features_only,Only 51 features,HIGH,MIXED,2
+features_only,Only 51 features,HIGH,HIGH,137
