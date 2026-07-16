@@ -6,6 +6,7 @@
 gemini_features.csv
 gemini_results.csv
 *.zip
+!data/**/*.zip
 *.log
 .DS_Store
 .claude/
@@ -22,10 +23,6 @@ low_factuality/
 
 # Large data kept locally but excluded from git history
 data/screenshots/
-data/features/
-data/embeddings/
-data/reference/
-data/clean/
 
 # Python
 __pycache__/
@@ -37,9 +34,6 @@ venv/
 .ipynb_checkpoints/
 .cache/
 .matplotlib-cache/
-data/articles/
-data/wiki/
-data/graphs/
-data/metadata/
 baselines/MGM/models/
 baselines/text_only_llm/models/
+data/articles/articles.jsonl

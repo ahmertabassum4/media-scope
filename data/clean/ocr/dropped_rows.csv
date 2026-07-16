@@ -1,0 +1,23 @@
+split,source_index,key,media_name,image_file,factuality,bias,reason,conflicting_tasks,match_types,canonical_key,canonical_media_name
+train,1632,americanconservativemovement,American Conservative Movement,American_Conservative_Movement.png,LOW,right,duplicate_model_input,,"ocr,features,screenshot,embedding",americafirstreport,America First Report
+train,1121,ponokanews,Ponoka News,Ponoka_News.png,HIGH,left-center,duplicate_model_input,,"ocr,features,screenshot,embedding",bashawstar,Bashaw Star
+train,189,breakthroughnews,Breakthrough News,Breakthrough_News.png,MIXED,left,conflicting_labels,"bias,factuality","outlet_key,ocr,features,embedding",,
+train,190,breakthroughnews,Breakthrough.News,Breakthrough.News.png,LOW,right,conflicting_labels,"bias,factuality","outlet_key,ocr,features,embedding",,
+train,1684,catholictribunearizona,Catholic Tribune – Arizona,Catholic_Tribune_Arizona.png,MIXED,right-center,duplicate_model_input,,"outlet_key,ocr,features,screenshot,embedding",catholictribunearizona,Catholic Tribune - Arizona
+train,1685,catholictribuneflorida,Catholic Tribune – Florida,Catholic_Tribune_Florida.png,MIXED,right-center,duplicate_model_input,,"outlet_key,ocr,features,screenshot,embedding",catholictribuneflorida,Catholic Tribune - Florida
+train,260,catholictribunetribune,Catholic Tribune - Tribune,Catholic_Tribune_-_Tribune.png,MIXED,right-center,duplicate_model_input,,"ocr,features,screenshot,embedding",catholictribunepennsylvania,Catholic Tribune – Pennsylvania
+train,1687,catholictribunewisconsin,Catholic Tribune – Wisconsin,Catholic_Tribune_Wisconsin.png,MIXED,right-center,duplicate_model_input,,"outlet_key,ocr,features,screenshot,embedding",catholictribunewisconsin,Catholic Tribune - Wisconsin
+train,603,freepressorg,FreePress.org,FreePress.org.png,MIXED,left,duplicate_model_input,,"ocr,features,screenshot,embedding",columbusfreepress,Columbus Free Press
+train,1732,creativedestructionmediacdmedia,Creative Destruction Media – CD Media,Creative_Destruction_Media_CD_Media.png,LOW,right,duplicate_model_input,,"outlet_key,ocr,features,embedding",creativedestructionmediacdmedia,Creative Destruction Media - CD Media
+train,1360,sylvanlakenews,Sylvan Lake News,Sylvan_Lake_News.png,HIGH,left-center,duplicate_model_input,,"ocr,features,screenshot,embedding",eckvilleecho,Eckville Echo
+train,1254,sarniathisweek,Sarnia This Week,Sarnia_This_Week.png,HIGH,right-center,duplicate_model_input,,"ocr,features,screenshot,embedding",sarniaobserver,Sarnia Observer
+train,2139,southmiamidadenews,South Miami Dade News,South_Miami_Dade_News.png,MIXED,right-center,duplicate_model_input,,"outlet_key,ocr,features,embedding",southmiamidadenews,South Miami-Dade News
+train,1378,thecanadianpress,The Canadian Press,The_Canadian_Press.png,HIGH,center,conflicting_labels,"bias,factuality",embedding,,
+train,1648,auf1,Auf1,Auf1.png,LOW,right,conflicting_labels,"bias,factuality",embedding,,
+train,1412,thespectator,The Spectator,The_Spectator.png,HIGH,right-center,conflicting_labels,"bias,factuality","outlet_key,ocr,features,embedding",,
+train,1424,thespectatorinfo1,TheSpectator.info,TheSpectator.info_1.png,LOW,right,conflicting_labels,"bias,factuality","outlet_key,ocr,features,embedding",,
+train,2163,thespectator,TheSpectator,TheSpectator.png,LOW,right,conflicting_labels,"bias,factuality","outlet_key,ocr,features,embedding",,
+train,1432,timminstimes,Timmins Times,Timmins_Times.png,HIGH,right-center,duplicate_model_input,,"ocr,features,screenshot,embedding",timminspress,Timmins Press
+train,2191,theohioindependent,The Ohio Independent,The_Ohio_Independent.png,MIXED,left,duplicate_model_input,,"ocr,features,screenshot,embedding",arizonaindependent,Arizona Independent
+test,401,catholictribunemichigan,Catholic Tribune – Michigan,Catholic_Tribune_Michigan.png,MIXED,right-center,duplicate_model_input,,"outlet_key,ocr,features,screenshot,embedding",catholictribunemichigan,Catholic Tribune - Michigan
+test,402,catholictribuneminnesota,Catholic Tribune – Minnesota,Catholic_Tribune_Minnesota.png,MIXED,right-center,duplicate_model_input,,"outlet_key,ocr,features,screenshot,embedding",catholictribuneminnesota,Catholic Tribune - Minnesota

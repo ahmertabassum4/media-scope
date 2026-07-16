@@ -1,0 +1,52 @@
+[
+  {
+    "kept": "baltimorecitypaper",
+    "key": "baltimoresun",
+    "node_id": 2330
+  },
+  {
+    "kept": "jerusalempost",
+    "key": "thejerusalemreport",
+    "node_id": 8891
+  },
+  {
+    "kept": "sputnik",
+    "key": "sputniknewsagencyfrance",
+    "node_id": 22077
+  },
+  {
+    "kept": "analyzingamerica",
+    "key": "youngconservatives",
+    "node_id": 28882
+  },
+  {
+    "kept": "xyznet",
+    "key": "xyznetau",
+    "node_id": 33144
+  },
+  {
+    "kept": "focusonthefamily",
+    "key": "dailycitizen",
+    "node_id": 33912
+  },
+  {
+    "kept": "cbsbostonwbztv",
+    "key": "cbsnews",
+    "node_id": 51681
+  },
+  {
+    "kept": "cbsbostonwbztv",
+    "key": "wcminnesotanewsa",
+    "node_id": 51681
+  },
+  {
+    "kept": "covidgov",
+    "key": "whitehouse",
+    "node_id": 57612
+  },
+  {
+    "kept": "covidgov",
+    "key": "whitehousewire",
+    "node_id": 57612
+  }
+]

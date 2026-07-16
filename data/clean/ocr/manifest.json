@@ -1,0 +1,865 @@
+{
+  "class_counts": {
+    "test": {
+      "bias": {
+        "center": 74,
+        "left": 38,
+        "left-center": 77,
+        "right": 145,
+        "right-center": 221
+      },
+      "factuality": {
+        "HIGH": 173,
+        "LOW": 93,
+        "MIXED": 293
+      }
+    },
+    "train": {
+      "bias": {
+        "center": 309,
+        "left": 148,
+        "left-center": 320,
+        "right": 564,
+        "right-center": 911
+      },
+      "factuality": {
+        "HIGH": 683,
+        "LOW": 364,
+        "MIXED": 1212
+      }
+    }
+  },
+  "counts": {
+    "clean_embedding_rows": 2818,
+    "clean_feature_rows": 2818,
+    "clean_test": 559,
+    "clean_train": 2259,
+    "conflicting_components": 3,
+    "dropped_test": 2,
+    "dropped_train": 20,
+    "duplicate_components": 18,
+    "raw_test": 561,
+    "raw_train": 2279
+  },
+  "duplicate_components": [
+    {
+      "conflicting_tasks": [],
+      "labels": {
+        "bias": [
+          "right"
+        ],
+        "factuality": [
+          "LOW"
+        ]
+      },
+      "match_types": [
+        "ocr",
+        "features",
+        "screenshot",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "right",
+          "factuality": "LOW",
+          "key": "americafirstreport",
+          "media_name": "America First Report",
+          "source_index": 56,
+          "split": "train"
+        },
+        {
+          "bias": "right",
+          "factuality": "LOW",
+          "key": "americanconservativemovement",
+          "media_name": "American Conservative Movement",
+          "source_index": 1632,
+          "split": "train"
+        }
+      ],
+      "size": 2,
+      "winner": {
+        "key": "americafirstreport",
+        "media_name": "America First Report",
+        "source_index": 56,
+        "split": "train"
+      }
+    },
+    {
+      "conflicting_tasks": [],
+      "labels": {
+        "bias": [
+          "left-center"
+        ],
+        "factuality": [
+          "HIGH"
+        ]
+      },
+      "match_types": [
+        "ocr",
+        "features",
+        "screenshot",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "left-center",
+          "factuality": "HIGH",
+          "key": "bashawstar",
+          "media_name": "Bashaw Star",
+          "source_index": 137,
+          "split": "train"
+        },
+        {
+          "bias": "left-center",
+          "factuality": "HIGH",
+          "key": "ponokanews",
+          "media_name": "Ponoka News",
+          "source_index": 1121,
+          "split": "train"
+        }
+      ],
+      "size": 2,
+      "winner": {
+        "key": "bashawstar",
+        "media_name": "Bashaw Star",
+        "source_index": 137,
+        "split": "train"
+      }
+    },
+    {
+      "conflicting_tasks": [
+        "bias",
+        "factuality"
+      ],
+      "labels": {
+        "bias": [
+          "left",
+          "right"
+        ],
+        "factuality": [
+          "LOW",
+          "MIXED"
+        ]
+      },
+      "match_types": [
+        "outlet_key",
+        "ocr",
+        "features",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "left",
+          "factuality": "MIXED",
+          "key": "breakthroughnews",
+          "media_name": "Breakthrough News",
+          "source_index": 189,
+          "split": "train"
+        },
+        {
+          "bias": "right",
+          "factuality": "LOW",
+          "key": "breakthroughnews",
+          "media_name": "Breakthrough.News",
+          "source_index": 190,
+          "split": "train"
+        }
+      ],
+      "size": 2,
+      "winner": null
+    },
+    {
+      "conflicting_tasks": [],
+      "labels": {
+        "bias": [
+          "right-center"
+        ],
+        "factuality": [
+          "MIXED"
+        ]
+      },
+      "match_types": [
+        "outlet_key",
+        "ocr",
+        "features",
+        "screenshot",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "right-center",
+          "factuality": "MIXED",
+          "key": "catholictribunearizona",
+          "media_name": "Catholic Tribune - Arizona",
+          "source_index": 258,
+          "split": "train"
+        },
+        {
+          "bias": "right-center",
+          "factuality": "MIXED",
+          "key": "catholictribunearizona",
+          "media_name": "Catholic Tribune \u2013 Arizona",
+          "source_index": 1684,
+          "split": "train"
+        }
+      ],
+      "size": 2,
+      "winner": {
+        "key": "catholictribunearizona",
+        "media_name": "Catholic Tribune - Arizona",
+        "source_index": 258,
+        "split": "train"
+      }
+    },
+    {
+      "conflicting_tasks": [],
+      "labels": {
+        "bias": [
+          "right-center"
+        ],
+        "factuality": [
+          "MIXED"
+        ]
+      },
+      "match_types": [
+        "outlet_key",
+        "ocr",
+        "features",
+        "screenshot",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "right-center",
+          "factuality": "MIXED",
+          "key": "catholictribuneflorida",
+          "media_name": "Catholic Tribune - Florida",
+          "source_index": 259,
+          "split": "train"
+        },
+        {
+          "bias": "right-center",
+          "factuality": "MIXED",
+          "key": "catholictribuneflorida",
+          "media_name": "Catholic Tribune \u2013 Florida",
+          "source_index": 1685,
+          "split": "train"
+        }
+      ],
+      "size": 2,
+      "winner": {
+        "key": "catholictribuneflorida",
+        "media_name": "Catholic Tribune - Florida",
+        "source_index": 259,
+        "split": "train"
+      }
+    },
+    {
+      "conflicting_tasks": [],
+      "labels": {
+        "bias": [
+          "right-center"
+        ],
+        "factuality": [
+          "MIXED"
+        ]
+      },
+      "match_types": [
+        "ocr",
+        "features",
+        "screenshot",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "right-center",
+          "factuality": "MIXED",
+          "key": "catholictribunetribune",
+          "media_name": "Catholic Tribune - Tribune",
+          "source_index": 260,
+          "split": "train"
+        },
+        {
+          "bias": "right-center",
+          "factuality": "MIXED",
+          "key": "catholictribunepennsylvania",
+          "media_name": "Catholic Tribune \u2013 Pennsylvania",
+          "source_index": 1686,
+          "split": "train"
+        }
+      ],
+      "size": 2,
+      "winner": {
+        "key": "catholictribunepennsylvania",
+        "media_name": "Catholic Tribune \u2013 Pennsylvania",
+        "source_index": 1686,
+        "split": "train"
+      }
+    },
+    {
+      "conflicting_tasks": [],
+      "labels": {
+        "bias": [
+          "right-center"
+        ],
+        "factuality": [
+          "MIXED"
+        ]
+      },
+      "match_types": [
+        "outlet_key",
+        "ocr",
+        "features",
+        "screenshot",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "right-center",
+          "factuality": "MIXED",
+          "key": "catholictribunewisconsin",
+          "media_name": "Catholic Tribune - Wisconsin",
+          "source_index": 261,
+          "split": "train"
+        },
+        {
+          "bias": "right-center",
+          "factuality": "MIXED",
+          "key": "catholictribunewisconsin",
+          "media_name": "Catholic Tribune \u2013 Wisconsin",
+          "source_index": 1687,
+          "split": "train"
+        }
+      ],
+      "size": 2,
+      "winner": {
+        "key": "catholictribunewisconsin",
+        "media_name": "Catholic Tribune - Wisconsin",
+        "source_index": 261,
+        "split": "train"
+      }
+    },
+    {
+      "conflicting_tasks": [],
+      "labels": {
+        "bias": [
+          "left"
+        ],
+        "factuality": [
+          "MIXED"
+        ]
+      },
+      "match_types": [
+        "ocr",
+        "features",
+        "screenshot",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "left",
+          "factuality": "MIXED",
+          "key": "columbusfreepress",
+          "media_name": "Columbus Free Press",
+          "source_index": 344,
+          "split": "train"
+        },
+        {
+          "bias": "left",
+          "factuality": "MIXED",
+          "key": "freepressorg",
+          "media_name": "FreePress.org",
+          "source_index": 603,
+          "split": "train"
+        }
+      ],
+      "size": 2,
+      "winner": {
+        "key": "columbusfreepress",
+        "media_name": "Columbus Free Press",
+        "source_index": 344,
+        "split": "train"
+      }
+    },
+    {
+      "conflicting_tasks": [],
+      "labels": {
+        "bias": [
+          "right"
+        ],
+        "factuality": [
+          "LOW"
+        ]
+      },
+      "match_types": [
+        "outlet_key",
+        "ocr",
+        "features",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "right",
+          "factuality": "LOW",
+          "key": "creativedestructionmediacdmedia",
+          "media_name": "Creative Destruction Media - CD Media",
+          "source_index": 379,
+          "split": "train"
+        },
+        {
+          "bias": "right",
+          "factuality": "LOW",
+          "key": "creativedestructionmediacdmedia",
+          "media_name": "Creative Destruction Media \u2013 CD Media",
+          "source_index": 1732,
+          "split": "train"
+        }
+      ],
+      "size": 2,
+      "winner": {
+        "key": "creativedestructionmediacdmedia",
+        "media_name": "Creative Destruction Media - CD Media",
+        "source_index": 379,
+        "split": "train"
+      }
+    },
+    {
+      "conflicting_tasks": [],
+      "labels": {
+        "bias": [
+          "left-center"
+        ],
+        "factuality": [
+          "HIGH"
+        ]
+      },
+      "match_types": [
+        "ocr",
+        "features",
+        "screenshot",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "left-center",
+          "factuality": "HIGH",
+          "key": "eckvilleecho",
+          "media_name": "Eckville Echo",
+          "source_index": 508,
+          "split": "train"
+        },
+        {
+          "bias": "left-center",
+          "factuality": "HIGH",
+          "key": "sylvanlakenews",
+          "media_name": "Sylvan Lake News",
+          "source_index": 1360,
+          "split": "train"
+        }
+      ],
+      "size": 2,
+      "winner": {
+        "key": "eckvilleecho",
+        "media_name": "Eckville Echo",
+        "source_index": 508,
+        "split": "train"
+      }
+    },
+    {
+      "conflicting_tasks": [],
+      "labels": {
+        "bias": [
+          "right-center"
+        ],
+        "factuality": [
+          "HIGH"
+        ]
+      },
+      "match_types": [
+        "ocr",
+        "features",
+        "screenshot",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "right-center",
+          "factuality": "HIGH",
+          "key": "sarniaobserver",
+          "media_name": "Sarnia Observer",
+          "source_index": 1253,
+          "split": "train"
+        },
+        {
+          "bias": "right-center",
+          "factuality": "HIGH",
+          "key": "sarniathisweek",
+          "media_name": "Sarnia This Week",
+          "source_index": 1254,
+          "split": "train"
+        }
+      ],
+      "size": 2,
+      "winner": {
+        "key": "sarniaobserver",
+        "media_name": "Sarnia Observer",
+        "source_index": 1253,
+        "split": "train"
+      }
+    },
+    {
+      "conflicting_tasks": [],
+      "labels": {
+        "bias": [
+          "right-center"
+        ],
+        "factuality": [
+          "MIXED"
+        ]
+      },
+      "match_types": [
+        "outlet_key",
+        "ocr",
+        "features",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "right-center",
+          "factuality": "MIXED",
+          "key": "southmiamidadenews",
+          "media_name": "South Miami-Dade News",
+          "source_index": 1308,
+          "split": "train"
+        },
+        {
+          "bias": "right-center",
+          "factuality": "MIXED",
+          "key": "southmiamidadenews",
+          "media_name": "South Miami Dade News",
+          "source_index": 2139,
+          "split": "train"
+        }
+      ],
+      "size": 2,
+      "winner": {
+        "key": "southmiamidadenews",
+        "media_name": "South Miami-Dade News",
+        "source_index": 1308,
+        "split": "train"
+      }
+    },
+    {
+      "conflicting_tasks": [
+        "bias",
+        "factuality"
+      ],
+      "labels": {
+        "bias": [
+          "center",
+          "right"
+        ],
+        "factuality": [
+          "HIGH",
+          "LOW"
+        ]
+      },
+      "match_types": [
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "center",
+          "factuality": "HIGH",
+          "key": "thecanadianpress",
+          "media_name": "The Canadian Press",
+          "source_index": 1378,
+          "split": "train"
+        },
+        {
+          "bias": "right",
+          "factuality": "LOW",
+          "key": "auf1",
+          "media_name": "Auf1",
+          "source_index": 1648,
+          "split": "train"
+        }
+      ],
+      "size": 2,
+      "winner": null
+    },
+    {
+      "conflicting_tasks": [
+        "bias",
+        "factuality"
+      ],
+      "labels": {
+        "bias": [
+          "right",
+          "right-center"
+        ],
+        "factuality": [
+          "HIGH",
+          "LOW"
+        ]
+      },
+      "match_types": [
+        "outlet_key",
+        "ocr",
+        "features",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "right-center",
+          "factuality": "HIGH",
+          "key": "thespectator",
+          "media_name": "The Spectator",
+          "source_index": 1412,
+          "split": "train"
+        },
+        {
+          "bias": "right",
+          "factuality": "LOW",
+          "key": "thespectatorinfo1",
+          "media_name": "TheSpectator.info",
+          "source_index": 1424,
+          "split": "train"
+        },
+        {
+          "bias": "right",
+          "factuality": "LOW",
+          "key": "thespectator",
+          "media_name": "TheSpectator",
+          "source_index": 2163,
+          "split": "train"
+        }
+      ],
+      "size": 3,
+      "winner": null
+    },
+    {
+      "conflicting_tasks": [],
+      "labels": {
+        "bias": [
+          "right-center"
+        ],
+        "factuality": [
+          "HIGH"
+        ]
+      },
+      "match_types": [
+        "ocr",
+        "features",
+        "screenshot",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "right-center",
+          "factuality": "HIGH",
+          "key": "timminspress",
+          "media_name": "Timmins Press",
+          "source_index": 1431,
+          "split": "train"
+        },
+        {
+          "bias": "right-center",
+          "factuality": "HIGH",
+          "key": "timminstimes",
+          "media_name": "Timmins Times",
+          "source_index": 1432,
+          "split": "train"
+        }
+      ],
+      "size": 2,
+      "winner": {
+        "key": "timminspress",
+        "media_name": "Timmins Press",
+        "source_index": 1431,
+        "split": "train"
+      }
+    },
+    {
+      "conflicting_tasks": [],
+      "labels": {
+        "bias": [
+          "left"
+        ],
+        "factuality": [
+          "MIXED"
+        ]
+      },
+      "match_types": [
+        "ocr",
+        "features",
+        "screenshot",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "left",
+          "factuality": "MIXED",
+          "key": "arizonaindependent",
+          "media_name": "Arizona Independent",
+          "source_index": 1645,
+          "split": "train"
+        },
+        {
+          "bias": "left",
+          "factuality": "MIXED",
+          "key": "theohioindependent",
+          "media_name": "The Ohio Independent",
+          "source_index": 2191,
+          "split": "train"
+        }
+      ],
+      "size": 2,
+      "winner": {
+        "key": "arizonaindependent",
+        "media_name": "Arizona Independent",
+        "source_index": 1645,
+        "split": "train"
+      }
+    },
+    {
+      "conflicting_tasks": [],
+      "labels": {
+        "bias": [
+          "right-center"
+        ],
+        "factuality": [
+          "MIXED"
+        ]
+      },
+      "match_types": [
+        "outlet_key",
+        "ocr",
+        "features",
+        "screenshot",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "right-center",
+          "factuality": "MIXED",
+          "key": "catholictribunemichigan",
+          "media_name": "Catholic Tribune - Michigan",
+          "source_index": 66,
+          "split": "test"
+        },
+        {
+          "bias": "right-center",
+          "factuality": "MIXED",
+          "key": "catholictribunemichigan",
+          "media_name": "Catholic Tribune \u2013 Michigan",
+          "source_index": 401,
+          "split": "test"
+        }
+      ],
+      "size": 2,
+      "winner": {
+        "key": "catholictribunemichigan",
+        "media_name": "Catholic Tribune - Michigan",
+        "source_index": 66,
+        "split": "test"
+      }
+    },
+    {
+      "conflicting_tasks": [],
+      "labels": {
+        "bias": [
+          "right-center"
+        ],
+        "factuality": [
+          "MIXED"
+        ]
+      },
+      "match_types": [
+        "outlet_key",
+        "ocr",
+        "features",
+        "screenshot",
+        "embedding"
+      ],
+      "rows": [
+        {
+          "bias": "right-center",
+          "factuality": "MIXED",
+          "key": "catholictribuneminnesota",
+          "media_name": "Catholic Tribune - Minnesota",
+          "source_index": 67,
+          "split": "test"
+        },
+        {
+          "bias": "right-center",
+          "factuality": "MIXED",
+          "key": "catholictribuneminnesota",
+          "media_name": "Catholic Tribune \u2013 Minnesota",
+          "source_index": 402,
+          "split": "test"
+        }
+      ],
+      "size": 2,
+      "winner": {
+        "key": "catholictribuneminnesota",
+        "media_name": "Catholic Tribune - Minnesota",
+        "source_index": 67,
+        "split": "test"
+      }
+    }
+  ],
+  "outputs": {
+    "dropped_rows": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/clean/ocr/dropped_rows.csv",
+      "sha256": "82d4173b811e83d55f7dcd07238150294ca5a00bfa1ea90c48047e7bf17f4798"
+    },
+    "embeddings": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/clean/ocr/visual_embeddings.npz",
+      "sha256": "3cab5efdb54cacb32243de46ee715a7ed33b9ee34a2f63eeaf51498b64fd4515"
+    },
+    "features": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/clean/ocr/features.jsonl",
+      "sha256": "bbeecf4384eace75058d8a9bee0c1f0b9e2b2664f4bb87cffdaf64f961d39d06"
+    },
+    "test": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/clean/ocr/test.csv",
+      "sha256": "9436c42cc502daac54d3f9e7e867a7a5fc2baa56314e77da73871abd8d664d8b"
+    },
+    "train": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/clean/ocr/train.csv",
+      "sha256": "7588aa9d43b471586e518155990b055dadbbe7131d04b10de330da2f483fcca8"
+    }
+  },
+  "policy": {
+    "conflicting_duplicate_labels": "drop the complete connected component",
+    "duplicate_identifiers": [
+      "normalized outlet key",
+      "normalized exact OCR",
+      "exact compact feature vector",
+      "exact screenshot bytes",
+      "exact normalized two-view visual embedding"
+    ],
+    "raw_sources_mutated": false,
+    "same_label_duplicates": "keep one deterministic row, preferring test"
+  },
+  "schema": "ocr_canonical_dataset_v1",
+  "sources": {
+    "embeddings": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/embeddings/visual_embeddings.safe.npz",
+      "sha256": "0c82a931f899e97abcd14db171438f1bc00464f330d7f527207b02e7b1b7b67e"
+    },
+    "features": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/features/features.jsonl",
+      "sha256": "8347e5678fd20d9b6d817e82ee0223d9bff700f986c72348815905952d6a8a82"
+    },
+    "test": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/splits/test.csv",
+      "sha256": "f26940139966ad7e0fa3300f2f0e1dee1a479c4c7040b84d81a44b1c39ed9b0e"
+    },
+    "train": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/splits/train.csv",
+      "sha256": "61dfde12d5b875ed2af312e4929f70c20b8b067ac5e75f4b4eb6f41d22f2f0e6"
+    }
+  }
+}
