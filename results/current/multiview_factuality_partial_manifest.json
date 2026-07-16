@@ -1,0 +1,189 @@
+{
+  "classes": [
+    "LOW",
+    "MIXED",
+    "HIGH"
+  ],
+  "complete": false,
+  "metrics": [
+    {
+      "HIGH_f1": 0.0,
+      "LOW_f1": 0.0,
+      "MIXED_f1": 68.7793427230047,
+      "accuracy": 52.41502683363149,
+      "balanced_accuracy": 33.33333333333333,
+      "components": "-",
+      "experiment": "Majority class",
+      "macro_f1": 22.926447574334897,
+      "macro_precision": 17.471675611210493,
+      "macro_recall": 33.33333333333333,
+      "mae": 0.47584973166368516,
+      "model": "majority",
+      "mse": 0.47584973166368516,
+      "n_test": 559
+    },
+    {
+      "HIGH_f1": 0.0,
+      "LOW_f1": 0.0,
+      "MIXED_f1": 68.47697756788665,
+      "accuracy": 51.878354203935594,
+      "balanced_accuracy": 32.992036405005685,
+      "components": "alexa_gcn",
+      "experiment": "SVM: alexa_gcn",
+      "macro_f1": 22.825659189295553,
+      "macro_precision": 17.448856799037305,
+      "macro_recall": 32.992036405005685,
+      "mae": 0.4847942754919499,
+      "model": "SVM",
+      "mse": 0.4919499105545617,
+      "n_test": 559
+    },
+    {
+      "HIGH_f1": 40.445859872611464,
+      "LOW_f1": 17.77777777777778,
+      "MIXED_f1": 8.450704225352112,
+      "accuracy": 27.549194991055455,
+      "balanced_accuracy": 30.47769478521458,
+      "components": "alexa_sage",
+      "experiment": "SVM: alexa_sage",
+      "macro_f1": 22.22478062524712,
+      "macro_precision": 26.892354956871085,
+      "macro_recall": 30.47769478521458,
+      "mae": 0.8676207513416816,
+      "model": "SVM",
+      "mse": 1.1538461538461537,
+      "n_test": 559
+    },
+    {
+      "HIGH_f1": 0.0,
+      "LOW_f1": 7.339449541284404,
+      "MIXED_f1": 68.6602870813397,
+      "accuracy": 52.05724508050089,
+      "balanced_accuracy": 34.08443123295044,
+      "components": "alexa_resgated",
+      "experiment": "SVM: alexa_resgated",
+      "macro_f1": 25.333245540874707,
+      "macro_precision": 25.951503990178022,
+      "macro_recall": 34.08443123295044,
+      "mae": 0.49016100178890876,
+      "model": "SVM",
+      "mse": 0.5116279069767442,
+      "n_test": 559
+    },
+    {
+      "HIGH_f1": 14.000000000000002,
+      "LOW_f1": 0.0,
+      "MIXED_f1": 69.57575757575758,
+      "accuracy": 53.84615384615385,
+      "balanced_accuracy": 35.34823465972236,
+      "components": "hyperlink_gcn",
+      "experiment": "SVM: hyperlink_gcn",
+      "macro_f1": 27.85858585858586,
+      "macro_precision": 35.26640675763482,
+      "macro_recall": 35.34823465972236,
+      "mae": 0.4740608228980322,
+      "model": "SVM",
+      "mse": 0.4991055456171735,
+      "n_test": 559
+    },
+    {
+      "HIGH_f1": 34.88843813387424,
+      "LOW_f1": 0.0,
+      "MIXED_f1": 40.97744360902256,
+      "accuracy": 34.883720930232556,
+      "balanced_accuracy": 28.970782615557617,
+      "components": "hyperlink_sage",
+      "experiment": "SVM: hyperlink_sage",
+      "macro_f1": 25.288627247632263,
+      "macro_precision": 24.160564853556487,
+      "macro_recall": 28.970782615557617,
+      "mae": 0.740608228980322,
+      "model": "SVM",
+      "mse": 0.9194991055456172,
+      "n_test": 559
+    }
+  ],
+  "ordinal": {
+    "HIGH": 1.0,
+    "LOW": -1.0,
+    "MIXED": 0.0
+  },
+  "outlet_universe_sha256": "c20bf978320e073633b362699b49b4bb3d86d82b3fc793460b5133eb08d8a5a5",
+  "outputs": {
+    "metrics": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/results/current/multiview_factuality_partial.csv",
+      "sha256": "809c02c5e22016ca371e21b72075eb27b9b52d8764fdead64aa4742e53c886bc"
+    },
+    "predictions": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/results/current/multiview_factuality_partial_predictions.csv",
+      "sha256": "12e85321897d1c8c3a8b5b145ef984bfecb6a79efd8d7153d45f2b2aa5a1c787"
+    }
+  },
+  "produced_rows": 6,
+  "requested_rows": 10,
+  "rl_timesteps": 100000,
+  "schema": "multiview_run_v1",
+  "skipped": [
+    {
+      "method": "svm",
+      "missing": [
+        "hyperlink_resgated"
+      ],
+      "specs": [
+        "hyperlink_resgated"
+      ]
+    },
+    {
+      "method": "svm",
+      "missing": [
+        "llm_gcn"
+      ],
+      "specs": [
+        "llm_gcn"
+      ]
+    },
+    {
+      "method": "svm",
+      "missing": [
+        "llm_sage"
+      ],
+      "specs": [
+        "llm_sage"
+      ]
+    },
+    {
+      "method": "svm",
+      "missing": [
+        "llm_resgated"
+      ],
+      "specs": [
+        "llm_resgated"
+      ]
+    }
+  ],
+  "sources": {
+    "alexa_gcn": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/graphs/emb_alexa_gcn.npz",
+      "sha256": "8915e9642e41c16c052cbae4fc475c80a037d00e7e2c982825fd2ef401cda329"
+    },
+    "alexa_resgated": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/graphs/emb_alexa_resgated.npz",
+      "sha256": "d9555aae10370dc901978d56c540bfdaec7512debf821a25fc5e1017534b01e7"
+    },
+    "alexa_sage": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/graphs/emb_alexa_sage.npz",
+      "sha256": "3ed5523f797e4208d4983578f484571af2b3a66013eb07d53a98af5f13292312"
+    },
+    "hyperlink_gcn": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/graphs/emb_hyperlink_gcn.npz",
+      "sha256": "42d7b66ff704786e2f9414bc0745f703336b39aac4dfadc83ec9eee5880e93b5"
+    },
+    "hyperlink_sage": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/graphs/emb_hyperlink_sage.npz",
+      "sha256": "caaa7f1804ce7aaa0521a30813924e52fce5ac594205e44501d115b7d762e0e9"
+    }
+  },
+  "task": "factuality",
+  "test_rows": 559,
+  "train_rows": 2259
+}

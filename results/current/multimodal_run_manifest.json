@@ -1,0 +1,150 @@
+{
+  "dataset_audit": {
+    "test": {
+      "class_counts": {
+        "HIGH": 173,
+        "LOW": 93,
+        "MIXED": 293
+      },
+      "rows": 559
+    },
+    "train": {
+      "class_counts": {
+        "HIGH": 683,
+        "LOW": 364,
+        "MIXED": 1212
+      },
+      "rows": 2259
+    }
+  },
+  "dataset_manifest": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/clean/ocr/manifest.json",
+  "dataset_manifest_sha256": "fab7881e8a2f836cf7264d9c559de4f65cd0b0879e0f73c8b70f85586a4fcb9a",
+  "inner_splits": 3,
+  "metrics": [
+    {
+      "HIGH_f1": 0.0,
+      "LOW_f1": 0.0,
+      "MIXED_f1": 68.7793427230047,
+      "accuracy": 52.41502683363149,
+      "balanced_accuracy": 33.33333333333333,
+      "components": "predicts the majority train class for every row",
+      "experiment": "Majority class",
+      "macro_f1": 22.926447574334897,
+      "macro_precision": 17.471675611210493,
+      "macro_recall": 33.33333333333333,
+      "mae": 0.47584973166368516,
+      "model": "majority",
+      "mse": 0.47584973166368516,
+      "n_test": 559
+    },
+    {
+      "HIGH_f1": 85.79234972677595,
+      "LOW_f1": 70.04608294930875,
+      "MIXED_f1": 84.11214953271028,
+      "accuracy": 81.9320214669052,
+      "balanced_accuracy": 83.08789468931742,
+      "components": "51 features + OCR expert + DINO knn15",
+      "experiment": "Full",
+      "macro_f1": 79.98352740293166,
+      "macro_precision": 78.53755981709426,
+      "macro_recall": 83.08789468931742,
+      "mae": 0.20930232558139536,
+      "model": "full",
+      "mse": 0.26654740608228983,
+      "n_test": 559
+    },
+    {
+      "HIGH_f1": 78.19148936170212,
+      "LOW_f1": 60.747663551401864,
+      "MIXED_f1": 80.3030303030303,
+      "accuracy": 75.84973166368515,
+      "balanced_accuracy": 75.73950672987876,
+      "components": "51 features + DINO knn15",
+      "experiment": "Removed OCR",
+      "macro_f1": 73.08072773871143,
+      "macro_precision": 72.11518910845264,
+      "macro_recall": 75.73950672987876,
+      "mae": 0.29695885509839,
+      "model": "no_ocr",
+      "mse": 0.407871198568873,
+      "n_test": 559
+    },
+    {
+      "HIGH_f1": 85.6353591160221,
+      "LOW_f1": 67.27272727272727,
+      "MIXED_f1": 83.5820895522388,
+      "accuracy": 81.03756708407872,
+      "balanced_accuracy": 81.87192671368472,
+      "components": "OCR expert + DINO knn15",
+      "experiment": "Removed 51 features",
+      "macro_f1": 78.83005864699606,
+      "macro_precision": 77.4864561682876,
+      "macro_recall": 81.8719267136847,
+      "mae": 0.22182468694096602,
+      "model": "no_features",
+      "mse": 0.28622540250447226,
+      "n_test": 559
+    },
+    {
+      "HIGH_f1": 84.5303867403315,
+      "LOW_f1": 67.57990867579909,
+      "MIXED_f1": 84.17132216014897,
+      "accuracy": 81.03756708407872,
+      "balanced_accuracy": 81.71410154451586,
+      "components": "OCR expert only",
+      "experiment": "Only OCR",
+      "macro_f1": 78.76053919209318,
+      "macro_precision": 77.43516350073727,
+      "macro_recall": 81.71410154451586,
+      "mae": 0.22719141323792486,
+      "model": "ocr_only",
+      "mse": 0.3023255813953488,
+      "n_test": 559
+    },
+    {
+      "HIGH_f1": 66.66666666666666,
+      "LOW_f1": 50.0,
+      "MIXED_f1": 79.08745247148289,
+      "accuracy": 69.05187835420394,
+      "balanced_accuracy": 67.5731714465702,
+      "components": "DINO knn15 only",
+      "experiment": "Only DINOv2",
+      "macro_f1": 65.25137304604985,
+      "macro_precision": 65.05604265526094,
+      "macro_recall": 67.5731714465702,
+      "mae": 0.4221824686940966,
+      "model": "dino_only",
+      "mse": 0.6475849731663685,
+      "n_test": 559
+    },
+    {
+      "HIGH_f1": 76.54986522911051,
+      "LOW_f1": 58.93719806763285,
+      "MIXED_f1": 79.25925925925927,
+      "accuracy": 74.59749552772809,
+      "balanced_accuracy": 73.56995512235657,
+      "components": "51 compact features only",
+      "experiment": "Only 51 features",
+      "macro_f1": 71.58210751866754,
+      "macro_precision": 70.62187325345221,
+      "macro_recall": 73.56995512235657,
+      "mae": 0.3076923076923077,
+      "model": "features_only",
+      "mse": 0.4150268336314848,
+      "n_test": 559
+    }
+  ],
+  "models": [
+    "majority",
+    "full",
+    "no_ocr",
+    "no_features",
+    "ocr_only",
+    "dino_only",
+    "features_only"
+  ],
+  "n_predictions": 3913,
+  "schema": "multimodal_factuality_run_v2",
+  "test_csv": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/clean/ocr/test.csv",
+  "train_csv": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/data/clean/ocr/train.csv"
+}

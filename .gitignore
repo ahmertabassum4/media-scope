@@ -6,7 +6,9 @@
 gemini_features.csv
 gemini_results.csv
 *.zip
+*.log
 .DS_Store
+.claude/
 agent_bias_*
 benchmark_*.py
 compact_clean_*.csv
@@ -23,12 +25,21 @@ data/screenshots/
 data/features/
 data/embeddings/
 data/reference/
+data/clean/
 
 # Python
 __pycache__/
 *.pyc
+nohup.out
+.pytest_cache/
 .venv/
 venv/
 .ipynb_checkpoints/
 .cache/
 .matplotlib-cache/
+data/articles/
+data/wiki/
+data/graphs/
+data/metadata/
+baselines/MGM/models/
+baselines/text_only_llm/models/

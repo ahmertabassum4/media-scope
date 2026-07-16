@@ -1,0 +1,33 @@
+{
+  "label_mappings": {
+    "bias": "left=-2; left-center=-1; center=0; right-center=1; right=2",
+    "factuality": "LOW=-1; MIXED=0; HIGH=1"
+  },
+  "outputs": {
+    "bias": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/results/current/all_baselines_bias.csv",
+      "sha256": "2db8779a6c1da05c28c9625421c33aca16238c10b14287e0f5ce28522b895445"
+    },
+    "factuality": {
+      "path": "/Users/delyan.hristov/Documents/projects/UGRIP 2026/results/current/all_baselines_factuality.csv",
+      "sha256": "761edcc40630e142210f154c2ab3b7c771afb52a0577971b373b60254c6d2d96"
+    }
+  },
+  "row_counts": {
+    "bias": 17,
+    "factuality": 17
+  },
+  "schema": "all_baselines_report_v1",
+  "sources": {
+    "bias": {
+      "mgm_groupA_bias.csv": "27bb70c47f55a2fa64308b87a72db21ee074dc546ca4e6f6125523080dae8e96",
+      "multimodal_bias_metrics.csv": "3bdb6e12f926baf96fe3dbaae564f4cc43a2c418cf656b7a02fab3efc4861bf0",
+      "text_only_llm_bias_metrics.csv": "bba3526fc32db0d72fa334e92eaac2da6a3aacbcb9030b176f8fa6391a5411fb"
+    },
+    "factuality": {
+      "metrics.csv": "2220842346790c18141429e962819a5f3283acce218bce203ec7b12412f05c87",
+      "mgm_groupA_factuality.csv": "dd421837d038b60690e227a5d8a199cd90786d1c76bacf2546d030f5e1ada744",
+      "text_only_llm_metrics.csv": "8f2d9cd66738abf360d2a10bc69bbf7fb0d9e588635ae0085bddc6181a507fa5"
+    }
+  }
+}

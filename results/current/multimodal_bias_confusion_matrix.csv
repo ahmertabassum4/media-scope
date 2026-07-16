@@ -1,0 +1,176 @@
+model,experiment,truth,pred,count
+majority,Majority class,left,left,0
+majority,Majority class,left,left-center,0
+majority,Majority class,left,center,0
+majority,Majority class,left,right-center,38
+majority,Majority class,left,right,0
+majority,Majority class,left-center,left,0
+majority,Majority class,left-center,left-center,0
+majority,Majority class,left-center,center,0
+majority,Majority class,left-center,right-center,77
+majority,Majority class,left-center,right,0
+majority,Majority class,center,left,0
+majority,Majority class,center,left-center,0
+majority,Majority class,center,center,0
+majority,Majority class,center,right-center,74
+majority,Majority class,center,right,0
+majority,Majority class,right-center,left,0
+majority,Majority class,right-center,left-center,0
+majority,Majority class,right-center,center,0
+majority,Majority class,right-center,right-center,221
+majority,Majority class,right-center,right,0
+majority,Majority class,right,left,0
+majority,Majority class,right,left-center,0
+majority,Majority class,right,center,0
+majority,Majority class,right,right-center,145
+majority,Majority class,right,right,0
+full,Full,left,left,27
+full,Full,left,left-center,6
+full,Full,left,center,1
+full,Full,left,right-center,0
+full,Full,left,right,4
+full,Full,left-center,left,18
+full,Full,left-center,left-center,49
+full,Full,left-center,center,8
+full,Full,left-center,right-center,0
+full,Full,left-center,right,2
+full,Full,center,left,4
+full,Full,center,left-center,14
+full,Full,center,center,52
+full,Full,center,right-center,1
+full,Full,center,right,3
+full,Full,right-center,left,9
+full,Full,right-center,left-center,14
+full,Full,right-center,center,6
+full,Full,right-center,right-center,186
+full,Full,right-center,right,6
+full,Full,right,left,17
+full,Full,right,left-center,4
+full,Full,right,center,4
+full,Full,right,right-center,1
+full,Full,right,right,119
+no_ocr,Removed OCR,left,left,16
+no_ocr,Removed OCR,left,left-center,7
+no_ocr,Removed OCR,left,center,3
+no_ocr,Removed OCR,left,right-center,0
+no_ocr,Removed OCR,left,right,12
+no_ocr,Removed OCR,left-center,left,15
+no_ocr,Removed OCR,left-center,left-center,47
+no_ocr,Removed OCR,left-center,center,5
+no_ocr,Removed OCR,left-center,right-center,0
+no_ocr,Removed OCR,left-center,right,10
+no_ocr,Removed OCR,center,left,11
+no_ocr,Removed OCR,center,left-center,13
+no_ocr,Removed OCR,center,center,44
+no_ocr,Removed OCR,center,right-center,0
+no_ocr,Removed OCR,center,right,6
+no_ocr,Removed OCR,right-center,left,14
+no_ocr,Removed OCR,right-center,left-center,14
+no_ocr,Removed OCR,right-center,center,3
+no_ocr,Removed OCR,right-center,right-center,185
+no_ocr,Removed OCR,right-center,right,5
+no_ocr,Removed OCR,right,left,34
+no_ocr,Removed OCR,right,left-center,12
+no_ocr,Removed OCR,right,center,3
+no_ocr,Removed OCR,right,right-center,0
+no_ocr,Removed OCR,right,right,96
+no_features,Removed 51 features,left,left,25
+no_features,Removed 51 features,left,left-center,7
+no_features,Removed 51 features,left,center,1
+no_features,Removed 51 features,left,right-center,0
+no_features,Removed 51 features,left,right,5
+no_features,Removed 51 features,left-center,left,16
+no_features,Removed 51 features,left-center,left-center,52
+no_features,Removed 51 features,left-center,center,7
+no_features,Removed 51 features,left-center,right-center,0
+no_features,Removed 51 features,left-center,right,2
+no_features,Removed 51 features,center,left,5
+no_features,Removed 51 features,center,left-center,14
+no_features,Removed 51 features,center,center,52
+no_features,Removed 51 features,center,right-center,1
+no_features,Removed 51 features,center,right,2
+no_features,Removed 51 features,right-center,left,8
+no_features,Removed 51 features,right-center,left-center,12
+no_features,Removed 51 features,right-center,center,8
+no_features,Removed 51 features,right-center,right-center,187
+no_features,Removed 51 features,right-center,right,6
+no_features,Removed 51 features,right,left,17
+no_features,Removed 51 features,right,left-center,3
+no_features,Removed 51 features,right,center,4
+no_features,Removed 51 features,right,right-center,1
+no_features,Removed 51 features,right,right,120
+ocr_only,Only OCR,left,left,26
+ocr_only,Only OCR,left,left-center,6
+ocr_only,Only OCR,left,center,1
+ocr_only,Only OCR,left,right-center,0
+ocr_only,Only OCR,left,right,5
+ocr_only,Only OCR,left-center,left,17
+ocr_only,Only OCR,left-center,left-center,49
+ocr_only,Only OCR,left-center,center,9
+ocr_only,Only OCR,left-center,right-center,0
+ocr_only,Only OCR,left-center,right,2
+ocr_only,Only OCR,center,left,3
+ocr_only,Only OCR,center,left-center,15
+ocr_only,Only OCR,center,center,54
+ocr_only,Only OCR,center,right-center,0
+ocr_only,Only OCR,center,right,2
+ocr_only,Only OCR,right-center,left,8
+ocr_only,Only OCR,right-center,left-center,11
+ocr_only,Only OCR,right-center,center,7
+ocr_only,Only OCR,right-center,right-center,189
+ocr_only,Only OCR,right-center,right,6
+ocr_only,Only OCR,right,left,17
+ocr_only,Only OCR,right,left-center,3
+ocr_only,Only OCR,right,center,4
+ocr_only,Only OCR,right,right-center,1
+ocr_only,Only OCR,right,right,120
+dino_only,Only DINOv2,left,left,8
+dino_only,Only DINOv2,left,left-center,8
+dino_only,Only DINOv2,left,center,2
+dino_only,Only DINOv2,left,right-center,2
+dino_only,Only DINOv2,left,right,18
+dino_only,Only DINOv2,left-center,left,14
+dino_only,Only DINOv2,left-center,left-center,37
+dino_only,Only DINOv2,left-center,center,10
+dino_only,Only DINOv2,left-center,right-center,1
+dino_only,Only DINOv2,left-center,right,15
+dino_only,Only DINOv2,center,left,12
+dino_only,Only DINOv2,center,left-center,12
+dino_only,Only DINOv2,center,center,34
+dino_only,Only DINOv2,center,right-center,2
+dino_only,Only DINOv2,center,right,14
+dino_only,Only DINOv2,right-center,left,12
+dino_only,Only DINOv2,right-center,left-center,9
+dino_only,Only DINOv2,right-center,center,12
+dino_only,Only DINOv2,right-center,right-center,181
+dino_only,Only DINOv2,right-center,right,7
+dino_only,Only DINOv2,right,left,29
+dino_only,Only DINOv2,right,left-center,12
+dino_only,Only DINOv2,right,center,14
+dino_only,Only DINOv2,right,right-center,5
+dino_only,Only DINOv2,right,right,85
+features_only,Only 51 features,left,left,20
+features_only,Only 51 features,left,left-center,7
+features_only,Only 51 features,left,center,2
+features_only,Only 51 features,left,right-center,0
+features_only,Only 51 features,left,right,9
+features_only,Only 51 features,left-center,left,22
+features_only,Only 51 features,left-center,left-center,47
+features_only,Only 51 features,left-center,center,5
+features_only,Only 51 features,left-center,right-center,0
+features_only,Only 51 features,left-center,right,3
+features_only,Only 51 features,center,left,10
+features_only,Only 51 features,center,left-center,13
+features_only,Only 51 features,center,center,46
+features_only,Only 51 features,center,right-center,1
+features_only,Only 51 features,center,right,4
+features_only,Only 51 features,right-center,left,14
+features_only,Only 51 features,right-center,left-center,11
+features_only,Only 51 features,right-center,center,5
+features_only,Only 51 features,right-center,right-center,185
+features_only,Only 51 features,right-center,right,6
+features_only,Only 51 features,right,left,33
+features_only,Only 51 features,right,left-center,14
+features_only,Only 51 features,right,center,4
+features_only,Only 51 features,right,right-center,1
+features_only,Only 51 features,right,right,93

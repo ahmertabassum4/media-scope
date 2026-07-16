@@ -1,55 +1,64 @@
 model,experiment,truth,pred,count
-full,Full,LOW,LOW,79
-full,Full,LOW,MIXED,5
-full,Full,LOW,HIGH,9
-full,Full,MIXED,LOW,50
-full,Full,MIXED,MIXED,216
+majority,Majority class,LOW,LOW,0
+majority,Majority class,LOW,MIXED,93
+majority,Majority class,LOW,HIGH,0
+majority,Majority class,MIXED,LOW,0
+majority,Majority class,MIXED,MIXED,293
+majority,Majority class,MIXED,HIGH,0
+majority,Majority class,HIGH,LOW,0
+majority,Majority class,HIGH,MIXED,173
+majority,Majority class,HIGH,HIGH,0
+full,Full,LOW,LOW,76
+full,Full,LOW,MIXED,10
+full,Full,LOW,HIGH,7
+full,Full,MIXED,LOW,39
+full,Full,MIXED,MIXED,225
 full,Full,MIXED,HIGH,29
-full,Full,HIGH,LOW,16
-full,Full,HIGH,MIXED,6
-full,Full,HIGH,HIGH,151
-no_ocr,Removed OCR,LOW,LOW,75
-no_ocr,Removed OCR,LOW,MIXED,4
+full,Full,HIGH,LOW,9
+full,Full,HIGH,MIXED,7
+full,Full,HIGH,HIGH,157
+no_ocr,Removed OCR,LOW,LOW,65
+no_ocr,Removed OCR,LOW,MIXED,14
 no_ocr,Removed OCR,LOW,HIGH,14
-no_ocr,Removed OCR,MIXED,LOW,48
-no_ocr,Removed OCR,MIXED,MIXED,210
-no_ocr,Removed OCR,MIXED,HIGH,37
-no_ocr,Removed OCR,HIGH,LOW,31
-no_ocr,Removed OCR,HIGH,MIXED,1
-no_ocr,Removed OCR,HIGH,HIGH,141
-no_features,Removed 51 features,LOW,LOW,82
-no_features,Removed 51 features,LOW,MIXED,4
+no_ocr,Removed OCR,MIXED,LOW,39
+no_ocr,Removed OCR,MIXED,MIXED,212
+no_ocr,Removed OCR,MIXED,HIGH,42
+no_ocr,Removed OCR,HIGH,LOW,17
+no_ocr,Removed OCR,HIGH,MIXED,9
+no_ocr,Removed OCR,HIGH,HIGH,147
+no_features,Removed 51 features,LOW,LOW,74
+no_features,Removed 51 features,LOW,MIXED,12
 no_features,Removed 51 features,LOW,HIGH,7
-no_features,Removed 51 features,MIXED,LOW,47
-no_features,Removed 51 features,MIXED,MIXED,220
-no_features,Removed 51 features,MIXED,HIGH,28
-no_features,Removed 51 features,HIGH,LOW,14
-no_features,Removed 51 features,HIGH,MIXED,8
-no_features,Removed 51 features,HIGH,HIGH,151
-ocr_only,Only OCR,LOW,LOW,83
-ocr_only,Only OCR,LOW,MIXED,2
+no_features,Removed 51 features,MIXED,LOW,42
+no_features,Removed 51 features,MIXED,MIXED,224
+no_features,Removed 51 features,MIXED,HIGH,27
+no_features,Removed 51 features,HIGH,LOW,11
+no_features,Removed 51 features,HIGH,MIXED,7
+no_features,Removed 51 features,HIGH,HIGH,155
+ocr_only,Only OCR,LOW,LOW,74
+ocr_only,Only OCR,LOW,MIXED,11
 ocr_only,Only OCR,LOW,HIGH,8
-ocr_only,Only OCR,MIXED,LOW,45
-ocr_only,Only OCR,MIXED,MIXED,223
-ocr_only,Only OCR,MIXED,HIGH,27
+ocr_only,Only OCR,MIXED,LOW,39
+ocr_only,Only OCR,MIXED,MIXED,226
+ocr_only,Only OCR,MIXED,HIGH,28
 ocr_only,Only OCR,HIGH,LOW,13
-ocr_only,Only OCR,HIGH,MIXED,10
-ocr_only,Only OCR,HIGH,HIGH,150
-dino_only,Only DINOv2,LOW,LOW,60
+ocr_only,Only OCR,HIGH,MIXED,7
+ocr_only,Only OCR,HIGH,HIGH,153
+dino_only,Only DINOv2,LOW,LOW,58
 dino_only,Only DINOv2,LOW,MIXED,10
-dino_only,Only DINOv2,LOW,HIGH,23
-dino_only,Only DINOv2,MIXED,LOW,45
+dino_only,Only DINOv2,LOW,HIGH,25
+dino_only,Only DINOv2,MIXED,LOW,43
 dino_only,Only DINOv2,MIXED,MIXED,208
 dino_only,Only DINOv2,MIXED,HIGH,42
-dino_only,Only DINOv2,HIGH,LOW,41
+dino_only,Only DINOv2,HIGH,LOW,38
 dino_only,Only DINOv2,HIGH,MIXED,15
-dino_only,Only DINOv2,HIGH,HIGH,117
-features_only,Only 51 features,LOW,LOW,73
-features_only,Only 51 features,LOW,MIXED,5
-features_only,Only 51 features,LOW,HIGH,15
-features_only,Only 51 features,MIXED,LOW,48
-features_only,Only 51 features,MIXED,MIXED,211
-features_only,Only 51 features,MIXED,HIGH,36
-features_only,Only 51 features,HIGH,LOW,34
-features_only,Only 51 features,HIGH,MIXED,2
-features_only,Only 51 features,HIGH,HIGH,137
+dino_only,Only DINOv2,HIGH,HIGH,120
+features_only,Only 51 features,LOW,LOW,61
+features_only,Only 51 features,LOW,MIXED,19
+features_only,Only 51 features,LOW,HIGH,13
+features_only,Only 51 features,MIXED,LOW,36
+features_only,Only 51 features,MIXED,MIXED,214
+features_only,Only 51 features,MIXED,HIGH,43
+features_only,Only 51 features,HIGH,LOW,17
+features_only,Only 51 features,HIGH,MIXED,14
+features_only,Only 51 features,HIGH,HIGH,142
