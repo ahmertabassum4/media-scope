@@ -1,0 +1,126 @@
+task,class,rank,term,weight
+bias,left,1,made,1.399550
+bias,left,2,economy,1.356471
+bias,left,3,queer,1.318700
+bias,left,4,reading,1.258608
+bias,left,5,health care,1.165760
+bias,left,6,communities,1.163467
+bias,left,7,gaza,1.145336
+bias,left,8,resistance,1.109091
+bias,left,9,trump has,1.057037
+bias,left,10,dating,1.048456
+bias,left,11,women,1.048388
+bias,left,12,climate,1.046512
+bias,left,13,already,1.027883
+bias,left,14,democracy,1.017917
+bias,left,15,justice,0.995913
+bias,left,16,era,0.990425
+bias,left,17,fund,0.980586
+bias,left,18,als,0.980036
+bias,left,19,care,0.978411
+bias,left,20,ask,0.950495
+bias,left,21,press release,0.931558
+bias,left,22,reveals,0.915503
+bias,left,23,far,0.914396
+bias,left,24,power,0.910906
+bias,left,25,lives,0.910369
+bias,left-center,1,wednesday,1.209656
+bias,left-center,2,subscriber,1.143612
+bias,left-center,3,listen,1.114762
+bias,left-center,4,spencer,1.091856
+bias,left-center,5,without,1.077560
+bias,left-center,6,mission,1.061036
+bias,left-center,7,statistics,1.050711
+bias,left-center,8,democracy,1.026941
+bias,left-center,9,child,1.012002
+bias,left-center,10,season,1.001951
+bias,left-center,11,don,0.973090
+bias,left-center,12,mdp,0.969849
+bias,left-center,13,mdp newsroom,0.969849
+bias,left-center,14,including,0.964504
+bias,left-center,15,conference,0.956144
+bias,left-center,16,artist,0.950077
+bias,left-center,17,about,0.947459
+bias,left-center,18,nba,0.936528
+bias,left-center,19,things,0.930009
+bias,left-center,20,path,0.926201
+bias,left-center,21,miss,0.913424
+bias,left-center,22,series,0.902481
+bias,left-center,23,wed,0.896245
+bias,left-center,24,careers,0.893048
+bias,left-center,25,more than,0.889275
+bias,center,1,editorial,1.179632
+bias,center,2,goals,1.048898
+bias,center,3,inc,1.027589
+bias,center,4,valley,1.017564
+bias,center,5,tech,0.989604
+bias,center,6,meeting,0.968899
+bias,center,7,use,0.967589
+bias,center,8,newsletters,0.959474
+bias,center,9,dive,0.938761
+bias,center,10,amid,0.922171
+bias,center,11,updated,0.909070
+bias,center,12,suspected,0.908475
+bias,center,13,topics,0.897066
+bias,center,14,italian,0.891133
+bias,center,15,cyber,0.889050
+bias,center,16,trading,0.888411
+bias,center,17,discover the,0.887006
+bias,center,18,agency,0.884872
+bias,center,19,sport,0.870233
+bias,center,20,trusted,0.859635
+bias,center,21,pick,0.850134
+bias,center,22,experts,0.827555
+bias,center,23,follow,0.819250
+bias,center,24,publishing,0.819092
+bias,center,25,see all,0.806407
+bias,right-center,1,directory,0.984402
+bias,right-center,2,business daily,0.907216
+bias,right-center,3,government,0.868992
+bias,right-center,4,business,0.810058
+bias,right-center,5,jun,0.786097
+bias,right-center,6,announces,0.785647
+bias,right-center,7,jewish,0.769162
+bias,right-center,8,non-profit,0.762644
+bias,right-center,9,more news,0.757133
+bias,right-center,10,poccun,0.734265
+bias,right-center,11,schools,0.728234
+bias,right-center,12,poccuu,0.723355
+bias,right-center,13,russia's,0.713464
+bias,right-center,14,california,0.706175
+bias,right-center,15,courts,0.686427
+bias,right-center,16,july,0.674207
+bias,right-center,17,pope,0.667603
+bias,right-center,18,paul,0.641983
+bias,right-center,19,crime courts,0.621475
+bias,right-center,20,announced,0.619131
+bias,right-center,21,stories,0.610427
+bias,right-center,22,sports,0.590785
+bias,right-center,23,arts entertainment,0.590645
+bias,right-center,24,kak,0.572969
+bias,right-center,25,below,0.569825
+bias,right,1,freedom,1.465109
+bias,right,2,truth,1.361337
+bias,right,3,christian,1.318473
+bias,right,4,conservative,1.248614
+bias,right,5,https,1.222888
+bias,right,6,democrat,1.048422
+bias,right,7,america,1.012816
+bias,right,8,god,1.003358
+bias,right,9,bible,0.981614
+bias,right,10,liberty,0.971226
+bias,right,11,pravda,0.970944
+bias,right,12,dan,0.964597
+bias,right,13,illegal,0.925918
+bias,right,14,covid,0.910296
+bias,right,15,biden,0.906502
+bias,right,16,children,0.898391
+bias,right,17,privacy and,0.891137
+bias,right,18,woke,0.888733
+bias,right,19,videos,0.860879
+bias,right,20,leader,0.855633
+bias,right,21,collapse,0.852316
+bias,right,22,article,0.838787
+bias,right,23,dark,0.838736
+bias,right,24,ton,0.829260
+bias,right,25,charlie,0.815701
